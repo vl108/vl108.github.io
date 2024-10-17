@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="telephone=no" name="format-detection">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Document</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/lightbox.min.css">
+<link rel="stylesheet" href="css/jquery-ui.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/common.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <!-- header -->
+    <header id="hd">
+        <div class="container">
+            <a href="#" class="hd-back d-lg-none"><i class="icon-back">뒤로</i></a>
+            <h1 class="hd-logo"><a href="#"><img src="img/logo.svg" alt="OF 덴티스"></a></h1>
+            <ul class="hd-navi d-xl-flex">
+                <li>
+                    <a href="#">Courses</a>
+                    <ul class="depth">
+                        <li><a href="#">Offline Courses</a></li>
+                        <li><a href="#">Online Courses</a></li>
+                        <li><a href="#">Speakers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Contents</a>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">Posting</a></li>
+                        <li><a href="#">Clinical Cases</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Story</a></li>
+                <li><a href="#">OF Market</a></li>
+                <li><a href="#">Opening</a></li>
+                <li><a href="#">Event</a></li>
+            </ul>
+            <div class="hd-side">
+                <a href="#" class="icon-user d-xl-block" title="마이페이지">마이페이지</a>
+                <!-- [D] 로그인 이후에만 노출 -->
+                <button type="button" class="icon-user btn-mypage d-xl-none" title="마이페이지">마이페이지</button>
+                <a href="#" title="장바구니" class="position-relative">
+                    <span class="icon-cart">장바구니</span>
+                    <span class="cart-num">0</span>
+                </a>
+                <a href="#" title="내 찜 내역" class="icon-like">내 찜 내역</a>
+                <!-- [D] default
+                    <div class="d-xl-block"><b>홍길동</b>님</div>
+                    <a href="#" class="text-muted d-xl-block mr-xl-2">로그아웃</a>
+                -->
+                <a href="#" class="d-xl-block">로그인</a>
+                <a href="#" class="d-xl-block">회원가입</a>
+                <!-- // -->
+                <a href="#search" class="icon-search btn-search d-xl-none">검색</a>
+                 <form action="" class="form-search d-xl-block">
+                    <input type="text" class="form-control" name="" value="" placeholder="검색어를 입력해 주세요" title="검색">
+                    <button type="submit"><i class="icon-search">검색</i></button>
+                </form>
+            </div>
+            <button type="button" class="gnb-toggle d-xl-none"><span class="text-hide">메뉴열기/닫기</span></button>
+        </div>
+        <div id="search">
+            <div class="container">
+                <form action="">
+                    <div class="hd-search">
+                        <input type="text" name="" value="" placeholder="검색어를 입력해 주세요">
+                        <i></i>
+                        <button type="submit"><i class="icon-search">검색</i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <nav id="gnb">
+            <div class="gnb-bg"></div>
+            <div class="gnb-util">
+            <!-- 
+                <div><i class="icon-user"></i> <b>홍길동</b>님</div>
+                <a href="#" class="text-muted">로그아웃</a>
+                
+                [D] default
+                <a href="#">로그인</a> 
+                <a href="#">회원가입</a>
+            -->
+            </div>
+            <ul class="gnb">
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Courses</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">Offline Courses</a></li>
+                        <li><a href="#">Online Courses</a></li>
+                        <li><a href="#">Speakers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Market</a>
+                    </strong>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Contents</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">Posting</a></li>
+                        <li><a href="#">Clinical Cases</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Story</a>
+                    </strong>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Opening</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">상담신청</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Event</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">진행중 이벤트</a></li>
+                        <li><a href="#">종료 이벤트</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <nav id="mnb" class="mypage-menu">
+            <div class="mypage-menu-hd">
+                <button type="button" class="icon-close btn-mypage">닫기</button>
+                <p>만나서 반가워요, <b class="name">홍길동</b> 님</p>
+                <div class="hd-m-account">
+                    <a href="#" class="btn btn-outline-primary btn-xs">로그아웃</a>
+                </div>
+            </div>
+            <ul class="gnb">
+                <li>
+                    <a href="#">수강신청 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">오프라인 교육 신청 내역</a></li>
+                        <li><a href="#">온라인 교육 신청 내역</a></li>
+                        <li><a href="#">취소/환불 내역</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#">마켓 주문 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">마켓 주문 내역</a></li>
+                        <li class="active"><a href="#">반품/교환 내역</a></li>
+                        <li><a href="#">취소/환불 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">리뷰 / 댓글 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">내가 작성한 리뷰</a></li>
+                        <li><a href="#">내가 작성한 댓글</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">문의 / 상담 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">문의 내역</a></li>
+                        <li><a href="#">상담 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">찜 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">내 찜 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">포인트 / 결제 관리</a>
+                    <ul class="depth">
+                        <li><a href="#">보유 포인트</a></li>
+                        <li><a href="#">충전 / 계좌 관리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">쿠폰 관리</a>
+                    <ul class="depth">
+                        <li><a href="#">나의 보유 쿠폰</a></li>
+                        <li><a href="#">발급 가능 쿠폰</a></li>
+                        <li><a href="#">지난 쿠폰 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">회원 정보</a>
+                    <ul class="depth">
+                        <li><a href="#">배송지 목록</a></li>
+                        <li><a href="#">회원 정보 수정</a></li>
+                        <li><a href="#">회원 탈퇴</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">환경 설정</a>
+                    <ul class="depth">
+                        <li class="active"><a href="#">앱 설정</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+
+    <!-- content -->
+    <main id="ct">
+<!-- 페이지시작 -->
+<div class="sub-page">
+    <div class="container">
+        <div class="mypage">
+            <div class="mypage-hd">
+                <h2 class="content-title"><span>마이페이지</span></h2>
+                <p>만나서 반가워요, <span class="name">김덴티</span> 님</p>
+                <ul class="lnb">
+                    <li>
+                        <a href="06.마이페이지_수강신청내역_오프라인교육신청내역.html">수강신청 내역</a>
+                        <ul class="depth">
+                            <li><a href="06.마이페이지_수강신청내역_오프라인교육신청내역.html">오프라인 교육 신청 내역</a></li>
+                            <li><a href="06.마이페이지_수강신청내역_온라인교육신청내역.html">온라인 교육 신청 내역</a></li>
+                            <li><a href="06.마이페이지_수강신청내역_취소환불내역.html">취소/환불 내역</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    <a href="06.마이페이지_마켓주문내역.html">마켓 주문 내역</a>
+                        <ul class="depth">
+                            <li><a href="06.마이페이지_마켓주문내역.html">마켓 주문 내역</a></li>
+                            <li><a href="06.마이페이지_마켓주문내역_반품교환내역.html">반품/교환 내역</a></li>
+                            <li><a href="06.마이페이지_마켓주문내역_취소환불내역.html">취소/환불 내역</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="06.마이페이지_리뷰댓글내역_내가작성한리뷰.html">리뷰 / 댓글 내역</a>
+                        <ul class="depth">
+                            <li class="active"><a href="06.마이페이지_리뷰댓글내역_내가작성한리뷰.html">내가 작성한 리뷰</a></li>
+                            <li><a href="06.마이페이지_리뷰댓글내역_내가작성한댓글.html">내가 작성한 댓글</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="06.마이페이지_문의상담내역_문의내역(course).html">문의 / 상담 내역</a>
+                        <ul class="depth">
+                            <li><a href="06.마이페이지_문의상담내역_문의내역(course).html">문의 내역</a></li>
+                            <li><a href="06.마이페이지_문의상담내역_상담내역(counseling).html">상담 내역</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="06.마이페이지_찜내역_내찜내역(courses).html">찜 내역</a>
+                        <ul class="depth">
+                            <li><a href="06.마이페이지_찜내역_내찜내역(courses).html">내 찜 내역</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="06.마이페이지_포인트결제관리_포인트.html">포인트 / 결제 관리</a>
+                        <ul class="depth">
+                            <li><a href="06.마이페이지_포인트결제관리_포인트.html">보유 포인트</a></li>
+                            <li><a href="06.마이페이지_포인트결제관리_포인트충전.html">충전 / 계좌 관리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="06.마이페이지_쿠폰관리_나의보유쿠폰.html">쿠폰 관리</a>
+                        <ul class="depth">
+                            <li><a href="06.마이페이지_쿠폰관리_나의보유쿠폰.html">나의 보유 쿠폰</a></li>
+                            <li><a href="06.마이페이지_쿠폰관리_발급가능쿠폰.html">발급 가능 쿠폰</a></li>
+                            <li><a href="06.마이페이지_쿠폰관리_지난쿠폰내역.html">지난 쿠폰 내역</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="06.마이페이지_회원정보_배송지목록.html">회원 정보</a>
+                        <ul class="depth">
+                            <li><a href="06.마이페이지_회원정보_배송지목록.html">배송지 목록</a></li>
+                            <li><a href="06.마이페이지_회원정보_회원정보수정.html">회원 정보 수정</a></li>
+                            <li><a href="06.마이페이지_회원정보_회원탈퇴.html">회원 탈퇴</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="mypage-template">
+                <h3 class="tit">내가 작성한 리뷰</h3>
+                <ul class="nav">
+                    <!-- [D] 탭 활성화 .active-->
+                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page"><span>COURSE</span></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><span>MARKET</span></a></li>
+                </ul>
+                <div class="board-body">
+                    <ul class="board-list my-written">
+                        <!-- [D] COURSE 예시 -->
+                        <li class="board-item">
+                            <div class="board-content align-items-center">
+                                <div class="board-detail">
+                                    <div class="prdt-item">
+                                        <a href="#" class="item-img">
+                                            <img src="https://via.placeholder.com/164x100" alt="">
+                                        </a>
+                                        <div class="item-body">
+                                            <span class="badge badge-outline">OFFLINE</span>
+                                            <p class="text-clamp"><a href="#">(ALL+ 전체 수강) ALL PLUS SURGERY/ PROSTHETIC Hands-on Seminar</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="score mt-4">
+                                        <div class="star-grade">
+                                            <i style="width:100%"></i>
+                                        </div>
+                                        <b>8.2</b>
+                                    </div>
+                                    <p class="txt">최고의 임플란트 수술 위한 도구입니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 최고의 임플란트 수술 위한 도구입니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 최고의 임플란트 수술 위한 도구입니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다.</p>
+                                    <button type="button" class="btn-board-expand btn-underline-black">더보기</button>
+                                </div>
+                                <div class="circle-point">
+                                    <div>
+                                        <p>적립 포인트</p>
+                                        <b><span>200</span><small>Point</small></b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tools">
+                                <button type="button" onclick="$('#modal4').modal();">수정</button>
+                                <i class="split"></i>
+                                <button type="button">삭제</button>
+                            </div>
+                        </li>
+                        <!-- [D] MARKET 예시 -->
+                        <li class="board-item">
+                            <div class="board-content align-items-center">
+                                <div class="board-detail">
+                                    <div class="prdt-item">
+                                        <a href="#" class="item-img ratio-1by1">
+                                            <img src="img/_temp/790.png" alt="">
+                                        </a>
+                                        <div class="item-body">
+                                            <span class="badge badge-outline">예방/구강관리용품</span>
+                                            <p class="text-clamp"><a href="#">[PHILIPS] 엑스퍼트 클린 소닉케어2100</a></p>
+                                            <div class="item-meta">홈케어에 최적화된 제품</div>
+                                        </div>
+                                    </div>
+                                    <div class="score mt-4">
+                                        <div class="star-grade">
+                                            <i style="width:100%"></i>
+                                        </div>
+                                        <b>8.2</b>
+                                    </div>
+                                    <p class="txt">최고의 임플란트 수술 위한 도구입니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 최고의 임플란트 수술 위한 도구입니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 최고의 임플란트 수술 위한 도구입니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다.</p>
+                                    <button type="button" class="btn-board-expand btn-underline-black">더보기</button>
+                                </div>
+                                <div class="circle-point">
+                                    <div>
+                                        <p>적립 포인트</p>
+                                        <b><span>200</span><small>Point</small></b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tools">
+                                <button type="button" onclick="$('#modal4').modal();">수정</button>
+                                <i class="split"></i>
+                                <button type="button">삭제</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link arrow prev" href="#"><span class="sr-only">Previous</span></a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#" title="현재 페이지">1</a></li>
+                    <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item">
+                        <a class="page-link arrow next" href="#"><span class="sr-only">Next</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //페이지시작 -->
+    </main>
+    <!-- //content -->
+
+<!-- 강의_리뷰하기 -->
+<div id="modal4" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal"><span class="sr-only">닫기</span></button>
+            <div class="modal-header">
+                <h2 class="modal-title">강의 리뷰</h2>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="prdt-item">
+                        <div class="item-img">
+                            <img src="img/_temp/440x270.png" alt="">
+                        </div>
+                        <div class="item-body">
+                            <p class="text-clamp">[TEAM CTS] 아름답고 기능적인 총의치 정복</p>
+                        </div>
+                    </div>
+                    <div class="sect">
+                        <div class="sect-hd">
+                            <h4 class="modal-body-title">강의는 만족하셨나요?</h4>
+                        </div>
+                        <div class="grade">
+                            <input type="radio" class="sr-only" name="chkOne" id="grade100" checked>
+                            <label for="grade100" class="chk-custom">
+                                <span class="sr-only">5점</span>
+                            </label>
+                            <input type="radio" class="sr-only" name="chkOne" id="grade80">
+                            <label for="grade80" class="chk-custom">
+                                <span class="sr-only">4점</span>
+                            </label>
+                            <input type="radio" class="sr-only" name="chkOne" id="grade60">
+                            <label for="grade60" class="chk-custom">
+                                <span class="sr-only">3점</span>
+                            </label>
+                            <input type="radio" class="sr-only" name="chkOne" id="grade40">
+                            <label for="grade40" class="chk-custom">
+                                <span class="sr-only">2점</span>
+                            </label>
+                            <input type="radio" class="sr-only" name="chkOne" id="grade20">
+                            <label for="grade20" class="chk-custom">
+                                <span class="sr-only">1점</span>
+                            </label>
+                        </div>
+                        <p>선택하세요.</p>
+                    </div>
+                    <div class="sect">
+                        <div class="sect-hd">
+                            <h4 class="modal-body-title">어떤 점이 좋았나요?</h4>
+                        </div>
+                        <div class="form-column border-0">
+                            <textarea name="" class="form-control" cols="30" rows="6" placeholder="강의에 대한 리뷰를 작성해 주세요 ( 0 / 5,000 )" maxlength="5000"></textarea>
+                            <div class="input-group mt-3">
+                                <input type="file" class="sr-only">
+                                <input type="text" class="form-control file-name" readonly placeholder="파일을 첨부해주세요.">
+                                <label class="btn btn-black btn-sm">
+                                    <input type="file" class="sr-only">파일 선택
+                                </label>
+                            </div>
+                            <p class="nudge dot">사진은 최대 20MB 이하의 JPG, PNG, GIF 파일3개까지 첨부 가능합니다.</p>
+                            <ul class="thumb-list">
+                                <li class="thumb-list-item">
+                                    <img src="https://phinf.pstatic.net/checkout.phinf/20220719_153/1658170322939ImbAt_JPEG/20220718_203339.jpg?type=w640" alt="">
+                                    <button type="button" class="thumb-list-del text-hide">삭제</button>
+                                </li>
+                                <li class="thumb-list-item">
+                                    <img src="https://phinf.pstatic.net/checkout.phinf/20220719_153/1658170322939ImbAt_JPEG/20220718_203339.jpg?type=w640" alt="">
+                                    <button type="button" class="thumb-list-del text-hide">삭제</button>
+                                </li>
+                                <li class="thumb-list-item">
+                                    <img src="https://phinf.pstatic.net/checkout.phinf/20220719_153/1658170322939ImbAt_JPEG/20220718_203339.jpg?type=w640" alt="">
+                                    <button type="button" class="thumb-list-del text-hide">삭제</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="nudge caution mt-4">강의와 무관한 사진/동영상을 첨부한 리뷰는 통보없이 삭제 및 적립 혜택이 회수됩니다.</p>
+                        <p class="nudge caution mt-1">권리침해, 욕설, 특정 대상을 비하하는 내용, 청소년에게 유해한 내용 등을 게시할 경우 운영정책과 이용약관 및 관련 법률에 의해 제재될 수 있습니다.</p>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="bottom-btn">
+                    <div class="link-area">
+                        <div class="link-area-inner row">
+                            <div>
+                                <a href="#" class="btn btn-black">등록</a>
+                            </div>
+                            <div>
+                                <a href="#" class="btn btn-outline-black">취소</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- footer -->
+    <footer id="ft">
+        <div class="container">
+            <ul class="fnb">
+                <li><a href="#">OF 소개</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+            <div class="address">
+                상호명 : (주)덴티스 <i></i> 대표자명: 심기봉 <i></i> 개인정보관리책임자 : 전영현 <br>
+                사업자등록번호 : <a href="#" target="_blank" title="새창 열기">134-87-38310</a> <i></i> 통신판매업신고번호 : 제2012-대구달서-0202호 <i></i> 의료기기 판매업 신고번호 : 제20173420023-00057호<br>
+                사업장주소지 : [42718] 대구광역시 달서구 성서서로 99  <i></i> 팩스: 053-583-2806 <i></i>이메일 : 7061@dentis.co.kr <i></i> 제품문의 : 02-919-8312
+            </div>
+            <p class="copy">COPYRIGHT (C) DENTIS ALL RIGHTS RESERVED.</p>
+            <ul class="sns-list">
+                <li><a href="#" class="icon-sns-ytp" target="_blank">덴티스 유튜브채널 바로가기</a></li>
+                <li><a href="#" class="icon-sns-face" target="_blank">덴티스 페이스북 바로가기</a></li>
+                <li><a href="#" class="icon-sns-insta" target="_blank">덴티스 인스타그램 바로가기</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- //footer -->
+</div>    
+</body>
+</html>

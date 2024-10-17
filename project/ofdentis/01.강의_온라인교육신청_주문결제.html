@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="telephone=no" name="format-detection">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Document</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/lightbox.min.css">
+<link rel="stylesheet" href="css/jquery-ui.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/common.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <!-- header -->
+    <header id="hd">
+        <div class="container">
+            <a href="#" class="hd-back d-lg-none"><i class="icon-back">뒤로</i></a>
+            <h1 class="hd-logo"><a href="#"><img src="img/logo.svg" alt="OF 덴티스"></a></h1>
+            <ul class="hd-navi d-xl-flex">
+                <li>
+                    <a href="#">Courses</a>
+                    <ul class="depth">
+                        <li><a href="#">Offline Courses</a></li>
+                        <li><a href="#">Online Courses</a></li>
+                        <li><a href="#">Speakers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Contents</a>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">Posting</a></li>
+                        <li><a href="#">Clinical Cases</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Story</a></li>
+                <li><a href="#">OF Market</a></li>
+                <li><a href="#">Opening</a></li>
+                <li><a href="#">Event</a></li>
+            </ul>
+            <div class="hd-side">
+                <a href="#" class="icon-user d-xl-block" title="마이페이지">마이페이지</a>
+                <!-- [D] 로그인 이후에만 노출 -->
+                <button type="button" class="icon-user btn-mypage d-xl-none" title="마이페이지">마이페이지</button>
+                <a href="#" title="장바구니" class="position-relative">
+                    <span class="icon-cart">장바구니</span>
+                    <span class="cart-num">0</span>
+                </a>
+                <a href="#" title="내 찜 내역" class="icon-like">내 찜 내역</a>
+                <!-- [D] default
+                    <div class="d-xl-block"><b>홍길동</b>님</div>
+                    <a href="#" class="text-muted d-xl-block mr-xl-2">로그아웃</a>
+                -->
+                <a href="#" class="d-xl-block">로그인</a>
+                <a href="#" class="d-xl-block">회원가입</a>
+                <!-- // -->
+                <a href="#search" class="icon-search btn-search d-xl-none">검색</a>
+                 <form action="" class="form-search d-xl-block">
+                    <input type="text" class="form-control" name="" value="" placeholder="검색어를 입력해 주세요" title="검색">
+                    <button type="submit"><i class="icon-search">검색</i></button>
+                </form>
+            </div>
+            <button type="button" class="gnb-toggle d-xl-none"><span class="text-hide">메뉴열기/닫기</span></button>
+        </div>
+        <div id="search">
+            <div class="container">
+                <form action="">
+                    <div class="hd-search">
+                        <input type="text" name="" value="" placeholder="검색어를 입력해 주세요">
+                        <i></i>
+                        <button type="submit"><i class="icon-search">검색</i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <nav id="gnb">
+            <div class="gnb-bg"></div>
+            <div class="gnb-util">
+            <!-- 
+                <div><i class="icon-user"></i> <b>홍길동</b>님</div>
+                <a href="#" class="text-muted">로그아웃</a>
+                
+                [D] default
+                <a href="#">로그인</a> 
+                <a href="#">회원가입</a>
+            -->
+            </div>
+            <ul class="gnb">
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Courses</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">Offline Courses</a></li>
+                        <li><a href="#">Online Courses</a></li>
+                        <li><a href="#">Speakers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Market</a>
+                    </strong>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Contents</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">Posting</a></li>
+                        <li><a href="#">Clinical Cases</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Story</a>
+                    </strong>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Opening</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">상담신청</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Event</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">진행중 이벤트</a></li>
+                        <li><a href="#">종료 이벤트</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <nav id="mnb" class="mypage-menu">
+            <div class="mypage-menu-hd">
+                <button type="button" class="icon-close btn-mypage">닫기</button>
+                <p>만나서 반가워요, <b class="name">홍길동</b> 님</p>
+                <div class="hd-m-account">
+                    <a href="#" class="btn btn-outline-primary btn-xs">로그아웃</a>
+                </div>
+            </div>
+            <ul class="gnb">
+                <li>
+                    <a href="#">수강신청 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">오프라인 교육 신청 내역</a></li>
+                        <li><a href="#">온라인 교육 신청 내역</a></li>
+                        <li><a href="#">취소/환불 내역</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#">마켓 주문 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">마켓 주문 내역</a></li>
+                        <li class="active"><a href="#">반품/교환 내역</a></li>
+                        <li><a href="#">취소/환불 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">리뷰 / 댓글 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">내가 작성한 리뷰</a></li>
+                        <li><a href="#">내가 작성한 댓글</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">문의 / 상담 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">문의 내역</a></li>
+                        <li><a href="#">상담 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">찜 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">내 찜 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">포인트 / 결제 관리</a>
+                    <ul class="depth">
+                        <li><a href="#">보유 포인트</a></li>
+                        <li><a href="#">충전 / 계좌 관리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">쿠폰 관리</a>
+                    <ul class="depth">
+                        <li><a href="#">나의 보유 쿠폰</a></li>
+                        <li><a href="#">발급 가능 쿠폰</a></li>
+                        <li><a href="#">지난 쿠폰 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">회원 정보</a>
+                    <ul class="depth">
+                        <li><a href="#">배송지 목록</a></li>
+                        <li><a href="#">회원 정보 수정</a></li>
+                        <li><a href="#">회원 탈퇴</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">환경 설정</a>
+                    <ul class="depth">
+                        <li class="active"><a href="#">앱 설정</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+
+    <!-- content -->
+    <main id="ct">
+<!-- 페이지시작 -->
+<div class="sub-page sub-order">
+    <div class="sub-page-hd">
+        <h2 class="content-title"><span>주문/결제</span></h2>
+    </div>
+    <form action="">
+        <div class="column-layout">
+            <div class="contents">
+                <section class="fieldset">
+                    <div class="form-hd">
+                        <h4 class="tit">주문정보</h4>
+                    </div>
+                    <ul class="prdt-list">
+                        <li class="prdt">
+                            <div class="media prdt-wrap">
+                                <div class="prdt-item">
+                                    <a href="#" class="item-img">
+                                        <img src="img/_temp/440x270.png" alt="">
+                                    </a>
+                                    <div class="item-body">
+                                        <div class="item-meta">오프라인 세미나</div>
+                                        <p class="item-title text-clamp"><a href="#">(ALL+ 전체 수강) ALL PLUS SURGERY/ PROSTHETIC Hands-on Seminar</a></p>
+                                        <div class="opt">
+                                            <span>수강 기간(시간) : 4:00:00</span>
+                                        </div>
+                                        <div class="amounts">1개</div>
+                                    </div>
+                                </div>
+                                <button type="button" class="icon-exit">삭제</button>
+                            </div>
+                            <div class="prdt-value">
+                                <b>500,000</b>원
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="fieldset">
+                    <div class="form-hd">
+                        <h4 class="tit">신청자 정보</h4>
+                        <div class="form-chk ml-auto">
+                            <input type="checkbox" class="sr-only" id="applicantValue">
+                            <label for="applicantValue" class="chk-custom">
+                                <span>기본 정보로 저장</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-body">
+                        <div class="form-contents">
+                            <div class="form-row">
+                                <div class="form-label require">이름 (국문)</div>
+                                <div class="col-md">
+                                    <input type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-label require">이름 (영문)</div>
+                                <div class="col-md">
+                                    <input type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-label require">휴대폰 번호</div>
+                                <div class="col-md">
+                                    <div class="input-group input-group-number">
+                                        <input type="number" class="form-control text-center" required>
+                                        <span class="px-2">-</span>
+                                        <input type="number" class="form-control text-center" required>
+                                        <span class="px-2">-</span>
+                                        <input type="number" class="form-control text-center" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-label require">이메일</div>
+                                <div class="col-md">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" required>
+                                        <span class="px-1">@</span>
+                                        <select class="form-select">
+                                            <option value="">gmail.com</option>
+                                        </select>
+                                        <button type="button" class="btn btn-black btn-sm m-100">직접입력</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-label require">병원명</div>
+                                <div class="col-md">
+                                    <input type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-label require">재직형태</div>
+                                <div class="col-md">
+                                    <select class="form-select mx-none">
+                                        <option value="">재직형태를 선택해 주세요.</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-label require">병원 주소</div>
+                                <div class="col-md">
+                                    <div class="input-group input-group-post">
+                                        <input type="text" class="form-control">
+                                        <input type="button" class="btn btn-black btn-sm" value="우편번호">
+                                    </div>
+                                    <input type="text" class="form-control mt-2">
+                                    <input type="text" class="form-control mt-2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="fieldset">
+                    <div class="form-hd">
+                        <h4 class="tit">결제 정보</h4>
+                    </div>
+                    <div class="form-body">
+                        <div class="form-contents">
+                            <div class="form-row">
+                                <div class="form-label">내 포인트</div>
+                                <div class="col-md">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="사용할 포인트 입력">
+                                        <button type="button" class="btn btn-black btn-sm">모두사용</button>
+                                    </div>
+                                    <div class="pay-point">
+                                        <div>보유 포인트: 264,000 원</div>
+                                        <i class="split"></i>
+                                        <div>사용 가능 포인트: <span class="text-primary">254,000 원</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-label">할인 쿠폰</div>
+                                <div class="col-md">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="쿠폰을 선택해 주세요">
+                                        <button type="button" class="btn btn-black btn-sm" data-toggle="modal" data-target="#modalCoupon">쿠폰선택</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-label">결제 수단</div>
+                                <div class="col-md mx-none">
+                                    <div class="paywith">
+                                        <ul class="paywith-list row">
+                                            <li class="col">
+                                                <label class="paywith-button">
+                                                    <input type="radio" name="payment" class="sr-only" checked>
+                                                    <span><i class="icon-card"></i>신용카드</span>
+                                                </label>
+                                            </li>
+                                            <li class="col">
+                                                <label class="paywith-button">
+                                                    <input type="radio" name="payment" value="paywithTransfer" class="sr-only">
+                                                    <span><i class="icon-transfer"></i>계좌이체</span>
+                                                </label>
+                                            </li>
+                                            <li class="col">
+                                                <label class="paywith-button">
+                                                    <input type="radio" name="payment" value="paywithDeposit" class="sr-only">
+                                                    <span><i class="icon-deposit"></i>무통장입금</span>
+                                                </label>
+                                            </li>
+                                            <li class="col">
+                                                <label class="paywith-button">
+                                                    <input type="radio" name="payment" value="" class="sr-only">
+                                                    <span><i class="icon-package"></i>패키지차감</span>
+                                                </label>
+                                            </li>
+                                            <li class="col">
+                                                <label class="paywith-button">
+                                                    <input type="radio" name="payment" class="sr-only">
+                                                    <span><i class="icon-kakaopay"></i>카카오페이</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                        <!-- [D] 임시 버튼UI -->
+                                        <script>
+                                            let paywithButtons = document.querySelectorAll('.paywith-button>input');
+                                            for(const button of paywithButtons){
+                                                button.addEventListener('change', function(){
+                                                    document.querySelector('#paywithCash').style.display = 'none';
+                                                    if(this.value === 'paywithTransfer' || this.value === 'paywithDeposit'){
+                                                        document.querySelector('#paywithCash').style.display = 'block';
+                                                    }
+                                                });
+                                            }
+                                        </script>
+                                        <p class="txt">※ BC카드는 3개월까지만 할부가 가능합니다.</p>
+                                    </div>
+                                    <!-- [D] 계좌이체, 무통장입금 시 -->
+                                    <div id="paywithCash" style="display: none">
+                                        <div class="paywith-radio custom-radio-wrap">
+                                            <label class="custom-radio">
+                                                <input type="radio" name="invoice" class="sr-only" checked>
+                                                <span>미발행</span>
+                                            </label>
+                                            <label class="custom-radio">
+                                                <input type="radio" name="invoice" value="tax" class="sr-only">
+                                                <span>세금계산서</span>
+                                            </label>
+                                            <label class="custom-radio">
+                                                <input type="radio" name="invoice" value="cash" class="sr-only">
+                                                <span>현금영수증</span>
+                                            </label>
+                                        </div>
+                                        <!-- [D] 임시 버튼UI -->
+                                        <script>
+                                            let invoiceButtons = document.querySelectorAll('[name="invoice"]');
+                                            for(const button of invoiceButtons){
+                                                button.addEventListener('change', function(){
+                                                    Object.values(document.querySelector('#invoice').children).forEach(element => {
+                                                        element.style.display = 'none';
+                                                    });
+                                                    document.getElementById(this.value).style.display = 'block';
+                                                });
+                                            }
+                                        </script>
+                                        <div id="invoice">
+                                            <!-- 세금계산서 -->
+                                            <div id="tax" style="display: none;">
+                                                <table class="tb vertical tb-mobile">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">상호(법인명)</th>
+                                                            <td>
+                                                                <input type="text" class="form-control">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">대표자명</th>
+                                                            <td>
+                                                                <input type="text" class="form-control">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">사업자등록번호</th>
+                                                            <td>
+                                                                <input type="text" class="form-control">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">사업장주소</th>
+                                                            <td>
+                                                                <div class="input-group input-group-post">
+                                                                    <input type="text" class="form-control">
+                                                                    <input type="button" class="btn btn-black btn-sm" value="우편번호">
+                                                                </div>
+                                                                <input type="text" class="form-control mt-2">
+                                                                <input type="text" class="form-control mt-2">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">업태</th>
+                                                            <td>
+                                                                <input type="text" class="form-control">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">종목</th>
+                                                            <td>
+                                                                <input type="text" class="form-control">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">사업자등록번호</th>
+                                                            <td>
+                                                                <div class="input-group">
+                                                                    <input type="file" id="fileName" class="sr-only">
+                                                                    <input type="text" class="form-control file-name" readonly="" value="" placeholder="파일을 첨부해주세요.">
+                                                                    <label class="btn btn-black btn-sm">
+                                                                        <input type="file" class="sr-only" id="btn-upload">파일 선택
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="form-chk mt-3">
+                                                    <input type="checkbox" class="sr-only" id="saveEditInfo">
+                                                    <label for="saveEditInfo" class="chk-custom">
+                                                        <span>변경된 정보 저장하기</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <!-- 현금영수증 -->
+                                            <div id="cash" style="display: none;">
+                                                <ul class="nav nav-boxs mb-4">
+                                                    <li class="nav-item"><a href="#deduction" class="nav-link active" data-toggle="tab" class="active">개인소득공제</a></li>
+                                                    <li class="nav-item"><a href="#expenditure" class="nav-link" data-toggle="tab">사업자 지출증빙</a></li>
+                                                </ul>
+                                                <div class="tab-content">
+                                                    <div id="deduction" class="tab-pane active">
+                                                        <table class="tb vertical tb-mobile">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">휴대폰 번호</th>
+                                                                    <td>
+                                                                        <input type="text" class="form-control">
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div id="expenditure" class="tab-pane">
+                                                        <table class="tb vertical tb-mobile">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">사업자번호</th>
+                                                                    <td>
+                                                                        <input type="text" class="form-control">
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="fieldset">
+                    <div class="form-hd">
+                        <h4 class="tit">구매 경로</h4>
+                    </div>
+                    <div class="form-body px-0">
+                        <div class="custom-radio-wrap">
+                            <label class="custom-radio">
+                                <input type="radio" name="purchaseChannel" class="sr-only" checked>
+                                <span>OF DENTIS 카카오톡</span>
+                            </label>
+                            <label class="custom-radio">
+                                <input type="radio" name="purchaseChannel" class="sr-only">
+                                <span>덴스토어</span>
+                            </label>
+                            <label class="custom-radio">
+                                <input type="radio" name="purchaseChannel" class="sr-only">
+                                <span>자사 홈페이지</span>
+                            </label>
+                            <label class="custom-radio">
+                                <input type="radio" name="purchaseChannel" class="sr-only">
+                                <span>전단/덴티스톡</span>
+                            </label>
+                            <label class="custom-radio">
+                                <input type="radio" name="purchaseChannel" class="sr-only">
+                                <span>영업사원</span>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 총 결제금액 -->
+            <div class="aside">
+                <div class="total-payment">
+                    <div class="form-hd">
+                        <h4 class="tit">총 결제금액</h4>
+                    </div>
+                    <div class="form-body">
+                        <dl class="desc">
+                            <dt>총 주문금액</dt>
+                            <dd>500,000 <small>원</small></dd>
+                        </dl>
+                        <dl class="desc">
+                            <dt>할인금액</dt>
+                            <dd>- 20,000 <small>원</small></dd>
+                        </dl>
+                        <div class="use-benefit">
+                            <dl class="desc">
+                                <dt><b>ㆍ</b>사용 쿠폰</dt>
+                                <dd>- 15,000 <small>원</small></dd>
+                            </dl>
+                            <dl class="desc">
+                                <dt><b>ㆍ</b>사용 포인트</dt>
+                                <dd>- 5,000 <small>원</small></dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <dl class="desc value-amount">
+                        <dt class="font-weight-bold">결제 예정 금액</dt>
+                        <dd><b class="price">480,000</b><small>원</small></dd>
+                    </dl>
+                </div>
+                <button type="submit" class="btn btn-block btn-black">결제하기</button>
+            </div>
+            <div class="contents">
+                <div class="order-info">
+                    <strong>OF MARKET은 치과회원 전용 페이지로 교육 및 콘텐츠와 연계된 제/상품을 간편하게 구매하실 수 있습니다.</strong>
+                    <ul class="list-bullet-decimal">
+                        <li>회원가입 페이지 또는 주문/결제 페이지에서 치과정보 및 사업자 등록증을 등록해주셔야 이용 가능합니다. </li>
+                        <li>사업자 등록 정보 기입이 어려운 경우, 면허번호를 입력해주시기 바랍니다.</li>
+                        <li>회원가입 시 입력하신 정보 확인 차 등록해주신 치과 및 기타 사업장으로 확인 전화가 갈 수 있습니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- //페이지시작 -->
+    </main>
+    <!-- //content -->
+
+    <!-- footer -->
+    <footer id="ft">
+        <div class="container">
+            <ul class="fnb">
+                <li><a href="#">OF 소개</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+            <div class="address">
+                상호명 : (주)덴티스 <i></i> 대표자명: 심기봉 <i></i> 개인정보관리책임자 : 전영현 <br>
+                사업자등록번호 : <a href="#" target="_blank" title="새창 열기">134-87-38310</a> <i></i> 통신판매업신고번호 : 제2012-대구달서-0202호 <i></i> 의료기기 판매업 신고번호 : 제20173420023-00057호<br>
+                사업장주소지 : [42718] 대구광역시 달서구 성서서로 99  <i></i> 팩스: 053-583-2806 <i></i>이메일 : 7061@dentis.co.kr <i></i> 제품문의 : 02-919-8312
+            </div>
+            <p class="copy">COPYRIGHT (C) DENTIS ALL RIGHTS RESERVED.</p>
+            <ul class="sns-list">
+                <li><a href="#" class="icon-sns-ytp" target="_blank">덴티스 유튜브채널 바로가기</a></li>
+                <li><a href="#" class="icon-sns-face" target="_blank">덴티스 페이스북 바로가기</a></li>
+                <li><a href="#" class="icon-sns-insta" target="_blank">덴티스 인스타그램 바로가기</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- //footer -->
+</div>
+
+<!-- popup start -->
+<!-- 쿠폰사용 -->
+<div id="modalCoupon" class="modal fade" tabindex="-1">
+    <div class="modal-sm modal-dialog modal-dialog-centered">
+        <form class="modal-content">
+            <button type="button" class="close" data-dismiss="modal"><span class="sr-only">닫기</span></button>
+            <div class="modal-header">
+                <h2 class="modal-title">쿠폰 사용</h2>
+            </div>
+            <div class="modal-body">
+                <div class="sect-hd">
+                    <h3 class="modal-body-title">쿠폰선택</h3>
+                </div>
+                <div class="form-body full">
+                    <div class="form-contents">
+                        <div class="form-row">
+                            <div class="form-label">쿠폰번호</div>
+                            <div class="col-md">
+                                <select class="form-select mx-none">
+                                    <option value="">쿠폰을 선택하세요</option>
+                                </select>
+                                <div class="pay-point">
+                                    <div>사용 가능: <span class="text-primary">1 장</span></div>
+                                    <i class="split"></i>
+                                    <div>보유 : 3 장</div>
+                                    <i class="split"></i>
+                                    <div>발급가능 : 0 장</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="bottom-btn">
+                    <div class="link-area">
+                        <div class="link-area-inner row">
+                            <div>
+                                <button type="submit" class="btn btn-dark">선택</button>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-outline-dark" data-dismiss="modal">취소</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- // popup end -->
+
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+#wrap{background-image: url(../images/virtual_01/bg.jpg)}
+#wrap .row{padding-right: 122px;}
+.col-content.ml-auto{margin-left: 40px; width: 544px;}
+.col-content.mr-auto{margin-left: 40px; width: 498px;}
+.col-content.ml-auto .font-dt{font-weight: 600;}
+
+.label-exp{width:37px; height: 20px; display: inline-block; text-align: justify;font-size: 16px;color: #225d9c ;background: url(../images/virtual_01/label-exp.png) no-repeat; background-size: contain; line-height: 20px; vertical-align: middle;}
+
+.text-info{line-height: 34px;}
+.text-info .icon-info {margin-top: 8px;}
+
+.utility{left: auto; right: 0; top: 0px;}
+.arrange{margin-top: 460px;margin-bottom: 15px;}
+.arrange .text-circle, #exp3 .text-circle{margin-right: 0; margin-top:0}
+.text-circle{vertical-align: middle;}
+
+.lst-num>li+li {margin-top: 5px;}
+
+.icon-hand {position: absolute;}
+.inter{display: none;}
+.inter.active{display: block;}
+.inter .fwd {color: #fff;}
+.active>[class*=ani]{animation: fadeIn 0.5s both;}
+.ani-d1{animation-delay:1s !important;}
+.ani-d2{animation-delay:2s !important}
+
+[class*=fwd] {font-weight: 600;}
+.fwd1{top:577px; left: 57.5px;}
+.fwd2{top:577px; left: 344.5px;}
+.fwd3{top:577px; left: 611px;}
+
+.painting-area {height: 350px;}
+.tb tr>td{border-left: none;}
+.draw{top: 10px;left: 10px;}
+.layer-wrp.layer-wrp-draw{ position: absolute; top: 20px; right: 20px;z-index: 20;}
+
+#exp3 .form-control.itx{width: 400px;}
+
+.btn-wrp {display: inline-flex;}
+
+
+/* 가상 실험실 */
+.virtual-content{text-align: center;}
+#modalVirtual .nav{display: inline-flex;margin-bottom:20px;padding: 4px 4px;background:#e9e1cf;border-radius: 25px;box-shadow: inset 2px 2px #dfd6c1, inset -2px -2px #dfd6c1}
+#modalVirtual .nav button{padding: 5px 19px;background: transparent;border-radius: 20px;border: 1px solid transparent;font-size: 22px;font-weight: 700;color:#b6a389;}
+#modalVirtual .nav button.active{background-color: #fff;box-shadow: inset 0 -2px #f7f5f1;border-color:#ded3b9;color:#000;pointer-events: none;}
+.interaction{position:relative;}
+.interaction .fwd{font-size:20px;color:#587689;}
+.time{display: inline-block;width:210px;padding: 4px 0;background: #fcfaf3;border-radius: 26px;border: 10px solid #ffd400;border-bottom-width: 8px;box-shadow: 0 4px #ffb400;font-size: 45px;text-shadow: 0 2px #edd8a7;text-align: center;}
+#modalVirtual .btn.btn-fix {min-width: 160px;}
+.interaction .obj{position:absolute;opacity: 0;transition: all .5s;}
+.interaction .move-obj{display:none;position: absolute;transition:transform 1s}
+.start:not(.finish) .move-obj{animation:fadeIn 1s both;}
+.interaction1 .move-obj, .interaction1 .obj1{top: 174px;left: 97px;}
+.interaction1 .obj2{top: 123px;left: 163px;}
+.interaction1 .obj3{top: 88px;left: 230px;}
+.interaction1 .obj4{top: 72px;left: 307px;}
+.interaction1 .obj5{top: 88px;left: 388px;}
+.interaction1 .obj6{top: 120px;left: 462px;}
+.interaction1 .obj7{top: 174px;left: 518px}
+.interaction1[data-time="1"] .move-obj{transform: translate(66px, -51px);}
+.interaction1[data-time="2"] .move-obj{transform: translate(133px, -86px)}
+.interaction1[data-time="3"] .move-obj{transform: translate(210px, -102px)}
+.interaction1[data-time="4"] .move-obj{transform: translate(292px, -86px)}
+.interaction1[data-time="5"] .move-obj{transform: translate(366px, -55px)}
+.interaction1[data-time="6"] .move-obj{transform: translate(422px, 0)}
+.interaction2 .move-obj, .interaction2 .obj1{top: 226px;left: 32px;}
+.interaction2 .obj2{top: 167px;left: 66px;}
+.interaction2 .obj3{top: 122px;left: 116px;}
+.interaction2 .obj4{top: 86px;left: 174px;}
+.interaction2 .obj5{top: 62px;left: 244px;}
+.interaction2 .obj6{top: 50px;left: 321px;}
+.interaction2 .obj7{top: 61px;left: 395px;}
+.interaction2 .obj8{top: 85px; left: 459px;}
+.interaction2 .obj9{top: 121px; left: 508px;}
+.interaction2 .obj10{top: 166px;left: 558px;}
+.interaction2[data-time="1"] .move-obj{transform: translate(34px, -59px)}
+.interaction2[data-time="2"] .move-obj{transform: translate(84px, -104px)}
+.interaction2[data-time="3"] .move-obj{transform: translate(142px, -140px)}
+.interaction2[data-time="4"] .move-obj{transform: translate(212px, -164px)}
+.interaction2[data-time="5"] .move-obj{transform: translate(289px, -175px)}
+.interaction2[data-time="6"] .move-obj{transform: translate(363px, -165px)}
+.interaction2[data-time="7"] .move-obj{transform: translate(426px, -141px)}
+.interaction2[data-time="8"] .move-obj{transform: translate(475px, -105px)}
+.interaction2[data-time="9"] .move-obj{transform: translate(526px, -60px)}
+.interaction2[data-time="10"] .move-obj{transform: translate(558px, 0)}
+.start .move-obj{display: block;}
+/* .start [data-control="start"]:not(.btn-pause-hide), [data-control="stop"]{display: none;}
+.btn-pause-hide{display: none;}
+.start [data-control="stop"]{display: block;} */
+.modal-virtual.modal-half{opacity: 1;}
+.modal-virtual .drop-area>div {display: inline-block;vertical-align: middle;}
+.modal-virtual.modal-half .modal-body{text-align: center;}
+.modal-virtual .drop-area{font-size: 25px;font-weight: 700;}
+.modal-virtual .bx.drag-area{max-width:435px;margin:20px auto 0;}
+.modal-virtual .drag-type-box, .modal-virtual .drop-type-box{width:55px;}
+.modal-virtual.modal-half .btn{width: 115px;margin-top: 25px; margin-bottom:5px; padding:0 12px}
+.ui-draggable-disabled{pointer-events: none;}
+
+/* 정리 문제 */
+#test01 .drop-answer { display: inline-block; vertical-align: middle;}
+#test01 .drop-type-box {width: 84px;}
+
+
+#modalReference1 .fwd.font-komi{font-size:24px; line-height: 1.3;}
+#modalReference1 .fwd.date{font-size:20px; border-radius: 10px;padding: 10px;background-color:#fff;}
+
+/* 가상실험실 추가 */
+.btn-flex{display: flex;align-items: center;justify-content: center;margin-top: 25px;}
+.btn-times{margin-right: 20px;}
+.btn-times>button{display: block;font-size:35px;}
+.start .btn-toggle [data-control="start"], [data-control="pause"]{display: none;}
+.start [data-control="pause"]{display: block;}
+.tab-pane:not(.start) [data-control="stop"]{display: none;}
+.tab-pane:not(.start) .default-txt{display: none;}
+.interaction2 .obj p, .interaction2 .move-obj p{width:70px;color:#fff !important;left:50%;transform: translateX(-50%);}
+
+button:disabled{pointer-events: none !important;}
+.finish [data-control="pause"]{display: none;}

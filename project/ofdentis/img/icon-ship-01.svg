@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90">
+  <g id="그룹_2178" data-name="그룹 2178" transform="translate(-605 -7655)">
+    <circle id="타원_416" data-name="타원 416" cx="45" cy="45" r="45" transform="translate(605 7655)" fill="#fff"/>
+    <g id="그룹_2172" data-name="그룹 2172" transform="translate(618 7668)">
+      <rect id="사각형_1301" data-name="사각형 1301" width="64" height="64" fill="none"/>
+      <circle id="타원_411" data-name="타원 411" cx="12.5" cy="12.5" r="12.5" transform="translate(6 6)" fill="#ff7500" opacity="0.15"/>
+      <g id="그룹_2167" data-name="그룹 2167" transform="translate(18.462 16)">
+        <g id="그룹_2166" data-name="그룹 2166">
+          <path id="사각형_1242" data-name="사각형 1242" d="M2.215,2.215V29.785H24.862V2.215H2.215M1.231,0H25.846a1.231,1.231,0,0,1,1.231,1.231V30.769A1.231,1.231,0,0,1,25.846,32H1.231A1.231,1.231,0,0,1,0,30.769V1.231A1.231,1.231,0,0,1,1.231,0Z" fill="#111"/>
+        </g>
+        <path id="선_547" data-name="선 547" d="M11.077,1.315H0V-.9H11.077Z" transform="translate(8 9.023)" fill="#111"/>
+        <path id="선_548" data-name="선 548" d="M11.077,1.315H0V-.9H11.077Z" transform="translate(8 13.946)" fill="#111"/>
+      </g>
+    </g>
+  </g>
+</svg>

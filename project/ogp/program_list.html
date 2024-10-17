@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+<title>Document</title>
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/post.css">
+</head>
+<body>
+<nav>
+	<a href="#ct" class="skip sr-only sr-only-focusable">Go to content</a>
+</nav>
+<div id="wrap">
+	<!-- Header -->
+	<header id="hd">
+		<div class="container">
+		      <h1 class="hd-logo">
+				<a href="#"><img src="img/logo.svg" alt="OGP GLOBAL SUMMIT KOREA 2021"></a>
+			</h1>
+			<button type="button" class="js-mn d-xl-none"><span>Open / Close menu</span></button>
+		    <nav id="gnb">
+				<div class="hd-util">
+					<a href="#">마이페이지</a>
+					<a href="#">로그아웃</a>
+					<div class="drop-lang">
+						<button type="button" class="btn-lang" data-toggle="dropdown">KO</button>
+						<ul class="dropdown-menu">
+							<li><a href="#">KO</a></li>
+							<li><a href="#">EN</a></li>
+						</ul>
+					</div>
+					<a href="#" class="btn-d-date">D-162</a>
+				</div>
+				<ul class="gnb">
+		            <li>
+						<a href="#">글로벌서밋</a>
+						<button type="button" class="btn-depth">View menu</button>
+						<ul class="depth">
+							<li><a href="global_01.html">인사말</a></li>
+							<li><a href="global_02.html">행사소개</a></li>
+							<li><a href="global_03.html">아젠다</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="ogp_01.html">OGP 소개</a>
+						<button type="button" class="btn-depth">View menu</button>
+						<ul class="depth">
+							<li><a href="ogp_01.html">OGP 란?</a></li>
+							<li><a href="ogp_02.html">대한민국 OGP 활동</a></li>
+							<li><a href="ogp_03.html">대한민국 열린정부위원회</a></li>
+						</ul>
+					</li>
+		            <!--<li>
+						<a href="#" onclick="alert('페이지 준비중입니다.');">프로그램</a>
+						<button type="button" class="btn-depth">View menu</button>
+						<ul class="depth">
+							<li><a href="#" onclick="alert('페이지 준비중입니다.');">개요</a></li>
+							<li><a href="#" onclick="alert('페이지 준비중입니다.');">세부 프로그램</a></li>
+							<li><a href="menu6.html">연사 소개</a></li>
+						</ul>
+					</li>-->
+					<li>
+						<a href="guide.html">참가 안내</a>
+						<button type="button" class="btn-depth">View menu</button>
+						<ul class="depth">
+							<li><a href="guide.html">참가 가이드</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="media_01.html">미디어센터</a>
+						<button type="button" class="btn-depth">View menu</button>
+						<ul class="depth">
+							<li><a href="media_01.html">공지사항</a></li>
+							<li><a href="media_02.html">FAQ</a></li>
+							<li><a href="media_03.html">프레스</a></li>
+							<li><a href="media_04.html">갤러리</a></li>
+						</ul>
+					</li>
+		        </ul>
+		    </nav>
+		</div>
+	</header>
+	<!-- //Header -->
+
+	<!-- Container -->
+	<div id="ct">
+<!-- 페이지 시작 -->
+<div class="sub-header" style="background-image: url(img/sub-bg-7.png)">
+	<div class="container">
+		<h2 class="sub-title">프로그램</h2>
+		<ul class="nav nav-pills nav-justified">
+			<li class="nav-item"><a href="program_list.html" class="nav-link active">공식 세션</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">파트너스 세션</a></li>
+		</ul>
+		<ol class="location container">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">프로그램</a></li>
+            <li aria-current="page"><a href="#">공식세션</a></li> 
+        </ol>
+	</div>
+</div>
+<div class="sub-content" id="programSearch">
+	<div class="container">
+		<div class="content-inner">
+			<div class="layout">
+				<div class="layer-popup-dim"></div>
+				<div class="side-bar fixed wide layer-popup">
+					<div class="inner-layer-popup">
+						<div class="inner-side-bar">
+							<button type="button" class="close"><span><i></i></span></button>
+							<a href="#" class="btn btn-download btn-primary">전체 프로그램 다운로드</a>
+							<div class="input-group-srch">
+								<input type="text" class="form-control" placeholder="검색어를 입력해주세요.">
+								<button type="button" class="btn-program-srch no-style"><span class="sr-only">검색</span></button>
+							</div>
+							<a href="#" class="btn btn-srch-clear btn-outline-gray" onClick="$('.filter-select-wrap').find('input').prop('checked', false);">필터 해제</a>
+							<ul class="filter-select-wrap">
+								<li class="filter-select-box">
+									<div role="button" class="filter-select-cate">
+										세션
+										<i class="btn-filter-open"><span class="sr-only">열기</span></i>
+									</div>
+									<div class="filter-select-group">
+										<div class="chk-item">
+											<input type="checkbox" id="chk1-all" name="chk1" value="전체">
+											<label class="chk-label" for="chk1-all">전체</label>
+										</div>
+										<div class="chk-item">
+											<input type="checkbox" id="chk1-1" name="chk1" value="전체회의">
+											<label class="chk-label" for="chk1-1">전체회의</label>
+											<ul class="details-option">
+												<div class="chk-item">
+													<input type="checkbox" id="chk1-1-1" name="chk1" value="개∙폐회식">
+													<label class="chk-label" for="chk1-1-1">개∙폐회식</label>
+												</div>
+												<div class="chk-item">
+													<input type="checkbox" id="chk1-1-2" name="chk1" value="주제별 전체회의">
+													<label class="chk-label" for="chk1-1-2">주제별 전체회의</label>
+												</div>
+												<div class="chk-item">
+													<input type="checkbox" id="chk1-1-3" name="chk1" value="지방정부 회의">
+													<label class="chk-label" for="chk1-1-3">지방정부 회의</label>
+												</div>
+											</ul>
+										</div>
+										<div class="chk-item">
+											<input type="checkbox" id="chk1-2" name="chk2" value="분과회의">
+											<label class="chk-label" for="chk1-2">분과회의</label>
+											<ul class="details-option">
+												<div class="chk-item">
+													<input type="checkbox" id="chk1-2-1" name="chk2" value="특별세션">
+													<label class="chk-label" for="chk1-2-1">특별세션</label>
+												</div>
+												<div class="chk-item">
+													<input type="checkbox" id="chk1-2-2" name="chk2" value="주제별 분과회의">
+													<label class="chk-label" for="chk1-2-2">주제별 분과회의</label>
+												</div>
+												<div class="chk-item">
+													<input type="checkbox" id="chk1-2-3" name="chk2" value="대륙별 회의">
+													<label class="chk-label" for="chk1-2-3">대륙별 회의</label>
+												</div>
+												<div class="chk-item">
+													<input type="checkbox" id="chk1-2-4" name="chk2" value="대륙별 분과회의">
+													<label class="chk-label" for="chk1-2-4">대륙별 분과회의</label>
+												</div>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="filter-select-box">
+									<div role="button" class="filter-select-cate">
+										주제
+										<i class="btn-filter-open"><span class="sr-only">열기</span></i>
+									</div>
+									<div class="filter-select-group">
+										<div class="chk-item">
+											<input type="checkbox" id="chk2-all" name="chk2" value="전체" checked>
+											<label class="chk-label chkall" for="chk2-all">전체</label>
+										</div>
+										<div class="chk-item">
+											<input type="checkbox" id="chk2-1" name="chk2" value="시민영역·국민참여 강화">
+											<label class="chk-label chkone" for="chk2-1">시민영역·국민참여 강화</label>
+										</div>
+										<div class="chk-item">
+											<input type="checkbox" id="chk2-2" name="chk2" value="반부패">
+											<label class="chk-label chkone" for="chk2-2">반부패</label>
+										</div>
+										<div class="chk-item">
+											<input type="checkbox" id="chk2-3" name="chk2" value="포용적 디지털 혁신">
+											<label class="chk-label chkone" for="chk2-3">포용적 디지털 혁신</label>
+										</div>
+										<div class="chk-item">
+											<input type="checkbox" id="chk2-4" name="chk2" value="기타">
+											<label class="chk-label chkone" for="chk2-4">기타</label>
+										</div>
+									</div>
+								</li>
+								<li class="filter-select-box">
+									<div role="button" class="filter-select-cate">
+										일자
+										<i class="btn-filter-open"><span class="sr-only">열기</span></i>
+									</div>
+									<div class="filter-select-group">
+										<div class="chk-item">
+											<input type="checkbox" id="chk3-all" name="chk3" value="전체" checked>
+											<label class="chk-label" for="chk3-all">전체</label>
+										</div>
+										<div class="chk-item">
+											<input type="checkbox" id="chk3-1" name="chk3" value="12월 15일 (수)">
+											<label class="chk-label" for="chk3-1">12월 15일 (수)</label>
+										</div>
+										<div class="chk-item">
+											<input type="checkbox" id="chk3-2" name="chk3" value="12월 16일 (목)">
+											<label class="chk-label" for="chk3-2">12월 16일 (목)</label>
+										</div>
+										<div class="chk-item">
+											<input type="checkbox" id="chk3-3" name="chk3" value="12월 17일 (금)">
+											<label class="chk-label" for="chk3-3">12월 17일 (금)</label>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="top-bar">
+					<div class="filter-wrp">
+						<div class="input-group-srch">
+							<input type="text" class="form-control" placeholder="검색어를 입력해주세요.">
+							<button type="button" class="btn-program-srch no-style"><span class="sr-only">검색</span></button>
+						</div>
+						<button type="button" class="btn-filter">Filter</button>
+					</div>
+				</div>
+				<div class="page">
+					<ul class="list-dot type2">
+						<li>등록 시 입력한 GMT 기준으로 일자와 시간이 표기됩니다. </li>
+						<li>로그인 하지 않으신 분들은 KST(GMT+9) 기준으로 표기됩니다.</li>
+						<li>'스케줄 추가' 아이콘을 클릭하시면 마이페이지(내 스케줄)에서 나만의 스케줄링이 가능합니다.</li>
+					</ul>
+					<ul class="nav nav-tabs mt-5">
+						<li class="nav-item">
+							<a href="#programList1" class="nav-link active" data-toggle="tab">전체</a>
+						</li>
+						<li class="nav-item">
+						  	<a href="#programList2" class="nav-link" data-toggle="tab">12월 15일(수)</a>
+						</li>
+						<li class="nav-item">
+							<a href="#programList3" class="nav-link" data-toggle="tab">12월 16일(목)</a>
+						</li>
+						<li class="nav-item">
+							<a href="#programList4" class="nav-link" data-toggle="tab">12월 17일(금)</a>
+						</li>
+					</ul>
+					<div class="tab-content programList">
+						<div id="programList1" class="tab-pane active">
+							<ul class="post-group type-session row">
+								<!-- 
+									[C] 참고
+
+									1) 상단라인
+									* theme-blue 파랑(시민영역 국민참여 강화)
+									* theme-green 초록(포용적 디지털 혁신)
+									* theme-orange 주황(반부패)
+									* theme-dark 검정(카테고리 미정)
+
+									2) 상단영상버튼
+									* 시청하기(.btn-view)
+									* 다시보기(.btn-view + .btn-replay)
+									* 준비중(.btn-view + .btn-wait)
+								-->
+								<li class="post-item col-sm-6 col-lg-4">
+									<div class="post-cont theme-blue">
+										<div class="post-menu-top">
+											<span class="cate">전체회의</span>
+											<a href="#" class="btn-view replay">다시보기</a>
+										</div>
+										<a href="#" class="inner-post">
+											<h5 class="tit">
+												지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다.
+											</h5>
+										</a>
+										<div class="post-menu-bottom">
+											<ul class="schedule-info">
+												<li class="date">
+													<i class="icon-scheduler"></i>2021.12.15
+												</li>
+												<li class="time">
+													<i class="icon-clock"></i>13:00~13:30 KST
+												</li>
+											</ul>
+											<button type="button" class="btn-add-schedule p-0 border-0" onClick="$(this).toggleClass('active')">
+												<span class="sr-only">일정에 추가</span>
+												<span class="sr-only">일정 추가 완료</span>
+											</button>
+										</div>
+									</div>
+								</li>
+								<li class="post-item col-sm-6 col-lg-4">
+									<div class="post-cont theme-orange">
+										<div class="post-menu-top">
+											<span class="cate">전체회의</span>
+											<a href="#" class="btn-view">시청하기</a>
+										</div>
+										<a href="#" class="inner-post">
+											<h5 class="tit">
+												지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다.
+											</h5>
+										</a>
+										<div class="post-menu-bottom">
+											<ul class="schedule-info">
+												<li class="date">
+													<i class="icon-scheduler"></i>2021.12.15
+												</li>
+												<li class="time">
+													<i class="icon-clock"></i>13:00~13:30 KST
+												</li>
+											</ul>
+											<button type="button" class="btn-add-schedule p-0 border-0" onClick="$(this).toggleClass('active')">
+												<span class="sr-only">일정에 추가</span>
+												<span class="sr-only">일정 추가 완료</span>
+											</button>
+										</div>
+									</div>
+								</li>
+								<li class="post-item col-sm-6 col-lg-4">
+									<div class="post-cont theme-green">
+										<div class="post-menu-top">
+											<span class="cate">전체회의</span>
+											<a href="#" class="btn-view wait">준비중</a>
+										</div>
+										<a href="#" class="inner-post">
+											<h5 class="tit">
+												지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다.
+											</h5>
+										</a>
+										<div class="post-menu-bottom">
+											<ul class="schedule-info">
+												<li class="date">
+													<i class="icon-scheduler"></i>2021.12.15
+												</li>
+												<li class="time">
+													<i class="icon-clock"></i>13:00~13:30 KST
+												</li>
+											</ul>
+											<button type="button" class="btn-add-schedule p-0 border-0" onClick="$(this).toggleClass('active')">
+												<span class="sr-only">일정에 추가</span>
+												<span class="sr-only">일정 추가 완료</span>
+											</button>
+										</div>
+									</div>
+								</li>
+								<li class="post-item col-sm-6 col-lg-4">
+									<div class="post-cont theme-dark">
+										<div class="post-menu-top">
+											<span class="cate">전체회의</span>
+											<a href="#" class="btn-view">시청하기</a>
+										</div>
+										<a href="#" class="inner-post">
+											<h5 class="tit">
+												지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다.
+											</h5>
+										</a>
+										<div class="post-menu-bottom">
+											<ul class="schedule-info">
+												<li class="date">
+													<i class="icon-scheduler"></i>2021.12.15
+												</li>
+												<li class="time">
+													<i class="icon-clock"></i>13:00~13:30 KST
+												</li>
+											</ul>
+											<button type="button" class="btn-add-schedule p-0 border-0" onClick="$(this).toggleClass('active')">
+												<span class="sr-only">일정에 추가</span>
+												<span class="sr-only">일정 추가 완료</span>
+											</button>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="btn-area btn-lg">
+								<a href="#" class="btn btn-dark">더보기</a>
+							</div>
+						</div>
+						<div id="programList2" class="tab-pane">
+							<ul class="post-group type-session row">
+								<li class="post-item col-sm-6 col-lg-4">
+									<div class="post-cont theme-blue">
+										<div class="post-menu-top">
+											<span class="cate">전체회의</span>
+											<a href="#" class="btn-view replay">다시보기</a>
+										</div>
+										<a href="#" class="inner-post">
+											<h5 class="tit">
+												지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다.
+											</h5>
+										</a>
+										<div class="post-menu-bottom">
+											<ul class="schedule-info">
+												<li class="date">
+													<i class="icon-scheduler"></i>2021.12.15
+												</li>
+												<li class="time">
+													<i class="icon-clock"></i>13:00~13:30 KST
+												</li>
+											</ul>
+											<button type="button" class="btn-add-schedule p-0 border-0" onClick="$(this).toggleClass('active')">
+												<span class="sr-only">일정에 추가</span>
+												<span class="sr-only">일정 추가 완료</span>
+											</button>
+										</div>
+									</div>
+								</li>
+								<li class="post-item col-sm-6 col-lg-4">
+									<div class="post-cont theme-orange">
+										<div class="post-menu-top">
+											<span class="cate">전체회의</span>
+											<a href="#" class="btn-view">시청하기</a>
+										</div>
+										<a href="#" class="inner-post">
+											<h5 class="tit">
+												지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다.
+											</h5>
+										</a>
+										<div class="post-menu-bottom">
+											<ul class="schedule-info">
+												<li class="date">
+													<i class="icon-scheduler"></i>2021.12.15
+												</li>
+												<li class="time">
+													<i class="icon-clock"></i>13:00~13:30 KST
+												</li>
+											</ul>
+											<button type="button" class="btn-add-schedule p-0 border-0" onClick="$(this).toggleClass('active')">
+												<span class="sr-only">일정에 추가</span>
+												<span class="sr-only">일정 추가 완료</span>
+											</button>
+										</div>
+									</div>
+								</li>
+								<li class="post-item col-sm-6 col-lg-4">
+									<div class="post-cont theme-green">
+										<div class="post-menu-top">
+											<span class="cate">전체회의</span>
+											<a href="#" class="btn-view wait">준비중</a>
+										</div>
+										<a href="#" class="inner-post">
+											<h5 class="tit">
+												지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다.
+											</h5>
+										</a>
+										<div class="post-menu-bottom">
+											<ul class="schedule-info">
+												<li class="date">
+													<i class="icon-scheduler"></i>2021.12.15
+												</li>
+												<li class="time">
+													<i class="icon-clock"></i>13:00~13:30 KST
+												</li>
+											</ul>
+											<button type="button" class="btn-add-schedule p-0 border-0" onClick="$(this).toggleClass('active')">
+												<span class="sr-only">일정에 추가</span>
+												<span class="sr-only">일정 추가 완료</span>
+											</button>
+										</div>
+									</div>
+								</li>
+								<li class="post-item col-sm-6 col-lg-4">
+									<div class="post-cont theme-dark">
+										<div class="post-menu-top">
+											<span class="cate">전체회의</span>
+											<a href="#" class="btn-view">시청하기</a>
+										</div>
+										<a href="#" class="inner-post">
+											<h5 class="tit">
+												지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다.
+											</h5>
+										</a>
+										<div class="post-menu-bottom">
+											<ul class="schedule-info">
+												<li class="date">
+													<i class="icon-scheduler"></i>2021.12.15
+												</li>
+												<li class="time">
+													<i class="icon-clock"></i>13:00~13:30 KST
+												</li>
+											</ul>
+											<button type="button" class="btn-add-schedule p-0 border-0" onClick="$(this).toggleClass('active')">
+												<span class="sr-only">일정에 추가</span>
+												<span class="sr-only">일정 추가 완료</span>
+											</button>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="btn-area btn-lg">
+								<a href="#" class="btn btn-dark">더보기</a>
+							</div>
+						</div>
+						<div id="programList3" class="tab-pane">
+							<ul class="post-group type-session row">
+								<li class="post-item col-sm-6 col-lg-4">
+									<div class="post-cont theme-blue">
+										<div class="post-menu-top">
+											<span class="cate">전체회의</span>
+											<a href="#" class="btn-view replay">다시보기</a>
+										</div>
+										<a href="#" class="inner-post">
+											<h5 class="tit">
+												지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다.
+											</h5>
+										</a>
+										<div class="post-menu-bottom">
+											<ul class="schedule-info">
+												<li class="date">
+													<i class="icon-scheduler"></i>2021.12.15
+												</li>
+												<li class="time">
+													<i class="icon-clock"></i>13:00~13:30 KST
+												</li>
+											</ul>
+											<button type="button" class="btn-add-schedule p-0 border-0" onClick="$(this).toggleClass('active')">
+												<span class="sr-only">일정에 추가</span>
+												<span class="sr-only">일정 추가 완료</span>
+											</button>
+										</div>
+									</div>
+								</li>
+								<li class="post-item col-sm-6 col-lg-4">
+									<div class="post-cont theme-orange">
+										<div class="post-menu-top">
+											<span class="cate">전체회의</span>
+											<a href="#" class="btn-view">시청하기</a>
+										</div>
+										<a href="#" class="inner-post">
+											<h5 class="tit">
+												지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다.
+											</h5>
+										</a>
+										<div class="post-menu-bottom">
+											<ul class="schedule-info">
+												<li class="date">
+													<i class="icon-scheduler"></i>2021.12.15
+												</li>
+												<li class="time">
+													<i class="icon-clock"></i>13:00~13:30 KST
+												</li>
+											</ul>
+											<button type="button" class="btn-add-schedule p-0 border-0" onClick="$(this).toggleClass('active')">
+												<span class="sr-only">일정에 추가</span>
+												<span class="sr-only">일정 추가 완료</span>
+											</button>
+										</div>
+									</div>
+								</li>
+								<li class="post-item col-sm-6 col-lg-4">
+									<div class="post-cont theme-green">
+										<div class="post-menu-top">
+											<span class="cate">전체회의</span>
+											<a href="#" class="btn-view wait">준비중</a>
+										</div>
+										<a href="#" class="inner-post">
+											<h5 class="tit">
+												지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다.
+											</h5>
+										</a>
+										<div class="post-menu-bottom">
+											<ul class="schedule-info">
+												<li class="date">
+													<i class="icon-scheduler"></i>2021.12.15
+												</li>
+												<li class="time">
+													<i class="icon-clock"></i>13:00~13:30 KST
+												</li>
+											</ul>
+											<button type="button" class="btn-add-schedule p-0 border-0" onClick="$(this).toggleClass('active')">
+												<span class="sr-only">일정에 추가</span>
+												<span class="sr-only">일정 추가 완료</span>
+											</button>
+										</div>
+									</div>
+								</li>
+								<li class="post-item col-sm-6 col-lg-4">
+									<div class="post-cont theme-dark">
+										<div class="post-menu-top">
+											<span class="cate">전체회의</span>
+											<a href="#" class="btn-view">시청하기</a>
+										</div>
+										<a href="#" class="inner-post">
+											<h5 class="tit">
+												지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다.
+											</h5>
+										</a>
+										<div class="post-menu-bottom">
+											<ul class="schedule-info">
+												<li class="date">
+													<i class="icon-scheduler"></i>2021.12.15
+												</li>
+												<li class="time">
+													<i class="icon-clock"></i>13:00~13:30 KST
+												</li>
+											</ul>
+											<button type="button" class="btn-add-schedule p-0 border-0" onClick="$(this).toggleClass('active')">
+												<span class="sr-only">일정에 추가</span>
+												<span class="sr-only">일정 추가 완료</span>
+											</button>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="btn-area btn-lg">
+								<a href="#" class="btn btn-dark">더보기</a>
+							</div>
+						</div>
+						<div id="programList4" class="tab-pane">
+							<ul class="post-group type-session row">
+								<li class="post-item col-sm-6 col-lg-4">
+									<div class="post-cont theme-blue">
+										<div class="post-menu-top">
+											<span class="cate">전체회의</span>
+											<a href="#" class="btn-view replay">다시보기</a>
+										</div>
+										<a href="#" class="inner-post">
+											<h5 class="tit">
+												지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다.
+											</h5>
+										</a>
+										<div class="post-menu-bottom">
+											<ul class="schedule-info">
+												<li class="date">
+													<i class="icon-scheduler"></i>2021.12.15
+												</li>
+												<li class="time">
+													<i class="icon-clock"></i>13:00~13:30 KST
+												</li>
+											</ul>
+											<button type="button" class="btn-add-schedule p-0 border-0" onClick="$(this).toggleClass('active')">
+												<span class="sr-only">일정에 추가</span>
+												<span class="sr-only">일정 추가 완료</span>
+											</button>
+										</div>
+									</div>
+								</li>
+								<li class="post-item col-sm-6 col-lg-4">
+									<div class="post-cont theme-orange">
+										<div class="post-menu-top">
+											<span class="cate">전체회의</span>
+											<a href="#" class="btn-view">시청하기</a>
+										</div>
+										<a href="#" class="inner-post">
+											<h5 class="tit">
+												지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다.
+											</h5>
+										</a>
+										<div class="post-menu-bottom">
+											<ul class="schedule-info">
+												<li class="date">
+													<i class="icon-scheduler"></i>2021.12.15
+												</li>
+												<li class="time">
+													<i class="icon-clock"></i>13:00~13:30 KST
+												</li>
+											</ul>
+											<button type="button" class="btn-add-schedule p-0 border-0" onClick="$(this).toggleClass('active')">
+												<span class="sr-only">일정에 추가</span>
+												<span class="sr-only">일정 추가 완료</span>
+											</button>
+										</div>
+									</div>
+								</li>
+								<li class="post-item col-sm-6 col-lg-4">
+									<div class="post-cont theme-green">
+										<div class="post-menu-top">
+											<span class="cate">전체회의</span>
+											<a href="#" class="btn-view wait">준비중</a>
+										</div>
+										<a href="#" class="inner-post">
+											<h5 class="tit">
+												지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다.
+											</h5>
+										</a>
+										<div class="post-menu-bottom">
+											<ul class="schedule-info">
+												<li class="date">
+													<i class="icon-scheduler"></i>2021.12.15
+												</li>
+												<li class="time">
+													<i class="icon-clock"></i>13:00~13:30 KST
+												</li>
+											</ul>
+											<button type="button" class="btn-add-schedule p-0 border-0" onClick="$(this).toggleClass('active')">
+												<span class="sr-only">일정에 추가</span>
+												<span class="sr-only">일정 추가 완료</span>
+											</button>
+										</div>
+									</div>
+								</li>
+								<li class="post-item col-sm-6 col-lg-4">
+									<div class="post-cont theme-dark">
+										<div class="post-menu-top">
+											<span class="cate">전체회의</span>
+											<a href="#" class="btn-view">시청하기</a>
+										</div>
+										<a href="#" class="inner-post">
+											<h5 class="tit">
+												지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다. 지구를 바꾸는 변화의 물결을 만듭니다.
+											</h5>
+										</a>
+										<div class="post-menu-bottom">
+											<ul class="schedule-info">
+												<li class="date">
+													<i class="icon-scheduler"></i>2021.12.15
+												</li>
+												<li class="time">
+													<i class="icon-clock"></i>13:00~13:30 KST
+												</li>
+											</ul>
+											<button type="button" class="btn-add-schedule p-0 border-0" onClick="$(this).toggleClass('active')">
+												<span class="sr-only">일정에 추가</span>
+												<span class="sr-only">일정 추가 완료</span>
+											</button>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="btn-area btn-lg">
+								<a href="#" class="btn btn-dark">더보기</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //페이지 끝-->
+	</div>
+	<!-- //Container -->
+
+	<!-- Footer -->
+	<footer id="ft">
+		<div class="container">
+			<div class="ft">
+				<a href="#wrap" class="btn-top">
+					<span class="sr-only">go to top of page</span>
+				</a>
+				<div class="ft-logo">
+					<a href="https://www.mois.go.kr/frt/a01/frtMain.do" target="_blank"><img src="img/ft-logo-1.png" alt="대한민국 정부"></a>
+					<a href="https://www.opengovpartnership.org/" target="_blank"><img src="img/ft-logo-2.png" alt="Open Government Partnership"></a>
+				</div>
+				<div class="ft-info">
+					<ul class="ft-menu">
+						<li><a href="#" data-ezpmp-term="PrivacyPolicy"><span>개인정보처리방침</span></a></li>
+						<li><a href="#" data-ezpmp-term="TermsofUse"><span>이용약관</span></a></li>
+						<li><a href="#" data-ezpmp-term="SecretariatGuide"><span>연락처 안내 </span></a></li>
+						<li>
+							<div class="drop-site">
+								<button type="button" class="btn-site" data-toggle="dropdown">연계 사이트</button>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="https://www.opengovpartnership.org/" target="_blank">OGP</a>
+									</li>
+									<li><a href="https://www.mois.go.kr/frt/a01/frtMain.do" target="_blank">행정안전부</a></li>
+									<li><a href="https://www.innogov.go.kr/ucms/main/main.do" target="_blank">정부혁신1번가</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<div class="ft-link no-gutters">
+						<div class="ft-browser-info col">
+							<div class="browser-list">
+								<img src="img/img-3-1-1.png" alt="google chrome">
+								<img src="img/img-3-1-2.png" alt="edge">
+								<img src="img/img-3-1-3.png" alt="safari">
+							</div>
+							<p>크롬/엣지/사파리 최신버전의 브라우저에 최적화 되어 있습니다.</p>
+						</div>
+						<div class="ft-contact">
+							<span>2021 OGP 글로벌서밋 준비기획단</span>
+							<a href="mailto:ogpkorea2021@gmail.com">E-mail: ogpkorea2021@gmail.com</a>
+							<p class="copy">Copyrights (c) 2021 OGP Global Summit. All rights reserved.</p>
+						</div>
+						<ul class="sns-link col-auto">
+							<li>
+								<a href="#" target="_blank"><img src="img/sns-logo-1.svg" alt="instagram"></a>
+							</li>
+							<li>
+								<a href="#" target="_blank"><img src="img/sns-logo-2.svg" alt="facebook"></a>
+							</li>
+							<li>
+								<a href="https://www.youtube.com/channel/UCJhl1kYryNRS_Tj0VNLTQTA" target="_blank"><img src="img/sns-logo-3.svg" alt="youtube"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- //Footer -->
+</div>
+<!-- //wrap -->
+
+
+<!-- js -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+@charset "utf-8";
+@import url(interaction.css);
+
+/*슬라이드*/
+.slide{padding-top:40px}
+.slide.slide-interaction{padding-top:0}
+.swiper-slide{text-align:center}
+#ct>.slide>.swiper-container{width: 1150px; height:740px; margin: 0 auto}
+#ct>.slide.slide-interaction>.swiper-container{height:718px}
+#ct>.slide .swiper-slide>img{height:400px; border-radius: 30px}
+#ct>.slide .swiper-container .swiper-wrapper .swiper-slide>p,
+#ct>.slide-pn-dot .swiper-container .swiper-wrapper .swiper-slide>p{padding:10px 0}
+#ct>.slide-pn-dot .swiper-slide{padding-top:10px}
+/* #ct>.slide-pn-dot .swiper-slide>img{height:400px; min-height:400px; max-height:400px; margin: 0px auto; } */
+/*   */
+#ct>.slide-pn-dot .swiper-slide>img{height:400px; min-height:400px; max-height:400px; margin: 0px auto; transform: translateZ(0)}
+#ct>.slide .swiper-pagination{position: absolute; bottom:50px;margin:0}
+.modal-txt-table{display:table}
+.modal-txt-cell{display: table-cell; height: 460px; text-align:justify; vertical-align: middle;padding: 0 20px}
+#ct .slide-fh-img{width: 1092px; margin: 0 auto; padding-top:40px}
+#ct .slide-fh-img .swiper-container{height:700px}
+#ct .slide-fh-img .modal-img-only .bx-modal{height:auto; max-height:468px}
+#ct .slide-fh-img .modal-img-only .bx-modal img{margin:0}
+#ct .slide-fh-img .modal-txt-quiz{height:auto; max-height:468px; padding: 110px 40px}
+
+/*모달*/
+.modal-type-process .fraction {display: inline-block; position: relative; top: 13px; line-height: 1.0; margin-top: -72px; font-size:30px}
+.modal-type-process .fraction span {display: inline-block; vertical-align: middle}
+.modal-type-process .fraction span:last-child {border-top: 2px solid #000}
+.modal-type-process .img-txt-group{display:flex; position: relative}
+.modal-type-process .img-txt-icon{display: inline-block;position: relative;top: 14px;width: 37px; height: 37px; background: #8ea2b7; font-size: 36px; border-radius: 50%; color: #fff; margin-right: 14px; padding-left:7px}
+.modal-type-process .img-txt-num{position: absolute; top: -3px}
+.modal-type-process .img-txt-group .img-small-txt{font-size:32px; line-height: 1.4}
+.modal-type-process #modal .fraction{font-size:40px; margin-right:5px}
+.modal-tit{border-radius:30px; background:#ff7e00; color:#fff; margin:0 auto; padding: 16px 20px}
+.modal-tit-num{display: inline-block; position: relative; top: -2px; width: 56px; height: 56px; font-size: 43px; border-radius: 100%; background: #fff; text-align: center; color: #ff7e00; margin-right:10px}
+.modal-cont-wrap img{margin:0}
+.modal-img-only{max-width:530px}
+.modal-tit-wrap>span{display: block; position: absolute; text-align: center; width: 300px}
+.modal-img-box img{height: 370px}
+.modal-img-box .bx-modal img{width:100%}
+.modal-txt-only .short-answer-block{min-height:374px}
+.modal-txt-box .short-answer{margin:0 10px 0 5px}
+.modal-txt-box .short-answer-block{min-height: 275px; margin: 20px 0 0}
+.bx-modal{overflow: hidden; max-width: 530px; height: 396px; border: 4px solid #e6e6e9; border-radius: 30px}
+.modal-txt-quiz{height:396px; text-align: justify}
+/*
+.modal-txt-quiz .short-answer-block{min-height: 214px !important}*/
+.swiper-slide .modal-full-img img{/*width:100%;*/ max-width:200px; max-height:200px}
+#ct>.slide-pn-dot.slide-full-img{padding-top:30px}
+#ct>.slide-pn-dot.slide-full-img .swiper-slide>img{height: 500px; min-height: 500px; max-height: 500px}
+
+/*modal btn type1*/
+.btn-circle{width:136px; height: 136px; border-radius:50%; border:6px dashed #ff6c00; background:transparent; font-size: 30px; text-align: center; color: #FFF; content: ""}
+.btn-circle:hover{background:rgba(255, 108, 0, 0.4)}
+.btn-circle.active{background:rgba(255, 108, 0, .2)}
+.btn-circle>span{display: inline-block; position: relative; top: -45px; left: -55px; width:44px; height:44px; background:#ff6c00; padding: 20px 3px; border-radius:50%}
+/*modal btn type2*/
+.btn-circle-plus{z-index:10; position: absolute; width: 60px; height: 60px; border-radius:50%; background: #246a84; }
+.btn-circle-plus:hover{background: #ff7e00}
+.btn-circle-plus::before{position: absolute; top: 16px; left: 28px; width:4px; height: 30px; background:#fff; font-size: 30px; text-align: center; color: #FFF; content: ""; transform:rotate(90deg)}
+.btn-circle-plus::after{position: absolute; top: 16px; left: 28px; width:4px; height: 30px; background:#fff; font-size: 30px; text-align: center; color: #FFF; content: ""}
+/*modal btn type3*/
+.btn-click{z-index:10; width:60px; height:46px; background: url(../images/common/modal-btn-icon.png) 2px 3px no-repeat;background-size: 100%}
+
+/*layout*/
+.num-ex{width:60px; padding:7px}
+.section-num {text-align:justify}
+.section-ex .section-num{margin:10px 0 30px}
+.section-ex{display: inherit}
+.section-ex-tit{display: flex;  margin-bottom: 20px}
+.section-ex-tit>.num{flex: 0 0 60px;max-width: 60px;font-weight: 700;color: #234d69}
+.section-ex-subtit{margin: 10px 0}
+.bx-example>p{text-align:left; margin:6px 0px 14px 0}
+.bx-example .lst-deco{padding-left: 0.6em}
+.bx-example .lst-deco:before{top:.8em; left:0em}
+.bx-example .short-answer{margin:5px 5px}
+.bx-example .short-answer-block{margin:10px 0}
+.process-txt{display: flex; font-size: 38px}
+.process-txt>p{padding:20px 23px; width:33.3%}
+.cnt>p:first-child{margin-bottom:15px}
+li u{border-bottom:2px solid}
+.mCSB_container:not(.mCS_no_scrollbar){padding-bottom:40px}
+.mCSB_scrollTools{margin-bottom: 88px}
+.content-vertical .mCSB_container:not(.mCS_no_scrollbar){padding-bottom:0}
+.content-vertical .mCSB_scrollTools{margin-bottom: 0}
+.content{height:798px}
+.top-bar+.content,.tab-content .content{height:717px}
+/*.content>*:last-child,.mCSB_container>*:last-child{margin-bottom:0 !important}*/
+.short-answer-lg,.short-answer-lg .before{font-size:70px}
+.lst-num>li>b, .lst-choice b {font-size: 36px; top: .3em}
+.badge{position:relative; top:-2px; font-size: 44px; padding: .2em .32em .2em; }
+.lst-num>li, .lst-choice label {margin:5px 0}
+.lst-ex,.lst-deco{text-align:justify}
+.lst-deco{position: relative; padding-left: 1.34em}
+.lst-deco:before{content: '';position: absolute;top: .6em;left: .6em;border-radius: 50%;border: 4px solid}
+.lst-deco+.cnt{padding-left:1.2em; margin:20px 0 30px}
+.txt-deco{content: '';display: inline-block;position: relative;top:-3px; width: 1.2em;height: 1.2em;font-size:40px; border: 1px solid; border-radius: 50%;line-height: 1.1;text-align: center;font-family: 'NotoSerif',serif; /*margin:0 6px;*/}
+.tb .txt-deco{top:2px}
+.bx-example .txt-deco, .lst-ex .txt-deco, .bx-dashed .txt-deco{top:-2px; font-size:36px}
+.tb .lst-ex.font-serif>li{font-size: 40px}
+.tb .lst-ex.font-serif>li:before {top:1.2em}
+.tb .short-answer .lst-ex li, .tb .short-answer>*{font-size:45px}
+.tb .deco{display: flex; text-align: left}
+.tb .deco .lst-deco{font-size:40px; padding-left:0.8em}
+.tb .deco .lst-deco:before {left:2px; top: 0.7em}
+.tb .short-answer{margin:0 6px}
+.tb .short-answer-block{margin:0}
+.tb .font-sang.color-grey{top:-1px; font-size:50px}
+.tb tr td.colspan-modify{border-left: 3px solid #c1dfdd; border-radius: 1rem 0 0 1rem !important}
+.after>.txt-deco.ex-deco{margin:0 0 10px 0}
+.ex-deco{padding-right:4px}
+.num-bullet{position: relative}
+.num-bullet:before{content: '';position: absolute; top: .6em; left: .45em; border-radius: 50%;border: 6px solid}
+
+/* 평가하기 */ 
+.tb.rating{width: 100%;border:2px solid #e6e6e9;border-radius: calc(1rem + 2px)}
+.tb.rating tr>*{position:relative;border-radius: 0;border-color: #e6e6e9;padding: 7px 5px}
+.tb.rating .colspan-last{border-bottom: 0} 
+.tb.rating thead td{padding-top:0;padding-bottom:0;border-color:#e5f1f1}
+.tb.rating thead tr:first-child>th:first-child{border-radius: 1rem 0 0 0 }
+.tb.rating thead tr:first-child>th:last-child{border-radius: 0 1rem 0 0 }
+.tb.rating tbody tr:last-child>*{border-bottom: 0} 
+.tb.rating tbody tr>td:first-child{text-align: left} 
+.tb.rating tbody tr>*:not(:last-child){border-right:0}
+.tb.rating tbody tr>*:last-child .rating-bubble{right: 0;left: auto;transform: none}
+.tb.rating tbody tr>*:last-child .rating-bubble::after{right: 7px;left: auto;transform: none}
+.tb.rating tbody tr:last-child>*{border-color: #e6e6e9 } 
+.tb.rating input{width: 97px;padding: 0;margin: 0;border: 0;border-radius: 0;font-size: 28px;text-align:center;line-height:62px}
+.tb.rating tfoot tr>td{border-radius: 0 0 1rem 1rem;text-align: right;font-size: 28px;border-bottom:3px solid #e6e6e9} 
+.tb.rating .rating-check {display: inline-block;position:relative;width:70px;height: 64px;margin: -2px 0 0 0;vertical-align: middle;background:url(../images/common/icon-rating.png);cursor: pointer;background-size: cover ;text-align: center;font-size: 36px;line-height: 64px}
+.tb.rating .rating-check.active{background-image:url(../images/common/icon-rating-active.png)}
+.tb.rating .rating-check button{position:relative;z-index:10;width:100%;height:100%}
+.tb.rating .rating-check p{position: absolute;top: 0;right: 0;bottom: 0;width: 100%;height: 100%}
+.tb.rating .rating-check p [class^=rating-0]{background-size:45px 45px;width:100%;height:100%}
+.rating-check.active .rating-bubble{display:block}
+.rating-bubble{display:none;position: absolute;bottom: calc( 100% + 18px );left: 50%;z-index: 9999;transform: translateX(-50%);-webkit-transform: translateX(-50%);-moz-transform: translateX(-50%);-ms-transform: translateX(-50%);line-height: 1}
+.rating-check.active + .rating-bubble{display:block}
+.inner-rating-bubble div{position:relative}
+.inner-rating-bubble>div:not(:last-child){margin-right: 12px}
+.inner-rating-bubble>div:not(:last-child):after{content: '';display: inline-block;border-right: dotted 2px #91daff;position: absolute;right: -7px;top: 50%;height: 80%;transform: translateY(-50%)}
+[class^=rating-0]{display: inline-block;background-color:transparent;background-repeat:no-repeat;background-position:center center;background-size:90%;width: 45px;height: 45px;border-radius: 10px}
+.inner-rating-bubble [class^=rating-0]:hover{background-color: #fff}
+.rating-01{background-image:url(../images/common/icon-rating-01.png)}
+.rating-check p .rating-01, .inner-rating-bubble .rating-01:hover{background-image:url(../images/common/icon-rating-01-active.png)}
+.rating-02{background-image:url(../images/common/icon-rating-02.png)}
+.rating-check p .rating-02, .inner-rating-bubble .rating-02:hover{background-image:url(../images/common/icon-rating-02-active.png)}
+.rating-03{margin-right: 0;background-image:url(../images/common/icon-rating-03.png)}
+.rating-check p .rating-03, .inner-rating-bubble .rating-03:hover{background-image:url(../images/common/icon-rating-03-active.png)}
+
+.rating-bubble::after{content: "";position: absolute;top: 100%;left: 50%;line-height: 0;transform: translateX(-50%);background: url(../images/common/bg-rating-tail.png) no-repeat center center / cover;width: 57px;height: 28px}
+.rating-bubble i{height:45px;cursor: pointer}
+.inner-rating-bubble{display: flex;position: relative;z-index: 10;padding:8px;background-color: #16b0ff;box-shadow: 2px 2px 5px rgb(0 0 0 / 20%), -2px -2px 5px rgb(0 0 0 / 20%);border-radius: 12px}
+
+/**/
+.img-mini-quiz{position: absolute; overflow:hidden; min-width:156px; text-align: center; border:3px solid #b8cfdb; border-radius: 30px}
+.img-mini-quiz dt{background-color:#d0e7f4; font-size: 32px; padding:8px}
+.img-mini-quiz dd{line-height: 68px; background:#fff; padding:14px 0 16px}
+
+/*텍스트*/
+.img-balloon-txt{position:absolute; font-family: 'netmarble', sans-serif !important; font-size:22px; text-align:center}
+.img-balloon-txt.bg-y{background:#425e89; color:#fff; border-radius: 28px; padding: 5px 10px}
+.img-small-txt{font-size:32px; line-height:40px; font-weight:500; text-align: center;  letter-spacing: -0.02em; margin-top:10px; }
+.bg-small-txt{position:absolute; text-align: left; font-size:22px; line-height: 38px; font-weight: 500;letter-spacing: -0.02em; margin-top: 10px}
+.img-small-txt2{font-size:26px; line-height:1.2; font-weight:500; text-align: left}
+.img-desc-txt{position:absolute; font-size:28px; font-weight:500; text-align: center; letter-spacing: -0.02em}
+.img-desc-txt .font-sang{top:1px; font-size:50px}
+.img-desc-txt .short-answer{font-size: 40px; font-weight: 700; margin: 10px 8px}
+.img-small-txt .short-answer{margin:4px 8px; font-size:42px}
+.bg-yellow{min-height: 402px; background:url(../images/common/bg-yellow.png) 0 28px no-repeat; background-size:100%}
+.bg-yellow ul{width: 960px; text-align:center; margin: 30px auto}
+.bg-blue{min-height: 320px; background:url(../images/common/bg-blue.png) 0 0 no-repeat; background-size:100%}
+.bg-blue ul{width: 1030px; text-align:center; margin: 30px auto}
+/*color-box*/
+.bx-color-item{min-height: 166px; line-height: 166px; background: #f4f4f4; border-radius: 40px; margin:16px 0; padding:0 20px}
+.bx-color-y>.bx-color-item:first-child{height: 124px; line-height: 124px; background: #fee7bf}
+.bx-color-y>.bx-color-item>.short-answer-block{display:inline-block}
+
+/*color-tit*/
+.color-tit{font: 700 30px/50px netmarble,sans-serif}
+.color-tit>span{font-size:50px; color:#6e8f2c}
+.color-num{display: inline-block;width: 50px; height: 50px;border-radius: 50%;background: #6e8f2c; font-size: 42px; color: #fff; padding: 2px 12px;margin-right: 10px}
+
+/* button */
+.btn_act_wrap{position:relative; height: 160px}
+.btn_act{width: 338px;height: 119px;position: absolute; top: 164px; left: 390px; background:none; font-size:0; line-height:0; color: transparent}
+.btn_gr{width: 380px; height: 114px; position: absolute; top: 26px; left: 50%; transform: translateX(-50%); border-radius: 30px; color: #fff; background: url(../images/common/btn_gr.png) 0 0 no-repeat; background-size: 100%; color: transparent}
+.btn_gr2{width:456px; height:106px; background: url(../images/common/btn_gr2.png) 0 0 no-repeat; background-size: 100%; }
+/*문제 안 요소*/
+.answer-box{display: inline-block; position:relative; top:11px; width: 60px; height: 60px; border: 4px solid #e6e6e9; border-radius: 10px; margin-top: -50px; margin-right: 8px}
+.short-answer .after b{content: ''; display:inline-block; position: relative; width: 1.2em; height: 1.2em;  border: 1px solid; border-radius: 50%; line-height: 1.1; text-align: center; font-family: 'NotoSerif',serif !important}
+.empty-place-s{display: inline-block; width: 60px; text-align: center}
+.empty-place{display: inline-block; width: 100px; text-align: center}
+/*이미지 정답 박스*/
+.answer-img-type,
+.answer-img-type2{overflow: hidden}
+.answer-img-type .after,
+.answer-img-type2 .after{padding: 0}
+.answer-img-type2.active{background:transparent}
+.answer-empty .short-answer.active{background:transparent;border:none}
+
+/*둥근 정답 박스*/
+.short-answer.circle-answer{width: 200px; height: 200px; border-radius: 50%}
+.short-answer.circle-answer .after{position: absolute; left: 0; right: 0; width: 100%}
+.short-answer.circle-answer-s{width: 140px; height: 140px; border-radius: 50%}
+.short-answer.circle-answer-s .after{position: absolute; left: 0; right: 0; width: 100%}
+
+/*선택형*/
+.lst-choice.active [data-answer]:checked~*::after{position: absolute; top: -1px; left: -13px;width: 72px;height: 72px;border-radius: 50%; border: 5px solid red; background: transparent; box-shadow:inset 2px 2px rgba(0,0,0,.4), 2px 2px  rgba(0,0,0,.4); content: ""}
+.choice.active input[type=checkbox][data-answer]+*::after{position: absolute;top: -2px;left: -13px;width: 67px;height: 67px;border-radius: 50%; border: 5px solid red; background: transparent; box-shadow:inset 2px 2px rgba(0,0,0,.4), 2px 2px  rgba(0,0,0,.4); content: ""}
+.lst-choice.choice-img-type b{top:0; font-size:32px}
+.lst-choice.choice-img-type li{margin-right:10px}
+.lst-choice.choice-img-type li:last-child{margin-right:0}
+.lst-choice.choice-img-type label{padding-left:0.8em}
+.lst-choice.choice-img-type.active [data-answer]:checked~*::after {top: -11px; left: -12px; width: 60px; height: 60px}
+
+.lst-choice{position: relative}
+.lst-choice>li .short-answer{position: absolute; bottom:104%; right:0; z-index:100}
+.lst-choice.active [data-answer]:checked~.short-answer::after{border:none; box-shadow: none}
+.page-closing .lst-choice+.short-answer{position: absolute; right:0;  bottom:76%}
+.page-closing .lst-choice+.short-answer.v2{min-width: 180px}
+/*보기 박스*/
+.badge-example-txt {background: #9db6c2}
+.bx-example.bx-example-type2{background:#fff; box-shadow:none; border: 3px solid #9db6c2}
+.bx-example-type2.bx-example-img li{margin:0; padding:10px}
+.bx-example-type2.bx-example-img li .txt-deco{top: -24px; left: -8px; font-size:32px}
+/*보기 박스 이미지(박스 라인 없음)*/
+.ex-wrap-v1{margin-top:40px}
+.ex-wrap-v1 li{display:flex; padding:0 10px}
+.ex-wrap-v1 li .txt-deco{top: -19px; font-size: 36px; margin:0 10px}
+.ex-wrap-v1.ex-wrap-half{width:972px; margin:0 auto}
+/*보기 박스 1/2텍스트형*/
+.bx-ex-v2.bx-ex-half .bx-ex-wrap{display:flex; width:100%}
+.bx-ex-v2.bx-ex-half .bx-ex-lst{width:50%}
+/*보기 박스 2/2텍스트형*/
+.bx-example.bx-ex-v2{background: #fff; box-shadow: none; border: 3px solid #9db6c2; margin:20px 0}
+.bx-ex-v2 .bx-ex-lst{display:flex; width:100%; margin:0}
+.bx-ex-v2 .bx-ex-lst .txt-deco{flex: 0 0 44px; max-width: 44px; top:16px; margin-right:14px}
+.bx-ex-v2 .lst-ex li{padding:4px 0 4px 30px}
+.bx-ex-wrap.bx-ex-wrap-s li{margin:0 30px}
+.bx-ex-wrap.bx-ex-wrap-ss li{margin:0 16px}
+.bx-ex-wrap.bx-ex-wrap-s .txt-deco,
+.bx-ex-wrap.bx-ex-wrap-ss .txt-deco{margin-right:10px}
+/*보기 박스 dashed line*/
+.bx-dashed{overflow: hidden; background: #fff; border: 5px dashed #e6e6e9; border-radius: 30px; box-shadow: none; font-size:45px; margin: 30px 0; padding: 20px 36px}
+.bx-dashed u{display: inline; border-bottom:2px solid}
+.bx-dashed .lst-ex-v2{font-size:40px}
+.bx-dashed .lst-ex-v2 u{border-bottom: 2px solid}
+.bx-dashed .lst-ex-v2 li{margin:10px 0}
+.bx-dashed .lst-ex-v2 li .txt-deco{font-size: 32px; margin-right: 14px}
+.bx-dashed .short-answer-block{margin:10px 0}
+/**/
+.bx-dashed-line{border:8px dashed #b8cfdb; border-radius:30px; margin: 30px 0; padding:20px}
+.bx-dashed-line>p{margin-bottom:30px}
+.bx-dashed-line>p>span{background: #b8cfdb; border-radius: 46px; font-size: 40px; padding: 10px 30px}
+/*정답 타입 기본*/
+.answer-wrap,.answer-wrap-v3,.answer-wrap-v4{margin-top:30px}
+.answer-wrap li{display:flex; align-items: center}
+.answer-wrap li span{margin:0 6px}
+.answer-wrap li .short-answer-block{width:100%}
+.answer-wrap li .txt-deco{flex: 0 0 48px; max-width: 48px; top: 7px}
+
+/*정답 타입 v1*/
+.answer-wrap-v1 li{margin-left:14px}
+.answer-wrap-v1 li>.txt-deco{top:2px}
+.answer-wrap-v1 .short-answer{min-width:196px}
+/*정답 타입 v2*/
+.answer-wrap-v1,
+.answer-wrap-v2,
+.answer-type-process{display: flex; justify-content: flex-end; margin-top:30px}
+.answer-wrap-short .short-answer,
+.answer-wrap-v2 .short-answer{min-width: 196px; margin-left: 16px}
+.answer-type-process .short-answer{min-width:152px}
+.answer-wrap-v2 .after,
+.answer-type-process .after{padding: 0px 24px}
+.answer-wrap-short .after>.txt-deco,
+.answer-wrap-v2 .after>.txt-deco{margin:16px 12px 10px 24px}
+.answer-wrap-short .after>.txt-deco{top:-2px}
+.answer-wrap-short .short-answer-block{display:inline-block}
+.answer-type-process .after>.txt-deco{margin: 10px 24px}
+.answer-type-process li{display: flex}
+.answer-type-process .icon-process{position:relative; margin: 0 14px; padding-right: 40px}
+
+.answer-wrap-v4 li{display:flex; align-items: center}
+.answer-wrap-v4 li>span{min-width:182px}
+.answer-wrap-v4 li>.short-answer-block{width:100%}
+.answer-wrap-v4 li>.short-answer-block .after .txt-deco{top:1px; margin-right:4px}
+/*그 외 타입*/
+.question-wrap{margin-top:30px}
+.question-wrap li{display:flex}
+.question-num{position: relative; top: -10px; font-size:40px}

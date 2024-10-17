@@ -1,0 +1,20 @@
+<svg id="ic_coupon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_1484" data-name="사각형 1484" width="16" height="16" fill="none"/>
+    </clipPath>
+  </defs>
+  <rect id="사각형_1136" data-name="사각형 1136" width="20" height="20" fill="none"/>
+  <g id="그룹_2633" data-name="그룹 2633" transform="translate(2 2)">
+    <rect id="사각형_1483" data-name="사각형 1483" width="14.4" height="14.4" transform="translate(0.8 0.8)" fill="#fff"/>
+    <path id="패스_190" data-name="패스 190" d="M1.6,1.6H14.4V14.4H1.6ZM0,16H16V0H0Z"/>
+    <line id="선_587" data-name="선 587" x1="5.714" y2="5.714" transform="translate(5.143 5.143)" fill="#fff"/>
+    <line id="선_588" data-name="선 588" x1="5.714" y2="5.714" transform="translate(5.143 5.143)" fill="none" stroke="#000" stroke-width="1.6"/>
+    <g id="그룹_2632" data-name="그룹 2632">
+      <g id="그룹_2631" data-name="그룹 2631" clip-path="url(#clip-path)">
+        <path id="패스_191" data-name="패스 191" d="M12,10.857a1.143,1.143,0,1,1-1.143-1.143A1.143,1.143,0,0,1,12,10.857"/>
+        <path id="패스_192" data-name="패스 192" d="M6.286,5.143A1.143,1.143,0,1,1,5.143,4,1.143,1.143,0,0,1,6.286,5.143"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="telephone=no" name="format-detection">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Document</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/lightbox.min.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/jquery-ui.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/common.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <!-- header -->
+    <header id="hd">
+        <div class="container">
+            <a href="#" class="hd-back d-lg-none"><i class="icon-back">뒤로</i></a>
+            <h1 class="hd-logo"><a href="#"><img src="img/logo.svg" alt="OF 덴티스"></a></h1>
+            <ul class="hd-navi d-xl-flex">
+                <li>
+                    <a href="#">Courses</a>
+                    <ul class="depth">
+                        <li><a href="#">Offline Courses</a></li>
+                        <li><a href="#">Online Courses</a></li>
+                        <li><a href="#">Speakers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Contents</a>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">Posting</a></li>
+                        <li><a href="#">Clinical Cases</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Story</a></li>
+                <li><a href="#">OF Market</a></li>
+                <li><a href="#">Opening</a></li>
+                <li><a href="#">Event</a></li>
+            </ul>
+            <div class="hd-side">
+                <a href="#" class="icon-user d-xl-block" title="마이페이지">마이페이지</a>
+                <!-- [D] 로그인 이후에만 노출 -->
+                <button type="button" class="icon-user btn-mypage d-xl-none" title="마이페이지">마이페이지</button>
+                <a href="#" title="장바구니" class="position-relative">
+                    <span class="icon-cart">장바구니</span>
+                    <span class="cart-num">0</span>
+                </a>
+                <a href="#" title="내 찜 내역" class="icon-like">내 찜 내역</a>
+                <!-- [D] default
+                    <div class="d-xl-block"><b>홍길동</b>님</div>
+                    <a href="#" class="text-muted d-xl-block mr-xl-2">로그아웃</a>
+                -->
+                <a href="#" class="d-xl-block">로그인</a>
+                <a href="#" class="d-xl-block">회원가입</a>
+                <!-- // -->
+                <a href="#search" class="icon-search btn-search d-xl-none">검색</a>
+                 <form action="" class="form-search d-xl-block">
+                    <input type="text" class="form-control" name="" value="" placeholder="검색어를 입력해 주세요" title="검색">
+                    <button type="submit"><i class="icon-search">검색</i></button>
+                </form>
+            </div>
+            <button type="button" class="gnb-toggle d-xl-none"><span class="text-hide">메뉴열기/닫기</span></button>
+        </div>
+        <div id="search">
+            <div class="container">
+                <form action="">
+                    <div class="hd-search">
+                        <input type="text" name="" value="" placeholder="검색어를 입력해 주세요">
+                        <i></i>
+                        <button type="submit"><i class="icon-search">검색</i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <nav id="gnb">
+            <div class="gnb-bg"></div>
+            <div class="gnb-util">
+            <!-- 
+                <div><i class="icon-user"></i> <b>홍길동</b>님</div>
+                <a href="#" class="text-muted">로그아웃</a>
+                
+                [D] default
+                <a href="#">로그인</a> 
+                <a href="#">회원가입</a>
+            -->
+            </div>
+            <ul class="gnb">
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Courses</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">Offline Courses</a></li>
+                        <li><a href="#">Online Courses</a></li>
+                        <li><a href="#">Speakers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Market</a>
+                    </strong>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Contents</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">Posting</a></li>
+                        <li><a href="#">Clinical Cases</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Story</a>
+                    </strong>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Opening</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">상담신청</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Event</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">진행중 이벤트</a></li>
+                        <li><a href="#">종료 이벤트</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <nav id="mnb" class="mypage-menu">
+            <div class="mypage-menu-hd">
+                <button type="button" class="icon-close btn-mypage">닫기</button>
+                <p>만나서 반가워요, <b class="name">홍길동</b> 님</p>
+                <div class="hd-m-account">
+                    <a href="#" class="btn btn-outline-primary btn-xs">로그아웃</a>
+                </div>
+            </div>
+            <ul class="gnb">
+                <li>
+                    <a href="#">수강신청 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">오프라인 교육 신청 내역</a></li>
+                        <li><a href="#">온라인 교육 신청 내역</a></li>
+                        <li><a href="#">취소/환불 내역</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#">마켓 주문 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">마켓 주문 내역</a></li>
+                        <li class="active"><a href="#">반품/교환 내역</a></li>
+                        <li><a href="#">취소/환불 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">리뷰 / 댓글 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">내가 작성한 리뷰</a></li>
+                        <li><a href="#">내가 작성한 댓글</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">문의 / 상담 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">문의 내역</a></li>
+                        <li><a href="#">상담 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">찜 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">내 찜 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">포인트 / 결제 관리</a>
+                    <ul class="depth">
+                        <li><a href="#">보유 포인트</a></li>
+                        <li><a href="#">충전 / 계좌 관리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">쿠폰 관리</a>
+                    <ul class="depth">
+                        <li><a href="#">나의 보유 쿠폰</a></li>
+                        <li><a href="#">발급 가능 쿠폰</a></li>
+                        <li><a href="#">지난 쿠폰 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">회원 정보</a>
+                    <ul class="depth">
+                        <li><a href="#">배송지 목록</a></li>
+                        <li><a href="#">회원 정보 수정</a></li>
+                        <li><a href="#">회원 탈퇴</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">환경 설정</a>
+                    <ul class="depth">
+                        <li class="active"><a href="#">앱 설정</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+
+    <!-- content -->
+    <main id="ct">
+<!-- 페이지시작 -->
+<div class="sub-page sub-main sub-company">
+    <section class="company-about">
+        <div class="container text-center">
+            <div class="js-animate">
+                <h2 class="company-about-title font-obj">
+                    <span class="animate animate__reveal">A BIG <br class="d-xl-none">INSPIRATION</span>
+                    <span class="animate animate__reveal">FOR THE <br class="d-xl-none">GROWTH</span>
+                </h2>
+                <p class="company-about-text animate">성장을 위한 영감을 얻고 함께 도약합니다</p>
+            </div>
+            <section class="text-left js-animate">
+                <h3 class="title font-obj animate">About us</h3>
+                <ul class="company-values clearfix">
+                    <li>
+                        <div class="inner animate animate__ink">
+                            <strong>Essence</strong>
+                            <p>성장을 위한 일상과 임상의 연결</p>
+                            <img src="img/values01.png" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner animate animate__ink">
+                            <strong>Value</strong>
+                            <p>OF는 교육 및 임상 콘텐츠 아카이브, 편리한 커머스, <br>치과 의료진 커뮤니티가 통합된 새로운 플랫폼입니다.</p>
+                            <img src="img/values02.png" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner animate animate__ink">
+                            <strong>Vision</strong>
+                            <p>공유하고, 성장하는 라이프 스타일은 <br>가장 큰 영향력을 발휘하고 유행을 선도합니다.</p>
+                            <img src="img/values03.png" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner animate animate__ink">
+                            <strong class="font-obj">Mission</strong>
+                            <p>경계를 넘어 더 큰 성장을 하고, <br>다른 시각으로 새로움에 다가가고 <br>임상의 가치와 무게를 알고 공정하게 행동합니다.</p>
+                            <img src="img/values04.png" alt="">
+                        </div>
+                    </li>
+                </ul>
+                <div class="company-slogan js-animate">
+                    <strong class="font-obj animate animate__reveal">Connect dentistry</strong>
+                    <p class="animate__animated animate__fadeIn">성장을 위한 일상과 임상의 연결</p>
+                </div>
+                <ul class="company-slogan-group js-animate">
+                    <li>
+                        <div class="inner w-100">
+                            <strong class="font-obj">New Value</strong>
+                            <hr>
+                            <p>다른 시각으로 찾아내는 <br>새로운 가치</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner w-100">
+                            <strong class="font-obj">COnnect</strong>
+                            <hr>
+                            <p>성장을 위한 <br>일상과 임상의 연결</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner w-100">
+                            <strong class="font-obj">growth</strong>
+                            <hr>
+                            <p>공유하고, 성장하는 <br>라이프스타일</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </section>
+    <section class="company-service">
+        <div class="container js-animate">
+            <h2 class="title font-obj animate">Service</h2>
+            <ul class="company-service-group animate__animated animate__fadeIn">
+                <li>
+                    <strong>Seminar</strong>
+                    <div>세미나</div>
+                    <p>성장은 지식에서 시작됩니다. <br>
+                    OF는 차별화된 수준의 교육 프로그램을 지향합니다. <br>
+                    임상 교육은 다양한 전문가와 함께하며 체계적이고, 높은 수준의 교육 모델을 개발하고 제공합니다.<br>
+                    심포지움, 온오프라인 세미나, 웨비나 등 각 콘텐츠에 최적화된 포멧으로 제공합니다.</p>
+                </li>
+                <li>
+                    <strong>Contents</strong>
+                    <div>콘텐츠</div>
+                    <p>새로움의 시각과 임상의 무게감의 균형을 갖춘 영상과 텍스트 콘텐츠를 제공합니다. <br>
+                        온라인 임상 콘텐츠 라이브러리, 빅데이터로 맞춤 임상 콘텐츠가 각 치과 의료 관계자에게 추천되어, 나에게 맞는 콘텐츠를 보다 간편하고 빠르게 확인하실 수 있습니다. <br>
+                    임상 카운슬링은 궁금한 점을 자유롭게 질문하고, 실제 경험과 케이스를 바탕으로 한 의견을 나눌 수 있는 공간입니다.</p>
+                </li>
+                <li>
+                    <strong>Market</strong>
+                    <div>마켓</div>
+                    <p>제품별 기본 정보는 물론, 제품과 연동된 콘텐츠와 리뷰를 통해 보다 상세하고 생생한 정보를 제공합니다.<br>
+                        제품별 임상 콘텐츠를 통해 제품의 특장점 비교와 유용한 임상 팁을 참조할 수 있으며
+                        실 사용자의 리얼 리뷰는 제품 탐색과 구매 결정에 도움을 줄 것입니다.<br>
+                        더불어 기간 한정 특별 프로모션 등 매월 다양한 혜택 이벤트를 제공하고 있습니다. 
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="company-location">
+        <div class="container">
+            <div id="map"></div>
+            <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=4b9d9f27bfc228d1e2d43116281316d8"></script>
+            <script>
+                var mapContainer = document.getElementById('map'),
+                    mapOption = {
+                        center: new kakao.maps.LatLng(37.4853545765742, 127.119226534642),
+                        level: 4
+                    };
+                var map = new kakao.maps.Map(mapContainer, mapOption);
+                var imageSrc = 'img/marker.svg',
+                    imageSize = new kakao.maps.Size(40, 48),
+                    imageOption = {offset: new kakao.maps.Point(27, 48)};
+                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+                    markerPosition = new kakao.maps.LatLng(37.4853545765742, 127.119226534642);
+                var marker = new kakao.maps.Marker({
+                    position: markerPosition,
+                    image: markerImage
+                });
+                marker.setMap(map);
+            </script>
+            <div class="company-location-box js-animate">
+                <h3 class="title animate">OF</h3>
+                <dl class="animate__animated animate__fadeIn">
+                    <dt>Address</dt>
+                    <dd>서울특별시 송파구 법원로11길 7 2층</dd>
+                </dl>
+                <dl class="animate__animated animate__fadeIn">
+                    <dt>Contact</dt>
+                    <dd>
+                        <table class="contact-data">
+                            <tr>
+                                <td>대표번호</td>
+                                <td>02-919-8312</td>
+                            </tr>
+                            <tr>
+                                <td>제품 및 제휴문의</td>
+                                <td>02-919-8312</td>
+                            </tr>
+                            <tr>
+                                <td>팩스번호</td>
+                                <td>053-583-2806</td>
+                            </tr>
+                            <tr>
+                                <td>E-mail</td>
+                                <td>ofdentis@ofdentis.com</td>
+                            </tr>
+                        </table>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- //페이지시작 -->
+    </main>
+    <!-- //content -->
+
+    <!-- footer -->
+    <footer id="ft">
+        <div class="container">
+            <ul class="fnb">
+                <li><a href="#">OF 소개</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+            <div class="address">
+                상호명 : (주)덴티스 <i></i> 대표자명: 심기봉 <i></i> 개인정보관리책임자 : 전영현 <br>
+                사업자등록번호 : <a href="#" target="_blank" title="새창 열기">134-87-38310</a> <i></i> 통신판매업신고번호 : 제2012-대구달서-0202호 <i></i> 의료기기 판매업 신고번호 : 제20173420023-00057호<br>
+                사업장주소지 : [42718] 대구광역시 달서구 성서서로 99  <i></i> 팩스: 053-583-2806 <i></i>이메일 : 7061@dentis.co.kr <i></i> 제품문의 : 02-919-8312
+            </div>
+            <p class="copy">COPYRIGHT (C) DENTIS ALL RIGHTS RESERVED.</p>
+            <ul class="sns-list">
+                <li><a href="#" class="icon-sns-ytp" target="_blank">덴티스 유튜브채널 바로가기</a></li>
+                <li><a href="#" class="icon-sns-face" target="_blank">덴티스 페이스북 바로가기</a></li>
+                <li><a href="#" class="icon-sns-insta" target="_blank">덴티스 인스타그램 바로가기</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- //footer -->
+</div>    
+</body>
+</html>

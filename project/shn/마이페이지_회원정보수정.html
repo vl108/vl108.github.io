@@ -1,0 +1,259 @@
+<!doctype html>
+    <html lang="ko">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SHN</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/vendors.bundle.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/vendors.bundle.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="#ct" class="skip sr-only sr-only-focusable">Go to content</a>
+    </nav>
+    <div id="wrap">
+        <header id="hd">
+            <div class="container">
+                <div class="hd-inner">
+                    <div class="hd-btns">
+                        <div class="gnb-wrp hd-navi hd-toggle">
+                            <button type="button" class="hd-toggler btn-gnb text-hide" aria-expanded="false" aria-controls="gnb">
+                                <span>주메뉴 열기</span>
+                            </button>
+                            <nav id="gnb" class="menu-container" role="navigation" aria-hidden="true">
+                                <ul>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">학술지</a></li>
+                                    <li><a href="#">회원게시판</a></li>
+                                    <li><a href="#">자료실</a></li>
+                                    <li><a href="#">학회소개</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="srch-wrp hd-toggle">
+                            <button type="button" class="hd-toggler btn-srch text-hide" aria-expanded="false" aria-controls="srch">검색창 열기</button>
+                            <form action="" id="srch">
+                                <label for="keyword"></label>
+                                <input type="text" placeholder="검색어를 입력해주세요." value="">
+                                <button type="button" class="btn-srch-del text-hide">내용 삭제</button>
+                            </form>
+                        </div>
+                    </div>
+                    <a href="#" class="hd-logo text-hide" title="메인페이지로 이동">SHN</a>
+                    <div class="sign-wrp hd-navi hd-toggle">
+                        <button type="button" class="hd-toggler btn-sign text-hide" aria-expanded="false" aria-controls="sign">
+                            <span>로그인메뉴 열기</span>
+                        </button>
+                        <nav id="sign" class="menu-container" role="navigation" aria-hidden="true">
+                            <ul>
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">회원가입</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="ct">
+			<div class="container mypage">
+                <h3 class="sub-tit">마이페이지</h3>
+                <ul class="tab">
+                    <li><a href="#">나의 활동내역</a></li>
+                    <li><a href="#">비밀번호 수정</a></li>
+                    <li><a href="#" class="active" aria-current="page">회원정보 수정</a></li>
+                </ul>
+                <form action="" class="doc sign-up">
+                    <div class="form-sect">
+                        <h4 class="form-hd">기본정보</h4>
+                        <div class="form-body">
+                            <div class="row">
+                                <div class="form-group col-12">
+                                    <div class="form-label">회원구분</div>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="val1" value="정회원" readonly>	
+                                    </div>
+                                </div>
+                                <div class="form-group col-12">
+                                    <div class="form-label">아이디</div>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="val2" value="sketchbook" readonly>	
+                                    </div>
+                                </div>
+                                <div class="form-group col-12">
+                                    <div class="form-label">이름</div>
+                                    <input type="text" class="form-control" id="val3" value="홍길동" readonly>	
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="val5" class="form-label">한자 이름</label>
+                                    <input type="text" class="form-control" id="val4" value="洪吉童" readonly>	
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="val6" class="form-label">영문 이름</label>
+                                    <input type="text" class="form-control" id="val5" value="Gildong Hong" readonly>	
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="val7" class="form-label">생년월일</label>
+                                    <input type="text" class="form-control datepicker" id="val6" value="0000-00-00" readonly>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="val8" class="form-label">휴대폰 번호</label>
+                                    <input type="tel" class="form-control" id="val7" value="010-0000-0000">	
+                                </div>
+                                <div class="form-group col-12">
+                                    <div class="form-label">성별</div>
+                                    <div class="input-group">
+                                        <div class="form-check">
+                                            <input type="radio" class="sr-only" name="val8" id="val8-1" checked disabled>
+                                            <label for="val8-1" class="chk-custom">
+                                                <span>남성</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" class="sr-only" name="val8" id="val8-2" disabled>
+                                            <label for="val8-2" class="chk-custom">
+                                                <span>여성</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="val10" class="form-label">전화번호</label>
+                                    <input type="tel" class="form-control" id="val9" value="010-0000-0000">	
+                                </div>
+                                <div class="form-group col-12">
+                                    <div class="form-label">주소</div>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="user_address" name="user_address" value="서울 서초구 강남대로37길 42 (06734)" readonly>	
+                                    </div>
+                                    <input type="text" class="form-control mt-2" id="user_detailAddress" name="user_detailAddress" value="2층" readonly>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="val12" class="form-label">E-mail <span class="dot text-red">*</span></label>
+                                    <input type="text" class="form-control" id="val11" value="abced@fg.kr">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-sect">
+                        <h4 class="form-hd">소속</h4>
+                        <div class="form-body">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="val13" class="form-label">출신학교</label>
+                                    <div class="form-select">
+                                        <select class="form-control" id="val12">
+                                            <option value="" disabled selected>가천대학교</option>
+                                            <option value="test">test</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="val14" class="form-label">졸업년도</label>
+                                    <div class="form-select">
+                                        <select class="form-control" id="val13">
+                                            <option value="" disabled selected>2020</option>
+                                            <option value="test">test</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="val15" class="form-label">면허번호</label>
+                                    <div class="form-select">
+                                        <select class="form-control" id="val14">
+                                            <option value="" disabled selected>00000000</option>
+                                            <option value="test">test</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="val16" class="form-label">면허취득 년도</label>
+                                    <div class="form-select">
+                                        <select class="form-control" id="val15">
+                                            <option value="" disabled selected>2020</option>
+                                            <option value="test">test</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <div class="form-label">전문의 여부</div>
+                                    <div class="input-group">
+                                        <div class="form-check">
+                                            <input type="radio" class="sr-only" name="val16" id="val16-1" checked>
+                                            <label for="val16-1" class="chk-custom">
+                                                <span>전문의</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" class="sr-only" name="val16" id="val16-2">
+                                            <label for="val16-2" class="chk-custom">
+                                                <span>비전문의</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="val18" class="form-label">과목</label>
+                                    <input type="text" class="form-control" id="val17" value="한의학">	
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wrp">
+                        <button type="button" class="btn btn-black">수정 완료</button>
+                    </div>
+                </form>
+			</div>
+		</div>
+        <footer id="ft">
+            <div class="container">
+                <div class="ft-top">
+                    <span class="ft-logo text-hide">SHN</span>
+                    <ul class="ft-info">
+                        <li>
+                            <strong>Address</strong>
+                            <p>서울특별시 강남구 남부순환로 377길 7 3층</p>
+                        </li>
+                        <li>
+                            <strong>학회장</strong>
+                            <p>정우병</p>
+                        </li>
+                        <li>
+                            <strong>Tel</strong>
+                            <p><a href="tel:02-1234-5678" title="전화걸기">02-1234-5678</a></p>
+                        </li>
+                        <li>
+                            <strong>Fax</strong>
+                            <p>02-1234-5678</p>
+                        </li>
+                        <li>
+                            <strong>E-mail</strong>
+                            <p><a href="mailto:abcd@saamdang.kr" title="메일보내기">abcd@saamdang.kr</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ft-btm">
+                    <p class="ft-copy">Copyright 2023 Sky Human Nature. All right reserved</p>
+                    <ul class="ft-privacy">
+                        <li>
+                            <a href="#" target="_blank" title="개인정보취급방침 새창열림">개인정보취급방침</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" title="정보공개 새창열림">정보공개</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" id="goTop" class="btn-top text-hide">페이지 최상단으로 이동</button>
+        </footer>
+    </div>
+</body>
+</html>

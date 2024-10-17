@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="telephone=no" name="format-detection">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Document</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/lightbox.min.css">
+<link rel="stylesheet" href="css/jquery-ui.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/common.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <!-- header -->
+    <header id="hd">
+        <div class="container">
+            <a href="#" class="hd-back d-lg-none"><i class="icon-back">뒤로</i></a>
+            <h1 class="hd-logo"><a href="#"><img src="img/logo.svg" alt="OF 덴티스"></a></h1>
+            <ul class="hd-navi d-xl-flex">
+                <li>
+                    <a href="#">Courses</a>
+                    <ul class="depth">
+                        <li><a href="#">Offline Courses</a></li>
+                        <li><a href="#">Online Courses</a></li>
+                        <li><a href="#">Speakers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Contents</a>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">Posting</a></li>
+                        <li><a href="#">Clinical Cases</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Story</a></li>
+                <li><a href="#">OF Market</a></li>
+                <li><a href="#">Opening</a></li>
+                <li><a href="#">Event</a></li>
+            </ul>
+            <div class="hd-side">
+                <a href="#" class="icon-user d-xl-block" title="마이페이지">마이페이지</a>
+                <!-- [D] 로그인 이후에만 노출 -->
+                <button type="button" class="icon-user btn-mypage d-xl-none" title="마이페이지">마이페이지</button>
+                <a href="#" title="장바구니" class="position-relative">
+                    <span class="icon-cart">장바구니</span>
+                    <span class="cart-num">0</span>
+                </a>
+                <a href="#" title="내 찜 내역" class="icon-like">내 찜 내역</a>
+                <!-- [D] default
+                    <div class="d-xl-block"><b>홍길동</b>님</div>
+                    <a href="#" class="text-muted d-xl-block mr-xl-2">로그아웃</a>
+                -->
+                <a href="#" class="d-xl-block">로그인</a>
+                <a href="#" class="d-xl-block">회원가입</a>
+                <!-- // -->
+                <a href="#search" class="icon-search btn-search d-xl-none">검색</a>
+                 <form action="" class="form-search d-xl-block">
+                    <input type="text" class="form-control" name="" value="" placeholder="검색어를 입력해 주세요" title="검색">
+                    <button type="submit"><i class="icon-search">검색</i></button>
+                </form>
+            </div>
+            <button type="button" class="gnb-toggle d-xl-none"><span class="text-hide">메뉴열기/닫기</span></button>
+        </div>
+        <div id="search">
+            <div class="container">
+                <form action="">
+                    <div class="hd-search">
+                        <input type="text" name="" value="" placeholder="검색어를 입력해 주세요">
+                        <i></i>
+                        <button type="submit"><i class="icon-search">검색</i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <nav id="gnb">
+            <div class="gnb-bg"></div>
+            <div class="gnb-util">
+            <!-- 
+                <div><i class="icon-user"></i> <b>홍길동</b>님</div>
+                <a href="#" class="text-muted">로그아웃</a>
+                
+                [D] default
+                <a href="#">로그인</a> 
+                <a href="#">회원가입</a>
+            -->
+            </div>
+            <ul class="gnb">
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Courses</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">Offline Courses</a></li>
+                        <li><a href="#">Online Courses</a></li>
+                        <li><a href="#">Speakers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Market</a>
+                    </strong>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Contents</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">Posting</a></li>
+                        <li><a href="#">Clinical Cases</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Story</a>
+                    </strong>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Opening</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">상담신청</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Event</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">진행중 이벤트</a></li>
+                        <li><a href="#">종료 이벤트</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <nav id="mnb" class="mypage-menu">
+            <div class="mypage-menu-hd">
+                <button type="button" class="icon-close btn-mypage">닫기</button>
+                <p>만나서 반가워요, <b class="name">홍길동</b> 님</p>
+                <div class="hd-m-account">
+                    <a href="#" class="btn btn-outline-primary btn-xs">로그아웃</a>
+                </div>
+            </div>
+            <ul class="gnb">
+                <li>
+                    <a href="#">수강신청 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">오프라인 교육 신청 내역</a></li>
+                        <li><a href="#">온라인 교육 신청 내역</a></li>
+                        <li><a href="#">취소/환불 내역</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#">마켓 주문 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">마켓 주문 내역</a></li>
+                        <li class="active"><a href="#">반품/교환 내역</a></li>
+                        <li><a href="#">취소/환불 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">리뷰 / 댓글 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">내가 작성한 리뷰</a></li>
+                        <li><a href="#">내가 작성한 댓글</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">문의 / 상담 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">문의 내역</a></li>
+                        <li><a href="#">상담 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">찜 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">내 찜 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">포인트 / 결제 관리</a>
+                    <ul class="depth">
+                        <li><a href="#">보유 포인트</a></li>
+                        <li><a href="#">충전 / 계좌 관리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">쿠폰 관리</a>
+                    <ul class="depth">
+                        <li><a href="#">나의 보유 쿠폰</a></li>
+                        <li><a href="#">발급 가능 쿠폰</a></li>
+                        <li><a href="#">지난 쿠폰 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">회원 정보</a>
+                    <ul class="depth">
+                        <li><a href="#">배송지 목록</a></li>
+                        <li><a href="#">회원 정보 수정</a></li>
+                        <li><a href="#">회원 탈퇴</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">환경 설정</a>
+                    <ul class="depth">
+                        <li class="active"><a href="#">앱 설정</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+
+    <!-- content -->
+    <main id="ct">
+<!-- 페이지시작 -->
+<div class="sub-page market-order">
+    <div class="container">
+        <div class="sub-page-hd">
+            <h2 class="content-title"><span>주문/결제</span></h2>
+        </div>
+    </div>
+    <form action="">
+        <div class="column-layout">
+            <div class="contents">
+                <section class="fieldset">
+                    <div class="tb-body">
+                        <table class="tb tb-mobile tb-order-list">
+                            <colgroup>
+                                <col width="55%"><col><col width="8%"><col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">상품명(옵션)</th>
+                                    <th scope="col">판매가</th>
+                                    <th scope="col">쿠폰할인</th>
+                                    <th scope="col">주문금액<br>(적립예정)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="cell-title">
+                                        <div class="prdt-item">
+                                            <a href="#" class="item-img ratio-1by1">
+                                                <img src="img/_temp/prdt.jpg" alt="">
+                                            </a>
+                                            <div class="item-body">
+                                                <p class="text-clamp"><a href="#">닥터즈위즈덤 진료용 글러브 기획 특가 (최소 30Box 구매) 닥터즈위즈덤 진료용 글러브 기획 특가 (최소 30Box 구매) 닥터즈위즈덤 진료용 글러브 기획 특가 (최소 30Box 구매)</a></p>
+                                                <p>S / 수량 1</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="cell-price">
+                                        <span class="base-price">260,000원<br class="d-none d-md-block"></span>
+                                        <span>247,000원</span>
+                                    </td>
+                                    <td class="cell-btn cell-coupon">
+                                        <input type="text" class="form-control input_coupon" placeholder="쿠폰을 선택해 주세요" data-couponPrice="0" id="useCoupon${productCart.seq}" name="useCoupon" value="" data-originPrice="${productCart.totalPrice}" readonly>
+                                       <button type="button" class="btn btn-black btn-sm" data-toggle="modal" data-target="#modalCoupon">쿠폰선택</button>
+                                       <p class="text-primary">100,000원 할인</p>
+                                    </td>
+                                    <td class="cell-total-price">
+                                        <span class="text-primary">136,000원</span>
+                                        <span><br class="d-none d-md-block">(1,000원)</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cell-title">
+                                        <div class="prdt-item">
+                                            <a href="#" class="item-img ratio-1by1">
+                                                <img src="img/_temp/prdt.jpg" alt="">
+                                            </a>
+                                            <div class="item-body">
+                                                <p class="text-clamp"><a href="#">닥터즈위즈덤 진료용 글러브 기획 특가 (최소 30Box 구매)</a></p>
+                                                <p>S / 수량 1</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="cell-price">
+                                        <span class="base-price">260,000원<br class="d-none d-md-block"></span>
+                                        <span>247,000원</span>
+                                    </td>
+                                    <td class="cell-btn cell-coupon">
+                                        <input type="text" class="form-control input_coupon" placeholder="쿠폰을 선택해 주세요" data-couponPrice="0" id="useCoupon${productCart.seq}" name="useCoupon" value="" data-originPrice="${productCart.totalPrice}" readonly>
+                                       <button type="button" class="btn btn-black btn-sm" data-toggle="modal" data-target="#modalCoupon">쿠폰선택</button>
+                                       <p class="text-primary">100,000원 할인</p>
+                                    </td>
+                                    <td class="cell-total-price">
+                                        <span class="text-primary">136,000원</span>
+                                        <span><br class="d-none d-md-block">(1,000원)</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cell-title">
+                                        <div class="prdt-item">
+                                            <a href="#" class="item-img ratio-1by1">
+                                                <img src="img/_temp/prdt.jpg" alt="">
+                                            </a>
+                                            <div class="item-body">
+                                                <p class="text-clamp"><a href="#">닥터즈위즈덤 진료용 글러브 기획 특가 (최소 30Box 구매)</a></p>
+                                                <p>S / 수량 1</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="cell-price">
+                                        <span class="base-price">260,000원<br class="d-none d-md-block"></span>
+                                        <span>247,000원</span>
+                                    </td>
+                                    <td class="cell-btn cell-coupon">
+                                         <input type="text" class="form-control input_coupon" placeholder="쿠폰을 선택해 주세요" data-couponPrice="0" id="useCoupon${productCart.seq}" name="useCoupon" value="" data-originPrice="${productCart.totalPrice}" readonly>
+                                        <button type="button" class="btn btn-black btn-sm" data-toggle="modal" data-target="#modalCoupon">쿠폰선택</button>
+                                    </td>
+                                    <td class="cell-total-price">
+                                        <span class="text-primary">136,000원</span>
+                                        <span><br class="d-none d-md-block">(1,000원)</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cell-title">
+                                        <div class="prdt-item">
+                                            <a href="#" class="item-img ratio-1by1">
+                                                <img src="img/_temp/prdt.jpg" alt="">
+                                            </a>
+                                            <div class="item-body">
+                                                <p class="text-clamp"><a href="#">닥터즈위즈덤 진료용 글러브 기획 특가 (최소 30Box 구매)</a></p>
+                                                <p>S / 수량 1</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="cell-price">
+                                        <span class="base-price">260,000원<br class="d-none d-md-block"></span>
+                                        <span>247,000원</span>
+                                    </td>
+                                    <td class="cell-btn cell-coupon">
+                                        <input type="text" class="form-control input_coupon" placeholder="쿠폰을 선택해 주세요" data-couponPrice="0" id="useCoupon${productCart.seq}" name="useCoupon" value="" data-originPrice="${productCart.totalPrice}" readonly>
+                                       <button type="button" class="btn btn-black btn-sm" data-toggle="modal" data-target="#modalCoupon">쿠폰선택</button>
+                                   </td>
+                                    <td class="cell-total-price">
+                                        <span class="text-primary">136,000원</span>
+                                        <span><br class="d-none d-md-block">(1,000원)</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section class="fieldset">
+                    <div class="form-hd">
+                        <h4 class="tit">주문자 정보</h4>
+                    </div>
+                    <div class="tb-body">
+                        <table class="tb vertical no-style border-bottom-0">
+                            <colgroup>
+                                <col width="22%">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">주문자명</th>
+                                    <td>오덴티</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">휴대폰</th>
+                                    <td>010-1234-1234</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">추가연락처</th>
+                                    <td>02-****-1234</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">병원명</th>
+                                    <td>***병원</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">병원 주소</th>
+                                    <td>**시 **구 **대로 270-2 **빌딩 3층</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section class="fieldset">
+                    <div class="form-hd">
+                        <h4 class="tit mr-auto">배송지 정보</h4>
+                        <div class="mt-3 mt-md-0 input-group w-auto">
+                            <div class="form-chk">
+                                <input type="checkbox" class="sr-only" id="sameOrdererInfo">
+                                <label for="sameOrdererInfo" class="chk-custom">
+                                    <span>주문자 정보와 동일</span>
+                                </label>
+                            </div>
+                            <div class="form-chk ml-4">
+                                <input type="checkbox" class="sr-only" id="applicantValue">
+                                <label for="applicantValue" class="chk-custom">
+                                    <span>기본 정보로 저장</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-body">
+                        <div class="form-contents">
+                            <div class="form-row">
+                                <div class="form-label mt-0">배송지 선택</div>
+                                <div class="col-md">
+                                    <div class="custom-radio-wrap">
+                                        <label class="custom-radio">
+                                            <input type="radio" name="shipping" class="sr-only" checked>
+                                            <span>기본배송지</span>
+                                        </label>
+                                        <label class="custom-radio">
+                                            <input type="radio" name="shipping" class="sr-only">
+                                            <span>신규배송지</span>
+                                        </label>
+                                        <a href="#modal25" data-toggle="modal" class="btn btn-outline-black btn-xs">배송지 목록</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-label require">배송지명</div>
+                                <div class="col-md">
+                                    <input type="text" class="form-control form-control-sm" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-label require">받으시는 분 </div>
+                                <div class="col-md">
+                                    <div class="row align-items-center">
+                                        <div class="col"><input type="text" class="form-control form-control-sm" required></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-label require">휴대폰 번호</div>
+                                <div class="col-md">
+                                    <div class="input-group input-group-number">
+                                        <input type="number" class="form-control form-control-sm text-center" required>
+                                        <span class="px-2">-</span>
+                                        <input type="number" class="form-control form-control-sm text-center" required>
+                                        <span class="px-2">-</span>
+                                        <input type="number" class="form-control form-control-sm text-center" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-label">추가 연락처</div>
+                                <div class="col-md">
+                                    <div class="input-group input-group-number">
+                                        <input type="number" class="form-control form-control-sm text-center">
+                                        <span class="px-2">-</span>
+                                        <input type="number" class="form-control form-control-sm text-center">
+                                        <span class="px-2">-</span>
+                                        <input type="number" class="form-control form-control-sm text-center">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-label require">이메일</div>
+                                <div class="col-md">
+                                    <div class="input-group input-group-email">
+                                        <input type="text" class="form-control form-control-sm" required>
+                                        <span class="px-1">@</span>
+                                        <div class="dropdown opt-dropdown">
+                                            <button class="form-select form-control-sm" type="button" data-toggle="dropdown" aria-expanded="false">gmail.com</button>
+                                            <div class="dropdown-menu" role="listbox">
+                                                <ul>
+                                                    <li class="dropdown-item">옵션</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-black btn-sm m-100">직접입력</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-label require">주소</div>
+                                <div class="col-md">
+                                    <div class="input-group input-group-post">
+                                        <input type="text" class="form-control form-control-sm">
+                                        <input type="button" class="btn btn-black btn-sm" value="우편번호">
+                                    </div>
+                                    <input type="text" class="form-control form-control-sm mt-2">
+                                    <input type="text" class="form-control form-control-sm mt-2" placeholder="상세 주소 입력">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-label">배송메시지</div>
+                                <div class="col-md">
+                                    <div class="dropdown opt-dropdown">
+                                        <button class="form-select form-control-sm" type="button" data-toggle="dropdown" aria-expanded="false">배송메시지를 선택해주세요</button>
+                                        <div class="dropdown-menu" role="listbox">
+                                            <ul>
+                                                <li class="dropdown-item">배송 전 연락 부탁드립니다.</li>
+                                                <li class="dropdown-item">경비실에 맡겨주세요.</li>
+                                                <li class="dropdown-item">집 앞에 놔주세요.</li>
+                                                <li class="dropdown-item">택배함에 놔주세요.</li>
+                                                <li class="dropdown-item">부재 시 휴대폰으로 연락주세요.</li>
+                                                <li class="dropdown-item">부재 시 경비실에 맡겨주세요.</li>
+                                                <li class="dropdown-item">부재 시 집앞에 놔주세요.</li>
+                                                <li class="dropdown-item">직접입력</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control form-control-sm mt-2" placeholder="20자 이내로 입력하세요.">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-label mt-0">프로모션 구매경로</div>
+                                <div class="col-md">
+                                    <div class="custom-radio-wrap">
+                                        <label class="custom-radio">
+                                            <input type="radio" name="promotionPurchaseChannel" class="sr-only" checked>
+                                            <span>OF DENTIS 카카오톡</span>
+                                        </label>
+                                        <label class="custom-radio">
+                                            <input type="radio" name="promotionPurchaseChannel" class="sr-only">
+                                            <span>덴스토어</span>
+                                        </label>
+                                        <label class="custom-radio">
+                                            <input type="radio" name="promotionPurchaseChannel" class="sr-only">
+                                            <span>자사 홈페이지</span>
+                                        </label>
+                                        <label class="custom-radio">
+                                            <input type="radio" name="promotionPurchaseChannel" class="sr-only">
+                                            <span>전단/덴티스톡</span>
+                                        </label>
+                                        <label class="custom-radio">
+                                            <input type="radio" name="promotionPurchaseChannel" class="sr-only">
+                                            <span>영업사원</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="fieldset">
+                    <div class="form-hd">
+                        <h4 class="tit">결제 정보</h4>
+                    </div>
+                    <div class="form-body">
+                        <div class="form-contents">
+                            <div class="form-row">
+                                <div class="form-label">내 포인트</div>
+                                <div class="col-md">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" placeholder="사용할 포인트 입력">
+                                        <button type="button" class="btn btn-black btn-sm">모두사용</button>
+                                    </div>
+                                    <div class="pay-point">
+                                        <div>보유 포인트: 264,000 원</div>
+                                        <i class="split"></i>
+                                        <div>사용 가능 포인트: <span class="text-primary">254,000 원</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-label">결제 수단</div>
+                                <div class="col-md mx-none">
+                                    <div class="paywith">
+                                        <ul class="paywith-list row">
+                                            <li class="col">
+                                                <label class="paywith-button">
+                                                    <input type="radio" name="payment" class="sr-only" checked>
+                                                    <span><i class="icon-card"></i>신용카드</span>
+                                                </label>
+                                            </li>
+                                            <li class="col">
+                                                <label class="paywith-button">
+                                                    <input type="radio" name="payment" value="paywithTransfer" class="sr-only">
+                                                    <span><i class="icon-transfer"></i>계좌이체</span>
+                                                </label>
+                                            </li>
+                                            <li class="col">
+                                                <label class="paywith-button">
+                                                    <input type="radio" name="payment" value="paywithDeposit" class="sr-only">
+                                                    <span><i class="icon-deposit"></i>무통장입금</span>
+                                                </label>
+                                            </li>
+                                            <li class="col">
+                                                <label class="paywith-button">
+                                                    <input type="radio" name="payment" value="" class="sr-only">
+                                                    <span><i class="icon-package"></i>패키지차감</span>
+                                                </label>
+                                            </li>
+                                            <li class="col">
+                                                <label class="paywith-button">
+                                                    <input type="radio" name="payment" value="paywithAppServices" class="sr-only">
+                                                    <span><i class="icon-kakaopay"></i>카카오페이</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                        <!-- [D] 임시 버튼UI -->
+                                        <script>
+                                            let paywithButtons = document.querySelectorAll('.paywith-button>input');
+                                            for(const button of paywithButtons){
+                                                button.addEventListener('change', function(){
+                                                    document.querySelector('#paywithCash').style.display = 'none';
+                                                    document.querySelector('#paywithKakaoPay').style.display = 'none';
+                                                    
+                                                    if(this.value === 'paywithTransfer' || this.value === 'paywithDeposit'){
+                                                        document.querySelector('#paywithCash').style.display = 'block';
+                                                    } else if(this.value === 'paywithAppServices'){
+                                                        document.querySelector('#paywithKakaoPay').style.display = 'block';
+                                                    }
+                                                });
+                                            }
+                                        </script>
+                                        <p class="txt">※ BC카드는 3개월까지만 할부가 가능합니다.</p>
+                                    </div>
+                                    <!-- [D] 계좌이체, 무통장입금 시 -->
+                                    <div id="paywithCash" style="display: none">
+                                        <div class="paywith-radio custom-radio-wrap">
+                                            <label class="custom-radio">
+                                                <input type="radio" name="invoice" class="sr-only" checked>
+                                                <span>미발행</span>
+                                            </label>
+                                            <label class="custom-radio">
+                                                <input type="radio" name="invoice" value="tax" class="sr-only">
+                                                <span>세금계산서</span>
+                                            </label>
+                                            <label class="custom-radio">
+                                                <input type="radio" name="invoice" value="cash" class="sr-only">
+                                                <span>현금영수증</span>
+                                            </label>
+                                        </div>
+                                        <!-- [D] 임시 버튼UI -->
+                                        <script>
+                                            let invoiceButtons = document.querySelectorAll('[name="invoice"]');
+                                            for(const button of invoiceButtons){
+                                                button.addEventListener('change', function(){
+                                                    Object.values(document.querySelector('#invoice').children).forEach(element => {
+                                                        element.style.display = 'none';
+                                                    });
+                                                    document.getElementById(this.value).style.display = 'block';
+                                                });
+                                            }
+                                        </script>
+                                        <div id="invoice">
+                                            <!-- 세금계산서 -->
+                                            <div id="tax" style="display: none;">
+                                                <table class="tb vertical tb-mobile">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">상호(법인명)</th>
+                                                            <td>
+                                                                <input type="text" class="form-control form-control-sm">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">대표자명</th>
+                                                            <td>
+                                                                <input type="text" class="form-control form-control-sm">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">사업자등록번호</th>
+                                                            <td>
+                                                                <input type="text" class="form-control form-control-sm">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">사업장주소</th>
+                                                            <td>
+                                                                <div class="input-group input-group-post">
+                                                                    <input type="text" class="form-control form-control-sm">
+                                                                    <input type="button" class="btn btn-black btn-sm" value="우편번호">
+                                                                </div>
+                                                                <input type="text" class="form-control form-control-sm mt-2">
+                                                                <input type="text" class="form-control form-control-sm mt-2">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">업태</th>
+                                                            <td>
+                                                                <input type="text" class="form-control form-control-sm">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">종목</th>
+                                                            <td>
+                                                                <input type="text" class="form-control form-control-sm">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">사업자등록번호</th>
+                                                            <td>
+                                                                <div class="input-group">
+                                                                    <input type="file" id="fileName" class="sr-only">
+                                                                    <input type="text" class="form-control form-control-sm file-name" readonly="" value="" placeholder="파일을 첨부해주세요.">
+                                                                    <label class="btn btn-black btn-sm">
+                                                                        <input type="file" class="sr-only" id="btn-upload">파일 선택
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="form-chk mt-3">
+                                                    <input type="checkbox" class="sr-only" id="saveEditInfo">
+                                                    <label for="saveEditInfo" class="chk-custom">
+                                                        <span>변경된 정보 저장하기</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <!-- 현금영수증 -->
+                                            <div id="cash" style="display: none;">
+                                                <ul class="nav nav-boxs mb-4">
+                                                    <li class="nav-item"><a href="#deduction" class="nav-link active" data-toggle="tab" class="active">개인소득공제</a></li>
+                                                    <li class="nav-item"><a href="#expenditure" class="nav-link" data-toggle="tab">사업자 지출증빙</a></li>
+                                                </ul>
+                                                <div class="tab-content">
+                                                    <div id="deduction" class="tab-pane active">
+                                                        <table class="tb vertical tb-mobile">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">휴대폰 번호</th>
+                                                                    <td>
+                                                                        <input type="text" class="form-control form-control-sm">
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div id="expenditure" class="tab-pane">
+                                                        <table class="tb vertical tb-mobile">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">사업자번호</th>
+                                                                    <td>
+                                                                        <input type="text" class="form-control form-control-sm">
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- [D] 카카오페이 안내문구 추가 -->
+                                    <div id="paywithKakaoPay" style="display: none">
+                                        <ul class="kakaopay-info" >
+                                            <li>
+                                                <strong>카카오 페이를 이용하시는 경우</strong>
+                                                <p>카카오 톡에서 사전 설정 하신 증빙 방식(사업자지출증빙/현금영수증)에 따라 자동으로 일괄 발행 됩니다.</p>
+                                            </li>
+                                            <li>
+                                                <strong>카카오 페이 지출 증빙 / 현금영수증 정보 설정 방법</strong>
+                                                <p>카카오 톡 → 하단 ••• (더보기) → <i class="icon-kakaopay-sm"></i> → 설정 → 현금 영수증 발급정보에서 설정 가능합니다.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="fieldset">
+                    <div class="form-hd">
+                        <h4 class="tit">구매 경로</h4>
+                    </div>
+                    <div class="form-body px-0">
+                        <div class="custom-radio-wrap">
+                            <label class="custom-radio">
+                                <input type="radio" name="purchaseChannel" class="sr-only" checked>
+                                <span>OF 카카오톡</span>
+                            </label>
+                            <label class="custom-radio">
+                                <input type="radio" name="purchaseChannel" class="sr-only">
+                                <span>자사 홈페이지</span>
+                            </label>
+                            <label class="custom-radio">
+                                <input type="radio" name="purchaseChannel" class="sr-only">
+                                <span>전단/덴티스톡</span>
+                            </label>
+                            <label class="custom-radio">
+                                <input type="radio" name="purchaseChannel" class="sr-only">
+                                <span>영업사원</span>
+                            </label>
+                            <input type="text" name="salesPerson" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 총 결제금액 -->
+            <div class="aside">
+                <div class="total-payment">
+                    <div class="form-hd">
+                        <h4 class="tit">총 결제금액</h4>
+                    </div>
+                    <div class="form-body">
+                        <dl class="desc">
+                            <dt>총 주문금액</dt>
+                            <dd>500,000 <small>원</small></dd>
+                        </dl>
+                        <dl class="desc">
+                            <dt>배송비</dt>
+                            <dd>3,000 <small>원</small></dd>
+                        </dl>
+                        <dl class="desc">
+                            <dt>할인금액</dt>
+                            <dd>- 20,000 <small>원</small></dd>
+                        </dl>
+                        <div class="use-benefit">
+                            <dl class="desc">
+                                <dt><b>ㆍ</b>사용 쿠폰</dt>
+                                <dd>- 15,000 <small>원</small></dd>
+                            </dl>
+                            <dl class="desc">
+                                <dt><b>ㆍ</b>사용 포인트</dt>
+                                <dd>- 5,000 <small>원</small></dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <dl class="desc value-amount">
+                        <dt class="font-weight-bold">결제 예정 금액</dt>
+                        <dd><b class="price">480,000</b><small>원</small></dd>
+                    </dl>
+                </div>
+                <button type="submit" class="btn btn-lg btn-block btn-black">결제하기</button>
+            </div>
+            <div class="contents">
+                <div class="order-info">
+                    <strong>OF MARKET은 치과회원 전용 페이지로 교육 및 콘텐츠와 연계된 제/상품을 간편하게 구매하실 수 있습니다.</strong>
+                    <ul class="list-bullet-decimal">
+                        <li>회원가입 페이지 또는 주문/결제 페이지에서 치과정보 및 사업자 등록증을 등록해주셔야 이용 가능합니다. </li>
+                        <li>사업자 등록 정보 기입이 어려운 경우, 면허번호를 입력해주시기 바랍니다.</li>
+                        <li>회원가입 시 입력하신 정보 확인 차 등록해주신 치과 및 기타 사업장으로 확인 전화가 갈 수 있습니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- //페이지시작 -->
+    </main>
+    <!-- //content -->
+
+    <!-- footer -->
+    <footer id="ft">
+        <div class="container">
+            <ul class="fnb">
+                <li><a href="#">OF 소개</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+            <div class="address">
+                상호명 : (주)덴티스 <i></i> 대표자명: 심기봉 <i></i> 개인정보관리책임자 : 전영현 <br>
+                사업자등록번호 : <a href="#" target="_blank" title="새창 열기">134-87-38310</a> <i></i> 통신판매업신고번호 :
+                제2012-대구달서-0202호 <i></i> 의료기기 판매업 신고번호 : 제20173420023-00057호<br>
+                사업장주소지 : [42718] 대구광역시 달서구 성서서로 99 <i></i> 팩스: 053-583-2806 <i></i>이메일 : 7061@dentis.co.kr <i></i> 제품문의
+                : 02-919-8312
+            </div>
+            <p class="copy">COPYRIGHT (C) DENTIS ALL RIGHTS RESERVED.</p>
+            <ul class="sns-list">
+                <li><a href="#" class="icon-sns-ytp" target="_blank">덴티스 유튜브채널 바로가기</a></li>
+                <li><a href="#" class="icon-sns-face" target="_blank">덴티스 페이스북 바로가기</a></li>
+                <li><a href="#" class="icon-sns-insta" target="_blank">덴티스 인스타그램 바로가기</a></li>
+            </ul>
+        </div>
+    </footer>
+    <div id="floating">
+        <div id="quick">
+            <button type="button" class="icon-quick btn-quick">퀵메뉴열기</button>
+            <ul class="quick-menu">
+                <li>
+                    <a href="#">
+                        <i class="icon-quick-cart"></i>
+                        <div>장바구니</div>
+                        <div class="text-primary">156,000원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="icon-quick-money"></i>
+                        <div>예치금</div>
+                        <div class="text-primary">100,000 P</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="icon-quick-inter"></i>
+                        <div>관심품목</div>
+                    </a>
+                <li>
+                    <a href="#">
+                        <i class="icon-quick-list"></i>
+                        <div>구매내역</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="icon-quick-ch"></i>
+                        <div>카카오채널</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="icon-quick-evt"></i>
+                        <div>이벤트</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="icon-quick-ship"></i>
+                        <div>배송안내</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="icon-quick-open"></i>
+                        <div>개원상담</div>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        <a href="#" class="btn-back"><span class="sr-only">뒤로가기</span></a>
+        <button type="button" class="icon-top">맨위로가기</button>
+    </div>
+    <!-- //footer -->
+</div>
+
+<!-- popup start -->
+<!-- 쿠폰사용 -->
+<div id="modalCoupon" class="modal fade" tabindex="-1">
+    <div class="modal-sm modal-dialog modal-dialog-centered">
+        <form class="modal-content">
+            <button type="button" class="close" data-dismiss="modal"><span class="sr-only">닫기</span></button>
+            <div class="modal-header">
+                <h2 class="modal-title">쿠폰 사용</h2>
+            </div>
+            <div class="modal-body">
+                <div class="sect-hd">
+                    <h3 class="modal-body-title">쿠폰선택</h3>
+                </div>
+                <div class="form-body full">
+                    <div class="form-contents">
+                        <div class="form-row">
+                            <div class="form-label">쿠폰번호</div>
+                            <div class="col-md">
+                                <div class="dropdown opt-dropdown mw-100">
+                                    <button class="form-select" type="button" data-toggle="dropdown" aria-expanded="false">쿠폰을 선택하세요</button>
+                                    <div class="dropdown-menu" role="listbox">
+                                        <ul>
+                                            <li class="dropdown-item">옵션</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="pay-point">
+                                    <div>사용 가능: <span class="text-primary">1 장</span></div>
+                                    <i class="split"></i>
+                                    <div>보유 : 3 장</div>
+                                    <i class="split"></i>
+                                    <div>발급가능 : 0 장</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="bottom-btn">
+                    <div class="link-area">
+                        <div class="link-area-inner row">
+                            <div>
+                                <button type="submit" class="btn btn-dark">선택</button>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-outline-dark" data-dismiss="modal">취소</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- 배송지 목록 -->
+<div id="modal25" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal"><span class="sr-only">닫기</span></button>
+            <div class="modal-header">
+                <h2 class="modal-title">배송지 목록</h2>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="media align-items-center">
+                            <label class="custom-radio">
+                                <input type="radio" name="ship" class="sr-only">
+                                <span class="sr-only">선택</span>
+                            </label>
+                            <div class="media-body">
+                                <b>[배송지명]</b> 성함
+                                <div>(00000) <br>기본정보 입력 주소 출력 / 상세주소 출력</div> 
+                                <div>010-0000-1234</div>
+                            </div>    
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="media align-items-center">
+                            <label class="custom-radio">
+                                <input type="radio" name="ship" class="sr-only">
+                                <span class="sr-only">선택</span>
+                            </label>
+                            <div class="media-body">
+                                <b>[배송지명]</b> 성함
+                                <div>(00000) <br>기본정보 입력 주소 출력 / 상세주소 출력</div> 
+                                <div>010-0000-1234</div>
+                            </div>    
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- // popup end -->
+
+
+</body>
+</html>

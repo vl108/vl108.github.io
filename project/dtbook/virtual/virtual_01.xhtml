@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta content="width=768, height=1024" name="viewport" />
+<title></title>
+<link rel="preload" href="font/KoPubBatangPMA.woff" type="font/woff" />
+<link rel="preload" href="font/KoPubDotumPMA.woff" type="font/woff" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<script type="text/javascript" src="js/DTCaliperSensor.js"></script>
+<!-- page -->
+<link rel="stylesheet" type="text/css" href="css/spectrum.css" />
+<link rel="stylesheet" type="text/css" href="css/video.css" />
+<link rel="stylesheet" type="text/css" href="css/slider.css" />
+<link rel="stylesheet" type="text/css" href="css/virtual_01.css" />
+</head>
+<body>
+	<div id="wrap">
+		<div class="wrapper page-odd">
+			<div class="row">
+				<div class="col-content ml-auto font-dt">
+					<div class="font-dt"><span class="label-exp font-ka">탐구</span><span class="text-circle">2</span> 하루 동안 달의 위치 변화 관측하기</div>
+					<ul class="lst-num mt5">
+						<li class="text-flex text-num">
+							<span class="num font-coo">1</span>
+							<div class="col">달을 관측할 장소를 정하고, 나침반을 이용해 동쪽, 남쪽, 서쪽을 찾습니다.</div>
+						</li>
+						<li class="text-flex text-num">
+							<span class="num font-coo">2</span>
+							<div class="col">남쪽을 바라보고 선 뒤, 남쪽을 중심으로 기준이 될 수 있는 주변 건물이나 나무 등을 <span class="text-nowrap">찾아 그려 봅시다.</span></div>
+						</li>
+						<li class="text-flex text-num">
+							<span class="num font-coo">3</span>
+							<div class="col">
+								같은 장소에서 <span class="font-serif">1</span> 시간 간격으로 달을 관측해 달의 위치가 어떻게 달라지는지 확인해<span class="text-nowrap"> 봅시다.</span>
+								<div class="btn-wrp">
+									<button type="button" class="btn-tail mr4" data-toggle="modal" data-target="#modalExp" data-exp="1"><i class="icon-btn icon-pencil"></i><span class="left">실험 관찰</span></button>
+									<div class="layer-wrp layer-wrp-btm layer-wrp-left">
+										<button type="button" class="btn-tail" data-toggle="layer" data-target="#wedorang"><i class="icon-btn icon-wedorang"></i><span>위두랑</span></button>
+										<div id="wedorang" class="layer layer-sm" data-toggle="layerClse">
+											<div class="layer-body">
+												<p class="mb10">달의 위치 변화를 기록한 것을 게시판에 공유하고, 다른 친구들과 비교해 봅시다.</p>
+												<a class="btn" href="https://rang.edunet.net/main.do" target="_blank"><i class="icon-wedorang"></i>위두랑 공유하기</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="text-info mt8">
+									<i class="icon-info"></i>
+									<span class="col"
+										><span class="btn-dic" data-toggle="modal" data-target="#modalSmallDic">음력</span> <span class="font-serif">15</span> 일 무렵에 관측하면 달의 위치 변화를 잘 볼 수 있어요. <button type="button" class="btn mt3 btn-folder1" data-toggle="modal" data-target="#modalReference1"><i class="icon-folder"></i>보충 자료</button></span
+									>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="utility">
+				<div class="layer-wrp layer-wrp-right">
+					<button type="button" class="btn-safe font-ka" data-toggle="layer" data-layer-accordion="true" data-target="#layerSafe"><i class="icon-alert"></i>안전</button>
+					<div id="layerSafe" class="layer layer-safe" data-toggle="layerClse">
+						<div class="layer-body">
+							<strong class="title font-ka">
+								<i class="icon-alert"></i><span>안전</span>
+								<button type="button" class="icon-audio" data-audio="safeAudio1">내용듣기</button>
+								<audio id="safeAudio1" src="media/virtual_01/virtual_01_safe01.mp3" preload="none"></audio>
+							</strong>
+							<ul class="safe-check">
+								<li>
+									<label class="custom-input-check">
+										<input type="checkbox" id="check_025_19" class="sr-only" />
+										<span class="custom-label">어른과 함께 관측하고, 너무 늦은 시간까지 관측하지 않아요.</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="layer-wrp layer-wrp-right">
+					<button type="button" class="btn-img text-hide btn-help" data-toggle="layer" data-layer-accordion="true" data-target="#layerHelp">도움말</button>
+					<div id="layerHelp" class="layer layer-help" data-toggle="layerClse">
+						<div class="layer-body">
+							<strong class="title font-ka"><i class="icon-info"></i>도움말</strong>
+							<p>직접 관측이 어려울 경우 천체 관측 프로그램을 이용해 하루 동안 달의 위치 변화를 관측할 수도 있어요.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="inter">
+				<p class="position-absolute ani" style="top: 519px; left: 43px">
+					<img src="images/virtual_01/moon1.png" width="29" alt="" />
+					<span class="fwd" style="top: 7px; right: -62px">오후 <span class="font-serif">7</span> 시</span>
+				</p>
+				<p class="position-absolute ani-d1" style="top: 460px; left: 75px">
+					<img src="images/virtual_01/moon2.png" width="29" alt="" />
+					<span class="fwd" style="top: 7px; right: -62px">오후 <span class="font-serif">8</span> 시</span>
+				</p>
+				<p class="position-absolute ani-d2" style="top: 402px; left: 117px">
+					<img src="images/virtual_01/moon3.png" width="29" alt="" />
+					<span class="fwd" style="top: 7px; right: -62px">오후 <span class="font-serif">9</span> 시</span>
+				</p>
+			</div>
+			<button type="button" class="icon-hand" data-class=".inter,active" data-self-class="re" style="top: 601px; left: 340px">내용보기</button>
+
+			<button type="button" class="btn position-absolute" data-toggle="modal" data-target="#modalVirtual" style="top: 330px; right: -32px"><i class="icon-virtual"></i>가상 실험실</button>
+
+			<div class="arrange">
+				<strong class="arrange-title font-ka">정리해 볼까요</strong>
+				<p class="text-flex text-dot">
+					<i class="dot"></i>
+					<span class="col">
+						<span class="label-exp font-ka">탐구</span><span class="text-circle">1</span>과 <span class="label-exp font-ka">탐구</span><span class="text-circle">2</span>에서 하루 동안 관측한 태양과 달의 위치는 어떻게 달라졌나요?
+						<button type="button" class="btn-tail ml4" data-toggle="modal" data-target="#modalExp" data-exp="2"><i class="icon-btn icon-pencil"></i><span>실험 관찰</span></button>
+					</span>
+				</p>
+			</div>
+			<button type="button" class="btn-img text-hide btn-self ml5" data-toggle="modal" data-target="#modalSelf">스스로 평가해요</button>
+
+			<div class="col-content mt30">
+				<p class="para">
+					하루 동안 태양과 달은 동쪽에서 서쪽으로 위치가 달라집니다.<button type="button" class="btn position-absolute" style="top: 820px; left: 466px" data-toggle="modal" data-target="#modalVideo"><i class="icon-vod"></i>개념 영상</button>
+				</p>
+			</div>
+
+			<button type="button" class="btn position-absolute" style="top: 746px; left: 434px" data-toggle="modal" data-target="#modalReference2"><i class="icon-folder"></i>보충 자료</button>
+
+			<div class="bottom-buttons">
+				<button type="button" class="btn-img text-hide btn-self-check" data-toggle="modal" data-target="#modalSelfCheck">스스로 확인해요</button>
+				<button type="button" class="btn-img text-hide btn-arrange" data-toggle="modal" data-target="#modalArrange">정리 문제</button>
+			</div>
+			<p class="fwd1 font-dt">동</p>
+			<p class="fwd2 font-dt">남</p>
+			<p class="fwd3 font-dt">서</p>
+			<div id="num"><b>25</b></div>
+		</div>
+	</div>
+
+	<!-- 용어 사전 -->
+	<div id="modalSmallDic" class="modal modal-half modal-small-dic">
+		<div class="modal-content">
+			<div class="modal-body">
+				<button type="button" title="닫기" class="icon-layer-clse" data-dismiss="modal"></button>
+				<span class="btn"><i class="icon-dic"></i>용어 사전</span>
+				<div class="dic">
+					<strong class="dic-title">음력</strong>
+					<p class="dic-txt">우리나라에서 전통적으로 달의 모양 변화를 기준으로 만든 달력.</p>
+				</div>
+				<div class="dic-ex">
+					<strong class="label-ex font-ka">예문</strong>
+					<p>정월 대보름은 <strong>음력</strong> <span class="font-serif">1</span> 월 <span class="font-serif">15</span> 일로, 보름달이 뜹니다.</p>
+					<div class="text-center">
+						<img src="images/dictionary/025_01.jpg" alt="음력" title="음력" />
+						<p class="mt10">▲ 정월 대보름 달집태우기</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 비디오 -->
+	<div id="modalVideo" class="modal modal-video">
+		<div class="modal-content">
+			<div class="modal-body">
+				<button type="button" title="닫기" class="icon-modal-close" data-dismiss="modal">닫기</button>
+				<h2 class="modal-title">개념 영상</h2>
+				<!-- 비디오 -->
+				<video poster="media/virtual_01/612_025_c_1.jpg" class="video-js" data-content_index="content_cls_video" controls="controls" webkit-playsinline="" playsinline="" preload="none" title="개념 영상">
+					<source src="media/virtual_01/612_025_c_1.mp4" type="video/mp4" />
+					<track kind="subtitles" srclang="ko" src="media/virtual_01/612_025_c_1.vtt" />
+				</video>
+				<!-- 자막 -->
+				<div class="narr">
+					<div class="box">
+						<p class="hide" data-toggle="video-caption" data-playtime="6,11">하루 동안 태양은 동쪽에서 남쪽을 지나 서쪽으로 위치가 달라집니다.</p>
+						<p class="hide" data-toggle="video-caption" data-playtime="13,18">하루 동안 달은 동쪽에서 남쪽을 지나 서쪽으로 위치가 달라집니다.</p>
+						<p class="hide" data-toggle="video-caption" data-playtime="21,25">하루 동안 태양과 달은 동쪽에서 서쪽으로 위치가 달라집니다.</p>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="btn-narr">자막 보기</button>
+		</div>
+	</div>
+
+	<!-- 가상 실험실 -->
+	<div id="modalVirtual" class="modal modal-virtual">
+		<div class="modal-content">
+			<button type="button" title="닫기" class="icon-modal-close" data-dismiss="modal">닫기</button>
+			<div class="modal-virtual-header">
+				<strong class="virtual-title"><span class="sr-only">가상 실험실</span></strong>
+				<h2 class="modal-title">하루 동안 태양과 달의 위치는 어떻게 달라질까요</h2>
+			</div>
+			<div class="modal-body">
+				<div class="top-btn">
+					<button type="button" class="icon-btn icon-home" data-toggle="reset">첫 화면</button>
+					<button type="button" class="icon-btn text-hide icon-help" data-toggle="modal" data-target="#modalVirtualHelp">도움말</button>
+				</div>
+				<div class="virtual-content">
+					<nav class="nav">
+						<button type="button" class="active" data-toggle="tab" data-target="#virtual-1">낮</button>
+						<button type="button" data-toggle="tab" data-target="#virtual-2">밤</button>
+					</nav>
+
+					<div class="tab-content">
+						<div id="virtual-1" class="tab-pane active" data-modal-type="day" data-start-count="7" data-reset-time="09" data-ap-text="오전" data-de-time="9">
+							<div class="interaction interaction1" data-time="0" data-start-time="9">
+								<img src="images/virtual_01/virtual-bg1.jpg" alt="낮" />
+								<span class="fwd" style="top: 424px; left: 74px">동</span>
+								<span class="fwd" style="top: 424px; left: 325px">남</span>
+								<span class="fwd" style="top: 424px; left: 577px">서</span>
+								<div class="obj obj1">
+									<img src="images/virtual_01/obj1.png" alt="해" width="56" />
+									<p class="position-absolute fs12">오전 9 시 30 분</p>
+								</div>
+								<div class="obj obj2">
+									<img src="images/virtual_01/obj1.png" alt="해" width="56" />
+									<p class="position-absolute fs12">오전 10 시 30 분</p>
+								</div>
+								<div class="obj obj3">
+									<img src="images/virtual_01/obj1.png" alt="해" width="56" />
+									<p class="position-absolute fs12">오전 11 시 30 분</p>
+								</div>
+								<div class="obj obj4">
+									<img src="images/virtual_01/obj1.png" alt="해" width="56" />
+									<p class="position-absolute fs12">오후 12 시 30 분</p>
+								</div>
+								<div class="obj obj5">
+									<img src="images/virtual_01/obj1.png" alt="해" width="56" />
+									<p class="position-absolute fs12">오후 1 시 30 분</p>
+								</div>
+								<div class="obj obj6">
+									<img src="images/virtual_01/obj1.png" alt="해" width="56" />
+									<p class="position-absolute fs12">오후 2 시 30 분</p>
+								</div>
+								<div class="obj obj7">
+									<img src="images/virtual_01/obj1.png" alt="해" width="56" />
+									<p class="position-absolute fs12">오후 3 시 30 분</p>
+								</div>
+								<div class="move-obj">
+									<img src="images/virtual_01/obj1.png" alt="해" width="56" />
+									<p class="position-absolute fs12"><span class="ampm-txt">오전</span> <span class="hour2">9</span> 시 30 분</p>
+								</div>
+								
+							</div>
+							<div class="btn-flex">
+								<div class="btn-times">
+									<button type="button" class="btn-up">▲</button>
+									<button type="button" class="btn-down">▼</button>
+								</div>
+								<div class="time font-jalnan"><span class="hour">09</span>:30</div>
+							</div>
+							
+							<div class="btm-btn">
+								<div class="btn-toggle d-inline-block">
+									<button type="button" class="btn btn-fix" data-control="start">측정 시작</button>
+									<button type="button" class="btn btn-fix" data-control="pause">
+										정지
+									</button>
+								</div>
+								<!-- <button type="button" class="btn btn-fix btn-pause-hide" data-control="start">잠시 멈춤</button> -->
+								<button type="button" class="btn btn-fix btn-re" data-control="stop" data-target="#modalVirtualDay"> <i class="icon-re"></i>다시하기</button>
+							</div>
+						</div>
+						<div id="virtual-2" class="tab-pane" data-modal-type="night" data-start-count="11" data-reset-time="19"  data-ap-text="오후" data-de-time="7">
+							<div class="interaction interaction2" data-time="0" data-start-time="19">
+								<img src="images/virtual_01/virtual-bg2.jpg" alt="밤" />
+								<span class="fwd" style="top: 424px; left: 74px">동</span>
+								<span class="fwd" style="top: 424px; left: 325px">남</span>
+								<span class="fwd" style="top: 424px; left: 577px">서</span>
+								<div class="obj obj1">
+									<img src="images/virtual_01/obj2.png" alt="달" width="50" />
+									<p class="position-absolute fs12">오후 7 시<br />30 분</p>
+								</div>
+								<div class="obj obj2">
+									<img src="images/virtual_01/obj2.png" alt="달" width="50" />
+									<p class="position-absolute fs12">오후 8 시<br />30 분</p>
+								</div>
+								<div class="obj obj3">
+									<img src="images/virtual_01/obj2.png" alt="달" width="50" />
+									<p class="position-absolute fs12">오후 9 시<br />30 분</p>
+								</div>
+								<div class="obj obj4">
+									<img src="images/virtual_01/obj2.png" alt="달" width="50" />
+									<p class="position-absolute fs12">오후 10 시<br />30 분</p>
+								</div>
+								<div class="obj obj5">
+									<img src="images/virtual_01/obj2.png" alt="달" width="50" />
+									<p class="position-absolute fs12">오후 11 시<br />30 분</p>
+								</div>
+								<div class="obj obj6">
+									<img src="images/virtual_01/obj2.png" alt="달" width="50" />
+									<p class="position-absolute fs12">오전 12 시<br />30 분</p>
+								</div>
+								<div class="obj obj7">
+									<img src="images/virtual_01/obj2.png" alt="달" width="50" />
+									<p class="position-absolute fs12">오전 1 시<br />30 분</p>
+								</div>
+								<div class="obj obj8">
+									<img src="images/virtual_01/obj2.png" alt="달" width="50" />
+									<p class="position-absolute fs12">오전 2 시<br />30 분</p>
+								</div>
+								<div class="obj obj9">
+									<img src="images/virtual_01/obj2.png" alt="달" width="50" />
+									<p class="position-absolute fs12">오전 3 시<br />30 분</p>
+								</div>
+								<div class="obj obj10">
+									<img src="images/virtual_01/obj2.png" alt="달" width="50" />
+									<p class="position-absolute fs12">오전 4 시<br />30 분</p>
+								</div>
+								<div class="move-obj">
+									<img src="images/virtual_01/obj2.png" alt="달" width="50" />
+									<p class="position-absolute fs12"><span class="ampm-txt">오후</span> <span class="hour2">7</span> 시<br />30 분</p>
+								</div>
+							</div>
+							<div class="btn-flex">
+								<div class="btn-times">
+									<button type="button" class="btn-up">▲</button>
+									<button type="button" class="btn-down">▼</button>
+								</div>
+								<div class="time font-jalnan"><span class="hour">19</span>:30</div>
+							</div>
+							<div class="btm-btn">
+								<div class="btn-toggle d-inline-block">
+									<button type="button" class="btn btn-fix" data-control="start">측정 시작</button>
+									<button type="button" class="btn btn-fix" data-control="pause">
+										정지
+									</button>
+								</div>
+								
+								<button type="button" class="btn btn-fix btn-re" data-control="stop" data-target="#modalVirtualNight"> <i class="icon-re"></i>다시하기</button>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="modalVirtualDay" class="modal modal-virtual modal-half">
+		<div class="modal-content">
+			<div class="modal-dialog-centered">
+				<div class="modal-body">
+					<button type="button" title="닫기" class="icon-modal-close" data-dismiss="modal">닫기</button>
+					<div class="inner-modal-body">
+						<div class="dragdrop">
+							<div class="qbox drop-area">
+								하루 동안 태양은
+								<div>
+									<input type="text" id="text_077_01" class="sr-only" />
+									<div class="drop-fix drop-type-box" data-drop="1"></div>
+								</div>
+								쪽에서 <br />
+								<div>
+									<input type="text" id="text_077_02" class="sr-only" />
+									<div class="drop-fix drop-type-box" data-drop="2"></div>
+								</div>
+								쪽으로 위치가 달라진다.
+							</div>
+							<div class="bx drag-area">
+								<div class="drag-fix drag-type-box" data-drop="1">동</div>
+								<div class="drag-fix drag-type-box" data-drop="2">서</div>
+							</div>
+						</div>
+						<button type="button" class="btn btn-fix" data-dismiss="modal">완료</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="modalVirtualNight" class="modal modal-virtual modal-half">
+		<div class="modal-content">
+			<div class="modal-dialog-centered">
+				<div class="modal-body">
+					<button type="button" title="닫기" class="icon-modal-close" data-dismiss="modal">닫기</button>
+					<div class="inner-modal-body">
+						<div class="dragdrop">
+							<div class="qbox drop-area">
+								하루 동안 달은
+								<div>
+									<input type="text" id="text_077_03" class="sr-only" />
+									<div class="drop-fix drop-type-box" data-drop="1"></div>
+								</div>
+								쪽에서 <br />
+								<div>
+									<input type="text" id="text_077_04" class="sr-only" />
+									<div class="drop-fix drop-type-box" data-drop="2"></div>
+								</div>
+								쪽으로 위치가 달라진다.
+							</div>
+							<div class="bx drag-area">
+								<div class="drag-fix drag-type-box" data-text="동" data-drop="1">동</div>
+								<div class="drag-fix drag-type-box" data-text="서" data-drop="2">서</div>
+							</div>
+						</div>
+						<button type="button" class="btn" data-dismiss="modal">완료</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="modalVirtualHelp" class="modal modal-virtual modal-alert" data-dismiss="modal">
+		<div class="modal-content">
+			<div class="modal-dialog-centered">
+				<div class="modal-body">
+					<button type="button" title="닫기" class="icon-modal-close">닫기</button>
+					<strong class="title">도움말</strong>
+					<div class="bx-help">
+						<div class="media">
+							<i class="icon-btn icon-home"></i>
+							<div class="col">첫 화면으로 이동합니다.</div>
+						</div>
+						<div class="media">
+							<i class="icon-btn icon-help"></i>
+							<div class="col">활동에 필요한 안내를 확인할 수 있습니다.</div>
+						</div>
+						<div class="media">
+							<i class="icon-btn icon-rectangle"></i>
+							<div class="col">활동을 시작할 수 있습니다.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 보충자료 -->
+	<div id="modalReference1" class="modal">
+		<div class="modal-content">
+			<button type="button" title="닫기" class="icon-modal-close" data-dismiss="modal">닫기</button>
+			<div class="modal-header">
+				<h2 class="font-coo"><i class="icon-modal-folder"></i>보충 자료</h2>
+			</div>
+			<div class="reference modal-body">
+				<div class="reference-title">
+					<strong>음력 15 일에 달의 위치 변화가 잘 보이는 까닭</strong>
+				</div>
+				<div class="reference-content">
+					<p>날짜에 따라 달을 볼 수 있는 시간은 달라집니다. 음력 15 일에는 달이 저녁 무렵에 떠서 새벽 무렵에 지기 때문에 가장 오랫동안 달을 볼 수 있습니다. 따라서 이때 하루 동안 달의 위치 변화를 가장 잘 볼 수 있습니다.</p>
+					<div class="slider-wrap text-center mt20">
+						<div class="swiper-container">
+							<div class="swiper-wrapper align-items-center">
+								<div class="swiper-slide">
+									<img src="images/virtual_01/plus1-1.jpg" alt="" width="550" />
+									<p class="fwd font-komi" style="top: 176px; left: 97px">달이 보이지 않네.</p>
+									<p class="fwd date" style="top: 24px; left: 475px">음력 <span class="font-serif">1 </span>일</p>
+								</div>
+								<div class="swiper-slide">
+									<img src="images/virtual_01/plus1-2.jpg" alt="" width="550" />
+									<p class="fwd font-komi" style="top: 176px; left: 122px">달이 지려고 해.</p>
+									<p class="fwd date" style="top: 24px; left: 460px">음력 <span class="font-serif">7 </span>일</p>
+								</div>
+								<div class="swiper-slide">
+									<img src="images/virtual_01/plus1-3.jpg" alt="" width="550" />
+									<p class="fwd font-komi" style="top: 203px; left: 147px">
+										달이 높이<br />
+										떠 있네.
+									</p>
+									<p class="fwd date" style="top: 24px; left: 460px">음력 <span class="font-serif">15</span> 일</p>
+								</div>
+								<div class="swiper-slide">
+									<img src="images/virtual_01/plus1-4.jpg" alt="" width="550" />
+									<p class="fwd font-komi" style="top: 173px; right: 131px">
+										달이 아직도<br />
+										보이지 않네.
+									</p>
+									<p class="fwd date" style="top: 24px; left: 440px">음력 <span class="font-serif">22</span> 일</p>
+								</div>
+							</div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="modalReference2" class="modal">
+		<div class="modal-content">
+			<button type="button" title="닫기" class="icon-modal-close" data-dismiss="modal">닫기</button>
+			<div class="modal-header">
+				<h2 class="font-coo"><i class="icon-modal-folder"></i>보충 자료</h2>
+			</div>
+			<div class="reference modal-body">
+				<div class="reference-title">
+					<strong>하루 동안 태양과 달의 위치 변화</strong>
+				</div>
+				<div class="reference-content">
+					<p>태양과 달은 하루 동안 동쪽에서 떠서 서쪽으로 집니다. 즉, 하루 동안 태양과 달의 위치는 동쪽에서 서쪽으로 달라집니다.</p>
+					<div class="text-center mt20">
+						<div class="position-relative">
+							<img src="images/virtual_01/plus01.jpg" alt="" />
+							<p class="fwd" style="bottom: 5px; left: 10px">동</p>
+							<p class="fwd" style="bottom: 5px; left: 331px">남</p>
+							<p class="fwd" style="bottom: 5px; right: 10px">서</p>
+						</div>
+						<p class="mt5">▲ 하루 동안 태양의 위치 변화</p>
+						<div class="position-relative mt20">
+							<img src="images/virtual_01/plus02.jpg" alt="" />
+							<p class="fwd text-white" style="bottom: 5px; left: 10px">동</p>
+							<p class="fwd text-white" style="bottom: 5px; left: 331px">남</p>
+							<p class="fwd text-white" style="bottom: 5px; right: 10px">서</p>
+						</div>
+						<p class="mt5">▲ 하루 동안 달의 위치 변화</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 스스로확인해요 -->
+	<div id="modalSelfCheck" class="modal modal-self-check">
+		<div class="modal-content">
+			<button type="button" title="닫기" class="icon-modal-close" data-dismiss="modal">닫기</button>
+			<div class="modal-body">
+				<h2 class="self-check-title"><span class="text-hide">스스로</span> 확인해요</h2>
+				<div id="selfCheck01" data-qtype="text">
+					<assessmentItem data-qid="text_025_01" data-response-type="fillInTheBlank">
+						<itemBody>
+							<div class="question">
+								<span class="num font-coo">1.</span>
+								<div class="col">
+									<div class="text-q" data-answer="동쪽">
+										하루 동안 태양과 달의 위치는
+										<input type="text" id="text_025_01" class="form-control itx" />에서 서쪽으로 달라집니다.
+									</div>
+								</div>
+							</div>
+						</itemBody>
+						<correctResponse><span class="sr-only">동쪽</span></correctResponse>
+					</assessmentItem>
+					<div class="test-buttons">
+						<button type="button" class="btn-img btn-answer-check chk-data-button" data-toggle="answer-final" data-target="#selfCheck01" data-chance="1">확인하기</button>
+						<button type="button" class="btn-img btn-answer-refresh" data-toggle="answer-refresh" data-target="#selfCheck01">다시 하기</button>
+					</div>
+					<div class="answer-box">
+						<div class="answer-wrap">
+							<strong class="label-answer font-ka">정답</strong>
+							<div class="col text-blue">동쪽</div>
+						</div>
+					</div>
+				</div>
+				<div id="selfCheck02" data-qtype="etc">
+					<assessmentItem data-qid="textarea_025_01" data-response-type="essay">
+						<itemBody>
+							<div class="question">
+								<span class="num font-coo">2.</span>
+								<div class="col">
+									<p class="text-q"><span class="badge">의사소통 능력</span> 저녁 무렵에 동쪽에서 관측한 달의 위치는 시간이 지나면서 어느 방향으로 달라질지 이야기해 봅시다.</p>
+									<textarea id="textarea_025_01" class="form-control"></textarea>
+								</div>
+							</div>
+						</itemBody>
+					</assessmentItem>
+					<div class="test-buttons">
+						<button type="button" class="btn-img btn-answer-check chk-data-button" data-toggle="answer-final" data-target="#selfCheck02">확인하기</button>
+						<button type="button" class="btn-img btn-answer-refresh" data-toggle="answer-refresh" data-target="#selfCheck02">다시 하기</button>
+					</div>
+					<div class="answer-box">
+						<div class="answer-wrap">
+							<strong class="label-answer-ex font-ka">예시 답안</strong>
+							<div class="w-100 text-blue">저녁 무렵 동쪽에서 관측한 달의 위치는 시간이 지나면서 서쪽으로 달라질 것이다.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 스스로 평가해요 -->
+	<div id="modalSelf" class="modal modal-self modal-half">
+		<div class="modal-content">
+			<div class="modal-body">
+				<button type="button" title="닫기" class="icon-layer-clse" data-dismiss="modal"></button>
+				<strong class="self-check-title"><span class="text-hide">스스로</span> 평가해요</strong>
+				<p class="check-pencil font-komi">학습한 내용을 생각하며 선택해 봅시다.</p>
+				<ul class="self-check-list">
+					<li class="row">
+						<p class="col">하루 동안 태양과 달의 위치를 관측할 때 흥미와 호기심을 가지고 참여했나요?</p>
+						<div class="self-button text-hide">
+							<label> <input type="checkbox" name="self_074_01" value="self_074_01" id="self_074_01" class="sr-only" /><span>우수</span> </label>
+							<label class="self-button-2"> <input type="checkbox" name="self_074_01" value="self_074_02" id="self_074_02" class="sr-only" /><span>보통</span> </label>
+							<label class="self-button-3"> <input type="checkbox" name="self_074_01" value="self_074_03" id="self_074_03" class="sr-only" /><span>미흡</span> </label>
+						</div>
+					</li>
+					<li class="row">
+						<p class="col">하루 동안 태양과 달의 위치 변화를 관측했나요?</p>
+						<div class="self-button text-hide">
+							<label> <input type="checkbox" name="self_074_04" value="self_074_04" id="self_074_04" class="sr-only" /><span>우수</span> </label>
+							<label class="self-button-2"> <input type="checkbox" name="self_074_04" value="self_074_05" id="self_074_05" class="sr-only" /><span>보통</span> </label>
+							<label class="self-button-3"> <input type="checkbox" name="self_074_04" value="self_074_06" id="self_074_06" class="sr-only" /><span>미흡</span> </label>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- 실험관찰탐구 -->
+	<div id="modalExp" class="modal modal-exp">
+		<div class="modal-content">
+			<button type="button" title="닫기" class="icon-modal-close" data-dismiss="modal">닫기</button>
+			<div class="modal-exp-header">
+				<strong class="exp-header">실험 관찰<span>탐구</span></strong>
+				<span class="exp-label">『실험 관찰』 13 쪽</span>
+				<h2 class="modal-title">하루 동안 태양과 달의 위치 변화 관측하기</h2>
+			</div>
+			<div class="modal-body">
+				<div class="tab-content exp-content">
+					<div id="exp2" class="tab-pane active">
+						<div class="question">
+							<p><span class="label-exp font-ka">탐구</span><span class="text-circle mr5">2</span>하루 동안 달의 위치 변화 관측하기</p>
+						</div>
+						<p class="text-flex text-dot">
+							<i class="dot"></i>
+							<span class="col"> 관측 장소의 남쪽을 중심으로 기준이 될 수 있는 주변 건물이나 나무 등을 그리고, 1 시간 간격으로 관측한 달의 위치와 시각을 기록해 봅시다. </span>
+						</p>
+						<p class="text-info mt8">
+							<i class="icon-info"></i>
+							<span class="font-ka text-blue">도움말</span><span class="col"> 직접 관측이 어려울 경우 천체 관측 프로그램을 이용해 하루 동안 달의 위치 변화를 관측할 수도 있어요.</span>
+						</p>
+						<div class="position-relative">
+							<div class="table-round-wrp">
+								<table class="tb">
+									<tbody>
+										<tr>
+											<td class="text-center position-relative painting-area" colspan="3" style="height: 350px">
+												<canvas id="draw_024_02" class="draw" data-role="drawing" data-lineWidth="4" data-strokeStyle="#00b050" width="638" height="330"></canvas>
+											</td>
+										</tr>
+										<tr>
+											<td class="pl30">동</td>
+											<td class="text-center">남</td>
+											<td class="pr30 text-right">서</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="layer-wrp layer-wrp-draw">
+								<button type="button" class="icon-btn icon-pendraw" title="디교 펜쓰기" data-toggle="layer" data-target="#drawHelper">디교 펜쓰기</button>
+								<div id="drawHelper" class="layer layer-draw" data-toggle="layerClse">
+									<div class="draw-option">
+										<input id="spectrumInsert" type="color" value="#00b050" data-target="#draw_024_02" />
+										<div class="colorchart">
+											<button type="button" title="펜 검은색으로 변경" class="color01 no-style" onclick="changeColorPenDraw('#draw_024_02', '#000000')">색상 변경</button>
+											<button type="button" title="펜 빨간색으로 변경" class="color02 no-style" onclick="changeColorPenDraw('#draw_024_02', '#ff0000')">색상 변경</button>
+											<button type="button" title="펜 파란색으로 변경" class="color03 no-style" onclick="changeColorPenDraw('#draw_024_02', '#0000ff')">색상 변경</button>
+											<button type="button" title="펜 노란색으로 변경" class="color04 no-style" onclick="changeColorPenDraw('#draw_024_02', '#fdce54')">색상 변경</button>
+										</div>
+										<div class="linewidth">
+											<button type="button" title="펜 굵기 변경" class="line1 no-style" onclick="changeLineWidthPenDraw('#draw_024_02', 1)">굵기 변경</button>
+											<button type="button" title="펜 굵기 변경" class="line2 no-style" onclick="changeLineWidthPenDraw('#draw_024_02', 4)">굵기 변경</button>
+											<button type="button" title="펜 굵기 변경" class="line3 no-style" onclick="changeLineWidthPenDraw('#draw_024_02', 7)">굵기 변경</button>
+											<button type="button" title="펜 굵기 변경" class="line4 no-style" onclick="changeLineWidthPenDraw('#draw_024_02', 14)">굵기 변경</button>
+										</div>
+										<div class="btns">
+											<button type="button" title="펜 쓰기 영역 부분 삭제" class="icon-eraser ml10 mr10" onclick="eraserPenDraw('#draw_024_02',this);">펜 쓰기 영역 부분 삭제</button>
+											<button type="button" title="펜 쓰기 영역 전체 삭제" class="icon-del" onclick="deletePenDraw('#draw_024_02');">펜 쓰기 영역 전체 삭제</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bx">하루 동안 달은 <input type="text" id="input_024_03" class="form-control itx" />쪽에서 <input type="text" id="input_024_04" class="form-control itx" />쪽으로 위치가 달라진다.</div>
+						<div class="test-buttons btn-chk-wrap">
+							<button type="button" class="btn-img btn-answer-check" data-toggle="answer" data-target="#exp2">확인하기</button>
+							<div class="bubble-alert font-coo">스스로 <br />정리해 보세요.</div>
+							<button type="button" class="btn-img btn-answer-refresh" data-toggle="answer-refresh" data-target="#exp2">다시 하기</button>
+						</div>
+						<div class="ex-answer-box">
+							<strong class="label-answer-ex font-ka">예시 답안</strong>
+							<div class="media position-relative">
+								<img src="images/virtual_01/moon.png" width="613" alt="" />
+								<p class="fwd font-dt text-pink" style="top: 191.5px; left: 22.5px">오후 <span class="font-serif">7</span> 시 30 분</p>
+								<p class="fwd font-dt text-pink" style="top: 138.5px; left: 44.5px">오후 <span class="font-serif">8</span> 시 30 분</p>
+								<p class="fwd font-dt text-pink" style="top: 90.5px; left: 66.5px">오후 <span class="font-serif">9</span> 시 30 분</p>
+								<p class="fwd font-dt text-pink" style="top: 56px; left: 121.5px">오후 <span class="font-serif">10</span> 시 30 분</p>
+								<p class="fwd font-dt text-pink" style="top: 36px; left: 197px">오후 <span class="font-serif">11</span> 시 30 분</p>
+								<p class="fwd font-dt text-pink" style="top: 20.5px; left: 266px">오전 <span class="font-serif">0</span> 시 30 분</p>
+								<p class="fwd font-dt text-pink" style="top: 33px; left: 360px">오전 <span class="font-serif">1</span> 시 30 분</p>
+								<p class="fwd font-dt text-pink" style="top: 56px; left: 421px">오전 <span class="font-serif">2</span> 시 30 분</p>
+								<p class="fwd font-dt text-pink" style="top: 90.5px; left: 469px">오전 <span class="font-serif">3</span> 시 30 분</p>
+								<p class="fwd font-dt text-pink" style="top: 134.5px; left: 501px">오전 <span class="font-serif">4</span> 시 30 분</p>
+								<p class="fwd font-dt text-pink" style="top: 191.5px; left: 505px">오전 <span class="font-serif">5</span> 시 30 분</p>
+								<p class="fwd font-dt" style="top: 386px; left: 28px">동</p>
+								<p class="fwd font-dt" style="top: 386px; left: 300.5px">남</p>
+								<p class="fwd font-dt" style="top: 386px; left: 570px">서</p>
+							</div>
+							<p class="mt10">하루 동안 달은 <span class="text-blue">동</span>쪽에서 <span class="text-blue">서</span>쪽으로 위치가 달라진다.</p>
+						</div>
+					</div>
+					<div id="exp3" class="tab-pane active">
+						<strong class="arrange-title font-ka">정리해 볼까요</strong>
+						<p class="text-flex text-dot">
+							<i class="dot"></i>
+							<span class="col"> <span class="label-exp font-ka">탐구</span><span class="text-circle">1</span>과 <span class="label-exp font-ka">탐구</span><span class="text-circle">2</span>에서 하루 동안 관측한 태양과 달의 위치는 어떻게 달라졌나요? </span>
+						</p>
+						<div class="bx mt20">하루 동안 태양과 달은 <input type="text" id="input_025_03" class="form-control itx" /></div>
+						<div class="test-buttons btn-chk-wrap">
+							<button type="button" class="btn-img btn-answer-check" data-toggle="answer" data-target="#exp3">확인하기</button>
+							<div class="bubble-alert font-coo">스스로 <br />정리해 보세요.</div>
+							<button type="button" class="btn-img btn-answer-refresh" data-toggle="answer-refresh" data-target="#exp3">다시 하기</button>
+						</div>
+						<div class="ex-answer-box">
+							<strong class="label-answer-ex font-ka">예시 답안</strong>
+							<p>하루 동안 태양과 달은 <span class="text-blue">동쪽에서 서쪽으로 위치가 달라졌다.</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 정리 문제 -->
+	<div id="modalArrange" class="modal modal-test">
+		<div class="modal-content">
+			<button type="button" title="닫기" class="icon-modal-close" data-dismiss="modal">닫기</button>
+			<header class="modal-header">
+				<h2 class="font-coo"><i class="icon-modal-arrange"></i>정리 문제</h2>
+			</header>
+			<nav class="nav nav-test">
+				<button type="button" class="active" data-toggle="tab" data-target="#test01">1</button>
+				<button type="button" data-toggle="tab" data-target="#test02">2</button>
+				<button type="button" data-toggle="tab" data-target="#test03">3</button>
+			</nav>
+			<div class="modal-body">
+				<div class="tab-content">
+					<div id="test01" class="tab-pane active" data-qtype="multipleBlank">
+						<assessmentItem data-qid="etc_025_03" data-response-type="fillInTheBlank">
+							<itembody>
+								<div class="question">
+									<span class="num font-coo">1.</span>
+									<div class="col">
+										<div class="text-q media-body">다음은 하루 동안 태양의 위치 변화를 관측하는 방법과 관측한 결과를 기록한 것입니다. 빈칸에 들어갈 알맞은 말을 골라 옮겨 봅시다.</div>
+
+										<div class="bx drop-area d-block">
+											<ul>
+												<li class="text-flex">
+													<span>㉮</span>
+													<span class="col pl4">태양을 관측할 장소를 정한다.</span>
+												</li>
+												<li class="text-flex">
+													<span class="mt5">㉯</span>
+													<span class="col pl4">
+														<div class="drop-answer" data-answer="나침반">
+															<input type="text" id="etc_025_03" class="sr-only" />
+															<div class="drop-item drop-type-box"></div>
+														</div>
+														을/를 이용해 동쪽, 남쪽, 서쪽을 찾는다.
+													</span>
+												</li>
+												<li class="text-flex">
+													<span>㉰</span>
+													<span class="col pl4">남쪽을 바라보고 선 뒤, 남쪽을 중심으로 기준이 될 수 있는 주변 건물이나 나무 등을 찾아 그린다.</span>
+												</li>
+												<li class="text-flex">
+													<span>㉱</span>
+													<span class="col pl4">태양 관측 안경을 쓰고 같은 장소에서 하루 동안 1 시간 간격으로 태양을 관측한다.</span>
+												</li>
+												<li class="text-flex">
+													<span class="mt5">㉲</span>
+													<span class="col pl4">
+														하루 동안 관측한 태양은
+														<div class="drop-answer" data-answer="동쪽">
+															<input type="text" id="etc_025_04" class="sr-only" />
+															<div class="drop-item drop-type-box"></div>
+														</div>
+														에서
+														<div class="drop-answer" data-answer="서쪽">
+															<input type="text" id="etc_025_05" class="sr-only" />
+															<div class="drop-item drop-type-box"></div>
+														</div>
+														으로 위치가 달라진다.
+													</span>
+												</li>
+											</ul>
+											<div class="position-relative text-center mt10">
+												<img src="images/virtual_01/sun.png" width="250" alt="" />
+												<span class="fwd fs12" style="bottom: 0px; left: 179px">동</span>
+												<span class="fwd fs12" style="bottom: 0px; left: 288px">남</span>
+												<span class="fwd fs12" style="bottom: 0px; left: 356px">서</span>
+											</div>
+										</div>
+
+										<p class="dragdrop-info mb10 mt20">알맞은 곳에 옮겨서 놓아 보세요.</p>
+
+										<div class="bx drag-area justify-content-around">
+											<div class="drag-item drag-type-box">동쪽</div>
+											<div class="drag-item drag-type-box">나침반</div>
+											<div class="drag-item drag-type-box">서쪽</div>
+										</div>
+									</div>
+								</div>
+							</itembody>
+							<correctResponse><span class="sr-only">나침반, 동쪽, 서쪽</span></correctResponse>
+							<modalFeedback><span class="sr-only">태양을 관측할 장소를 정한 뒤 나침반을 이용해 동쪽, 남쪽, 서쪽을 찾고, 남쪽을 바라보고 선 뒤 남쪽을 중심으로 기준이 될 수 있는 주변 건물이나 나무 등을 찾아 그립니다. 태양 관측 안경을 쓰고 같은 장소에서 1 시간 간격으로 태양을 관측하면 태양의 위치가 동쪽에서 서쪽으로 달라지는 것을 알 수 있습니다.</span></modalFeedback>
+						</assessmentItem>
+						<div class="test-buttons">
+							<button type="button" class="btn-img btn-answer-check chk-data-button" data-toggle="answer-final" data-target="#test01" data-chance="2">확인하기</button>
+							<button type="button" class="btn-img btn-answer-refresh drop-refresh" data-toggle="answer-refresh" data-target="#test01">다시 하기</button>
+						</div>
+						<div class="answer-box" data-answer="hint">
+							<div class="answer-wrap">
+								<strong class="label-answer-hint font-ka">힌트</strong>
+								<div class="w-100">하루 동안 태양은 동쪽에서 떠서 서쪽으로 집니다.</div>
+							</div>
+						</div>
+						<div class="answer-bottom">
+							<div class="answer-box">
+								<div class="answer-wrap">
+									<strong class="label-answer font-ka">정답</strong>
+									<div class="col text-blue">나침반, 동쪽, 서쪽</div>
+								</div>
+								<div class="answer-wrap">
+									<strong class="label-answer-feed font-ka">해설</strong>
+									<div class="w-100">태양을 관측할 장소를 정한 뒤 나침반을 이용해 동쪽, 남쪽, 서쪽을 찾고, 남쪽을 바라보고 선 뒤 남쪽을 중심으로 기준이 될 수 있는 주변 건물이나 나무 등을 찾아 그립니다. 태양 관측 안경을 쓰고 같은 장소에서 1 시간 간격으로 태양을 관측하면 태양의 위치가 동쪽에서 서쪽으로 달라지는 것을 알 수 있습니다.</div>
+								</div>
+							</div>
+							<div class="answer-btn-wrong hide">
+								<button type="button" class="btn-img btn-vod" data-toggle="modal" data-target="#modalAnswerVideo1">개념 영상</button>
+								<div class="bubble-alert font-coo">개념 영상을 보며<br />배운 내용을 다시 생각해 봅시다.</div>
+							</div>
+							<div class="answer-btn hide">
+								<button type="button" class="btn-img btn-next">다음 문제</button>
+								<div class="bubble-alert font-coo">다음 <br />문제를 풀어 봅시다.</div>
+							</div>
+						</div>
+					</div>
+					<div id="test02" class="tab-pane" data-qtype="radio">
+						<assessmentItem data-qid="radio_025_07" data-response-type="trueFalse">
+							<itemBody>
+								<div class="question">
+									<span class="num font-coo">2.</span>
+									<div class="col">
+										<div class="text-q">하루 동안 보름달의 위치 변화에 대한 설명으로 옳으면 ◯, 옳지 <span class="underline">않으면</span> ✕를 골라 봅시다.</div>
+										<div class="text-center position-relative">
+											<img src="images/virtual_01/ask02.png" alt="이미지 요청" />
+											<span class="fwd text-white fs16" style="bottom: 5px; left: 9px">동</span>
+											<span class="fwd text-white fs16" style="bottom: 5px; left: 312px">남</span>
+											<span class="fwd text-white fs16" style="bottom: 5px; left: 613px">서</span>
+											<span class="fwd text-white fs18" style="bottom: 85px; left: 82px">㉠</span>
+											<span class="fwd text-white fs18" style="bottom: 186px; left: 324px">㉡</span>
+											<span class="fwd text-white fs18" style="bottom: 84px; left: 572px">㉢</span>
+										</div>
+										<div class="text-flex fw400 mt20">
+											<span class="pr5">(1)</span>
+											<div class="col pr20">보름달은 오후 7시 무렵에 ㉠에서 볼 수 있다.</div>
+											<div>
+												(
+												<div class="answer-wrp q-label-wrp">
+													<label class="q-label">
+														<input type="radio" name="radio_025_07" id="radio_025_07" value="O" class="sr-only" data-answer="" />
+														<span>◯</span> </label
+													>,
+													<label class="q-label">
+														<input type="radio" name="radio_025_07" id="radio_025_08" value="X" class="sr-only" />
+														<span>✕</span></label
+													>
+												</div>
+												)
+											</div>
+										</div>
+										<div class="text-flex fw400 mt20">
+											<span class="pr5">(2)</span>
+											<div class="col pr20">자정 무렵에 보름달은 ㉡에서 볼 수 있다.</div>
+											<div>
+												(
+												<div class="answer-wrp q-label-wrp">
+													<label class="q-label">
+														<input type="radio" name="radio_025_09" id="radio_025_09" value="O" class="sr-only" data-answer="" />
+														<span>◯</span> </label
+													>,
+													<label class="q-label">
+														<input type="radio" name="radio_025_09" id="radio_025_10" value="X" class="sr-only" />
+														<span>✕</span></label
+													>
+												</div>
+												)
+											</div>
+										</div>
+										<div class="text-flex fw400 mt20">
+											<span class="pr5">(3)</span>
+											<div class="col pr20">저녁 무렵에 ㉢에서 관측한 보름달은 시간이 지나면 ㉡을 지나 ㉠으로 위치가 달라진다.</div>
+											<div>
+												(
+												<div class="answer-wrp q-label-wrp">
+													<label class="q-label">
+														<input type="radio" name="radio_025_11" id="radio_025_11" value="O" class="sr-only" />
+														<span>◯</span> </label
+													>,
+													<label class="q-label">
+														<input type="radio" name="radio_025_11" id="radio_025_12" value="X" class="sr-only" data-answer="" />
+														<span>✕</span></label
+													>
+												</div>
+												)
+											</div>
+										</div>
+									</div>
+								</div>
+							</itemBody>
+							<correctResponse><span class="sr-only">O,O,X,</span></correctResponse>
+							<modalFeedback><span class="sr-only">하루 동안 달은 동쪽에서 서쪽으로 위치가 달라집니다.</span></modalFeedback>
+						</assessmentItem>
+						<div class="test-buttons">
+							<button type="button" class="btn-img btn-answer-check" data-toggle="answer-final" data-target="#test02" data-chance="2">확인하기</button>
+							<button type="button" class="btn-img btn-answer-refresh" data-toggle="answer-refresh" data-target="#test02">다시 하기</button>
+						</div>
+						<div class="answer-box" data-answer="hint">
+							<div class="answer-wrap">
+								<strong class="label-answer-hint font-ka">힌트</strong>
+								<div class="w-100">보름달은 오후 6시 무렵에 동쪽에서 뜨고, 시간이 지나면서 위치가 달라집니다.</div>
+							</div>
+						</div>
+						<div class="answer-bottom">
+							<div class="answer-box">
+								<div class="answer-wrap">
+									<strong class="label-answer font-ka">정답</strong>
+									<div class="col">(1) <span class="text-blue">O</span>, (2) <span class="text-blue">O</span>, (3) <span class="text-blue">X</span></div>
+								</div>
+								<div class="answer-wrap">
+									<strong class="label-answer-feed font-ka">해설</strong>
+									<div class="w-100">하루 동안 달은 동쪽에서 서쪽으로 위치가 달라집니다.</div>
+								</div>
+							</div>
+							<div class="answer-btn-wrong hide">
+								<button type="button" class="btn-img btn-vod" data-toggle="modal" data-target="#modalAnswerVideo2">개념 영상</button>
+								<div class="bubble-alert font-coo">개념 영상을 보며<br />배운 내용을 다시 생각해 봅시다.</div>
+							</div>
+							<div class="answer-btn hide">
+								<button type="button" class="btn-img btn-next">다음 문제</button>
+								<div class="bubble-alert font-coo">다음 <br />문제를 풀어 봅시다.</div>
+							</div>
+						</div>
+					</div>
+					<div id="test03" class="tab-pane" data-qtype="radio">
+						<assessmentItem data-qid="select_025_01" data-response-type="singleChoice">
+							<itemBody>
+								<div class="question">
+									<span class="num font-coo">3.</span>
+									<div class="col">
+										<div class="text-q">다음 중 하루 동안 달의 위치 변화를 나타낸 것으로 옳은 것을 골라 봅시다.</div>
+										<div class="text-center position-relative">
+											<img src="images/virtual_01/ask02.png" alt="" />
+											<span class="fwd text-white fs16" style="bottom: 5px; left: 9px">동</span>
+											<span class="fwd text-white fs16" style="bottom: 5px; left: 312px">남</span>
+											<span class="fwd text-white fs16" style="bottom: 5px; left: 613px">서</span>
+											<span class="fwd text-white fs18" style="bottom: 85px; left: 82px">㉠</span>
+											<span class="fwd text-white fs18" style="bottom: 186px; left: 324px">㉡</span>
+											<span class="fwd text-white fs18" style="bottom: 84px; left: 572px">㉢</span>
+										</div>
+										<ul class="answersheet">
+											<li>
+												<label class="text-flex">
+													<input type="radio" name="select_025_01" value="①" id="select_025_01" />
+													<b class="mark">①</b>
+													<span class="col"> ㉢ → ㉠ </span>
+												</label>
+											</li>
+											<li>
+												<label class="text-flex">
+													<input type="radio" name="select_025_01" value="②" id="select_025_02" />
+													<b class="mark">②</b>
+													<span class="col"> ㉢ → ㉡ </span>
+												</label>
+											</li>
+											<li>
+												<label class="text-flex">
+													<input type="radio" name="select_025_01" value="③" id="select_025_03" data-answer="" />
+													<b class="mark">③</b>
+													<span class="col"> ㉠ → ㉡ → ㉢ </span>
+												</label>
+											</li>
+											<li>
+												<label class="text-flex">
+													<input type="radio" name="select_025_01" value="④" id="select_025_04" />
+													<b class="mark">④</b>
+													<span class="col"> ㉢ → ㉡ → ㉠ </span>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</itemBody>
+							<correctResponse><span class="sr-only">③</span></correctResponse>
+							<modalFeedback><span class="sr-only">하루 동안 달은 동쪽에서 서쪽으로 위치가 달라집니다.</span></modalFeedback>
+						</assessmentItem>
+						<div class="test-buttons">
+							<button type="button" class="btn-img btn-answer-check" data-toggle="answer-final" data-target="#test03" data-chance="2">확인하기</button>
+							<button type="button" class="btn-img btn-answer-refresh" data-toggle="answer-refresh" data-target="#test03">다시 하기</button>
+						</div>
+						<div class="answer-box" data-answer="hint">
+							<div class="answer-wrap">
+								<strong class="label-answer-hint font-ka">힌트</strong>
+								<div class="w-100">저녁 무렵과 한밤중에 달을 관찰하면 위치가 달라진 것을 볼 수 있습니다.</div>
+							</div>
+						</div>
+						<div class="answer-bottom">
+							<div class="answer-box">
+								<div class="answer-wrap">
+									<strong class="label-answer font-ka">정답</strong>
+									<div class="col text-blue">③</div>
+								</div>
+								<div class="answer-wrap">
+									<strong class="label-answer-feed font-ka">해설</strong>
+									<div class="w-100">하루 동안 달은 동쪽에서 서쪽으로 위치가 달라집니다.</div>
+								</div>
+							</div>
+							<div class="answer-btn-wrong hide">
+								<button type="button" class="btn-img btn-vod" data-toggle="modal" data-target="#modalAnswerVideo3">개념 영상</button>
+								<div class="bubble-alert font-coo">개념 영상을 보며<br />배운 내용을 다시 생각해 봅시다.</div>
+							</div>
+							<div class="answer-btn">
+								<button type="button" class="btn-img btn-next last">처음으로</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 정리 문제 비디오 -->
+	<div id="modalAnswerVideo1" class="modal modal-video modal-answer-video">
+		<div class="modal-content">
+			<div class="modal-body">
+				<button type="button" title="닫기" class="icon-modal-close" data-dismiss="modal">닫기</button>
+				<h2 class="modal-title">개념 영상</h2>
+				<!-- 비디오 -->
+				<video poster="media/summary/612_025_c_1.jpg" class="video-js" data-content_index="content_cls_video" controls="controls" webkit-playsinline="" playsinline="" preload="none" title="개념 영상">
+					<source src="media/summary/612_025_c_1.mp4" type="video/mp4" />
+					<track kind="subtitles" srclang="ko" src="media/summary/612_025_c_1.vtt" />
+				</video>
+				<!-- 자막 -->
+				<div class="narr">
+					<div class="box">
+						<p class="hide" data-toggle="video-caption" data-playtime="6,11">하루 동안 태양은 동쪽에서 남쪽을 지나 서쪽으로 위치가 달라집니다.</p>
+						<p class="hide" data-toggle="video-caption" data-playtime="13,18">하루 동안 달은 동쪽에서 남쪽을 지나 서쪽으로 위치가 달라집니다.</p>
+						<p class="hide" data-toggle="video-caption" data-playtime="21,25">하루 동안 태양과 달은 동쪽에서 서쪽으로 위치가 달라집니다.</p>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="btn-narr">자막 보기</button>
+		</div>
+	</div>
+	<div id="modalAnswerVideo2" class="modal modal-video modal-answer-video">
+		<div class="modal-content">
+			<div class="modal-body">
+				<button type="button" title="닫기" class="icon-modal-close" data-dismiss="modal">닫기</button>
+				<h2 class="modal-title">개념 영상</h2>
+				<!-- 비디오 -->
+				<video poster="media/summary/612_025_c_1.jpg" class="video-js" data-content_index="content_cls_video" controls="controls" webkit-playsinline="" playsinline="" preload="none" title="개념 영상">
+					<source src="media/summary/612_025_c_1.mp4" type="video/mp4" />
+					<track kind="subtitles" srclang="ko" src="media/summary/612_025_c_1.vtt" />
+				</video>
+				<!-- 자막 -->
+				<div class="narr">
+					<div class="box">
+						<p class="hide" data-toggle="video-caption" data-playtime="6,11">하루 동안 태양은 동쪽에서 남쪽을 지나 서쪽으로 위치가 달라집니다.</p>
+						<p class="hide" data-toggle="video-caption" data-playtime="13,18">하루 동안 달은 동쪽에서 남쪽을 지나 서쪽으로 위치가 달라집니다.</p>
+						<p class="hide" data-toggle="video-caption" data-playtime="21,25">하루 동안 태양과 달은 동쪽에서 서쪽으로 위치가 달라집니다.</p>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="btn-narr">자막 보기</button>
+		</div>
+	</div>
+	<div id="modalAnswerVideo3" class="modal modal-video modal-answer-video">
+		<div class="modal-content">
+			<div class="modal-body">
+				<button type="button" title="닫기" class="icon-modal-close" data-dismiss="modal">닫기</button>
+				<h2 class="modal-title">개념 영상</h2>
+				<!-- 비디오 -->
+				<video poster="media/summary/612_025_c_1.jpg" class="video-js" data-content_index="content_cls_video" controls="controls" webkit-playsinline="" playsinline="" preload="none" title="개념 영상">
+					<source src="media/summary/612_025_c_1.mp4" type="video/mp4" />
+					<track kind="subtitles" srclang="ko" src="media/summary/612_025_c_1.vtt" />
+				</video>
+				<!-- 자막 -->
+				<div class="narr">
+					<div class="box">
+						<p class="hide" data-toggle="video-caption" data-playtime="6,11">하루 동안 태양은 동쪽에서 남쪽을 지나 서쪽으로 위치가 달라집니다.</p>
+						<p class="hide" data-toggle="video-caption" data-playtime="13,18">하루 동안 달은 동쪽에서 남쪽을 지나 서쪽으로 위치가 달라집니다.</p>
+						<p class="hide" data-toggle="video-caption" data-playtime="21,25">하루 동안 태양과 달은 동쪽에서 서쪽으로 위치가 달라집니다.</p>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="btn-narr">자막 보기</button>
+		</div>
+	</div>
+
+	<!-- 문항 확인 메시지 -->
+	<div id="answerMsgCheck" class="modal modal-alert">
+		<div class="modal-dialog-centered" data-dismiss="modal">
+			<img src="images/common/answer.png" width="375" alt="정답을 확인해 보세요." />
+		</div>
+	</div>
+	<div id="answerExMsgCheck" class="modal modal-alert">
+		<div class="modal-dialog-centered" data-dismiss="modal">
+			<img src="images/common/answerEx.png" width="375" alt="예시 답안을 확인해 보세요." />
+		</div>
+	</div>
+	<div id="answerMsgGood" class="modal modal-alert">
+		<div class="modal-dialog-centered" data-dismiss="modal">
+			<img src="images/common/good.png" width="375" alt="정답입니다." />
+		</div>
+	</div>
+	<div id="answerMsgOnemore" class="modal modal-alert">
+		<div class="modal-dialog-centered" data-dismiss="modal">
+			<img src="images/common/onemore.png" width="375" alt="다시 한번 생각해 보세요." />
+		</div>
+	</div>
+	<div id="answerMsgHint" class="modal modal-alert">
+		<div class="modal-dialog-centered" data-dismiss="modal">
+			<img src="images/common/hint.png" width="375" alt="힌트를 참고해 보세요." />
+		</div>
+	</div>
+
+	<!--멀티미디어 목록 시작-->
+	<div class="display:none;">
+		<p data-dtext_index="dtext_cls_image" title="실험 관찰_하루 동안 관측한 달의 위치 변화"></p>
+		<p data-dtext_index="dtext_cls_image" title="용어 사전_정월대보름 달집을 태우는 모습"></p>
+		<p data-dtext_index="dtext_cls_image" title="보충 자료_같은 시각 여러 날 동안 보이는 달의 위치"></p>
+		<p data-dtext_index="dtext_cls_image" title="하루 동안 달의 위치 변화 관측"></p>
+		<p data-dtext_index="dtext_cls_image" title="가상 실험실_하루 동안 태양과 달의 위치 변화"></p>
+		<p data-dtext_index="dtext_cls_image" title="보충 자료_하루 동안 태양과 달의 위치 변화"></p>
+		<p data-dtext_index="dtext_cls_video" title="개념 영상_하루 동안 태양과 달의 위치 변화"></p>
+		<p data-dtext_index="dtext_cls_image" title="정리 문제1_하루 동안 태양의 위치 변화"></p>
+		<p data-dtext_index="dtext_cls_image" title="정리 문제2_하루 동안 달의 위치 변화"></p>
+		<p data-dtext_index="dtext_cls_image" title="정리 문제3_하루 동안 달의 위치 변화"></p>
+	</div>
+	<!--멀티미디어 목록 끝-->
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<!-- page -->
+	<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
+	<script type="text/javascript" src="js/basic-slider.js"></script>
+	<script type="text/javascript" src="js/spectrum.js"></script>
+	<script type="text/javascript" src="js/drawing.js"></script>
+	<script type="text/javascript" src="js/video-js.js"></script>
+	<script type="text/javascript" src="js/video.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.custom.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+	<script type="text/javascript" src="js/dragdrop.fix.js"></script>
+	<script type="text/javascript" src="js/dragdrop.js"></script>
+	<script type="text/javascript" src="js/virtual_01.js"></script>
+</body>
+</html>

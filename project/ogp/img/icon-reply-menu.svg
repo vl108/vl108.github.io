@@ -1,0 +1,8 @@
+<svg id="구성_요소_1_1" data-name="구성 요소 1 – 1" xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15">
+  <rect id="사각형_1394" data-name="사각형 1394" width="11" height="15" fill="none"/>
+  <g id="그룹_1597" data-name="그룹 1597" transform="translate(3.886)">
+    <circle id="타원_532" data-name="타원 532" cx="1.5" cy="1.5" r="1.5" transform="translate(0.114)" fill="#bbb"/>
+    <circle id="타원_533" data-name="타원 533" cx="1.5" cy="1.5" r="1.5" transform="translate(0.114 6)" fill="#bbb"/>
+    <circle id="타원_534" data-name="타원 534" cx="1.5" cy="1.5" r="1.5" transform="translate(0.114 12)" fill="#bbb"/>
+  </g>
+</svg>

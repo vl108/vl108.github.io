@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="telephone=no" name="format-detection">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Document</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/lightbox.min.css">
+<link rel="stylesheet" href="css/jquery-ui.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/common.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <!-- header -->
+    <header id="hd">
+        <div class="container">
+            <a href="#" class="hd-back d-lg-none"><i class="icon-back">뒤로</i></a>
+            <h1 class="hd-logo"><a href="#"><img src="img/logo.svg" alt="OF 덴티스"></a></h1>
+            <ul class="hd-navi d-xl-flex">
+                <li>
+                    <a href="#">Courses</a>
+                    <ul class="depth">
+                        <li><a href="#">Offline Courses</a></li>
+                        <li><a href="#">Online Courses</a></li>
+                        <li><a href="#">Speakers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Contents</a>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">Posting</a></li>
+                        <li><a href="#">Clinical Cases</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Story</a></li>
+                <li><a href="#">OF Market</a></li>
+                <li><a href="#">Opening</a></li>
+                <li><a href="#">Event</a></li>
+            </ul>
+            <div class="hd-side">
+                <a href="#" class="icon-user d-xl-block" title="마이페이지">마이페이지</a>
+                <!-- [D] 로그인 이후에만 노출 -->
+                <button type="button" class="icon-user btn-mypage d-xl-none" title="마이페이지">마이페이지</button>
+                <a href="#" title="장바구니" class="position-relative">
+                    <span class="icon-cart">장바구니</span>
+                    <span class="cart-num">0</span>
+                </a>
+                <a href="#" title="내 찜 내역" class="icon-like">내 찜 내역</a>
+                <!-- [D] default
+                    <div class="d-xl-block"><b>홍길동</b>님</div>
+                    <a href="#" class="text-muted d-xl-block mr-xl-2">로그아웃</a>
+                -->
+                <a href="#" class="d-xl-block">로그인</a>
+                <a href="#" class="d-xl-block">회원가입</a>
+                <!-- // -->
+                <a href="#search" class="icon-search btn-search d-xl-none">검색</a>
+                 <form action="" class="form-search d-xl-block">
+                    <input type="text" class="form-control" name="" value="" placeholder="검색어를 입력해 주세요" title="검색">
+                    <button type="submit"><i class="icon-search">검색</i></button>
+                </form>
+            </div>
+            <button type="button" class="gnb-toggle d-xl-none"><span class="text-hide">메뉴열기/닫기</span></button>
+        </div>
+        <div id="search">
+            <div class="container">
+                <form action="">
+                    <div class="hd-search">
+                        <input type="text" name="" value="" placeholder="검색어를 입력해 주세요">
+                        <i></i>
+                        <button type="submit"><i class="icon-search">검색</i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <nav id="gnb">
+            <div class="gnb-bg"></div>
+            <div class="gnb-util">
+            <!-- 
+                <div><i class="icon-user"></i> <b>홍길동</b>님</div>
+                <a href="#" class="text-muted">로그아웃</a>
+                
+                [D] default
+                <a href="#">로그인</a> 
+                <a href="#">회원가입</a>
+            -->
+            </div>
+            <ul class="gnb">
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Courses</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">Offline Courses</a></li>
+                        <li><a href="#">Online Courses</a></li>
+                        <li><a href="#">Speakers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Market</a>
+                    </strong>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Contents</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">Posting</a></li>
+                        <li><a href="#">Clinical Cases</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Story</a>
+                    </strong>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Opening</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">상담신청</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Event</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">진행중 이벤트</a></li>
+                        <li><a href="#">종료 이벤트</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <nav id="mnb" class="mypage-menu">
+            <div class="mypage-menu-hd">
+                <button type="button" class="icon-close btn-mypage">닫기</button>
+                <p>만나서 반가워요, <b class="name">홍길동</b> 님</p>
+                <div class="hd-m-account">
+                    <a href="#" class="btn btn-outline-primary btn-xs">로그아웃</a>
+                </div>
+            </div>
+            <ul class="gnb">
+                <li>
+                    <a href="#">수강신청 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">오프라인 교육 신청 내역</a></li>
+                        <li><a href="#">온라인 교육 신청 내역</a></li>
+                        <li><a href="#">취소/환불 내역</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#">마켓 주문 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">마켓 주문 내역</a></li>
+                        <li class="active"><a href="#">반품/교환 내역</a></li>
+                        <li><a href="#">취소/환불 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">리뷰 / 댓글 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">내가 작성한 리뷰</a></li>
+                        <li><a href="#">내가 작성한 댓글</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">문의 / 상담 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">문의 내역</a></li>
+                        <li><a href="#">상담 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">찜 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">내 찜 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">포인트 / 결제 관리</a>
+                    <ul class="depth">
+                        <li><a href="#">보유 포인트</a></li>
+                        <li><a href="#">충전 / 계좌 관리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">쿠폰 관리</a>
+                    <ul class="depth">
+                        <li><a href="#">나의 보유 쿠폰</a></li>
+                        <li><a href="#">발급 가능 쿠폰</a></li>
+                        <li><a href="#">지난 쿠폰 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">회원 정보</a>
+                    <ul class="depth">
+                        <li><a href="#">배송지 목록</a></li>
+                        <li><a href="#">회원 정보 수정</a></li>
+                        <li><a href="#">회원 탈퇴</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">환경 설정</a>
+                    <ul class="depth">
+                        <li class="active"><a href="#">앱 설정</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+
+    <!-- content -->
+    <main id="ct">
+<!-- 페이지시작 -->
+<div class="sub-page">
+    <div class="container">
+        <div class="mypage">
+            <div class="mypage-hd">
+                <h2 class="content-title"><span>마이페이지</span></h2>
+                    <p>만나서 반가워요, <span class="name">김덴티</span> 님</p>
+                <ul class="lnb">
+                    <li>
+                        <a href="06.마이페이지_수강신청내역_오프라인교육신청내역.html">수강신청 내역</a>
+                        <ul class="depth">
+                            <li><a href="06.마이페이지_수강신청내역_오프라인교육신청내역.html">오프라인 교육 신청 내역</a></li>
+                            <li class="active"><a href="06.마이페이지_수강신청내역_온라인교육신청내역.html">온라인 교육 신청 내역</a></li>
+                            <li><a href="06.마이페이지_수강신청내역_취소환불내역.html">취소/환불 내역</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    <a href="06.마이페이지_마켓주문내역.html">마켓 주문 내역</a>
+                        <ul class="depth">
+                            <li><a href="06.마이페이지_마켓주문내역.html">마켓 주문 내역</a></li>
+                            <li><a href="06.마이페이지_마켓주문내역_반품교환내역.html">반품/교환 내역</a></li>
+                            <li><a href="06.마이페이지_마켓주문내역_취소환불내역.html">취소/환불 내역</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="06.마이페이지_리뷰댓글내역_내가작성한리뷰.html">리뷰 / 댓글 내역</a>
+                        <ul class="depth">
+                            <li><a href="06.마이페이지_리뷰댓글내역_내가작성한리뷰.html">내가 작성한 리뷰</a></li>
+                            <li><a href="06.마이페이지_리뷰댓글내역_내가작성한댓글.html">내가 작성한 댓글</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="06.마이페이지_문의상담내역_문의내역(course).html">문의 / 상담 내역</a>
+                        <ul class="depth">
+                            <li><a href="06.마이페이지_문의상담내역_문의내역(course).html">문의 내역</a></li>
+                            <li><a href="06.마이페이지_문의상담내역_상담내역(counseling).html">상담 내역</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="06.마이페이지_찜내역_내찜내역(courses).html">찜 내역</a>
+                        <ul class="depth">
+                            <li><a href="06.마이페이지_찜내역_내찜내역(courses).html">내 찜 내역</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="06.마이페이지_포인트결제관리_포인트.html">포인트 / 결제 관리</a>
+                        <ul class="depth">
+                            <li><a href="06.마이페이지_포인트결제관리_포인트.html">보유 포인트</a></li>
+                            <li><a href="06.마이페이지_포인트결제관리_포인트충전.html">충전 / 계좌 관리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="06.마이페이지_쿠폰관리_나의보유쿠폰.html">쿠폰 관리</a>
+                        <ul class="depth">
+                            <li><a href="06.마이페이지_쿠폰관리_나의보유쿠폰.html">나의 보유 쿠폰</a></li>
+                            <li><a href="06.마이페이지_쿠폰관리_발급가능쿠폰.html">발급 가능 쿠폰</a></li>
+                            <li><a href="06.마이페이지_쿠폰관리_지난쿠폰내역.html">지난 쿠폰 내역</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="06.마이페이지_회원정보_배송지목록.html">회원 정보</a>
+                        <ul class="depth">
+                            <li><a href="06.마이페이지_회원정보_배송지목록.html">배송지 목록</a></li>
+                            <li><a href="06.마이페이지_회원정보_회원정보수정.html">회원 정보 수정</a></li>
+                            <li><a href="06.마이페이지_회원정보_회원탈퇴.html">회원 탈퇴</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="mypage-template">
+                <h3 class="tit">온라인 교육 신청 내역</h3>
+                <div class="classroom">
+                    <div class="player-wrp">
+                        <div class="player dentis-ytp">
+                            <iframe src="https://www.youtube.com/embed/o5OdiAbhc1s" frameborder="0"></iframe>
+                        </div>
+                        <div class="player-list">
+                            <div class="tb-body">
+                                <table class="tb">
+                                    <colgroup><col width="15%"><col></colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">단원</th>
+                                            <th scope="col">강의명</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <table class="tb tb-course">
+                                    <tbody>
+                                        <tr class="active">
+                                            <td>1강</td>
+                                            <td class="text-left">
+                                                <div class="courses-name">
+                                                    <a href="#">
+                                                        1. Basic Implant Training Course Introduction</a>
+                                                        <div class="courses-btns">
+                                                            <button type="button">
+                                                                <span class="sr-only">강의보기</span>
+                                                            </button>
+                                                        </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2강</td>
+                                            <td class="text-left">
+                                                <div class="courses-name">
+                                                    <a href="#">2. Introduction of Dental Implant</a>
+                                                    <div class="courses-btns">
+                                                        <button type="button">
+                                                            <span class="sr-only">강의보기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3강</td>
+                                            <td class="text-left">
+                                                <div class="courses-name">
+                                                    <a href="#">3. Pellentesque ligula nulla, mattis quis felis vitae, elementum hendrerit elit. Curabitur at tristique purus, faucibus interdum magna.</a>
+                                                    <div class="courses-btns">
+                                                        <button type="button">
+                                                            <span class="sr-only">강의보기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4강</td>
+                                            <td class="text-left">
+                                                <div class="courses-name">
+                                                    <a href="#">4. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis odio quis metus mattis.</a>
+                                                    <div class="courses-btns">
+                                                        <button type="button">
+                                                            <span class="sr-only">강의보기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5강</td>
+                                            <td class="text-left">
+                                                <div class="courses-name">
+                                                    <a href="#">5. mattis sed tellus. Sed neque turpis</a>
+                                                    <div class="courses-btns">
+                                                        <button type="button">
+                                                            <span class="sr-only">강의보기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>6강</td>
+                                            <td class="text-left">
+                                                <div class="courses-name">
+                                                    <a href="#">6. Basic Implant Training Course Introduction</a>
+                                                    <div class="courses-btns">
+                                                        <button type="button">
+                                                            <span class="sr-only">강의보기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>7강</td>
+                                            <td class="text-left">
+                                                <div class="courses-name">
+                                                    <a href="#">7. Basic Implant Training Course Introduction</a>
+                                                    <div class="courses-btns">
+                                                        <button type="button">
+                                                            <span class="sr-only">강의보기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-info">
+                        <div class="tb-hd">
+                            <h4>[1강] 1. Basic Implant Training Course Introduction</h4>
+                        </div>
+                        <div class="tb-body">
+                            <table class="tb vertical no-style">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"><i class="icon-course-sm"></i>강의명</th>
+                                        <td>[23강] Standard implant training course</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><i class="icon-person-sm"></i>연자</th>
+                                        <td>장원건 원장, 노관태 교수</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><i class="icon-period-sm"></i>수강 기간</th>
+                                        <td>2022.00.00 - 2022.00.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><i class="icon-chkbox-sm"></i>진도율</th>
+                                        <td class="text-primary">
+                                            <span>45</span>
+                                            <small>%</small>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-btn">
+                    <a href="#" class="btn btn-outline-black">목록으로</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //페이지시작 -->
+    </main>
+    <!-- //content -->
+
+    <!-- footer -->
+    <footer id="ft">
+        <div class="container">
+            <ul class="fnb">
+                <li><a href="#">OF 소개</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+            <div class="address">
+                상호명 : (주)덴티스 <i></i> 대표자명: 심기봉 <i></i> 개인정보관리책임자 : 전영현 <br>
+                사업자등록번호 : <a href="#" target="_blank" title="새창 열기">134-87-38310</a> <i></i> 통신판매업신고번호 : 제2012-대구달서-0202호 <i></i> 의료기기 판매업 신고번호 : 제20173420023-00057호<br>
+                사업장주소지 : [42718] 대구광역시 달서구 성서서로 99  <i></i> 팩스: 053-583-2806 <i></i>이메일 : 7061@dentis.co.kr <i></i> 제품문의 : 02-919-8312
+            </div>
+            <p class="copy">COPYRIGHT (C) DENTIS ALL RIGHTS RESERVED.</p>
+            <ul class="sns-list">
+                <li><a href="#" class="icon-sns-ytp" target="_blank">덴티스 유튜브채널 바로가기</a></li>
+                <li><a href="#" class="icon-sns-face" target="_blank">덴티스 페이스북 바로가기</a></li>
+                <li><a href="#" class="icon-sns-insta" target="_blank">덴티스 인스타그램 바로가기</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- //footer -->
+</div>    
+
+
+</body>
+</html>

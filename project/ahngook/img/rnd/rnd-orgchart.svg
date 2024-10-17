@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="603" viewBox="0 0 720 603">
+  <g id="그룹_1615" data-name="그룹 1615" transform="translate(-600 -1014)">
+    <circle id="타원_120" data-name="타원 120" cx="110" cy="110" r="110" transform="translate(850 1014)" fill="#e52f42"/>
+    <line id="선_256" data-name="선 256" y2="120" transform="translate(960.5 1234.5)" fill="none" stroke="#999" stroke-linecap="round" stroke-width="1" stroke-dasharray="2 5"/>
+    <line id="선_397" data-name="선 397" y2="60" transform="translate(700.5 1294.5)" fill="none" stroke="#999" stroke-linecap="round" stroke-width="1" stroke-dasharray="2 5"/>
+    <line id="선_399" data-name="선 399" y2="60" transform="translate(1220.5 1294.5)" fill="none" stroke="#999" stroke-linecap="round" stroke-width="1" stroke-dasharray="2 5"/>
+    <line id="선_398" data-name="선 398" x1="520" transform="translate(700.5 1294.5)" fill="none" stroke="#999" stroke-linecap="round" stroke-width="1" stroke-dasharray="2 5"/>
+    <text id="R_D" data-name="R&amp;D" transform="translate(960 1138)" fill="#fff" font-size="40" font-family="Stolzl-Medium, Stolzl" font-weight="500"><tspan x="-43" y="0">R&amp;D</tspan></text>
+    <g id="그룹_1545" data-name="그룹 1545" transform="translate(-61 132)">
+      <rect id="사각형_320" data-name="사각형 320" width="200" height="60" transform="translate(661 1207)" fill="#313033"/>
+      <text id="AG_Cn_Tech본부" data-name="AG Cn Tech본부" transform="translate(761 1246)" fill="#fff" font-size="20" font-family="NotoSansCJKkr-Medium, Noto Sans CJK KR" font-weight="500" letter-spacing="-0.05em"><tspan x="-65" y="0">AG Cn Tech본부</tspan></text>
+      <rect id="사각형_321" data-name="사각형 321" width="200" height="208" transform="translate(661 1277)" fill="#f8f8f8"/>
+      <g id="그룹_1540" data-name="그룹 1540" transform="translate(87 -52)">
+        <circle id="타원_129" data-name="타원 129" cx="2.5" cy="2.5" r="2.5" transform="translate(604 1368)" fill="#e52f42"/>
+        <circle id="타원_202" data-name="타원 202" cx="2.5" cy="2.5" r="2.5" transform="translate(604 1410)" fill="#e52f42"/>
+        <circle id="타원_203" data-name="타원 203" cx="2.5" cy="2.5" r="2.5" transform="translate(604 1452)" fill="#e52f42"/>
+        <circle id="타원_204" data-name="타원 204" cx="2.5" cy="2.5" r="2.5" transform="translate(604 1494)" fill="#e52f42"/>
+        <text id="신제품기획팀" transform="translate(616 1378)" fill="#111" font-size="18" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" letter-spacing="-0.05em"><tspan x="0" y="0">신제품기획팀</tspan></text>
+        <text id="RA팀" transform="translate(616 1420)" fill="#111" font-size="18" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" letter-spacing="-0.05em"><tspan x="0" y="0">RA팀</tspan></text>
+        <text id="임상팀" transform="translate(616 1462)" fill="#111" font-size="18" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" letter-spacing="-0.05em"><tspan x="0" y="0">임상팀</tspan></text>
+        <text id="PV팀" transform="translate(616 1504)" fill="#111" font-size="18" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" letter-spacing="-0.05em"><tspan x="0" y="0">PV팀</tspan></text>
+      </g>
+    </g>
+    <g id="그룹_1543" data-name="그룹 1543" transform="translate(-21 132)">
+      <rect id="사각형_952" data-name="사각형 952" width="200" height="60" transform="translate(1141 1207)" fill="#313033"/>
+      <text id="바이오_의약본부" data-name="바이오 의약본부" transform="translate(1241 1246)" fill="#fff" font-size="20" font-family="NotoSansCJKkr-Medium, Noto Sans CJK KR" font-weight="500" letter-spacing="-0.05em"><tspan x="-63" y="0">바이오 의약본부</tspan></text>
+      <rect id="사각형_953" data-name="사각형 953" width="200" height="208" transform="translate(1141 1277)" fill="#f8f8f8"/>
+      <g id="그룹_1542" data-name="그룹 1542" transform="translate(567 -52)">
+        <circle id="타원_129-2" data-name="타원 129" cx="2.5" cy="2.5" r="2.5" transform="translate(604 1368)" fill="#e52f42"/>
+        <circle id="타원_202-2" data-name="타원 202" cx="2.5" cy="2.5" r="2.5" transform="translate(604 1410)" fill="#e52f42"/>
+        <circle id="타원_203-2" data-name="타원 203" cx="2.5" cy="2.5" r="2.5" transform="translate(604 1452)" fill="#e52f42"/>
+        <circle id="타원_204-2" data-name="타원 204" cx="2.5" cy="2.5" r="2.5" transform="translate(604 1494)" fill="#e52f42"/>
+        <text id="바이오기획팀" transform="translate(616 1378)" fill="#111" font-size="18" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" letter-spacing="-0.05em"><tspan x="0" y="0">바이오기획팀</tspan></text>
+        <text id="공정개발팀" transform="translate(616 1420)" fill="#111" font-size="18" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" letter-spacing="-0.05em"><tspan x="0" y="0">공정개발팀</tspan></text>
+        <text id="단백질공학팀" transform="translate(616 1462)" fill="#111" font-size="18" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" letter-spacing="-0.05em"><tspan x="0" y="0">단백질공학팀</tspan></text>
+        <text id="비임상연구팀" transform="translate(616 1504)" fill="#111" font-size="18" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" letter-spacing="-0.05em"><tspan x="0" y="0">비임상연구팀</tspan></text>
+      </g>
+    </g>
+    <g id="그룹_1544" data-name="그룹 1544" transform="translate(-41 132)">
+      <rect id="사각형_951" data-name="사각형 951" width="200" height="60" transform="translate(901 1207)" fill="#313033"/>
+      <text id="신약_연구본부" data-name="신약 연구본부" transform="translate(1001 1246)" fill="#fff" font-size="20" font-family="NotoSansCJKkr-Medium, Noto Sans CJK KR" font-weight="500" letter-spacing="-0.05em"><tspan x="-54" y="0">신약 연구본부</tspan></text>
+      <rect id="사각형_950" data-name="사각형 950" width="200" height="208" transform="translate(901 1277)" fill="#f8f8f8"/>
+      <g id="그룹_1541" data-name="그룹 1541" transform="translate(327 -52)">
+        <circle id="타원_129-3" data-name="타원 129" cx="2.5" cy="2.5" r="2.5" transform="translate(604 1368)" fill="#e52f42"/>
+        <circle id="타원_202-3" data-name="타원 202" cx="2.5" cy="2.5" r="2.5" transform="translate(604 1410)" fill="#e52f42"/>
+        <text id="제제연구팀" transform="translate(616 1378)" fill="#111" font-size="18" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" letter-spacing="-0.05em"><tspan x="0" y="0">제제연구팀</tspan></text>
+        <text id="분석연구팀" transform="translate(616 1420)" fill="#111" font-size="18" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" letter-spacing="-0.05em"><tspan x="0" y="0">분석연구팀</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

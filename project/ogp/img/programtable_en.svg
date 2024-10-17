@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1160" height="646" viewBox="0 0 1160 646">
+  <defs>
+    <filter id="Thematic_Plenary_1_12:00_-_14:00_UTC_" x="69.5" y="568.5" width="161" height="56" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Thematic_Plenary_3_11:00_-_13:00_UTC_" x="841.5" y="518.5" width="163" height="56" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-2"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Opening_Plenary_10:00_-_12:00_UTC_" x="78.5" y="478.5" width="143" height="56" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-3"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Closing_Plenary_13:00_-_14:00_UTC_" x="854.5" y="588.5" width="137" height="56" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-4"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Thematic_Plenary_2_12:00_-_14:00_UTC_" x="455.5" y="568.5" width="163" height="56" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-5"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Local_Leader_Plenary_15:00_-_16:30_UTC-1_" x="449.5" y="48.5" width="175" height="56" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-6"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Special_Sessions_10:30_-_11:30_UTC_" x="465.5" y="449.5" width="143" height="56" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-7"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="그룹_2788" data-name="그룹 2788" transform="translate(-380 -2208)">
+    <rect id="사각형_2132" data-name="사각형 2132" width="297" height="599" transform="translate(380 2255)" fill="#f6f6f6"/>
+    <rect id="사각형_2124" data-name="사각형 2124" width="296" height="599" transform="translate(1154 2255)" fill="#f6f6f6"/>
+    <rect id="사각형_2127" data-name="사각형 2127" width="297" height="599" transform="translate(767 2255)" fill="#f6f6f6"/>
+    <rect id="사각형_2011" data-name="사각형 2011" width="297" height="100" transform="translate(380 2754)" fill="#004f99"/>
+    <rect id="사각형_2010" data-name="사각형 2010" width="296" height="79" transform="translate(1154 2714)" fill="#004f99"/>
+    <rect id="사각형_2019" data-name="사각형 2019" width="297" height="79" transform="translate(380 2674)" fill="#7030a0"/>
+    <rect id="사각형_2008" data-name="사각형 2008" width="296" height="60" transform="translate(1154 2794)" fill="#7030a0"/>
+    <rect id="사각형_2027" data-name="사각형 2027" width="387" height="44" transform="translate(380 2208)" fill="#333"/>
+    <rect id="사각형_2029" data-name="사각형 2029" width="386" height="44" transform="translate(1154 2208)" fill="#333"/>
+    <g transform="matrix(1, 0, 0, 1, 380, 2208)" filter="url(#Thematic_Plenary_1_12:00_-_14:00_UTC_)">
+      <text id="Thematic_Plenary_1_12:00_-_14:00_UTC_2" data-name="Thematic Plenary 1
+(12:00 - 14:00 UTC)" transform="translate(149 590)" fill="#fff" font-size="16" font-family="Rubik-Bold, Rubik" letter-spacing="-0.025em" font-weight="700"><tspan x="-72" y="0">Thematic Plenary 1</tspan><tspan font-size="14" font-family="Rubik-Regular, Rubik" font-weight="400"><tspan x="-59" y="22">(12:00 - 14:00 UTC)</tspan></tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 380, 2208)" filter="url(#Thematic_Plenary_3_11:00_-_13:00_UTC_)">
+      <text id="Thematic_Plenary_3_11:00_-_13:00_UTC_2" data-name="Thematic Plenary 3
+(11:00 - 13:00 UTC)" transform="translate(922 540)" fill="#fff" font-size="16" font-family="Rubik-Bold, Rubik" letter-spacing="-0.025em" font-weight="700"><tspan x="-73" y="0">Thematic Plenary 3</tspan><tspan font-size="14" font-family="Rubik-Regular, Rubik" font-weight="400"><tspan x="-57" y="22">(11:00 - 13:00 UTC)</tspan></tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 380, 2208)" filter="url(#Opening_Plenary_10:00_-_12:00_UTC_)">
+      <text id="Opening_Plenary_10:00_-_12:00_UTC_2" data-name="Opening Plenary
+(10:00 - 12:00 UTC)" transform="translate(149 500)" fill="#fff" font-size="16" font-family="Rubik-Bold, Rubik" letter-spacing="-0.025em" font-weight="700"><tspan x="-63" y="0">Opening Plenary</tspan><tspan font-size="14" font-family="Rubik-Regular, Rubik" font-weight="400"><tspan x="-59" y="22">(10:00 - 12:00 UTC)</tspan></tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 380, 2208)" filter="url(#Closing_Plenary_13:00_-_14:00_UTC_)">
+      <text id="Closing_Plenary_13:00_-_14:00_UTC_2" data-name="Closing Plenary 
+(13:00 - 14:00 UTC)" transform="translate(922 610)" fill="#fff" font-size="16" font-family="Rubik-Bold, Rubik" letter-spacing="-0.025em" font-weight="700"><tspan x="-60" y="0">Closing Plenary </tspan><tspan font-size="14" font-family="Rubik-Regular, Rubik" font-weight="400"><tspan x="-59" y="22">(13:00 - 14:00 UTC)</tspan></tspan></text>
+    </g>
+    <text id="Wed_Dec_15" data-name="Wed, Dec 15" transform="translate(573 2235)" fill="#fff" font-size="16" font-family="Rubik-Bold, Rubik" font-weight="700" letter-spacing="-0.025em"><tspan x="-44" y="0">Wed, Dec 15</tspan></text>
+    <text id="Fri_Dec_17" data-name="Fri, Dec 17" transform="translate(1347 2235)" fill="#fff" font-size="16" font-family="Rubik-Bold, Rubik" font-weight="700" letter-spacing="-0.025em"><tspan x="-38" y="0">Fri, Dec 17</tspan></text>
+    <rect id="사각형_2035" data-name="사각형 2035" width="90" height="599" transform="translate(677 2255)" fill="#fee599"/>
+    <rect id="사각형_2009" data-name="사각형 2009" width="90" height="599" transform="translate(1450 2255)" fill="#fee599"/>
+    <rect id="사각형_2012" data-name="사각형 2012" width="297" height="100" transform="translate(767 2754)" fill="#004f99"/>
+    <rect id="사각형_2013" data-name="사각형 2013" width="297" height="60" transform="translate(767 2254)" fill="#066"/>
+    <rect id="사각형_2016" data-name="사각형 2016" width="297" height="60" transform="translate(767 2414)" fill="#c4e0b2"/>
+    <rect id="사각형_2017" data-name="사각형 2017" width="297" height="60" transform="translate(767 2574)" fill="#c4e0b2"/>
+    <rect id="사각형_2018" data-name="사각형 2018" width="297" height="60" transform="translate(767 2654)" fill="#ee3c24"/>
+    <rect id="사각형_2028" data-name="사각형 2028" width="387" height="44" transform="translate(767 2208)" fill="#333"/>
+    <g transform="matrix(1, 0, 0, 1, 380, 2208)" filter="url(#Thematic_Plenary_2_12:00_-_14:00_UTC_)">
+      <text id="Thematic_Plenary_2_12:00_-_14:00_UTC_2" data-name="Thematic Plenary 2
+(12:00 - 14:00 UTC)" transform="translate(536 590)" fill="#fff" font-size="16" font-family="Rubik-Bold, Rubik" letter-spacing="-0.025em" font-weight="700"><tspan x="-73" y="0">Thematic Plenary 2</tspan><tspan font-size="14" font-family="Rubik-Regular, Rubik" font-weight="400"><tspan x="-59" y="22">(12:00 - 14:00 UTC)</tspan></tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 380, 2208)" filter="url(#Local_Leader_Plenary_15:00_-_16:30_UTC-1_)">
+      <text id="Local_Leader_Plenary_15:00_-_16:30_UTC-1_2" data-name="Local Leader Plenary
+(15:00 - 16:30 UTC-1)" transform="translate(536 70)" fill="#fff" font-size="16" font-family="Rubik-Bold, Rubik" letter-spacing="-0.025em" font-weight="700"><tspan x="-79" y="0">Local Leader Plenary</tspan><tspan font-size="14" font-family="Rubik-Regular, Rubik" font-weight="400"><tspan x="-64" y="22">(15:00 - 16:30 UTC-1)</tspan></tspan></text>
+    </g>
+    <text id="Regional_Session_-_Asia_Pacific_02:00_-_03:30_UTC_" data-name="Regional Session - Asia Pacific 
+(02:00 - 03:30 UTC)" transform="translate(916 2438)" fill="#333" font-size="16" font-family="Rubik-Bold, Rubik" letter-spacing="-0.025em" font-weight="700"><tspan x="-116" y="0">Regional Session - Asia Pacific </tspan><tspan font-size="14" font-family="Rubik-Regular, Rubik" font-weight="400"><tspan x="-61" y="22">(02:00 - 03:30 UTC)</tspan></tspan></text>
+    <text id="Regional_Session_-_Africa_and_Middle_East_9:00_-_10:00_UTC_" data-name="Regional Session - Africa and 
+Middle East  (9:00 - 10:00 UTC)" transform="translate(916 2599)" fill="#333" font-size="16" font-family="Rubik-Bold, Rubik" letter-spacing="-0.025em" font-weight="700"><tspan x="-111" y="0">Regional Session - Africa and </tspan><tspan x="-102" y="22" xml:space="preserve">Middle East  </tspan><tspan y="22" font-size="14" font-family="Rubik-Regular, Rubik" font-weight="400">(9:00 - 10:00 UTC)</tspan></text>
+    <g transform="matrix(1, 0, 0, 1, 380, 2208)" filter="url(#Special_Sessions_10:30_-_11:30_UTC_)">
+      <text id="Special_Sessions_10:30_-_11:30_UTC_2" data-name="Special Sessions
+(10:30 - 11:30 UTC)" transform="translate(536 471)" fill="#fff" font-size="16" font-family="Rubik-Bold, Rubik" letter-spacing="-0.025em" font-weight="700"><tspan x="-63" y="0">Special Sessions</tspan><tspan font-size="14" font-family="Rubik-Regular, Rubik" font-weight="400"><tspan x="-57" y="22">(10:30 - 11:30 UTC)</tspan></tspan></text>
+    </g>
+    <text id="Thur_Dec_16" data-name="Thur, Dec 16" transform="translate(960 2235)" fill="#fff" font-size="16" font-family="Rubik-Bold, Rubik" font-weight="700" letter-spacing="-0.025em"><tspan x="-46" y="0">Thur, Dec 16</tspan></text>
+    <rect id="사각형_2036" data-name="사각형 2036" width="90" height="599" transform="translate(1064 2255)" fill="#fee599"/>
+    <rect id="사각형_2244" data-name="사각형 2244" width="4" height="646" transform="translate(765 2208)" fill="#fff"/>
+    <rect id="사각형_2245" data-name="사각형 2245" width="4" height="646" transform="translate(1152 2208)" fill="#fff"/>
+    <rect id="사각형_2246" data-name="사각형 2246" width="1160" height="4" transform="translate(380 2252)" fill="#fff"/>
+    <text id="Thematic_Community_Dialogue_Sessions" data-name="Thematic/Community Dialogue Sessions" transform="translate(717.5 2555) rotate(90)" fill="#333" font-size="16" font-family="Rubik-Bold, Rubik" font-weight="700"><tspan x="-161" y="0">Thematic/Community Dialogue Sessions</tspan></text>
+    <text id="Thematic_Community_Dialogue_Sessions-2" data-name="Thematic/Community Dialogue Sessions" transform="translate(1104 2555) rotate(90)" fill="#333" font-size="16" font-family="Rubik-Bold, Rubik" font-weight="700"><tspan x="-161" y="0">Thematic/Community Dialogue Sessions</tspan></text>
+    <text id="Thematic_Community_Dialogue_Sessions-3" data-name="Thematic/Community Dialogue Sessions" transform="translate(1490 2555) rotate(90)" fill="#333" font-size="16" font-family="Rubik-Bold, Rubik" font-weight="700"><tspan x="-161" y="0">Thematic/Community Dialogue Sessions</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90" height="90" viewBox="0 0 90 90">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_4640" data-name="사각형 4640" width="39.027" height="42.75" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="사각형_4635" data-name="사각형 4635" width="25" height="25" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="ic_signUp_step1" transform="translate(-605 -7655)">
+    <circle id="타원_416" data-name="타원 416" cx="45" cy="45" r="45" transform="translate(605 7655)" fill="#fff"/>
+    <g id="그룹_2172" data-name="그룹 2172" transform="translate(618 7668)">
+      <rect id="사각형_1301" data-name="사각형 1301" width="64" height="64" fill="none"/>
+      <g id="그룹_3943" data-name="그룹 3943" transform="translate(6 7)">
+        <g id="그룹_3942" data-name="그룹 3942" clip-path="url(#clip-path)">
+          <g id="그룹_3941" data-name="그룹 3941">
+            <g id="그룹_3940" data-name="그룹 3940" clip-path="url(#clip-path)">
+              <g id="그룹_3939" data-name="그룹 3939" opacity="0.15" style="mix-blend-mode: normal;isolation: isolate">
+                <g id="그룹_3938" data-name="그룹 3938">
+                  <g id="그룹_3937" data-name="그룹 3937" clip-path="url(#clip-path-3)">
+                    <path id="패스_1078" data-name="패스 1078" d="M12.5,0A12.5,12.5,0,1,1,0,12.5,12.5,12.5,0,0,1,12.5,0" fill="#ff7500"/>
+                  </g>
+                </g>
+              </g>
+              <rect id="사각형_4636" data-name="사각형 4636" width="24" height="30" transform="translate(13.777 11.5)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+            </g>
+          </g>
+          <rect id="사각형_4638" data-name="사각형 4638" width="11.077" height="2.215" transform="translate(20.238 17.24)" fill="#111"/>
+          <rect id="사각형_4639" data-name="사각형 4639" width="11.077" height="2.215" transform="translate(20.238 22.163)" fill="#111"/>
+          <path id="패스_1079" data-name="패스 1079" d="M22.647,31.927l2.118,2.118L29.809,29" fill="none" stroke="#111" stroke-linecap="square" stroke-width="2.5"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

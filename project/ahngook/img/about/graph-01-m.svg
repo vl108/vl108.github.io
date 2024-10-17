@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="641" height="460" viewBox="0 0 641 460">
+  <g id="그룹_1628" data-name="그룹 1628" transform="translate(11505 17326)">
+    <rect id="사각형_1025" data-name="사각형 1025" width="640" height="460" transform="translate(-11504 -17326)" fill="none"/>
+    <g id="그룹_1624" data-name="그룹 1624" transform="translate(0 -88)">
+      <text id="_210_000_140_000_70_000_0" data-name="210,000
+140,000
+70,000
+0" transform="translate(-11410 -17178)" fill="#999" font-size="24" font-family="Stolzl-Book, Stolzl"><tspan x="-93" y="0">210,000</tspan><tspan x="-94" y="77">140,000</tspan><tspan x="-82" y="154">70,000</tspan><tspan x="-16" y="231">0</tspan></text>
+      <rect id="사각형_1026" data-name="사각형 1026" width="532" height="2" transform="translate(-11396 -17189)" fill="#e5e5e5"/>
+      <rect id="사각형_1027" data-name="사각형 1027" width="532" height="2" transform="translate(-11396 -17111)" fill="#e5e5e5"/>
+      <rect id="사각형_1028" data-name="사각형 1028" width="532" height="2" transform="translate(-11396 -17033)" fill="#e5e5e5"/>
+      <rect id="사각형_1029" data-name="사각형 1029" width="532" height="2" transform="translate(-11396 -16955)" fill="#e5e5e5"/>
+      <text id="_2019" data-name="2019" transform="translate(-11293 -16907)" fill="#111" font-size="26" font-family="Stolzl-Medium, Stolzl" font-weight="500"><tspan x="-30" y="0">2019</tspan></text>
+      <text id="_2018" data-name="2018" transform="translate(-11126 -16907)" fill="#111" font-size="26" font-family="Stolzl-Medium, Stolzl" font-weight="500"><tspan x="-30" y="0">2018</tspan></text>
+      <text id="_2017" data-name="2017" transform="translate(-10959 -16907)" fill="#111" font-size="26" font-family="Stolzl-Medium, Stolzl" font-weight="500"><tspan x="-29" y="0">2017</tspan></text>
+      <rect id="사각형_581" data-name="사각형 581" width="20" height="226" transform="translate(-11342 -17179)" fill="#16b4b9"/>
+      <rect id="사각형_1032" data-name="사각형 1032" width="20" height="224" transform="translate(-11175 -17177)" fill="#16b4b9"/>
+      <rect id="사각형_1033" data-name="사각형 1033" width="20" height="224" transform="translate(-11008 -17177)" fill="#16b4b9"/>
+      <rect id="사각형_582" data-name="사각형 582" width="20" height="180" transform="translate(-11264 -17133)" fill="#e52f42"/>
+      <rect id="사각형_1030" data-name="사각형 1030" width="20" height="180" transform="translate(-11097 -17133)" fill="#e52f42"/>
+      <rect id="사각형_1035" data-name="사각형 1035" width="20" height="175" transform="translate(-10930 -17128)" fill="#e52f42"/>
+      <rect id="사각형_583" data-name="사각형 583" width="20" height="71" transform="translate(-11303 -17024)" fill="#313033"/>
+      <rect id="사각형_1031" data-name="사각형 1031" width="20" height="65" transform="translate(-11136 -17019)" fill="#313033"/>
+      <rect id="사각형_1034" data-name="사각형 1034" width="20" height="68" transform="translate(-10969 -17022)" fill="#313033"/>
+      <g id="그룹_1623" data-name="그룹 1623" transform="translate(-26)">
+        <text id="자산_총계" data-name="자산 총계" transform="translate(-11351 -16822)" fill="#111" font-size="26" font-family="NotoSansCJKkr-Medium, Noto Sans CJK KR" font-weight="500" letter-spacing="-0.05em"><tspan x="0" y="0">자산 총계</tspan></text>
+        <text id="부채_총계" data-name="부채 총계" transform="translate(-11186 -16822)" fill="#111" font-size="26" font-family="NotoSansCJKkr-Medium, Noto Sans CJK KR" font-weight="500" letter-spacing="-0.05em"><tspan x="0" y="0">부채 총계</tspan></text>
+        <text id="자본_총계" data-name="자본 총계" transform="translate(-11021 -16822)" fill="#111" font-size="26" font-family="NotoSansCJKkr-Medium, Noto Sans CJK KR" font-weight="500" letter-spacing="-0.05em"><tspan x="0" y="0">자본 총계</tspan></text>
+        <circle id="타원_140" data-name="타원 140" cx="12" cy="12" r="12" transform="translate(-11390 -16845)" fill="#16b4b9"/>
+        <circle id="타원_141" data-name="타원 141" cx="12" cy="12" r="12" transform="translate(-11225 -16845)" fill="#313033"/>
+        <circle id="타원_142" data-name="타원 142" cx="12" cy="12" r="12" transform="translate(-11060 -16845)" fill="#e52f42"/>
+      </g>
+    </g>
+  </g>
+</svg>

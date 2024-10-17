@@ -1,0 +1,270 @@
+@charset "utf-8";
+
+.btn{background: #FFAC30;border-color: #FFC977;box-shadow: 0 8px #ED8B19 !important}
+.icon-home{background-color: #009906;box-shadow: 2px 2px #005A04}
+.icon-close{background-color: #009906}
+.btn-start{background: #1AA6F4;border-color: #70CCFF;box-shadow: 0px 8px #007AEA !important}
+.btn-reset{background: #79D76A;border-color: #9BE98F;box-shadow: 0px 8px #52B143 !important}
+.btn-finish {background: #FFB11B;border-color: #FFDB5B;box-shadow: 0px 8px #FF8A00 !important}
+.btn-replay{background:#FF5A5A;border-color:#FF9393;box-shadow: 0 8px #E84242!important}
+.btn.btn-circle{right: 72px;background: #FFD300;border-color: #FFEC8F;box-shadow: 0 8px #FFA800 !important}
+#ending .btn-reset {background: #FF5A5A;border-color: #FF9393;box-shadow: 0px 8px #E84242 !important}
+
+.modal-content{box-shadow: 6px 6px #A9D9AB}
+.modal-alert .modal-content {box-shadow: 12px 12px #84CD78}
+.modal-title{color: #339424}
+.modal-title p{color: #678363}
+#modal-guide .icon-close {background-color: #98DF86}
+#modal-guide .modal-dialog {max-width: 876px}
+#modal-guide .modal-title{color: #57BA5B}
+.guide-item .num {background: #FFAE74}
+
+.home-balloon{background: #FF9900;border: 4px solid #FFBE18}
+.home-balloon:after{background-image: url(../img/game03/home-tail.png)}
+.round-bubble:after {background-image: url(../img/game03/round-tail.png)}
+#intro .step-bx .bx{padding: 28px 0;background: #DFFCDA;border: 4px solid #EBFFE8;border-radius: 30px;box-shadow: 10px 10px 0px 0px #CFF2C9 inset}
+#intro .step-bx .bx h3{color: #44893A}
+
+#home .home-title{top: 87px;width:827px;transform: translate(-50%, calc( -100% - 87px ))}
+.bg-obj01{left: 66px;top: 348px;transform: scale(-1, 1) rotate(-10deg);animation: flying-ani01 3s linear .25s infinite alternate}
+.bg-obj02{left: 137px;top: 282px;animation: flying-ani01 5s linear .5s infinite alternate}
+.bg-obj03{left: 1102px;top: 285px;animation: flying-ani01 3.5s linear .75s infinite alternate}
+.bg-obj04{left: 1161px;top: 369px;transform: scale(-1, 1) rotate(-10deg);animation: flying-ani02 2.5s linear .25s infinite alternate}
+.home-ai{top: 329px;width:693px;margin-left: 5px}
+.home-ai01{left: 1px;top: 0px;width: 686px;height: 262px;background:url(../img/game03/home-ai01.png) no-repeat 0 0 / 100% auto}
+#home.show .home-ai01{animation: animal-ani04 2s infinite .4s steps(2)}
+@keyframes animal-ani04 {
+    100% {
+        background-position: 0 -524px
+    }
+}
+.home-ai>*:nth-child(n+3){left: 232px;width:203px;transition: .5s}
+.home-ai02{top: 146px}
+.home-ai03{top: 117px;}
+.home-ai04{top: 140px}
+.home-ai05{top: 109px;transform:translateY(-20px);animation-delay: .75s !important}
+.home-ai06{top: 118px;transform:translateY(-72px);animation-delay: 1s !important}
+.home-ai07{top: 128px;transform:translateY(-83px);animation-delay: 1.25s !important}
+.home-ai08{top: 119px;transform:translateY(-103px);animation-delay: 1.5s !important}
+.home-ai09{top: 102px;transform:translateY(-113px);animation-delay: 1.75s !important}
+.show .home-ai>*:not(.home-ai01){animation: obj-move 2s ease-in-out 0s forwards}
+.end-ai{top: 246px;width: 918px}
+.end-obj{top: 223px}
+[class^=end-ai0]{background-position: 0 0;background-repeat: no-repeat;background-size: auto 100%}
+.end-ai01{left: 38px; top: 44px;width:267px;height:311px;background-image:url(../img/game03/end-ai01.png)}
+.end-ai02{left: 335px; top: 0;width:249px;height:252px;background-image:url(../img/game03/end-ai02.png)}
+.end-ai03{left: 594px; top: 83px;width:240px;height:246px;background-image:url(../img/game03/end-ai03.png)}
+.end-ai04{top: 196px;left: 299px;width: 300px}
+#ending.show .end-ai01{animation: animal-ani01 5s infinite steps(5)}
+#ending.show .end-ai02{animation: animal-ani02 5s infinite steps(5)}
+#ending.show .end-ai03{animation: animal-ani03 5s infinite steps(5)}
+@keyframes animal-ani01 {
+    100% {
+        background-position: -1335px 0
+    }
+}
+@keyframes animal-ani02 {
+    100% {
+        background-position: -1245px 0
+    }
+}
+@keyframes animal-ani03 {
+    100% {
+        background-position: -1200px 0
+    }
+}
+@keyframes obj-move {
+    30%,100% {
+        transform:translateY(0);
+    }
+}
+@keyframes flying-ani01 {
+    50% {
+        margin-top: -20px
+    }
+}
+@keyframes flying-ani02 {
+    50% {
+        margin-top:-6px;margin-right: -3px
+    }
+}
+.bx h3{color:#339424}
+#intro .step-bubble{left: 47px;padding-top: 14px;background-image: url(../img/game03/step-bubble.png)}
+#intro .step-wrp {top: 124px;left: 457px}
+#intro .step-bx{box-shadow: 8px 8px 0 0 #CEFAC7 inset;border-color: #9EEB92}
+#intro .step-index li{background-color: #84CD78;color:#A1EB95}
+#intro .step-index li.active {background-color: #9EEB92}
+.intro-obj01{top: 469px;width: 693px;margin-left: -446px}
+.intro-obj02{top: 522px;width: 219px;margin-left: 530px}
+#intro .bg-obj01{left: 134px;top: 291px;transform: scale(-1, 1) rotate(-2deg)}
+#intro .bg-obj02 {left: 255px;top: 219px;transform: rotate(-10deg)}
+#intro .bg-obj03 {left: 1190px;top: 303px}
+#intro .bg-obj04 {left: 1210px;top: 391px}
+#intro .pages{top: auto;bottom: 0;left: 0;z-index: 2;width: 50%;transform: none}
+#intro .pages img{top: auto;right: 43px;bottom: 34px;left: auto;width: 600px;transform: translateX(-100%)}
+#intro.show .pages img {transform: translateX(0);transition: all .5s}
+.round-bubble{background: #84cd78;border-color: #a6e39c;box-shadow: 0 6px 0 0 #6fb664}
+.result-desc p{width:806px}
+#round .bx{box-shadow: 10px 10px #79C26E !important}
+#round .bx-inner{border-color: #9EEB92;box-shadow: none}
+[class^=round-obj]{bottom: 0;left:0;z-index: 5;transform: none !important}
+.round-obj01{left: 0 !important}
+.round-obj02{left: auto !important;right:0}
+#life{background: #9EEB92;box-shadow: 8px 8px #79C26E}
+#life i{background-image: url(../img/game03/icon-star.png)}
+#life i.off{background-image: url(../img/game03/icon-star-off.png)}
+.guide-line{bottom: 156px;left: 50%;transform: translateX(-50%)}
+.guide-open .guide-line{animation: flash 1s infinite forwards}
+.guide-line:before, .guide-line:after{content: '';position: absolute;left: -293px;width: 105px;height: 37px;background: url(../img/game03/guide-line.png) no-repeat center / cover}
+.guide-line:after{left: 257px;transform: scale(-1, 1)}
+.guide-balloon{bottom: 267px;left: 482px;width: 315px;padding: 20px 31px;background: rgba(53, 61, 66, .9);border: none;font-size: 26px;text-align: center}
+.guide-balloon:after{top: 100%;right: auto;left: 50%;width: 28px;height: 9px;background-image: url(../img/game03/guide-tail.png);transform: translateX(-50%)}
+.ingredients{position: relative;z-index: 10;width: 100%;margin: 0}
+.ingredients li{position:absolute;left:0;transform: translateY(-100%)}
+.ingredients li:first-child{top: -129px;left: 124px}
+.ingredients li:nth-child(2){left: 349px;top: -90px}
+.ingredients li:nth-child(3){left:607px}
+.ingredients li:nth-child(4){top: -167px;left: 782px}
+.ingredients li:last-child{top: -117px;left: 1004px}
+.ingredients li.catch{animation: fadeOut .5s forwards}
+[class^=item]{background-position: center;background-repeat: no-repeat;background-size:cover}
+[class^=item1]:not(.item15){width: 170px;height: 71px}
+.item11{background-image: url(../img/game03/ingredients01-1.png)}
+.item12{background-image: url(../img/game03/ingredients01-2.png)}
+.item13{background-image: url(../img/game03/ingredients01-3.png)}
+.item14{background-image: url(../img/game03/ingredients01-4.png)}
+.item15{width:152px;height: 54px;background-image: url(../img/game03/ingredients01-5.png)}
+[data-page="2"] [class^=item1]:not(.item15), [data-page="3"] [class^=item1]:not(.item15){width: 242px;height: 101px}
+[data-page="2"] .item11, [data-page="3"] .item11{background-image: url(../img/game03/ingredients01-1-catch.png)}
+[data-page="2"] .item12, [data-page="3"] .item21{background-image: url(../img/game03/ingredients01-2-catch.png)}
+[data-page="2"] .item13, [data-page="3"] .item13{background-image: url(../img/game03/ingredients01-3-catch.png)}
+[data-page="2"] .item14, [data-page="3"] .item14{background-image: url(../img/game03/ingredients01-4-catch.png)}
+[data-page="2"] .item15, [data-page="3"] .item15{width: 216px;height: 77px;background-image: url(../img/game03/ingredients01-5-catch.png)}
+.item-hide{position: absolute;bottom: calc( 100% - 6px );order: 20;z-index: 20 !important;width:245px;height:0;margin: 0 !important;opacity: 0}
+.item11 + .item-hide{background-image: url(../img/game03/ingredients01-1-hide.png)}
+.item12 + .item-hide{background-image: url(../img/game03/ingredients01-2-hide.png)}
+.item13 + .item-hide{background-image: url(../img/game03/ingredients01-3-hide.png)}
+.item14 + .item-hide{background-image: url(../img/game03/ingredients01-4-hide.png)}
+.item15 + .item-hide{background-image: url(../img/game03/ingredients01-5-hide.png)}
+.item21{width: 156px;height: 81px;background-image: url(../img/game03/ingredients02-1.png)}
+.item22{width: 134px;height: 93px;background-image: url(../img/game03/ingredients02-2.png)}
+.item23{width: 156px;height: 156px;background-image: url(../img/game03/ingredients02-3.png)}
+.item24{width: 109px;height: 112px;background-image: url(../img/game03/ingredients02-4.png)}
+.item25{width: 135px;height: 80px;background-image: url(../img/game03/ingredients02-5.png)}
+.basket-inner [class^=item2]{width: 252px}
+.basket-inner .item21{height: 109px;background-image: url(../img/game03/ingredients02-1-catch.png)}
+.basket-inner .item22{height: 114px;background-image: url(../img/game03/ingredients02-2-catch.png)}
+.basket-inner .item23{height: 137px;background-image: url(../img/game03/ingredients02-3-catch.png)}
+.basket-inner .item24{height: 105px;background-image: url(../img/game03/ingredients02-4-catch.png)}
+.basket-inner .item25{height: 94px;background-image: url(../img/game03/ingredients02-5-catch.png)}
+.item31{width: 140px;height: 85px;background-image: url(../img/game03/ingredients03-1.png)}
+.item32{width: 155px;height: 65px;background-image: url(../img/game03/ingredients03-2.png)}
+.item33{width: 135px;height: 88px;background-image: url(../img/game03/ingredients03-3.png)}
+.item34{width: 180px;height: 96px;background-image: url(../img/game03/ingredients03-4.png)}
+.item35{width: 181px;height: 75px;background-image: url(../img/game03/ingredients03-5.png)}
+.basket-inner [class^=item3]{width: 258px}
+.basket-inner .item31{height: 113px;background-image: url(../img/game03/ingredients03-1-catch.png)}
+.basket-inner .item32{height: 84px;background-image: url(../img/game03/ingredients03-2-catch.png)}
+.basket-inner .item33{height: 136px;background-image: url(../img/game03/ingredients03-3-catch.png)}
+.basket-inner .item34{height: 136px;background-image: url(../img/game03/ingredients03-4-catch.png)}
+.basket-inner .item35{height: 98px;background-image: url(../img/game03/ingredients03-5-catch.png)}
+#floor {position: absolute;height: 40px;width: 100%;bottom: 0}
+.basket-container{position: absolute;bottom: 74px;z-index: 10;width: 100%;height: 48px;padding: 0 80px}
+#basket{position: absolute;left: 500px;width: 200px;height: 100%}
+.char{position: absolute;bottom: -88px;left: -100px;width: 542px;height: 337px}
+.char:before, .char:after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background: url(../img/game03/act-ai01.png) no-repeat 0 0 / 100% auto}
+.char:after{background-image: url(../img/game03/act-ai01-s.png);transition: .5s;opacity: 1}
+.game-wrp:not(.guide-open) .char:after{opacity: 0}
+.game-wrp.guide-open .basket-container, 
+#basket.ui-draggable-disabled{pointer-events: none}
+.basket-inner{display: flex;align-items: center;flex-direction: column-reverse;position: absolute;bottom: 44px;left: 0;width: 200px;height:auto}
+.basket-inner:after{content: '';position: absolute;bottom: 93px;right: calc( 100% - 31px );width: 106px;height: 54px;background: url(../img/game03/ai-miss.png) no-repeat center / 100%;transform-origin: bottom left;transform: scale(0);transition: none}
+.basket-inner [class^=item]{position: absolute;margin-right: auto; margin-left:auto}
+.basket-inner [class^=item1]{margin-bottom: 0 !important}
+.basket-inner>*{display: flex;flex-direction: column-reverse;position: relative;width: 100%;height: 15px;flex-wrap: nowrap;align-items: center}
+.basket-inner>*:first-child{height:10px}
+.basket-inner>*:nth-child(2), .basket-inner>*>*:nth-child(2){z-index:2}
+.basket-inner>*:nth-child(3), .basket-inner>*>*:nth-child(3){z-index:3}
+.basket-inner>*:nth-child(4){z-index:4}
+.basket-inner>*:nth-child(5){z-index:5}
+.basket-inner>*:nth-child(6){z-index:6}
+.basket-inner>*>*+*{margin-bottom:20px;}
+#act:not(.miss) #basket.dragging:before{animation: animal-moving 2s infinite steps(1)}
+@keyframes animal-moving {
+    25%, 75% {
+        background-position: 0 -337px
+    }
+    50%{
+        background-position: 0 0
+    }
+}
+/* .ingredients li.miss{animation: miss-ani 2s forwards} */
+.ingredients li.miss{animation: fadeOut .5s forwards}
+@keyframes miss-ani {
+    20%, 40%, 60%, 100% {
+       opacity: 0;
+    }
+    30%, 50%{
+        opacity: .2;
+    }
+}
+.miss .char:before{background-position: 0 -674px}
+/* .success .char:after{opacity: 1 !important} */
+.success .ingredients li{animation: fadeOut .5s forwards}
+/* .miss .basket-inner:after{transform: scale(1);transition: .25s .25s;animation: fadeOut .5s 1.5s forwards} */
+.miss .basket-inner .catch{position: absolute;bottom: 85px;height:0;animation: missAni1 1s linear forwards}
+.miss .basket-inner .catch>div{animation: missAni2 1s linear forwards}
+
+@keyframes missAni1 {
+    0% {transform:translate(0px, 0px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);animation-timing-function: cubic-bezier(.25,.25,.75,.75)}
+    20% {transform:translate(-55px, -40px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);animation-timing-function: cubic-bezier(.25,.25,.75,.75)}
+    40% {transform:translate(-98px, -65px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);animation-timing-function: cubic-bezier(.25,.25,.75,.75)}
+    60% {transform:translate(-141px, -70px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);animation-timing-function: cubic-bezier(.25,.25,.75,.75)}
+    80% {transform:translate(-159px, -20px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);animation-timing-function: cubic-bezier(.25,.25,.75,.75)}
+    100% {transform:translate(-190px, 92px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%)}
+  }
+@keyframes missAni2 {
+    20% {
+        transform: scale(0.8) rotate(-83deg)
+    }
+    40% {
+        transform: scale(0.8) rotate(-136deg)
+    }
+    60% {
+        transform: scale(0.8) rotate(-189deg)
+    }
+    80% {
+        transform: scale(0.8) rotate(-242deg)
+    }
+    100%{
+        transform:  scale(0.8) rotate(-366deg)
+    }
+}
+[data-page] .ingredients, .guide-balloon [class^=page0]{display:none;opacity: 1}
+[data-page="1"] .ingredients.page01, [data-page="2"] .ingredients.page02, [data-page="3"] .ingredients.page03{display: block}
+[data-page="1"] .guide-balloon .page01, [data-page="2"] .guide-balloon .page02, [data-page="3"] .guide-balloon .page03{display: inline-block}
+[data-page="2"] .basket-inner,
+[data-page="3"] .basket-inner{bottom: 42px;left: -22px}
+[data-page="2"] .guide-line {bottom: 124px}
+[data-page="2"] .guide-line:before{left: -279px}
+[data-page="2"] .guide-line:after{left: 208px;}
+[data-page="2"] .guide-balloon{bottom: 296px}
+[data-page="2"] .ingredients li:first-child{top: -58px;left: 124px}
+[data-page="2"] .ingredients li:nth-child(2){left: 336px;top: -4px}
+[data-page="2"] .ingredients li:nth-child(3){left:556px}
+[data-page="2"] .ingredients li:nth-child(4){left: 794px;top: -75px}
+[data-page="2"] .ingredients li:last-child{left: 989px;top: -98px}
+[data-page="2"] .char:before{background-image: url(../img/game03/act-ai02.png)}
+[data-page="2"] .char:after{background-image: url(../img/game03/act-ai02-s.png)}
+[data-page="3"] .guide-line {bottom: 168px;}
+[data-page="3"] .guide-line:before{left: -295px;}
+[data-page="3"] .guide-line:after{left: 197px;}
+[data-page="3"] .guide-balloon{bottom: 278px;}
+[data-page="3"] .ingredients li:first-child{left: 136px;top: -31px}
+[data-page="3"] .ingredients li:nth-child(2){left: 342px;top: -91px}
+[data-page="3"] .ingredients li:nth-child(3){left: 560px}
+[data-page="3"] .ingredients li:nth-child(4){left: 754px;top: -69px}
+[data-page="3"] .ingredients li:last-child{left: 985px;top: -103px}
+[data-page="3"] .char:before{background-image: url(../img/game03/act-ai03.png)}
+[data-page="3"] .char:after{background-image: url(../img/game03/act-ai03-s.png)}
+#ending .item-hide{height:103px;opacity: 1}

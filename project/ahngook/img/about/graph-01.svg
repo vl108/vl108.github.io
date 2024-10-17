@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1170" height="370" viewBox="0 0 1170 370">
+  <g id="그룹_1621" data-name="그룹 1621" transform="translate(-375 -1195)">
+    <rect id="사각형_1024" data-name="사각형 1024" width="1170" height="370" transform="translate(375 1195)" fill="none"/>
+    <rect id="사각형_577" data-name="사각형 577" width="1081" height="1" transform="translate(464 1242)" fill="#e5e5e5"/>
+    <rect id="사각형_578" data-name="사각형 578" width="1081" height="1" transform="translate(464 1303)" fill="#e5e5e5"/>
+    <rect id="사각형_579" data-name="사각형 579" width="1081" height="1" transform="translate(464 1364)" fill="#e5e5e5"/>
+    <rect id="사각형_580" data-name="사각형 580" width="1081" height="1" transform="translate(464 1425)" fill="#e5e5e5"/>
+    <text id="_210_000_140_000_70_000_0" data-name="210,000
+140,000
+70,000
+0" transform="translate(445 1250)" fill="#999" font-size="16" font-family="Stolzl-Book, Stolzl"><tspan x="-62" y="0">210,000</tspan><tspan x="-62" y="60">140,000</tspan><tspan x="-55" y="120">70,000</tspan><tspan x="-10" y="180">0</tspan></text>
+    <g id="그룹_1140" data-name="그룹 1140" transform="translate(-34 -56)">
+      <text id="_2019" data-name="2019" transform="translate(639 1522)" fill="#111" font-size="22" font-family="Stolzl-Medium, Stolzl" font-weight="500"><tspan x="-25" y="0">2019</tspan></text>
+      <g id="그룹_1139" data-name="그룹 1139" transform="translate(22)">
+        <rect id="사각형_581" data-name="사각형 581" width="40" height="175" transform="translate(517 1306)" fill="#16b4b9"/>
+        <rect id="사각형_582" data-name="사각형 582" width="40" height="145" transform="translate(677 1336)" fill="#e52f42"/>
+        <rect id="사각형_583" data-name="사각형 583" width="40" height="50" transform="translate(597 1431)" fill="#313033"/>
+      </g>
+    </g>
+    <g id="그룹_1141" data-name="그룹 1141" transform="translate(321 -56)">
+      <text id="_2018" data-name="2018" transform="translate(639 1522)" fill="#111" font-size="22" font-family="Stolzl-Medium, Stolzl" font-weight="500"><tspan x="-25" y="0">2018</tspan></text>
+      <g id="그룹_1139-2" data-name="그룹 1139" transform="translate(22)">
+        <rect id="사각형_581-2" data-name="사각형 581" width="40" height="175" transform="translate(517 1306)" fill="#16b4b9"/>
+        <rect id="사각형_582-2" data-name="사각형 582" width="40" height="144" transform="translate(677 1337)" fill="#e52f42"/>
+        <rect id="사각형_583-2" data-name="사각형 583" width="40" height="47" transform="translate(597 1434)" fill="#313033"/>
+      </g>
+    </g>
+    <g id="그룹_1142" data-name="그룹 1142" transform="translate(676 -56)">
+      <text id="_2017" data-name="2017" transform="translate(639 1522)" fill="#111" font-size="22" font-family="Stolzl-Medium, Stolzl" font-weight="500"><tspan x="-24" y="0">2017</tspan></text>
+      <g id="그룹_1139-3" data-name="그룹 1139" transform="translate(22)">
+        <rect id="사각형_581-3" data-name="사각형 581" width="40" height="175" transform="translate(517 1306)" fill="#16b4b9"/>
+        <rect id="사각형_582-3" data-name="사각형 582" width="40" height="144" transform="translate(677 1337)" fill="#e52f42"/>
+        <rect id="사각형_583-3" data-name="사각형 583" width="40" height="47" transform="translate(597 1434)" fill="#313033"/>
+      </g>
+    </g>
+    <g id="그룹_1143" data-name="그룹 1143" transform="translate(1 -69)">
+      <text id="자산_총계" data-name="자산 총계" transform="translate(820 1600)" fill="#111" font-size="16" font-family="NotoSansCJKkr-Medium, Noto Sans CJK KR" font-weight="500" letter-spacing="-0.05em"><tspan x="0" y="0">자산 총계</tspan></text>
+      <text id="부채_총계" data-name="부채 총계" transform="translate(941 1600)" fill="#111" font-size="16" font-family="NotoSansCJKkr-Medium, Noto Sans CJK KR" font-weight="500" letter-spacing="-0.05em"><tspan x="0" y="0">부채 총계</tspan></text>
+      <text id="자본_총계" data-name="자본 총계" transform="translate(1062 1600)" fill="#111" font-size="16" font-family="NotoSansCJKkr-Medium, Noto Sans CJK KR" font-weight="500" letter-spacing="-0.05em"><tspan x="0" y="0">자본 총계</tspan></text>
+      <circle id="타원_140" data-name="타원 140" cx="7.5" cy="7.5" r="7.5" transform="translate(798 1586)" fill="#16b4b9"/>
+      <circle id="타원_141" data-name="타원 141" cx="7.5" cy="7.5" r="7.5" transform="translate(919 1586)" fill="#313033"/>
+      <circle id="타원_142" data-name="타원 142" cx="7.5" cy="7.5" r="7.5" transform="translate(1040 1586)" fill="#e52f42"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="7.594" viewBox="0 0 13 7.594">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #8a8b8e;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="0.094" y="0.063" width="13" height="7.594" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#333"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="translate(-0.094 -0.063)" style="fill: none; filter: url(#filter)">
+    <path id="사각형_29_복사_2" data-name="사각형 29 복사 2" class="cls-1" d="M0.793,0.8L6.6,6.288,12.4,0.8" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use transform="translate(-0.094 -0.063)" xlink:href="#사각형_29_복사_2" style="stroke: #8a8b8e; filter: none; fill: none"/>
+</svg>

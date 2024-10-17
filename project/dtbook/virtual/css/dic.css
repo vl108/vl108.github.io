@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.modal-dic{background-color: #eb93a8}
+.modal-dic .icon-modal-dic{width: 35px;background-image: url(../images/dictionary/icon-modal-dic.png);margin-right: 12px}
+.modal-dic .modal-header>.font-coo{color: #ff6a94;background: #fff;box-shadow: 0px 2px 6px 0px rgba(255, 153, 182, 0.5);font-size: 30px;padding: 0 25px}
+.modal-dic-body{position: relative}
+.modal-dic .modal-body{height: 932px;margin-right: 70px;position: relative;z-index: 1;padding: 25px 27px}
+.dic-side{position: absolute;top: 0;right: 0}
+.dic-side [role=button]{position: relative;width: 70px;padding-right: 10px;display: flex;align-items: center;justify-content: center;height: 55px;box-shadow: 0px 2px 6px 0px rgb(255, 153, 182 / 50%), inset 0px -2px 2px rgb(255 197 212), inset 0 1px 1px rgb(255 175 194);background: #ffbfce;border-radius: 0 25px 25px 0;font-size: 17px;font-weight: 700;color: #ff6a94;z-index: 0;cursor: pointer}
+.dic-side li{margin-bottom: 4px;padding-left: 20px}
+.dic-side li:first-child{padding-left: 0}
+.dic-side li:first-child [role=button]{width: 90px;padding-left: 20px}
+.dic-side .active>[role=button]{background: #fff;z-index: 5;box-shadow: none}
+.dic-sort{display: flex;margin: 0 -4px}
+.dic-sort>.col-6{padding: 0 4px}
+.dic-sort button{width: 100%;height: 50px;background: #e5cfb2;border-radius: 25px 25px 0 0;font-size: 19px;color: #fff;border: 2px solid #d4bf9c;border-bottom: 0;position: relative;padding: 4px 3px 0}
+.dic-sort .active{background: #ff4901;border-color: transparent;color: #ffd958;font-weight: 700;box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.3),1.5px 2.598px 2px 0px rgba(0, 0, 0, 0.2);}
+.dic-sort .active:after{content: '';position: absolute;top: 3px;left: 3px;right: 3px;bottom: 0;border-bottom: 0;border-radius: 20px 20px 0 0;border: 1px solid #ffd958;border-bottom: 0}
+.lst-dic{margin: 0 -27px;background: #fff;position: relative;padding-left: 27px;height: 792px;overflow: hidden;overflow-y: auto}
+.lst-dic>li{width: 614px;padding-bottom: 25px;border-bottom: 1px solid #d7dee4;display: none}
+.lst-dic>li:after{content: '';display: block;clear: right}
+.lst-dic .dic{ margin:10px 0}
+.lst-dic .dic-ex{padding: 0 25px;border-radius: 6px;margin: 32px 0 20px;clear: both;position: relative}
+/*.lst-dic .dic-ex:before{content: '';position: absolute;top: -20px;left: 0;right: 0;bottom: -20px;background: #fff5e7;border-radius: 6px}*/
+.lst-dic .dic-ex>*:not([class*=fwd]){position: relative}
+.lst-dic .open>.dic-ex{display: block !important}
+.lst-dic .dic-title{font-size: 30px}
+.lst-dic .video-js{margin-top: 10px}
+.btn-dic-detail{float: right;width: 100px;height: 25px;border: 1px solid #d9d9d9;border-radius: 12px;font-size: 14px;color: #666;padding: 1px 0 0}
+.btn-dic-detail:after{content: '';display: inline-block;vertical-align: middle;width: 8px;height: 7px;background: url(../images/dictionary/arr.png) no-repeat 0 0/100% auto;margin: -2px 0 0 5px}
+.open>.btn-dic-detail{margin-bottom: 32px}
+.open>.btn-dic-detail:after{transform: scaleY(-1);}
+.pn{display: flex;align-items: flex-end;height: 40px;justify-content: center}
+.pn a{width: 34px;height: 34px;border-radius: 100%;font-size: 17px;color: #9fb1ba;border: 1px solid #d2dae1;display: flex;align-items: center;justify-content: center;padding-top: 2px;margin: 0 3px}
+.pn .active{border-color: #ff6a94;color: #ff6a94}
+.pn .not{display:none}
+[class^=icon-pn]{background-image: url(../images/common/pn.png);background-size: 12px auto;border: 0 !important}
+.icon-pn-next{-webkit-transform:scale(-1,1);transform:scale(-1,1)}
+#tabDicChapter li:not(:first-child) [role=button]{height: 80px}

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="타원_471" data-name="타원 471" cx="16" cy="16" r="16" transform="translate(-0.024)" fill="#ffd55c"/>
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="0.293" cy="1.077" r="1.325" gradientUnits="objectBoundingBox">
+      <stop offset="0.097" stop-color="#ffd55c"/>
+      <stop offset="0.146" stop-color="#fbc859"/>
+      <stop offset="0.236" stop-color="#f3a751"/>
+      <stop offset="0.355" stop-color="#e57145"/>
+      <stop offset="0.449" stop-color="#d9433b"/>
+      <stop offset="0.679" stop-color="#bb0f77"/>
+      <stop offset="1" stop-color="#484e9a"/>
+    </radialGradient>
+  </defs>
+  <g id="그룹_1339" data-name="그룹 1339" transform="translate(0.024)">
+    <g id="마스크_그룹_27" data-name="마스크 그룹 27" clip-path="url(#clip-path)">
+      <path id="패스_1286" data-name="패스 1286" d="M-805.83,1057.945a6.564,6.564,0,0,1-6.569,6.558h-18.843a6.564,6.564,0,0,1-6.569-6.558v-18.811a6.565,6.565,0,0,1,6.569-6.56H-812.4a6.565,6.565,0,0,1,6.569,6.56Z" transform="translate(837.79 -1032.574)" fill="url(#radial-gradient)"/>
+    </g>
+    <g id="그룹_666" data-name="그룹 666" transform="translate(6.209 6.208)">
+      <path id="패스_1287" data-name="패스 1287" d="M-814.845,1041.427h-7.829a6.285,6.285,0,0,0-6.285,6.286v7.828a6.284,6.284,0,0,0,6.285,6.284h7.829a6.284,6.284,0,0,0,6.285-6.284v-7.828A6.285,6.285,0,0,0-814.845,1041.427Zm4.327,13.361a5.078,5.078,0,0,1-5.078,5.078h-6.326a5.078,5.078,0,0,1-5.079-5.078v-6.326a5.079,5.079,0,0,1,5.079-5.078h6.326a5.079,5.079,0,0,1,5.078,5.078Z" transform="translate(828.959 -1041.427)" fill="#fff"/>
+      <path id="패스_1288" data-name="패스 1288" d="M-810.111,1054.373a5.359,5.359,0,0,0-5.271,5.445,5.361,5.361,0,0,0,5.271,5.445,5.361,5.361,0,0,0,5.271-5.445A5.36,5.36,0,0,0-810.111,1054.373Zm0,8.72a3.225,3.225,0,0,1-3.172-3.276,3.224,3.224,0,0,1,3.172-3.276,3.224,3.224,0,0,1,3.171,3.276A3.225,3.225,0,0,1-810.111,1063.094Z" transform="translate(820.589 -1049.584)" fill="#fff"/>
+      <path id="패스_1289" data-name="패스 1289" d="M-788.7,1051.857a1.347,1.347,0,0,1-1.346,1.345,1.345,1.345,0,0,1-1.345-1.345,1.346,1.346,0,0,1,1.345-1.347A1.348,1.348,0,0,1-788.7,1051.857Z" transform="translate(805.537 -1047.091)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Coding List</title>
+<link rel="stylesheet" href="../css/bootstrap.min.css"> 
+<style>
+html, body{font-family:'Noto Sans KR', sans-serif;line-height:1.7}
+.container{max-width:1400px;margin:0 auto}
+h1 {color:#333;font-size:30px;text-align:left;line-height:40px;font-weight:700;margin:30px 0}
+.nav-tabs{margin-bottom:8px;border:0}
+.nav-item{max-width:140px}
+.nav-item+.nav-item{margin-left:-1px}
+.nav-tabs .nav-link{background-color:#fafafa;border:1px solid #dee2e6;color:#333}
+.nav-tabs .nav-link:hover{color:#333}
+table {table-layout:fixed;width:100%;margin-bottom:50px;border-collapse:collapse}
+th {padding:12px 16px;background:#f9f9f9;border:1px solid #e2e2e2;font-size:15px;font-weight:500;text-align:center}
+td {padding:12px 16px;border:1px solid #e2e2e2;font-size:15px;text-align:center}
+a {display:block;color:#333;text-decoration: underline;}
+a:hover {color:inherit;}
+tr.line td {border-top:2px solid #d2d2d2}
+tr>td:last-child{background-color:#f0f0f0}
+tr>td:last-child a{display:block}
+td span.line{display:inline-block;position:relative;color:#ccc}
+td span.line:after{content:'';position:absolute;top:50%;left:0;width:100%;height:1px;background:#ccc}
+tr>td.bg-ing{background-color: greenyellow}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1 id="docTit">MARKUP LIST(영문 버전)</h1>
+		<!-- <ul class="nav nav-tabs nav-justified">
+			<li class="nav-item"><a href="#tab1" class="nav-link" data-toggle="tab">tab1</a></li>
+			<li class="nav-item"><a href="#tab2" class="nav-link" data-toggle="tab">tab2</a></li>
+			<li class="nav-item"><a href="#tab3" class="nav-link" data-toggle="tab">tab3</a></li>
+		</ul> -->
+		<div class="tab-content">
+			<div id="tab1" class="tab-pane active">
+				<table>
+					<colgroup>
+						<col span="5" width="auto">
+						<col width="360">
+						<col width="120">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>1 Depth</th>
+							<th>2 Depth</th>
+							<th>3 Depth</th>
+							<th>4 Depth</th>
+							<th>5 Depth</th>
+							<th>Page ID</th>
+							<th>진행도</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>메인</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="text-left ">
+								<a href="_index.html" target="_blank">_index.html</a>
+							</td>
+							<td>완료</td>
+						</tr>
+						<tr>
+							<td>회사소개(company)</td>
+							<td>인사말</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="text-left">
+								<a href="sub_회사소개_인사말.html" target="_blank">sub_회사소개_인사말.html</a>
+							</td>
+							<td>완료</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>연혁</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="text-left">
+								<a href="sub_회사소개_연혁.html" target="_blank">sub_회사소개_연혁.html</a>
+							</td>
+							<td>완료</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>비전</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="text-left">
+								<a href="sub_회사소개_비전.html" target="_blank">sub_회사소개_비전.html</a>
+							</td>
+							<td>완료</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>IR</td>
+							<td>재무정보</td>
+							<td></td>
+							<td></td>
+							<td class="text-left">
+								<a href="sub_회사소개_IR_재무정보.html" target="_blank">sub_회사소개_IR_재무정보.html</a>
+							</td>
+							<td>완료</td>
+						</tr>
+						<tr>
+							<td>제품소개(product)</td>
+							<td>제품검색</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="text-left">
+								<a href="sub_제품소개_제품검색.html" target="_blank">sub_제품소개_제품검색.html</a>
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>홍보센터</td>
+							<td>안국홍보관</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="text-left">
+								<a href="sub_홍보센터_소셜미디어.html" target="_blank">sub_홍보센터_소셜미디어.html</a>
+							</td>
+							<td>완료</td>
+						</tr>
+						<tr>
+							<td>연구개발(rnd)</td>
+							<td>R&amp;D vision</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="text-left">
+								<a href="sub_연구개발_R&amp;D_vision.html" target="_blank">sub_연구개발_R&amp;D_vision.html</a>
+							</td>
+							<td>완료</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>연혁및연구실적</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="text-left">
+								<a href="sub_연구개발_연혁및연구실적.html" target="_blank">sub_연구개발_연혁및연구실적.html</a>
+							</td>
+							<td>완료</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>연구개발품목</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="text-left">
+								<a href="sub_연구개발_연구개발품목.html" target="_blank">sub_연구개발_연구개발품목.html</a>
+							</td>
+							<td>완료</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>ProductPipeline</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="text-left">
+								<a href="sub_연구개발_ProductPipeline.html" target="_blank">sub_연구개발_ProductPipeline.html</a>
+							</td>
+							<td>완료</td>
+						</tr>
+						
+                    </tbody>
+                </table>
+            </div>
+		</div>
+	</div>
+</body>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+</html>

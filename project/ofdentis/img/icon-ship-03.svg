@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90">
+  <g id="그룹_2176" data-name="그룹 2176" transform="translate(-915 -7655)">
+    <circle id="타원_418" data-name="타원 418" cx="45" cy="45" r="45" transform="translate(915 7655)" fill="#fff"/>
+    <g id="그룹_2170" data-name="그룹 2170" transform="translate(928.308 7668)">
+      <rect id="사각형_1236" data-name="사각형 1236" width="64" height="64" transform="translate(-0.308)" fill="none"/>
+      <circle id="타원_413" data-name="타원 413" cx="12.5" cy="12.5" r="12.5" transform="translate(5.692 6)" fill="#ff7500" opacity="0.15"/>
+      <g id="그룹_2162" data-name="그룹 2162" transform="translate(18.462 18.462)">
+        <path id="사각형_1242" data-name="사각형 1242" d="M2.215,2.215V24.862H24.862V2.215H2.215M1.231,0H25.846a1.231,1.231,0,0,1,1.231,1.231V25.846a1.231,1.231,0,0,1-1.231,1.231H1.231A1.231,1.231,0,0,1,0,25.846V1.231A1.231,1.231,0,0,1,1.231,0Z" transform="translate(0)" fill="#111"/>
+        <path id="사각형_1243" data-name="사각형 1243" d="M2.215,2.215V7.631H7.631V2.215H2.215M1.231,0H8.615A1.231,1.231,0,0,1,9.846,1.231V8.615A1.231,1.231,0,0,1,8.615,9.846H1.231A1.231,1.231,0,0,1,0,8.615V1.231A1.231,1.231,0,0,1,1.231,0Z" transform="translate(8.615)" fill="#111"/>
+      </g>
+    </g>
+  </g>
+</svg>

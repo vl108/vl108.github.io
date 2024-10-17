@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=900">
+<title></title>
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+<!-- page -->
+<link rel="stylesheet" type="text/css" href="../../css/speedQuiz.css" />
+</head>
+<body>
+<!-- Start -->
+<div id="wrap">
+	<div class="wrap-inner">
+        <div class="game-header">
+            <ul class="lv-box">
+                <li class="level-num">레벨 5</li>
+                <li class="step-num">1단계</li>
+            </ul>
+            <p class="tit-question">1분 동안 총 10문제를 풀어 보세요. <br/>다음 뜻에 해당하는 낱말을 선택하세요.</p>
+            <button type="button" class="btn-home"><span class="sr-only">홈으로 가기</span></button>
+        </div>
+        <div class="game-board" id="speedQuiz">
+            <div class="gate">
+                <img src="../../images/step1/start-bg.png" width="697" alt="">
+                <h2 class="title">
+                    <img src="../../images/step1/start-deco.png" width="107">
+                    <span>스피드 퀴즈</span>
+                </h2>
+                <img src="../../images/step1/start-deco2.png" width="722" class="position-absolute" style="bottom: 7px;left: 71px;">
+                <button type="button" class="btn btn-lg btn-orange" id="btnStart" data-toggle="tab" data-target="#tab2">시작하기</button>
+            </div>
+            <ol class="quizlist"></ol>
+            <div id="timer"><span class="line"></span></div>
+            <div class="timeover font-coo">
+                <p><i class="icon-alarm"></i><span>시간 종료!</span></p>
+                <img src="../../images/step1/char1.png" width="98" class="position-absolute char1" style="top: 149px;left: 247px;" >
+                <img src="../../images/step1/char2.png" width="100" class="position-absolute char2" style="top: 150px;left: 343px;" >
+                <img src="../../images/step1/char3.png" width="88" class="position-absolute char1" style="top: 142px;left: 445px;" >
+                <img src="../../images/step1/char4.png" width="84" class="position-absolute char2" style="top: 159px;left: 543px;" >
+                <p class="result font-coo">총 <b id="correctNum">0</b> 문제를 맞혔어요!</p>
+                <div class="btns">
+                    <button type="button" class="btn btn-sm btn-fix" data-toggle="modal" data-target="#modalRe"><i class="icon-re"></i> 다시 하기</button>
+                    <button type="button" class="btn btn-sm btn-fix"><i class="icon-book"></i> 미니북 보기</button>
+                    <button type="button" class="btn btn-orange w-100 ml0 mt8"><i class="icon-arr"></i> 다음 단계로 이동하기</button>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+
+<div id="modalAlert" class="modal modal-alert" data-background="static">
+	<div class="modal-dialog-centered">
+        <div class="modal-content">
+			<div class="modal-body">
+				<button type="button" title="닫기" class="icon-close" data-dismiss="modal">닫기</button>
+				<p>문제를 풀어보세요.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modalRe" class="modal" data-background="static">
+	<div class="modal-dialog-centered">
+        <div class="modal-content">
+			<div class="modal-body">
+				<button type="button" title="닫기" class="icon-close" data-dismiss="modal">닫기</button>
+				<p>현재 단계를 다시 해 볼까요?</p>
+				<button type="button" class="btn btn-sm btn-fix mt30" data-dismiss="modal" data-toggle="replay">확인</button>
+				<button type="button" class="btn btn-sm btn-fix btn-gray mt30" data-dismiss="modal">취소</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modalHome" class="modal" data-background="static">
+	<div class="modal-dialog-centered">
+        <div class="modal-content">
+			<div class="modal-body">
+				<button type="button" title="닫기" class="icon-close" data-dismiss="modal">닫기</button>
+				<p>게임을 정말 멈추시겠습니까?</p>
+				<button type="button" class="btn btn-sm btn-fix mt30" data-dismiss="modal" data-toggle="reset">확인</button>
+				<button type="button" class="btn btn-sm btn-fix btn-gray mt30" data-dismiss="modal">취소</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- // End -->
+<!-- js -->
+<script type="text/javascript" src="../../js/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<!-- page -->
+<script type="text/javascript" src="../../data/data.book1.step1.js"></script>
+<script type="text/javascript" src="../../js/speedQuiz.js"></script>
+<script>
+// 시작
+speedQuiz(dataStep1Level5,'05');
+</script>
+</body>
+</html>

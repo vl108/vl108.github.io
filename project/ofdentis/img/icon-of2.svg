@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="ic_cancel" transform="translate(-1050 -311)">
+    <rect id="사각형_1459" data-name="사각형 1459" width="80" height="80" transform="translate(1050 311)" fill="none"/>
+    <g id="그룹_2665" data-name="그룹 2665" transform="translate(1050.022 311)">
+      <path id="패스_193" data-name="패스 193" d="M40,2.466A37.534,37.534,0,1,1,22.554,73.247l-9.022,4.159.909-9.894A37.533,37.533,0,0,1,40,2.466M40,0A40,40,0,0,0,11.877,68.473l-.8,8.706a2.466,2.466,0,0,0,3.489,2.466l7.94-3.66A40,40,0,1,0,40,0" fill="#ccc"/>
+      <path id="패스_194" data-name="패스 194" d="M20.66,28.56a2.466,2.466,0,1,1-2.466-2.466A2.466,2.466,0,0,1,20.66,28.56" transform="translate(3.667 6.084)" fill="#ccc"/>
+      <path id="패스_195" data-name="패스 195" d="M50.66,28.56a2.466,2.466,0,1,1-2.466-2.466A2.466,2.466,0,0,1,50.66,28.56" transform="translate(10.662 6.084)" fill="#ccc"/>
+      <path id="패스_196" data-name="패스 196" d="M44.206,36.526a11.1,11.1,0,0,1-19.275.085" transform="translate(5.813 8.516)" fill="none" stroke="#ccc" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

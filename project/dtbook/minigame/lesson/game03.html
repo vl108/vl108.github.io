@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<title></title>
+<script src="common/js/jquery.min.js"></script>
+<script src="common/js/jquery-ui.min.js"></script>
+<script src="common/js/jquery.ui.touch-punch.min.js"></script>
+<script src="common/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="common/css/minigame.css" />
+<link rel="stylesheet" type="text/css" href="css/game03.css" />
+</head>
+<body>
+
+<div id="wrap" class="step">
+    <button type="button" class="icon-close" data-dismiss="modal" data-role="finish">닫기</button>
+    <div class="game-wrp">
+        <button type="button" class="icon-home" data-role="reset">첫 화면</button>
+        <div class="game-body" data-page="1">
+            <img src="img/game03/bg.png" alt="" class="bg">
+            <div class="bg-obj">
+                <img src="img/game03/bg-obj.svg" alt="" class="bg-obj01">
+                <img src="img/game03/bg-obj.svg" alt="" class="bg-obj02" width="43">
+                <img src="img/game03/bg-obj.svg" alt="" class="bg-obj03">
+                <img src="img/game03/bg-obj.svg" alt="" class="bg-obj04" width="43">
+            </div>
+
+            <!-- 홈 -->
+            <div class="game-stage" id="home">
+                <img src="img/game03/home-title.png" alt="냠냠 맛있는 샌드위치를 만들자!" class="home-title">
+                <div class="home-ai">
+                    <img src="img/game03/home-obj.png" alt="">
+                    <div class="home-ai01"></div>
+                    <img src="img/game03/home-ai02.png" alt="" class="home-ai02">
+                    <img src="img/game03/home-ai03.png" alt="" class="home-ai03">
+                    <img src="img/game03/home-ai04.png" alt="" class="home-ai04">
+                    <img src="img/game03/home-ai05.png" alt="" class="home-ai05">
+                    <img src="img/game03/home-ai06.png" alt="" class="home-ai06">
+                    <img src="img/game03/home-ai07.png" alt="" class="home-ai07">
+                    <img src="img/game03/home-ai08.png" alt="" class="home-ai08">
+                    <img src="img/game03/home-ai09.png" alt="" class="home-ai09">
+                </div>
+                <img src="img/game03/bg-obj.png" alt="">
+                <button type="button" class="btn btn-icon btn-start" data-role="init">시&nbsp;&nbsp;작</button>
+                <button type="button" class="btn btn-circle" data-role="guide">
+                    <span class="home-balloon">놀이 방법</span>
+                    ?
+                </button>
+            </div>
+            <!-- // 홈 -->
+
+            <!-- 인트로 -->
+            <div class="game-stage" id="intro">
+                <img src="img/game03/bg.png" alt="" class="bg">
+                <div class="bg-obj">
+                    <img src="img/game03/bg-obj.svg" alt="" class="bg-obj01" width="76">
+                    <img src="img/game03/bg-obj.svg" alt="" class="bg-obj02" width="53">
+                    <img src="img/game03/bg-obj.svg" alt="" class="bg-obj03" width="50">
+                    <img src="img/game03/bg-obj.svg" alt="" class="bg-obj04" width="34">
+                </div>
+                <img src="img/game03/intro-obj01.png" alt="" class="intro-obj01">
+                <div class="pages">
+                    <div class="page01">
+                        <img src="img/game03/intro-ai01.png" alt="" class="intro-ai01">
+                    </div>
+                    <div class="page02">
+                        <img src="img/game03/intro-ai02.png" alt="" class="intro-ai02">
+                    </div>
+                    <div class="page03">
+                        <img src="img/game03/intro-ai03.png" alt="" class="intro-ai03">
+                    </div>
+                </div>
+                <div class="step-wrp">
+                    <ul class="step-index">
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                    <div class="bx step-bx">
+                        <div class="bx">
+                            <h3 class="active">두근두근! 빵을 얻어 볼까요?</h3>
+                            <h3>두근두근! <br>채소를 얻어 볼까요?</h3>
+                            <h3>두근두근! <br>이번에는 다른 재료를 얻어 볼까요?</h3>
+                        </div>
+                        <button type="button" class="btn" data-role="start">도&nbsp;&nbsp;전</button>
+                    </div>
+                    <div class="step-bubble"><span class="current-step">1</span>단계</div>
+                </div>
+                <img src="img/game03/intro-obj02.png" alt="" class="intro-obj02">
+            </div>
+            <!-- // 인트로 -->
+
+            <!-- 문제 -->
+            <div class="game-stage" id="round">
+                <img src="img/game03/bg2.png" alt="" class="bg">
+                <div class="bx">
+                    <div class="bx-inner">
+                        <h3 class="round-title">문제</h3>
+                        <div id="controler" class="controler">
+                            <!-- 진위형 -->
+                            <!-- <ul class="answer-type-ox answer-type-choice">
+                                <li>
+                                    <label>
+                                        <input type="radio" value="o" class="sr-only" data-answer />
+                                        <span>o</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" value="x" class="sr-only" />
+                                        <span>x</span>
+                                    </label>
+                                </li>
+                            </ul> -->
+
+                            <!-- 선택형 -->
+                            <!-- <ul class="answer-type-select answer-type-choice">
+                                <li>
+                                    <label>
+                                        <input type="radio" name="ex2" id="ex2-1" value="답안이 들어갑니다" class="sr-only" data-answer />
+                                        <b>1</b><span>답안이 들어갑니다</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="ex2" id="ex2-2" value="답안이 들어갑니다" class="sr-only" />
+                                        <b>2</b><span>답안이 들어갑니다</span>
+                                    </label>
+                                </li>
+                                <li> 
+                                    <label>
+                                        <input type="radio" name="ex2" id="ex2-3" value="답안이 들어갑니다" class="sr-only" />
+                                        <b>3</b><span>답안이 들어갑니다</span>
+                                    </label>
+                                </li><li> 
+                                    <label>
+                                        <input type="radio" name="ex2" id="ex2-4" value="답안이 들어갑니다" class="sr-only" />
+                                        <b>4</b><span>답안이 들어갑니다</span>
+                                    </label>
+                                </li>
+                            </ul> -->
+                        </div>
+                        <div class="round-bubble"><span class="current-step">1</span>단계</div>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <div class="result-ai correct">
+                        <img src="common/img/ai01-correct.png">
+                        <p>잘했어요!</p>
+                    </div>
+                    <div class="result-ai wrong">
+                        <img src="common/img/ai01-wrong.png">
+                        <p>다시 생각해 <br>보세요.</p>
+                    </div>
+                    <div class="result-desc">
+                        <button type="button" class="icon-close">닫기</button>
+                        <p>해설</p>
+                    </div>
+                </div>
+                <img src="img/game03/round-obj01.png" alt="" class="round-obj01" width="174">
+                <img src="img/game03/round-obj02.png" alt="" class="round-obj02" width="184">
+            </div>
+            <!-- // 문제 -->
+            
+            <!-- 활동 -->
+            <div class="game-stage" id="act">
+                <img src="img/game03/bg2.png" alt="" class="bg">
+                <div id="floor"></div>
+                <div class="basket-container">
+                    <div id="basket">
+                        <div class="char"></div>
+                        <div class="basket-inner"></div>
+                    </div>
+                </div>
+                <ul class="ingredients page01">
+                    <li><div class="item11"></div><div class="item-hide"></div></li>
+                    <li><div class="item12"></div><div class="item-hide"></div></li>
+                    <li><div class="item13"></div><div class="item-hide"></div></li>
+                    <li><div class="item14"></div><div class="item-hide"></div></li>
+                    <li><div class="item15"></div><div class="item-hide"></div></li>
+                </ul>
+                <ul class="ingredients page02">
+                    <li><div class="item21"></div></li>
+                    <li><div class="item22"></div></li>
+                    <li><div class="item23"></div></li>
+                    <li><div class="item24"></div></li>
+                    <li><div class="item25"></div></li>
+                </ul>
+                <ul class="ingredients page03">
+                    <li><div class="item31"></div></li>
+                    <li><div class="item32"></div></li>
+                    <li><div class="item33"></div></li>
+                    <li><div class="item34"></div></li>
+                    <li><div class="item35"></div></li>
+                </ul>
+                <div class="guide">
+                    <span class="guide-line"></span>
+                    <span class="guide-balloon">그릇을 <span class="text-green">움직여</span> <br><span class="page01">빵을</span><span class="page02">채소를</span><span class="page03">재료를</span> 받아 보세요.</span>
+                </div>
+            </div>
+            <!-- // 활동 -->
+
+            <!-- 성공 -->
+            <div class="game-stage" id="ending">
+                <div class="end-ai">
+                    <img src="img/game03/end-obj.png" alt="" class="end-obj">
+                    <div class="end-ai01"></div>
+                    <div class="end-ai02"></div>
+                    <div class="end-ai03"></div>
+                    <img src="img/game03/end-ai04.png" alt="" class="end-ai04">
+                </div>
+                <img src="img/game03/bg-obj.png" alt="">
+                <button type="button" class="btn btn-icon btn-reset" data-role="reset">처음부터 다시 하기</button>
+            </div>
+            <!-- // 성공 -->
+        </div>
+    </div>
+</div>
+
+<!-- 놀이 방법 -->
+<div id="modal-guide" class="modal modal-half" data-backdrop="static">
+	<div class="modal-dialog modal-dialog-centered">
+	    <div class="modal-content">
+            <button type="button" class="icon-close" data-dismiss="modal">닫기</button>
+	        <div class="modal-body">
+	            <h3 class="modal-title">놀이 방법</h3>
+	            <ul class="guide-list">
+                    <li class="guide-item"><span class="num">1</span><p>주어진 문제를 잘 읽고 정답을 선택합니다.
+                    <li class="guide-item"><span class="num">2</span><p>답을 맞히면 다음 문제로 넘어가며 틀리면 기회가 하나씩 <br>사라집니다.</p></li>
+                    <li class="guide-item"><span class="num">3</span><p>단계별 문제를 풀면 샌드위치를 만들기 위한 재료를 얻을 <br>수 있습니다.</p></li>
+                    <li class="guide-item"><span class="num">4</span><p>얻은 재료를 모으면 샌드위치를 완성할 수 있습니다.</p></li>
+                </ul>
+	        </div>
+	    </div>
+	</div>
+</div>
+<!-- // 놀이 방법 -->
+
+<!-- 성공 -->
+<div id="modal-success" class="modal modal-alert" data-backdrop="static">
+	<div class="modal-dialog modal-dialog-centered">
+	    <div class="modal-content">
+	        <div class="modal-body">
+                <div class="modal-title">
+                    <h3><span class="current-step">1</span>단계 성공을 축하합니다!</h3>
+                    <p>다음 단계를 시작합니다.</p>
+                </div>
+                <button type="button" class="btn w-auto" data-dismiss="modal" data-role="next">확&nbsp;인</button>
+	        </div>
+	    </div>
+	</div>
+</div>
+<!-- // 성공 -->
+
+<!-- 실패 -->
+<div id="modal-fail" class="modal modal-alert" data-backdrop="static">
+	<div class="modal-dialog modal-dialog-centered">
+	    <div class="modal-content">
+	        <div class="modal-body">
+                <div class="modal-title">
+                    <h3><span class="current-step">1</span>단계</h3>
+                    <p>아쉽지만, 힘을 내서 다시 도전해 볼까요?</p>
+                </div>
+                <button type="button" class="btn btn-icon btn-replay" data-dismiss="modal" data-role="replay">현재 단계 다시 하기</button>
+                <button type="button" class="btn btn-icon btn-reset" data-dismiss="modal" data-role="reset">처음부터 다시 하기</button>
+	        </div>
+	    </div>
+	</div>
+</div>
+<!-- // 실패 -->
+<script src="common/js/minigame.js"></script>
+<script src="data/game03.data.js"></script>
+<script src="js/game03.js"></script>
+<script>
+    gameInit('game03');
+</script>
+</body>
+</html>

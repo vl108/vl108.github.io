@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+    <i class="bg"></i>
+    <div id="intro" class="stage show">
+        <div class="stage-inner">
+            <div class="intro-img only-pc">
+                <img src="img/card.svg" alt="" class="intro-img01">
+                <div class="intro-img02">
+                    <div class="c">
+                        <img src="img/card.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="intro-contents">
+                <img src="img/intro-txt.png" alt="영혼의 예술가인 할머니들이 들려주는 타령카드" width="940" class="only-pc">
+                <img src="img/intro-txt-m.png" alt="영혼의 예술가인 할머니들이 들려주는 타령카드" width="360" class="only-mo">
+                <div class="intro-img only-mo">
+                    <img src="img/card.svg" alt="" class="intro-img01">
+                    <div class="intro-img02">
+                        <div class="c">
+                            <img src="img/card.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-start" data-action="bubble" data-target="#bubble1"><span>시<span class="split"></span>작</span></button>
+            </div>
+        </div>
+    </div>
+    <div id="chatbx" class="stage">
+        <div class="stage-inner">
+            <div class="chatbx">
+                <div class="chatbx-top">
+                    <div class="chat-profile">
+                        <div class="name">한영 할머니</div>
+                        <div class="status">ONLINE</div>
+                    </div>
+                    <div class="chat-icon"><i class="icon"></i><i class="icon"></i><i class="icon"></i></div>
+                </div>
+                <div class="chatbx-body">
+                    <div class="chat-profile">
+                        <div class="name">한영 할머니</div>
+                        <div class="bubble" id="bubble1" data-index="1">
+                            <span>안녕~ 그림책 "할머니체조대회"에 <br class="only-mo">참여했던 한영 할머니야~ 😘</span>
+                            <span>뭔가 고민이 있니?</span>
+                            <span>할머니들의 잔소리 같은 이야기지만 삶의 지혜를 담은 그림카드가 <br class="only-pc">너에게 도움이 되길 바란다면 질문을 입력하고 [전송] 버튼을 눌러줘~</span>
+                            <span>그럼 할머니가 카드를 보여줄게<span class="only-pc"> 😉</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chatbx-btm">
+                    <div class="only-pc">
+                        <textarea name="" id="q" rows="3" placeholder="질문 내용을 입력해주세요"></textarea>
+                        <button type="button" class="btn btn-normal btn-enter"><span>전<span class="split"></span>송</span></button>
+                    </div>
+                    <div class="only-mo">
+                        <input type="text" id="q" placeholder="질문 내용을 입력해주세요">
+                        <button type="button" class="icon icon-enter"><span class="sr-only">전송</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main" class="stage">
+        <div class="stage-inner">
+            <div class="bx">
+                <p><span class="message"></span></p>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane" id="tab1">
+                    <div class="interaction">
+                        <div class="img-show">
+                            <img src="img/tab01-img01.png" alt="" width="">
+                            <img src="img/tab01-img02.png" alt="" width="" class="hidden">
+                            <i class="icon icon-circle"></i>
+                            <button type="button" class="btn-transparent" data-role="tab" data-target="#tab2"><span class="sr-only">다음 단계로</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab2">
+                    <div class="interaction">
+                        <div class="card-wrp only-pc">
+                            <i class="c c1"></i>
+                            <i class="c c2"></i>
+                            <i class="c c3"></i>
+                            <i class="c c4"></i>
+                            <i class="c c5"></i>
+                            <i class="c c6"></i>
+                            <i class="c c7"></i>
+                            <i class="c c8"></i>
+                            <i class="c c9"></i>
+                            <i class="c c10"></i>
+                            <i class="c c11"></i>
+                            <i class="c c12"></i>
+                            <i class="c c13"></i>
+                            <i class="c c14"></i>
+                        </div>
+                        <div class="card-wrp only-mo">
+                            <i class="c c1"></i>
+                            <i class="c c2"></i>
+                            <i class="c c3"></i>
+                            <i class="c c4"></i>
+                            <i class="c c5"></i>
+                            <i class="c c6"></i>
+                            <i class="c c7"></i>
+                            <i class="c c8"></i>
+                            <i class="c c9"></i>
+                            <i class="c c10"></i>
+                            <i class="c c11"></i>
+                            <i class="c c12"></i>
+                            <i class="c c13"></i>
+                            <i class="c c14"></i>
+                        </div>
+                        <div class="circle-move">
+                            <i class="icon icon-circle"></i>
+                        </div>
+                        <div class="pointer">
+                            <i class="icon icon-circle"></i>
+                        </div>
+                    </div>
+                    <button type="button" class="btn" data-role="tab" data-target="#tab3"><span>카드 선택하기</span></button>
+                </div>
+                <div class="tab-pane" id="tab3">
+                    <div class="interaction">
+                        <div class="card-wrp">
+                            <a href="#" class="item item1">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item2">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item3">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item4">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item5">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item6">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item7">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item8">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item9">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item10">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item11">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item12">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item13">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item14">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item15">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item16">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item17">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item18">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item19">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item20">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item21">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item22">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item23">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item24">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item25">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item26">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item27">
+                                <i class="c"></i>
+                            </a>
+                            <a href="#" class="item item28">
+                                <i class="c"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <button type="button" class="btn" data-role="tab" data-target="#tab4"><span>카드 확인하러가기</span></button>
+                </div>
+                <div class="tab-pane" id="tab4">
+                    <div class="interaction">
+                        <div class="choice">
+                            <div class="card-effect">
+                                <div class="back" id="card-img">
+                                    <img src="img/card/01_line.png" alt="">
+                                    <img src="img/card/01_color.png" alt="" class="fill">
+                                </div>
+                                <div class="front"></div>
+                            </div>
+                        </div>
+                        <div class="result">
+                            <div class="card-effect">
+                                <div class="back">
+                                    <div class="result-bx">
+                                        <div class="result-txt" id="card-txt">
+                                            <h4>행동하세요.</h4>
+                                            <p>“몸이 움직이지 않아요!” 우리는 분명 이런 때를 많이 경험해요. 생각이 안내하는 길이 맞는지? 마음이 안내하는 길이 맞는지? 혼란스러운가요? 그럴 때는 가만히 나에게 집중해 보는 게 좋아요. 하지만 혼란의 시간이 너무 길어져 움직일 힘이 없어져 버릴 정도라면 그냥 일어나서 걸어보아요. 답을 찾고 걸어가는 걸음도 있지만 걸어가다 보면 답이 찾아올 때도 아주 많아요.  모깃소리보다 작은 소리를 내는 어느 시인의 용기를 당신께 드릴게요. 나비의 날개 짓보다 작은 움직임이여도 좋아요. 멋진 말의 등에 올라타 봐도 좋아요. 그 작은 움직임이 당신을 자유의 길로 안내할 거예요.</p>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-normal btn-chk only-pc" data-action="bubble" data-target="#bubble2"><span>확인</span></button>
+                                </div>
+                                <div class="front"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn" data-role="toggle"><span>해석 카드 보기</span></button>
+                    <button type="button" class="btn btn-normal btn-chk only-mo" data-action="bubble" data-target="#bubble2"><span>확인</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="chatbx2" class="stage">
+        <div class="stage-inner">
+            <div class="chatbx">
+                <div class="chatbx-top">
+                    <div class="chat-profile">
+                        <div class="name">한영 할머니</div>
+                        <div class="status">ONLINE</div>
+                    </div>
+                    <div class="chat-icon"><i class="icon"></i><i class="icon"></i><i class="icon"></i></div>
+                </div>
+                <div class="chatbx-body">
+                    <div class="chat-profile">
+                        <div class="name">한영 할머니</div>
+                        <div class="bubble" id="bubble2" data-index="2">
+                            <span>어떤 그림카드와 글을 만났니? ❤️</span>
+                            <span>오늘 만난 그림카드와 글을 잘 기억하렴. <br class="only-pc">너만의 답을 찾아가는 안내자가 되어줄 거야~</span>
+                            <span>타령카드에 대한 너의 의견이 궁금해. 선택해 주겠니? 😊</span>
+                        </div>
+                    </div> 
+                    <ul class="rating">
+                        <li>
+                            <label>
+                                <input type="radio" name="chk" value="" class="sr-only" checked/>
+                                <span>깊은 감명을 주는 그림이에요 🥺</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="chk" value="" class="sr-only"/>
+                                <span>영혼이 치유되는 글이에요 😌</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="chk" value="" class="sr-only"/>
+                                <span>제 상황과 잘 맞지 않았어요 😔</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="chk" value="" class="sr-only"/>
+                                <span>아쉬운 부분이 있어요 😕</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="chatbx-btm">
+                    <div class="only-pc">
+                        <textarea name="" id="q2" rows="3" placeholder="의견을 입력해주세요"></textarea>
+                        <button type="button" class="btn btn-normal btn-enter"><span>전<span class="split"></span>송</span></button>
+                    </div>
+                    <div class="only-mo">
+                        <input type="text" id="q2" placeholder="의견을 입력해주세요">
+                        <button type="button" class="icon icon-enter"><span class="sr-only">전송</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-chk" class="modal fade" data-backdrop="static">
+	<div class="modal-dialog modal-dialog-centered">
+	    <div class="modal-content">
+            <button type="button" class="icon icon-close" data-dismiss="modal" aria-label="Close"></button>
+	        <div class="modal-body">
+                <h3 class="modal-title">질문을 확인해주세요</h3>
+                <div class="bx">
+                    <p><span class="message"></span></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-normal btn-pink" data-dismiss="modal" data-role="edit"><span>수정할게요</span></button>
+                <button type="submit" class="btn btn-normal btn-chk" data-dismiss="modal" data-role="tab" data-target="#tab1"><span>네, 확인했어요</span></button>
+            </div>
+	    </div>
+	</div>
+</div>
+
+<div id="modal-end" class="modal fade" data-backdrop="static">
+	<div class="modal-dialog modal-dialog-centered">
+	    <div class="modal-content">
+            <button type="button" class="icon icon-close" data-dismiss="modal" aria-label="Close"></button>
+	        <div class="modal-body">
+                <P class="modal-txt">소중한 시간, <br>타령 카드와 함께 해주셔서 <br class="only-mo">감사합니다.</P>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-normal" data-dismiss="modal" data-role="reset"><span>첫 화면으로 가기</span></button>
+            </div>
+	    </div>
+	</div>
+</div>
+
+<div id="modal-alert" class="modal fade modal-alert">
+	<div class="modal-dialog modal-dialog-centered">
+	    <div class="modal-content">
+	        <div class="modal-body">
+                <div class="chat-profile">
+                    <div class="name">한영 할머니</div>
+                    <div class="bubble">
+                        <span>질문을 생각하면서, 마음을 담아 카드를 선택해 줘~ 🥰</span>
+                    </div>
+                </div>
+            </div>
+	    </div>
+	</div>
+</div>
+<audio id="effect"></audio>
+<audio id="bgm" loop></audio>
+<audio id="voice"></audio>
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<svg id="ic_calendar_sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_1462" data-name="사각형 1462" width="13.333" height="16" fill="none"/>
+    </clipPath>
+  </defs>
+  <rect id="사각형_1136" data-name="사각형 1136" width="20" height="20" fill="none"/>
+  <g id="그룹_2595" data-name="그룹 2595" transform="translate(3.334 2)">
+    <rect id="사각형_1461" data-name="사각형 1461" width="11.733" height="11.733" transform="translate(0.8 3.467)" fill="#fff"/>
+    <path id="패스_161" data-name="패스 161" d="M1.6,4.267H11.733V14.4H1.6ZM0,16H13.333V2.667H0Z"/>
+    <path id="패스_162" data-name="패스 162" d="M3.334,0V0Z" fill="#fff"/>
+    <g id="그룹_2592" data-name="그룹 2592">
+      <g id="그룹_2591" data-name="그룹 2591" clip-path="url(#clip-path)">
+        <line id="선_575" data-name="선 575" y2="2.667" transform="translate(3.333)" fill="none" stroke="#000" stroke-width="1.6"/>
+      </g>
+    </g>
+    <path id="패스_163" data-name="패스 163" d="M10,0V0Z" fill="#fff"/>
+    <g id="그룹_2594" data-name="그룹 2594">
+      <g id="그룹_2593" data-name="그룹 2593" clip-path="url(#clip-path)">
+        <line id="선_576" data-name="선 576" y2="2.667" transform="translate(10)" fill="none" stroke="#000" stroke-width="1.6"/>
+      </g>
+    </g>
+  </g>
+</svg>

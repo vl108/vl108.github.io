@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="telephone=no" name="format-detection">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Document</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/lightbox.min.css">
+<link rel="stylesheet" href="css/jquery-ui.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/common.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <!-- header -->
+    <header id="hd">
+        <div class="container">
+            <a href="#" class="hd-back d-lg-none"><i class="icon-back">뒤로</i></a>
+            <h1 class="hd-logo"><a href="#"><img src="img/logo.svg" alt="OF 덴티스"></a></h1>
+            <ul class="hd-navi d-xl-flex">
+                <li>
+                    <a href="#">Courses</a>
+                    <ul class="depth">
+                        <li><a href="#">Offline Courses</a></li>
+                        <li><a href="#">Online Courses</a></li>
+                        <li><a href="#">Speakers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Contents</a>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">Posting</a></li>
+                        <li><a href="#">Clinical Cases</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Story</a></li>
+                <li><a href="#">OF Market</a></li>
+                <li><a href="#">Opening</a></li>
+                <li><a href="#">Event</a></li>
+            </ul>
+            <div class="hd-side">
+                <a href="#" class="icon-user d-xl-block" title="마이페이지">마이페이지</a>
+                <!-- [D] 로그인 이후에만 노출 -->
+                <button type="button" class="icon-user btn-mypage d-xl-none" title="마이페이지">마이페이지</button>
+                <a href="#" title="장바구니" class="position-relative">
+                    <span class="icon-cart">장바구니</span>
+                    <span class="cart-num">0</span>
+                </a>
+                <a href="#" title="내 찜 내역" class="icon-like">내 찜 내역</a>
+                <!-- [D] default
+                    <div class="d-xl-block"><b>홍길동</b>님</div>
+                    <a href="#" class="text-muted d-xl-block mr-xl-2">로그아웃</a>
+                -->
+                <a href="#" class="d-xl-block">로그인</a>
+                <a href="#" class="d-xl-block">회원가입</a>
+                <!-- // -->
+                <a href="#search" class="icon-search btn-search d-xl-none">검색</a>
+                 <form action="" class="form-search d-xl-block">
+                    <input type="text" class="form-control" name="" value="" placeholder="검색어를 입력해 주세요" title="검색">
+                    <button type="submit"><i class="icon-search">검색</i></button>
+                </form>
+            </div>
+            <button type="button" class="gnb-toggle d-xl-none"><span class="text-hide">메뉴열기/닫기</span></button>
+        </div>
+        <div id="search">
+            <div class="container">
+                <form action="">
+                    <div class="hd-search">
+                        <input type="text" name="" value="" placeholder="검색어를 입력해 주세요">
+                        <i></i>
+                        <button type="submit"><i class="icon-search">검색</i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <nav id="gnb">
+            <div class="gnb-bg"></div>
+            <div class="gnb-util">
+            <!-- 
+                <div><i class="icon-user"></i> <b>홍길동</b>님</div>
+                <a href="#" class="text-muted">로그아웃</a>
+                
+                [D] default
+                <a href="#">로그인</a> 
+                <a href="#">회원가입</a>
+            -->
+            </div>
+            <ul class="gnb">
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Courses</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">Offline Courses</a></li>
+                        <li><a href="#">Online Courses</a></li>
+                        <li><a href="#">Speakers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Market</a>
+                    </strong>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Contents</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">Posting</a></li>
+                        <li><a href="#">Clinical Cases</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Story</a>
+                    </strong>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Opening</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">상담신청</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Event</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">진행중 이벤트</a></li>
+                        <li><a href="#">종료 이벤트</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <nav id="mnb" class="mypage-menu">
+            <div class="mypage-menu-hd">
+                <button type="button" class="icon-close btn-mypage">닫기</button>
+                <p>만나서 반가워요, <b class="name">홍길동</b> 님</p>
+                <div class="hd-m-account">
+                    <a href="#" class="btn btn-outline-primary btn-xs">로그아웃</a>
+                </div>
+            </div>
+            <ul class="gnb">
+                <li>
+                    <a href="#">수강신청 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">오프라인 교육 신청 내역</a></li>
+                        <li><a href="#">온라인 교육 신청 내역</a></li>
+                        <li><a href="#">취소/환불 내역</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#">마켓 주문 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">마켓 주문 내역</a></li>
+                        <li class="active"><a href="#">반품/교환 내역</a></li>
+                        <li><a href="#">취소/환불 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">리뷰 / 댓글 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">내가 작성한 리뷰</a></li>
+                        <li><a href="#">내가 작성한 댓글</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">문의 / 상담 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">문의 내역</a></li>
+                        <li><a href="#">상담 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">찜 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">내 찜 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">포인트 / 결제 관리</a>
+                    <ul class="depth">
+                        <li><a href="#">보유 포인트</a></li>
+                        <li><a href="#">충전 / 계좌 관리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">쿠폰 관리</a>
+                    <ul class="depth">
+                        <li><a href="#">나의 보유 쿠폰</a></li>
+                        <li><a href="#">발급 가능 쿠폰</a></li>
+                        <li><a href="#">지난 쿠폰 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">회원 정보</a>
+                    <ul class="depth">
+                        <li><a href="#">배송지 목록</a></li>
+                        <li><a href="#">회원 정보 수정</a></li>
+                        <li><a href="#">회원 탈퇴</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">환경 설정</a>
+                    <ul class="depth">
+                        <li class="active"><a href="#">앱 설정</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+
+    <!-- content -->
+    <main id="ct">
+<!-- 페이지시작 -->
+<div class="sub-page">
+    <div class="container">
+        <div class="sub-page-hd">
+            <h2 class="content-title"><span>COUNSELING</span></h2>
+            <p>임상에 대한 고민을 함께 공유하고, 디렉터의 경험을 바탕으로 솔루션을 제공합니다.</p>
+        </div>
+        <section class="sect-qna">
+            <div class="board-wrp">
+                <div class="board-q">
+                    <div class="board-hd">
+                        <div class="hashtag">
+                            <span class="badge-outline">#임플란트</span>
+                            <span class="badge-outline">#보철</span>
+                        </div>
+                        <div class="tit">
+                            <h2>Multi Use Coping 사용 질문</h2>
+                            <div class="info-split">
+                                <span class="name">greg******</span>
+                                <span class="date">2022. 05. 14</span>
+                            </div>
+                            <div class="tools">
+                                <button type="button">수정</button>
+                                <i class="split"></i>
+                                <button type="button">삭제</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="board-item">
+                        안녕하세요 ~ muc 사용시 질문 있습니다. muc를 보면 삼각형 단면으로 임프레션 캡이나, 바이트 캡이 3방향으로 적합이 가능한대요, 지금 캡쳐한 사진과 같이 바이트 캡을 이용해 바이트를 떳으면, 모델의 코핑상에도 저방향과 동일한 방향으로 바이트 캡이 위치해야 할거 같은데요, 기공소에 보낼 때 캡에 방향을 표시해서 보내면 되나요?
+                        <br><br>
+                        <p class="pic">
+                            <img src="img/_temp/490x298.png" alt="">
+                        </p>
+                        <br>
+                        그리고 임프레션캡을 이용해 임프를 떳을때, 밖에서 아날로그와 코핑을 연결 후 인상내에 정확히 꽂아 넣어야 하는데, 이때는 3가지의 방향 중 아무 방향으로 꽂아도 상관 없는게 맞나요?
+                    </div>
+                    <div class="board-file media">
+                        <b class="pr-2">첨부 파일</b> 
+                        <div class="media-body">
+                            <a href="#" class="btn-file-dl">
+                                <span>제품사진.jpg</span>
+                            </a>
+                            <a href="#" class="btn-file-dl">
+                                <span>제품사진2.jpg</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="board-a reply">
+                <ul class="board-list">
+                    <li class="board-item">
+                        <div class="tit">
+                            <b class="font-obj">A</b><span>김재윤</span> 님 답변
+                        </div>
+                        <div class="info-split">
+                            <span>現 이대종합병원 치과 원장</span>
+                            <span class="date">2022. 05. 14</span>
+                        </div>
+                        <p class="txt">구강 내 연결했을 때 버컬 쪽 원통 부위에 치아 번호를 적어보내면 기공사가 위치 찾기가 편하겠죠... 보통 바이트 인덴테이션으로 위치를 잘 찾긴하지만 선생님이 표시해주시면 더 수월하게 마운팅 할 수 있을 겁니다. 네 3방향 중 어디로 연결해도 헥사 방향에는 차이가 없습니다 잘 사용하면 유용합니다.</p>
+                        
+                        <!-- [D] 답글 -->
+                        <button type="button" class="btn-underline-black btn-reply">답글</button>
+                        <form action="">
+                            <div class="write-wrp">
+                                <textarea class="form-control" rows="3" placeholder="답글을 남겨보세요"></textarea>
+                                <button type="button" class="btn btn-primary btn-upload-reply">등록</button>
+                            </div>
+                        </form>
+
+                        <!-- [D] 답글목록 -->
+                        <button type="button" class="btn-reply-view">답글 <span>2</span>개 보기</button>
+                        <ul class="comment-list">
+                            <li class="comment-item">
+                                <div class="info-split">
+                                    <span class="name">greg******</span>
+                                    <span class="date">2022. 05. 14</span>
+                                    <div class="tools">
+                                        <button type="button" onclick="$('#modal26').modal();">수정</button>
+                                        <i class="split"></i>
+                                        <button type="button">삭제</button>
+                                    </div>
+                                </div>
+                                <p class="txt">앞으로 덴티스 루이버튼와 관련된 다양한 소식 전해주셨으면 좋겠습니다. 많은분들이 기분좋게 덴티스 유튜브에 방문해주시길 바라며, 많은 사랑받으시길 응원할게요! 소통에 힘써주시는 만큼 많은 칭찬과 응원속에서 더욱 성장해가는 덴티스가 되길 바라겠습니다.</p>
+                            </li>
+                            <li class="comment-item">
+                                <div class="info-split">
+                                    <span class="name">greg******</span>
+                                    <span class="date">2022. 05. 14</span>
+                                    <button type="button" class="btn-report" onclick="$('#modal8').modal();">신고</button>
+                                </div>
+                                <p class="txt">앞으로 덴티스 루이버튼와 관련된 다양한 소식 전해주셨으면 좋겠습니다. 많은분들이 기분좋게 덴티스 유튜브에 방문해주시길 바라며, 많은 사랑받으시길 응원할게요! 소통에 힘써주시는 만큼 많은 칭찬과 응원속에서 더욱 성장해가는 덴티스가 되길 바라겠습니다.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom-btn">
+                <div class="link-area">
+                    <div class="link-area-inner row">
+                        <div>
+                            <a href="#" class="btn btn-black">답변 수정</a>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-outline-black">목록으로</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<!-- //페이지시작 -->
+    </main>
+    <!-- //content -->
+
+<!-- 댓글/답글 수정 -->
+<div id="modal26" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal"><span class="sr-only">닫기</span></button>
+            <div class="modal-header">
+                <h2 class="modal-title">댓글ㆍ답글 수정</h2>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="write-wrp mb-0">
+                        <textarea class="form-control" rows="5" placeholder="답글을 남겨보세요">작성한 내용이 나옵니다.</textarea>
+                        <button type="button" class="btn btn-primary btn-upload-reply">등록</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 작성 글 신고하기 -->
+<div id="modal8" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal"><span class="sr-only">닫기</span></button>
+            <div class="modal-header">
+                <h2 class="modal-title">작성 글 신고하기</h2>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="sect mt-0">
+                        <div class="sect-hd">
+                            <h3 class="modal-body-title">신고대상 ID 및 내용</h3>
+                        </div>
+                        <table class="tb vertical">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">ID</th>
+                                    <td>gre****</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">내용</th>
+                                    <td>최고의 임플란트 수술을 위한 도구입니다! 최고의 임플란트 수술을 위한 도구입니다! 최고의 임플란트 수술을 위한 도구입니다! 최고의 임플란트 수술을 위한 도구입니다!</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="sect">
+                        <div class="sect-hd">
+                            <h3 class="modal-body-title">신고사유</h3>
+                        </div>
+                        <div class="form-column border-0">
+                            <label class="custom-radio" for="form1-1">
+                                <input type="radio" name="form1" id="form1-1" class="sr-only" checked>
+                                <span>부적절한 홍보 게시글</span>
+                            </label>
+                            <label class="custom-radio" for="form1-2">
+                                <input type="radio" name="form1" id="form1-2" class="sr-only">
+                                <span>음란성 또는 청소년에게 부적합한 내용</span>
+                            </label>
+                            <label class="custom-radio" for="form1-1">
+                                <input type="radio" name="form1" id="form1-3" class="sr-only">
+                                <span>명예훼손/사생활 침해 및 저작권 침해 등</span>
+                            </label>
+                            <label class="custom-radio" for="form1-2">
+                                <input type="radio" name="form1" id="form1-4" class="sr-only">
+                                <span>
+                                    기타
+                                    <textarea name="" class="form-control mt-2" cols="30" rows="6"></textarea>
+                                    <ul class="nudge dot">
+                                        <li>신고해주신 내용은 관리자 검토 후 내부정책에 의거 조치가 진행됩니다.</li>
+                                    </ul>
+                                </span>
+                            </label>
+                        </div>   
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="bottom-btn">
+                    <div class="link-area">
+                        <div class="link-area-inner row">
+                            <div>
+                                <a href="#" class="btn btn-black">신고</a>
+                            </div>
+                            <div>
+                                <a href="#" class="btn btn-outline-black">취소</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- footer -->
+    <footer id="ft">
+        <div class="container">
+            <ul class="fnb">
+                <li><a href="#">OF 소개</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+            <div class="address">
+                상호명 : (주)덴티스 <i></i> 대표자명: 심기봉 <i></i> 개인정보관리책임자 : 전영현 <br>
+                사업자등록번호 : <a href="#" target="_blank" title="새창 열기">134-87-38310</a> <i></i> 통신판매업신고번호 : 제2012-대구달서-0202호 <i></i> 의료기기 판매업 신고번호 : 제20173420023-00057호<br>
+                사업장주소지 : [42718] 대구광역시 달서구 성서서로 99  <i></i> 팩스: 053-583-2806 <i></i>이메일 : 7061@dentis.co.kr <i></i> 제품문의 : 02-919-8312
+            </div>
+            <p class="copy">COPYRIGHT (C) DENTIS ALL RIGHTS RESERVED.</p>
+            <ul class="sns-list">
+                <li><a href="#" class="icon-sns-ytp" target="_blank">덴티스 유튜브채널 바로가기</a></li>
+                <li><a href="#" class="icon-sns-face" target="_blank">덴티스 페이스북 바로가기</a></li>
+                <li><a href="#" class="icon-sns-insta" target="_blank">덴티스 인스타그램 바로가기</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- //footer -->
+</div>
+
+
+</body>
+</html>

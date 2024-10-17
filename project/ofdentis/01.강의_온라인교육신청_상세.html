@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="telephone=no" name="format-detection">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Document</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/lightbox.min.css">
+<link rel="stylesheet" href="css/jquery-ui.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/common.js"></script>
+<!-- page -->
+<script src="js/lightbox.js"></script>
+<script src="js/detail.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <!-- header -->
+    <header id="hd">
+        <div class="container">
+            <a href="#" class="hd-back d-lg-none"><i class="icon-back">뒤로</i></a>
+            <h1 class="hd-logo"><a href="#"><img src="img/logo.svg" alt="OF 덴티스"></a></h1>
+            <ul class="hd-navi d-xl-flex">
+                <li>
+                    <a href="#">Courses</a>
+                    <ul class="depth">
+                        <li><a href="#">Offline Courses</a></li>
+                        <li><a href="#">Online Courses</a></li>
+                        <li><a href="#">Speakers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Contents</a>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">Posting</a></li>
+                        <li><a href="#">Clinical Cases</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Story</a></li>
+                <li><a href="#">OF Market</a></li>
+                <li><a href="#">Opening</a></li>
+                <li><a href="#">Event</a></li>
+            </ul>
+            <div class="hd-side">
+                <a href="#" class="icon-user d-xl-block" title="마이페이지">마이페이지</a>
+                <!-- [D] 로그인 이후에만 노출 -->
+                <button type="button" class="icon-user btn-mypage d-xl-none" title="마이페이지">마이페이지</button>
+                <a href="#" title="장바구니" class="position-relative">
+                    <span class="icon-cart">장바구니</span>
+                    <span class="cart-num">0</span>
+                </a>
+                <a href="#" title="내 찜 내역" class="icon-like">내 찜 내역</a>
+                <!-- [D] default
+                    <div class="d-xl-block"><b>홍길동</b>님</div>
+                    <a href="#" class="text-muted d-xl-block mr-xl-2">로그아웃</a>
+                -->
+                <a href="#" class="d-xl-block">로그인</a>
+                <a href="#" class="d-xl-block">회원가입</a>
+                <!-- // -->
+                <a href="#search" class="icon-search btn-search d-xl-none">검색</a>
+                 <form action="" class="form-search d-xl-block">
+                    <input type="text" class="form-control" name="" value="" placeholder="검색어를 입력해 주세요" title="검색">
+                    <button type="submit"><i class="icon-search">검색</i></button>
+                </form>
+            </div>
+            <button type="button" class="gnb-toggle d-xl-none"><span class="text-hide">메뉴열기/닫기</span></button>
+        </div>
+        <div id="search">
+            <div class="container">
+                <form action="">
+                    <div class="hd-search">
+                        <input type="text" name="" value="" placeholder="검색어를 입력해 주세요">
+                        <i></i>
+                        <button type="submit"><i class="icon-search">검색</i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <nav id="gnb">
+            <div class="gnb-bg"></div>
+            <div class="gnb-util">
+            <!-- 
+                <div><i class="icon-user"></i> <b>홍길동</b>님</div>
+                <a href="#" class="text-muted">로그아웃</a>
+                
+                [D] default
+                <a href="#">로그인</a> 
+                <a href="#">회원가입</a>
+            -->
+            </div>
+            <ul class="gnb">
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Courses</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">Offline Courses</a></li>
+                        <li><a href="#">Online Courses</a></li>
+                        <li><a href="#">Speakers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Market</a>
+                    </strong>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Contents</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">Posting</a></li>
+                        <li><a href="#">Clinical Cases</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Story</a>
+                    </strong>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Opening</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">상담신청</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Event</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">진행중 이벤트</a></li>
+                        <li><a href="#">종료 이벤트</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <nav id="mnb" class="mypage-menu">
+            <div class="mypage-menu-hd">
+                <button type="button" class="icon-close btn-mypage">닫기</button>
+                <p>만나서 반가워요, <b class="name">홍길동</b> 님</p>
+                <div class="hd-m-account">
+                    <a href="#" class="btn btn-outline-primary btn-xs">로그아웃</a>
+                </div>
+            </div>
+            <ul class="gnb">
+                <li>
+                    <a href="#">수강신청 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">오프라인 교육 신청 내역</a></li>
+                        <li><a href="#">온라인 교육 신청 내역</a></li>
+                        <li><a href="#">취소/환불 내역</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#">마켓 주문 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">마켓 주문 내역</a></li>
+                        <li class="active"><a href="#">반품/교환 내역</a></li>
+                        <li><a href="#">취소/환불 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">리뷰 / 댓글 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">내가 작성한 리뷰</a></li>
+                        <li><a href="#">내가 작성한 댓글</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">문의 / 상담 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">문의 내역</a></li>
+                        <li><a href="#">상담 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">찜 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">내 찜 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">포인트 / 결제 관리</a>
+                    <ul class="depth">
+                        <li><a href="#">보유 포인트</a></li>
+                        <li><a href="#">충전 / 계좌 관리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">쿠폰 관리</a>
+                    <ul class="depth">
+                        <li><a href="#">나의 보유 쿠폰</a></li>
+                        <li><a href="#">발급 가능 쿠폰</a></li>
+                        <li><a href="#">지난 쿠폰 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">회원 정보</a>
+                    <ul class="depth">
+                        <li><a href="#">배송지 목록</a></li>
+                        <li><a href="#">회원 정보 수정</a></li>
+                        <li><a href="#">회원 탈퇴</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">환경 설정</a>
+                    <ul class="depth">
+                        <li class="active"><a href="#">앱 설정</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+
+    <!-- content -->
+    <main id="ct">
+<!-- 페이지시작 -->
+<div class="sub-page sub-detail">
+    <section class="sect-view sect-view-online">
+        <div class="container">
+            <div class="inner-view">
+                <div class="cont-visual">
+                    <img src="img/course-visual.jpg" alt="">
+                </div>
+                <div class="cont-info-area">
+                    <div class="top-btn">
+                        <!-- [D] 관심 활성화 .on -->
+                        <button type="button" class="btn-like on" title="관심상품" onclick="$('#modal2').modal();">
+                            <span class="sr-only">관심상품</span>
+                            <span class="num">52</span>
+                        </button>
+                        <a class="btn-prdt-share" href="#modalShare" data-toggle="modal" title="공유하기">
+                            <span class="sr-only">공유하기</span>
+                        </a>
+                    </div>
+                    <div class="info-box">
+                        <div class="cate">
+                            <span class="badge-outline">모집</span>
+                            임플란트
+                        </div>
+                        <h3 class="prdt-name">(ALL+ 전체 수강) ALL PLUS SURGERY/ PROSTHETIC Hands-on Seminar</h3>
+                        <table class="prdt-info-tb">
+                            <tbody>
+                                <tr>
+                                    <th>연자명</th>
+                                    <td>김재윤 원장, 전인성 원장, 나기원 원장</td>
+                                </tr>
+                                <tr>
+                                    <th>장소</th>
+                                    <td>서울, 덴티스 서울 문정 캠퍼스</td>
+                                </tr>
+                                <tr>
+                                    <th>강의정보</th>
+                                    <td>총 24강</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="prdt-price">
+                            <span><b>500,000</b>원 (전체 구매 금액)</span>
+                            <button type="button" class="prdt-coupon" onclick="$('#modal10').modal();">
+                                쿠폰받기<i class="icon-down"></i>
+                            </button>
+                        </div>
+                        <div class="order-buttons">
+                            <div class="row">  
+                                <div class="col">
+                                    <button type="submit" class="btn btn-black btn-block">전체구매</button>
+                                </div>
+                                <div class="col-auto">
+                                    <a href="#" class="btn-order-circle"><i class="icon-order-cart"></i><span>장바구니</span></a>
+                                </div> 
+                                <div class="col-auto">
+                                    <a href="#modal3" class="btn-order-circle" data-toggle="modal"><i class="icon-order-chat"></i><span>문의하기</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-buttons-fix">
+                            <div class="container">
+                                <strong class="title">(ALL+ 전체 수강) ALL PLUS SURGERY/ PROSTHETIC Hands-on Seminar</strong>
+                                <div class="info ml-auto">
+                                    총 <b class="text-primary">3</b> 개
+                                    <b class="text-primary price">50,000</b> 원
+                                </div>
+                                <a href="#" class="btn btn-black">신청하기</a>
+                                <a href="#" class="btn-order-circle"><i class="icon-order-cart"></i><span>장바구니</span></a>
+                                <a href="#modalContact" class="btn-order-circle" data-toggle="modal"><i class="icon-order-chat"></i><span>문의하기</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tb-courses">
+                <div class="tb-hd">
+                    <b>강의 리스트</b>
+                    <div class="form-chk">
+                        <input type="checkbox" class="sr-only" name="chkAll" id="chk-all">
+                        <label for="chk-all" class="chk-custom">
+                            <span>전체 선택</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="tb-body">
+                    <div class="table-responsive">
+                        <table class="tb">
+                            <thead>
+                                <tr>
+                                    <th scope="col">프로그램명</th>
+                                    <th scope="col" width="8.75%">강의시간</th>
+                                    <th scope="col" width="8.75%">금액</th>
+                                    <th scope="col" width="8.75%">할인가</th>
+                                    <th scope="col" width="8.75%">시청</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="courses-title">
+                                        <div class="media">
+                                            <span>1.</span>
+                                            <div>
+                                                <p class="text-truncate">[TEAM CTS] 아름답고 기능적인 충의치 정복</p>
+                                                <p class="item-meta">[Extraction and immediate implant placement]</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>00:13:00</td>
+                                    <td>무료</td>
+                                    <td></td>
+                                    <td>
+                                        <a href="#modalVideo" class="btn btn-xs btn-outline-primary" data-toggle="video" data-video="1833fb743234c119">시청</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="courses-title">
+                                        <div class="media">
+                                            <span>2.</span>
+                                            <div>
+                                                <p class="text-truncate">[TEAM CTS] 아름답고 기능적인 충의치 정복</p>
+                                                <p class="item-meta">[Extraction and immediate implant placement]</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>00:13:00</td>
+                                    <td><s>20,000</s></td>
+                                    <td><strong class="text-primary">10,000</strong></td>
+                                    <td>
+                                        <label class="check-button">
+                                            <input type="checkbox" class="sr-only">
+                                            <span class="btn btn-xs btn-outline-black">선택</span>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="courses-title">
+                                        <div class="media">
+                                            <span>8.</span>
+                                            <div>
+                                                <p class="text-truncate">[TEAM CTS] 아름답고 기능적인 충의치 정복</p>
+                                                <p class="item-meta">[Extraction and immediate implant placement]</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>00:13:00</td>
+                                    <td>20,000</td>
+                                    <td></td>
+                                    <td>
+                                        <label class="check-button">
+                                            <input type="checkbox" class="sr-only">
+                                            <span class="btn btn-xs btn-outline-black">선택</span>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="courses-title">
+                                        <div class="media">
+                                            <span>10.</span>
+                                            <div>
+                                                <p class="text-truncate">[TEAM CTS] 아름답고 기능적인 충의치 정복</p>
+                                                <p class="item-meta">[Extraction and immediate implant placement]</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>00:13:00</td>
+                                    <td><s>20,000</s></td>
+                                    <td><strong class="text-primary">10,000</strong></td>
+                                    <td>
+                                        <label class="check-button">
+                                            <input type="checkbox" class="sr-only">
+                                            <span class="btn btn-xs btn-outline-black">선택</span>
+                                        </label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="text-right mt-4">
+                    총 <strong class="text-primary">3</strong>개
+                    <i class="split"></i>
+                    합계 <strong class="h5 ml-1">50,000</strong>원
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sect-detail">
+        <ul class="nav nav-sticky">
+            <!-- [D] 탭 활성화 .active-->
+            <li class="nav-item"><a href="#detailSummary" class="nav-link active"><span>개요</span></a></li>
+            <li class="nav-item"><a href="#detailLecturer" class="nav-link"><span>강연자</span></a></li>
+            <li class="nav-item"><a href="#detailContent" class="nav-link"><span>상세내용</span></a></li>
+            <li class="nav-item"><a href="#detailWith" class="nav-link"><span>함께하고 싶은 분들</span></a></li>
+            <li class="nav-item"><a href="#detailBoard" class="nav-link"><span>관련 강의 후기(0)</span></a></li>
+            <li class="nav-item"><a href="#dtailRefund" class="nav-link"><span>환불 규정</span></a></li>
+        </ul>
+        <div class="inner-prdt-detail">
+            <!-- 개요 -->
+            <section id="detailSummary" class="sect-detail-content detail-summary">
+                <div class="container js-animate">
+                    <h3 class="content-title"><span>개요</span></h3>
+                    <div class="content">
+                        <p class="font-obj">(ALL+ PROSTHETIC) ALL PLUS <br>SURGERY/PROSTHETIC Hands-on Seminar</p>
+                        <p class="txt">올인원 코스에서는 임플란트의 기본적인 개념과 임플란트 치료시 안정적인 예후를 위해 보철적으로 고려해야 할 <br>전반적인 사항에 대해 구치부를 중심으로 다루었다고 하면, 올플러스 코스는 advanced course로서 상악 전치부와 무치악 환자의 수복에 대해 다룰 것입니다. <br>상악 전치부는 기능 뿐 아니라 심미가 매우 중요한 부위로서, 바람직한 결과를 만들어내기 위해 중요한 임플란트 식립시 <br>고려해야 할 사항과 연조직의 보존과 형성에 중요한 immediate loading의 기준 및 방법, <br>심미적인 abutment의 디자인과 보철적 고려사항에 대해 알아볼 것입니다.</p>
+                        <p class="pic">
+                            <img src="img/sample.jpg" alt="" title="">
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- 강연자 -->
+            <section id="detailLecturer" class="sect-detail-content detail-lecturer">
+                <div class="container js-animate">
+                    <h3 class="content-title"><span>강연자</span></h3>
+                    <ul class="profile-list content">
+                        <!-- 아이템 -->
+                        <li class="profile-item collapse-group">
+                            <div class="profile-img">
+                                <img src="img/sample2.jpg" alt="">
+                            </div>
+                            <div class="profile-txt">
+                                <span class="cate">임플란트/구강외과</span>
+                                <p class="name">전인성 원장</p>
+                                <ul class="list-bullet-dot">
+                                    <li>서울대학교 치과대학 졸업</li>
+                                    <li>서울대학교 치과대학 외래교수</li>
+                                    <li>서울대학교 치과대학원 졸업(치의학박사)</li>
+                                    <li>인제대학교 상계백병원 자문교수</li>
+                                    <li>인제대학교 상계백병원 치과 교수</li>
+                                    <li>인공치아 매식 및 악안면구강외과 전문의</li>
+                                    <li>미국하버드치과대학 교환교수</li>
+                                    <li>현 서울H치과 대표원장</li>
+                                </ul>
+                                <div class="collapse-btn link-area">
+                                    <div class="link-area-inner row">
+                                        <div>
+                                            <a href="#" class="btn btn-outline-primary"><span>강연자의 강의 보기</span></a>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="btn btn-outline-primary"><span>관련 콘텐츠 보기</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse-area">
+                                <div class="collapse-courses">
+                                    <div class="swiper swiper-minimize">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="#" class="courses-item">
+                                                    <div class="item-img">
+                                                        <img src="img/_temp/440x270.png" alt="all in one hans-on seminar">
+                                                        <span class="item-badge">모집</span>
+                                                    </div>
+                                                    <div class="item-body">
+                                                        <div class="item-tags">
+                                                            <span class="tag">임플란트</span>
+                                                            <span class="tag">치주</span>
+                                                        </div>
+                                                        <div class="info-split">
+                                                            <span class="font-obj">Offline</span>
+                                                            <span>2022.06.15 ~ 2022.07.17</span>
+                                                        </div>
+                                                        <h3 class="title">(ALL+ 전체 수강) ALL PLUS Surgery/Prosthetic Hand-on Seminar</h3>
+                                                        <div class="item-meta">김재윤 원장, 전인성 원장</div>   
+                                                        <div class="item-meta">서울, 덴티스 서울 문정 캠퍼스</div>    
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#" class="courses-item">
+                                                    <div class="item-img">
+                                                        <img src="img/_temp/440x270.png" alt="all in one hans-on seminar">
+                                                        <span class="item-badge">모집</span>
+                                                    </div>
+                                                    <div class="item-body">
+                                                        <div class="item-tags">
+                                                            <span class="tag">임플란트</span>
+                                                            <span class="tag">치주</span>
+                                                        </div>
+                                                        <div class="info-split">
+                                                            <span class="font-obj">Offline</span>
+                                                            <span>2022.06.15 ~ 2022.07.17</span>
+                                                        </div>
+                                                        <h3 class="title">(ALL+ 전체 수강) ALL PLUS Surgery/Prosthetic Hand-on Seminar</h3>
+                                                        <div class="item-meta">김재윤 원장, 전인성 원장</div>   
+                                                        <div class="item-meta">서울, 덴티스 서울 문정 캠퍼스</div>    
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#" class="courses-item">
+                                                    <div class="item-img">
+                                                        <img src="img/_temp/440x270.png" alt="all in one hans-on seminar">
+                                                        <span class="item-badge">모집</span>
+                                                    </div>
+                                                    <div class="item-body">
+                                                        <div class="item-tags">
+                                                            <span class="tag">임플란트</span>
+                                                            <span class="tag">치주</span>
+                                                        </div>
+                                                        <div class="info-split">
+                                                            <span class="font-obj">Offline</span>
+                                                            <span>2022.06.15 ~ 2022.07.17</span>
+                                                        </div>
+                                                        <h3 class="title">(ALL+ 전체 수강) ALL PLUS Surgery/Prosthetic Hand-on Seminar</h3>
+                                                        <div class="item-meta">김재윤 원장, 전인성 원장</div>   
+                                                        <div class="item-meta">서울, 덴티스 서울 문정 캠퍼스</div>    
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#" class="courses-item">
+                                                    <div class="item-img">
+                                                        <img src="https://via.placeholder.com/440x270" alt="">
+                                                        <span class="item-badge">모집</span>
+                                                    </div>
+                                                    <div class="item-body">
+                                                        <div class="item-tags">
+                                                            <span class="tag">임플란트</span>
+                                                            <span class="tag">치주</span>
+                                                        </div>
+                                                        <div class="info-split">
+                                                            <span class="font-obj">Offline</span>
+                                                            <span>2022.06.15 ~ 2022.07.17</span>
+                                                        </div>
+                                                        <h3 class="title">(ALL+ 전체 수강) ALL PLUS Surgery/Prosthetic Hand-on Seminar</h3>
+                                                        <div class="item-meta">김재윤 원장, 전인성 원장</div>   
+                                                        <div class="item-meta">서울, 덴티스 서울 문정 캠퍼스</div>    
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#" class="courses-item">
+                                                    <div class="item-img">
+                                                        <img src="https://via.placeholder.com/440x270" alt="">
+                                                        <span class="item-badge">모집</span>
+                                                    </div>
+                                                    <div class="item-body">
+                                                        <div class="item-tags">
+                                                            <span class="tag">임플란트</span>
+                                                            <span class="tag">치주</span>
+                                                        </div>
+                                                        <div class="info-split">
+                                                            <span class="font-obj">Offline</span>
+                                                            <span>2022.06.15 ~ 2022.07.17</span>
+                                                        </div>
+                                                        <h3 class="title">(ALL+ 전체 수강) ALL PLUS Surgery/Prosthetic Hand-on Seminar</h3>
+                                                        <div class="item-meta">김재윤 원장, 전인성 원장</div>   
+                                                        <div class="item-meta">서울, 덴티스 서울 문정 캠퍼스</div>    
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="btn-view-more">view more</a>
+                                    </div>
+                                </div>
+                                <div class="collapse-contents">
+                                    <div class="swiper swiper-minimize">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="#" class="ytp-item">
+                                                    <div class="embed-responsive embed-responsive-16by9">
+                                                        <img src="img/_temp/ytp.png" class="embed-responsive-item" alt="">
+                                                    </div>
+                                                    <div class="item-body">
+                                                        <div class="item-tags">
+                                                            <span class="tag">임플란트</span>
+                                                            <span class="tag">치주</span>
+                                                        </div>
+                                                        <strong class="ytp-item-title">Fixture removal & immediate restoration with ...</strong>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#" class="ytp-item">
+                                                    <div class="embed-responsive embed-responsive-16by9">
+                                                        <img src="img/_temp/ytp.png" class="embed-responsive-item" alt="">
+                                                    </div>
+                                                    <div class="item-body">
+                                                        <div class="item-tags">
+                                                            <span class="tag">임플란트</span>
+                                                            <span class="tag">치주</span>
+                                                        </div>
+                                                        <strong class="ytp-item-title">Fixture removal & immediate restoration with ...</strong>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#" class="ytp-item">
+                                                    <div class="embed-responsive embed-responsive-16by9">
+                                                        <img src="img/_temp/ytp.png" class="embed-responsive-item" alt="">
+                                                    </div>
+                                                    <div class="item-body">
+                                                        <div class="item-tags">
+                                                            <span class="tag">임플란트</span>
+                                                            <span class="tag">치주</span>
+                                                        </div>
+                                                        <strong class="ytp-item-title">Fixture removal & immediate restoration with ...</strong>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#" class="ytp-item">
+                                                    <div class="embed-responsive embed-responsive-16by9">
+                                                        <img src="img/_temp/ytp.png" class="embed-responsive-item" alt="">
+                                                    </div>
+                                                    <div class="item-body">
+                                                        <div class="item-tags">
+                                                            <span class="tag">임플란트</span>
+                                                            <span class="tag">치주</span>
+                                                        </div>
+                                                        <strong class="ytp-item-title">Fixture removal & immediate restoration with ...</strong>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#" class="ytp-item">
+                                                    <div class="embed-responsive embed-responsive-16by9">
+                                                        <img src="img/_temp/ytp.png" class="embed-responsive-item" alt="">
+                                                    </div>
+                                                    <div class="item-body">
+                                                        <div class="item-tags">
+                                                            <span class="tag">임플란트</span>
+                                                            <span class="tag">치주</span>
+                                                        </div>
+                                                        <strong class="ytp-item-title">Fixture removal & immediate restoration with ...</strong>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="btn-view-more">view more</a>
+                                    </div>
+                                </div>         
+                            </div>   
+                        </li>
+                        <!-- //아이템 -->
+                        <li class="profile-item collapse-group">
+                            <div class="profile-img">
+                                <img src="img/sample2.jpg" alt="">
+                            </div>
+                            <div class="profile-txt">
+                                <span class="cate">임플란트/구강외과</span>
+                                <p class="name">전인성 원장</p>
+                                <ul class="list-bullet-dot">
+                                    <li>서울대학교 치과대학 졸업</li>
+                                    <li>서울대학교 치과대학 외래교수</li>
+                                    <li>서울대학교 치과대학원 졸업(치의학박사)</li>
+                                    <li>인제대학교 상계백병원 자문교수</li>
+                                    <li>인제대학교 상계백병원 치과 교수</li>
+                                    <li>인공치아 매식 및 악안면구강외과 전문의</li>
+                                    <li>미국하버드치과대학 교환교수</li>
+                                    <li>현 서울H치과 대표원장</li>
+                                </ul>
+                                <div class="collapse-btn link-area">
+                                    <div class="link-area-inner row">
+                                        <!-- [D] 컨텐츠 내용이 없을경우 버튼 숨기기 -->
+                                        <div style="display: none">
+                                            <a href="#" class="btn btn-outline-primary"><span>강연자의 강의 보기</span></a>
+                                        </div>
+                                        <div style="display: none">
+                                            <a href="#" class="btn btn-outline-primary"><span>관련 콘텐츠 보기</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse-area">
+                                <div class="collapse-courses"></div>
+                                <div class="collapse-contents"></div>         
+                            </div>   
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- 상세내용 -->
+            <section id="detailContent" class="sect-detail-content detail-content">
+                <div class="container">
+                    <div class="js-animate">
+                        <h3 class="content-title"><span>상세내용</span></h3>
+                        <div class="content content-summary">
+                            <div>
+                                <p class="font-obj">ALL PLUS+ SURGERY <br>Hands-on Seminar</p>
+                                <p class="txt">최고의 임플란트 수술/보철 노하우만 담은 REAL CLASS</p>
+                            </div>
+                            <table class="prdt-info-tb">
+                                <tbody>
+                                    <tr>
+                                        <th>연자명</th>
+                                        <td>김재윤 원장, 전인성 원장, 나기원 원장</td>
+                                    </tr>
+                                    <tr>
+                                        <th>장소</th>
+                                        <td>서울, 덴티스 서울 문정 캠퍼스</td>
+                                    </tr>
+                                    <tr>
+                                        <th>일자</th>
+                                        <td>2022. 06. 15 ~ 2022. 07. 10</td>
+                                    </tr>
+                                    <tr>
+                                        <th>문의</th>
+                                        <td>02-1234-5678</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 함께 -->
+            <section id="detailWith" class="sect-detail-content detail-with">
+                <div class="container js-animate">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h3 class="content-title"><span>함께하고 <br class="d-none d-lg-block">싶은 분들</span></h3>
+                        </div>
+                        <div class="content col-lg-8">
+                            <ul class="target-list">
+                                <li class="target-item">
+                                    <span class="font-obj item-badge">01</span>
+                                    <div>
+                                        <strong>디지털 시대에 임플란트 수술의 기본과 컨셉을 알고 싶으신 분</strong>
+                                        <p>임플란트 수술의 기초부터 알아가고 싶은 분들에게 추천드려요</p>
+                                    </div>
+                                </li>
+                                <li class="target-item">
+                                    <span class="font-obj item-badge">02</span>
+                                    <div>
+                                        <strong>임플란트에 대해 아무것도 모른다고 생각하시는 분</strong>
+                                        <p>임플란트 수술의 기초부터 알아가고 싶은 분들에게 추천드려요</p>
+                                    </div>
+                                </li>
+                                <li class="target-item">
+                                    <span class="font-obj item-badge">03</span>
+                                    <div>
+                                        <strong>세미나 후에도 지속적인 Q&A로 실력을 더 향상해보고 싶으신 분</strong>
+                                        <p>임플란트 수술의 기초부터 알아가고 싶은 분들에게 추천드려요</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 후기 -->
+            <section id="detailBoard" class="sect-detail-content detail-board">
+                <div class="container js-animate">
+                    <h3 class="content-title"><span>관련 강의 후기</span></h3>
+                    <div class="content">
+                        <div class="board-wrp">
+                            <div class="tb-hd">
+                                <div class="star-grade-wrap">
+                                    <b class="font-weight-normal mr-2">총점</b>
+                                    <div class="star-grade">
+                                        <i style="width:80%"></i>
+                                    </div>
+                                    <b class="text-primary">4.5</b>
+                                </div>
+                                <nav class="item-count">
+                                    <a href="#" class="active">전체 (<b class="text-primary">30</b>건)</a>
+                                    <i class="split"></i>
+                                    <a href="#">포토리뷰 (<b class="text-primary">2</b>건)</a>
+                                </nav>
+                                <div class="dropdown">
+                                    <button class="btn-sorting" type="button" id="reveiwSortMenu" data-toggle="dropdown" aria-expanded="true">랭킹순
+                                        <i class="icon-sorting"></i>
+                                    </button>
+                                    <div class="dropdown-menu-wrp">
+                                        <ul class="dropdown-menu" aria-labelledby="reveiwSortMenu2">
+                                            <li><a class="dropdown-item" href="#">추천순</a></li>
+                                            <li><a class="dropdown-item" href="#">인기순</a></li>
+                                            <li><a class="dropdown-item" href="#">최신순</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="board-body">
+                                <!-- [D] 리뷰 있을 경우 -->
+                                <ul class="board-list">
+                                    <li class="board-item">
+                                        <div class="board-content">
+                                            <div class="board-detail">
+                                                <div class="info-split">
+                                                    <span class="name">greg******</span>
+                                                    <span class="date">2022. 05. 14</span>
+                                                    <button type="button" class="btn-report" onclick="$('#modal8').modal();">신고</button>
+                                                    <div class="tools">
+                                                        <button type="button" onclick="$('#modal4').modal();">수정</button>
+                                                        <i class="split"></i>
+                                                        <button type="button">삭제</button>
+                                                    </div>
+                                                </div>
+                                                <div class="score">
+                                                    <div class="star-grade">
+                                                        <i style="width:100%"></i>
+                                                    </div>
+                                                    <b>8.2</b>
+                                                </div>
+                                                <p class="txt">최고의 임플란트 수술 위한 도구입니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 최고의 임플란트 수술 위한 도구입니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 최고의 임플란트 수술 위한 도구입니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다.</p>
+                                                <button type="button" class="btn-board-expand btn-underline-black">더보기</button>
+                                            </div>
+                                            <div class="board-img card">
+                                                <div class="card-light-image">
+                                                    <a href="img/sample3.jpg" class="card-light-box" data-lightbox="gallery1"><img src="img/sample3.jpg" alt=""></a>
+                                                    <a href="img/sample3.jpg" class="card-light-box" data-lightbox="gallery1"><img src="img/sample3.jpg" alt=""></a>
+                                                    <a href="img/sample3.jpg" class="card-light-box" data-lightbox="gallery1"><img src="img/sample3.jpg" alt=""></a>
+                                                </div>
+                                                <span class="img-length">3</span>
+                                            </div>
+                                        </div>
+                                        <div class="board-comment">
+                                            <div class="txt">
+                                                회원님, 상세한 리뷰 감사드립니다. 도움이 되셨다니 감사합니다.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="board-item">
+                                        <div class="board-content">
+                                            <div class="board-detail">
+                                                <div class="info-split">
+                                                    <span class="name">greg******</span>
+                                                    <span class="date">2022. 05. 14</span>
+                                                    <button type="button" class="btn-report" onclick="$('#modal8').modal();">신고</button>
+                                                    <div class="tools">
+                                                        <button type="button" onclick="$('#modal4').modal();">수정</button>
+                                                        <i class="split"></i>
+                                                        <button type="button">삭제</button>
+                                                    </div>
+                                                </div>
+                                                <div class="score">
+                                                    <div class="star-grade">
+                                                        <i style="width:100%"></i>
+                                                    </div>
+                                                    <b>8.2</b>
+                                                </div>
+                                                <p class="txt">최고의 임플란트 수술 위한 도구입니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다.</p>
+                                                <button type="button" class="btn-board-expand btn-underline-black">더보기</button>
+                                            </div>
+                                            <div class="board-img card">
+                                                <div class="card-light-image">
+                                                    <a href="img/sample3.jpg" class="card-light-box" data-lightbox="gallery2"><img src="img/sample3.jpg" alt=""></a>
+                                                    <a href="img/sample3.jpg" class="card-light-box" data-lightbox="gallery2"><img src="img/sample3.jpg" alt=""></a>
+                                                    <a href="img/sample3.jpg" class="card-light-box" data-lightbox="gallery2"><img src="img/sample3.jpg" alt=""></a>
+                                                </div>
+                                                <span class="img-length">3</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="board-item">
+                                        <div class="board-content">
+                                            <div class="board-detail">
+                                                <div class="info-split">
+                                                    <span class="name">greg******</span>
+                                                    <span class="date">2022. 05. 14</span>
+                                                    <button type="button" class="btn-report" onclick="$('#modal8').modal();">신고</button>
+                                                    <div class="tools">
+                                                        <button type="button" onclick="$('#modal4').modal();">수정</button>
+                                                        <i class="split"></i>
+                                                        <button type="button">삭제</button>
+                                                    </div>
+                                                </div>
+                                                <div class="score">
+                                                    <div class="star-grade">
+                                                        <i style="width:100%"></i>
+                                                    </div>
+                                                    <b>8.2</b>
+                                                </div>
+                                                <p class="txt">최고의 임플란트 수술 위한 도구입니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다. 리뷰 내용이 들어갑니다.</p>
+                                                <button type="button" class="btn-board-expand btn-underline-black">더보기</button>
+                                            </div>
+                                            <div class="board-img card">
+                                                <div class="card-light-image">
+                                                    <a href="img/sample3.jpg" class="card-light-box" data-lightbox="gallery3"><img src="img/sample3.jpg" alt=""></a>
+                                                    <a href="img/sample3.jpg" class="card-light-box" data-lightbox="gallery3"><img src="img/sample3.jpg" alt=""></a>
+                                                    <a href="img/sample3.jpg" class="card-light-box" data-lightbox="gallery3"><img src="img/sample3.jpg" alt=""></a>
+                                                </div>
+                                                <span class="img-length">3</span>
+                                            </div>
+                                        </div>
+                                        <div class="board-comment">
+                                            <div class="txt">
+                                                회원님, 상세한 리뷰 감사드립니다. 도움이 되셨다니 감사합니다.
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- // -->
+
+                                <!-- [D] 리뷰 없을 경우 -->
+                                <p class="board-item empty">등록된 리뷰가 없습니다.</p>
+                                <!-- // -->
+                            </div>
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link arrow prev" href="#"><span class="sr-only">Previous</span></a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#" title="현재 페이지">1</a></li>
+                                <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item">
+                                    <a class="page-link arrow next" href="#"><span class="sr-only">Next</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 환불규정 -->
+            <section id="dtailRefund" class="sect-detail-content detail-refund">
+                <div class="container js-animate">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h3 class="content-title"><span>환불규정</span></h3>
+                        </div>
+                        <div class="content col-lg-8">
+                            <ul class="refund-policy-list">
+                                <li class="refund-policy-item">
+                                    <strong>기본 환불 규정</strong>
+                                    <p class="txt d-flex">
+                                        <span>1.</span> 세미나 전일인 2월 9일 23:59:59까지 홈페이지에서 직접 취소 가능하며, 전액 100% 환불됩니다. 
+                                    </p>
+                                    <p class="txt d-flex">
+                                        <span>2.</span> 세미나 당일인 2월 10일 00:00:00이후에는 환불이 불가합니다.
+                                    </p>
+                                </li>
+                                <li class="refund-policy-item">
+                                    <strong>환불 신청 방법</strong>
+                                    <p class="txt">
+                                        <a href="#" class="btn-underline-primary">[마이페이지 &gt; 구매내역]</a>에서 취소 가능합니다.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 연관컨텐츠 -->
+            <section class="sect-detail-content detail-relation">
+                <div class="container js-animate">
+                    <div class="small-content-wrp">
+                        <div class="small-content-item js-animate">
+                            <div class="small-content-hd">
+                                <h4 class="content-title-sm"><span>본 강의와 연관된 강의</span></h4>
+                                <a href="#" class="btn-view-more d-lg-inline-flex">view more</a>
+                            </div>
+                            <div class="content small-content-body">
+                                <div class="swiper swiper-article">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="#" class="courses-item">
+                                                <div class="item-img">
+                                                    <img src="img/_temp/440x270.png" alt="all in one hans-on seminar">
+                                                    <span class="item-badge">모집</span>
+                                                </div>
+                                                <div class="item-body">
+                                                    <div class="item-tags">
+                                                        <span class="tag">임플란트</span>
+                                                        <span class="tag">치주</span>
+                                                    </div>
+                                                    <div class="info-split">
+                                                        <span class="font-obj">Offline</span>
+                                                        <span>2022.06.15 ~ 2022.07.17</span>
+                                                    </div>
+                                                    <h3 class="title">(ALL+ 전체 수강) ALL PLUS Surgery/Prosthetic Hand-on Seminar</h3>
+                                                    <div class="item-meta">김재윤 원장, 전인성 원장</div>   
+                                                    <div class="item-meta">서울, 덴티스 서울 문정 캠퍼스</div>    
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="courses-item">
+                                                <div class="item-img">
+                                                    <img src="img/_temp/440x270.png" alt="all in one hans-on seminar">
+                                                    <span class="item-badge">모집</span>
+                                                </div>
+                                                <div class="item-body">
+                                                    <div class="item-tags">
+                                                        <span class="tag">임플란트</span>
+                                                        <span class="tag">치주</span>
+                                                    </div>
+                                                    <div class="info-split">
+                                                        <span class="font-obj">Offline</span>
+                                                        <span>2022.06.15 ~ 2022.07.17</span>
+                                                    </div>
+                                                    <h3 class="title">(ALL+ 전체 수강) ALL PLUS Surgery/Prosthetic Hand-on Seminar</h3>
+                                                    <div class="item-meta">김재윤 원장, 전인성 원장</div>   
+                                                    <div class="item-meta">서울, 덴티스 서울 문정 캠퍼스</div>    
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="courses-item">
+                                                <div class="item-img">
+                                                    <img src="img/_temp/440x270.png" alt="all in one hans-on seminar">
+                                                    <span class="item-badge">모집</span>
+                                                </div>
+                                                <div class="item-body">
+                                                    <div class="item-tags">
+                                                        <span class="tag">임플란트</span>
+                                                        <span class="tag">치주</span>
+                                                    </div>
+                                                    <div class="info-split">
+                                                        <span class="font-obj">Offline</span>
+                                                        <span>2022.06.15 ~ 2022.07.17</span>
+                                                    </div>
+                                                    <h3 class="title">(ALL+ 전체 수강) ALL PLUS Surgery/Prosthetic Hand-on Seminar</h3>
+                                                    <div class="item-meta">김재윤 원장, 전인성 원장</div>   
+                                                    <div class="item-meta">서울, 덴티스 서울 문정 캠퍼스</div>    
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="courses-item">
+                                                <div class="item-img">
+                                                    <img src="https://via.placeholder.com/440x270" alt="">
+                                                    <span class="item-badge">모집</span>
+                                                </div>
+                                                <div class="item-body">
+                                                    <div class="item-tags">
+                                                        <span class="tag">임플란트</span>
+                                                        <span class="tag">치주</span>
+                                                    </div>
+                                                    <div class="info-split">
+                                                        <span class="font-obj">Offline</span>
+                                                        <span>2022.06.15 ~ 2022.07.17</span>
+                                                    </div>
+                                                    <h3 class="title">(ALL+ 전체 수강) ALL PLUS Surgery/Prosthetic Hand-on Seminar</h3>
+                                                    <div class="item-meta">김재윤 원장, 전인성 원장</div>   
+                                                    <div class="item-meta">서울, 덴티스 서울 문정 캠퍼스</div>    
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="courses-item">
+                                                <div class="item-img">
+                                                    <img src="https://via.placeholder.com/440x270" alt="">
+                                                    <span class="item-badge">모집</span>
+                                                </div>
+                                                <div class="item-body">
+                                                    <div class="item-tags">
+                                                        <span class="tag">임플란트</span>
+                                                        <span class="tag">치주</span>
+                                                    </div>
+                                                    <div class="info-split">
+                                                        <span class="font-obj">Offline</span>
+                                                        <span>2022.06.15 ~ 2022.07.17</span>
+                                                    </div>
+                                                    <h3 class="title">(ALL+ 전체 수강) ALL PLUS Surgery/Prosthetic Hand-on Seminar</h3>
+                                                    <div class="item-meta">김재윤 원장, 전인성 원장</div>   
+                                                    <div class="item-meta">서울, 덴티스 서울 문정 캠퍼스</div>    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-lg-none text-center mt-4">
+                                    <a href="#" class="btn-view-more">view more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-content-item js-animate">
+                            <div class="small-content-hd">
+                                <h4 class="content-title-sm"><span>본 강의와 연관된 콘텐츠</span></h4>
+                                <a href="#" class="btn-view-more d-lg-inline-flex">view more</a>
+                            </div>
+                            <div class="content small-content-body">
+                                <div class="swiper swiper-article">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="#" class="ytp-item">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <img src="img/_temp/ytp.png" class="embed-responsive-item" alt="">
+                                                </div>
+                                                <div class="item-body">
+                                                    <div class="item-tags">
+                                                        <span class="tag">임플란트</span>
+                                                        <span class="tag">치주</span>
+                                                    </div>
+                                                    <strong class="ytp-item-title">Fixture removal & immediate restoration with ...</strong>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="ytp-item">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <img src="img/_temp/ytp.png" class="embed-responsive-item" alt="">
+                                                </div>
+                                                <div class="item-body">
+                                                    <div class="item-tags">
+                                                        <span class="tag">임플란트</span>
+                                                        <span class="tag">치주</span>
+                                                    </div>
+                                                    <strong class="ytp-item-title">Fixture removal & immediate restoration with ...</strong>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="ytp-item">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <img src="img/_temp/ytp.png" class="embed-responsive-item" alt="">
+                                                </div>
+                                                <div class="item-body">
+                                                    <div class="item-tags">
+                                                        <span class="tag">임플란트</span>
+                                                        <span class="tag">치주</span>
+                                                    </div>
+                                                    <strong class="ytp-item-title">Fixture removal & immediate restoration with ...</strong>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="ytp-item">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <img src="img/_temp/ytp.png" class="embed-responsive-item" alt="">
+                                                </div>
+                                                <div class="item-body">
+                                                    <div class="item-tags">
+                                                        <span class="tag">임플란트</span>
+                                                        <span class="tag">치주</span>
+                                                    </div>
+                                                    <strong class="ytp-item-title">Fixture removal & immediate restoration with ...</strong>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="ytp-item">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <img src="img/_temp/ytp.png" class="embed-responsive-item" alt="">
+                                                </div>
+                                                <div class="item-body">
+                                                    <div class="item-tags">
+                                                        <span class="tag">임플란트</span>
+                                                        <span class="tag">치주</span>
+                                                    </div>
+                                                    <strong class="ytp-item-title">Fixture removal & immediate restoration with ...</strong>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-lg-none text-center mt-4">
+                                    <a href="#" class="btn-view-more">view more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+</div>
+<!-- //페이지시작 -->
+    </main>
+    <!-- //content -->
+
+<!-- 찜리스트 -->
+<div id="modal2" class="modal fade" tabindex="-1" data-backdrop="static">
+    <div class="modal-alert modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal"><span class="sr-only">닫기</span></button>
+            <p class="txt">찜리스트 담기 완료</p>
+            <div class="modal-alert-btn">
+                <button type="button" class="btn btn-sm btn-black" data-dismiss="modal">계속 쇼핑</button>
+                <a href="#" class="btn btn-sm btn-outline-black">찜리스트 이동</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 공유하기 -->
+<div id="modalShare" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal"><span class="sr-only">닫기</span></button>
+            <div class="modal-header">
+                <h5 class="modal-title">공유하기</h5>
+            </div>
+            <div class="modal-body">
+                <div class="share-link">
+                    <button type="button" class="icon-share btn-kakao" title="카카오톡">카카오톡</button>
+                    <button type="button" class="icon-share btn-fb" title="페이스북">페이스북</button>
+                    <button type="button" class="icon-share btn-tw" title="트위터">트위터</button>
+                    <button type="button" class="icon-share btn-blog" title="블로그">블로그</button>
+                </div>
+                <div class="input-group align-items-center">
+                    <input type="text" id="copyUrl" class="form-control" readonly>
+                    <div class="input-group-append">
+                        <button type="button" class="btn-copy"><i class="icon-link">링크</i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 쿠폰받기 -->
+<div id="modal10" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal"><span class="sr-only">닫기</span></button>
+            <div class="modal-header">
+                <h2 class="modal-title">쿠폰받기</h2>
+            </div>
+            <div class="modal-body">
+                <div class="prdt-item">
+                    <div class="item-img">
+                        <img src="img/_temp/440x270.png" alt="">
+                    </div>
+                    <div class="item-body">
+                        <p class="text-clamp">[TEAM CTS] 아름답고 기능적인 총의치 정복</p>
+                    </div>
+                </div>
+                <div class="sect-hd">
+                    <h3 class="modal-body-title">쿠폰 정보</h3>
+                </div>    
+                <ul class="row">
+                    <li class="col-lg-6">
+                        <a href="#" class="coupon">
+                            <b class="d-block font-obj">coupon</b>
+                            <small>할인 쿠폰</small>
+                            <div class="flex-center">
+                                <span class="price">50,000</span>원
+                                <i class="icon-down-org"></i>
+                            </div>
+                        </a>
+                        <div class="coupon-info">
+                            <p class="tit">OF ALL IMPLANT 공보의/군의관/수련의 할인 쿠폰</p>
+                            <div>(100,000원 이상 구매시 사용)</div>
+                            <div class="text-muted">유효기간: 2022-07-05 ~ 2022-08-19</div>
+                        </div>
+                    </li>
+                    <li class="col-lg-6">
+                        <a href="#" class="coupon">
+                            <b class="d-block font-obj">coupon</b>
+                            <small>할인 쿠폰</small>
+                            <div class="flex-center">
+                                <span class="price">1,000</span>원
+                                <i class="icon-down-org"></i>
+                            </div>
+                        </a>
+                        <div class="coupon-info">
+                            <p class="tit">OF ALL IMPLANT 공보의/군의관/수련의 할인 쿠폰</p>
+                            <div>(100,000원 이상 구매시 사용)</div>
+                            <div class="text-muted">유효기간: 2022-07-05 ~ 2022-08-19</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <div class="bottom-btn">
+                    <button type="button" class="btn btn-black">쿠폰 전체 다운받기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 작성 글 신고하기 -->
+<div id="modal8" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal"><span class="sr-only">닫기</span></button>
+            <div class="modal-header">
+                <h2 class="modal-title">작성 글 신고하기</h2>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="sect mt-0">
+                        <div class="sect-hd">
+                            <h3 class="modal-body-title">신고대상 ID 및 내용</h3>
+                        </div>
+                        <table class="tb vertical">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">ID</th>
+                                    <td>gre****</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">내용</th>
+                                    <td>최고의 임플란트 수술을 위한 도구입니다! 최고의 임플란트 수술을 위한 도구입니다! 최고의 임플란트 수술을 위한 도구입니다! 최고의 임플란트 수술을 위한 도구입니다!</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="sect">
+                        <div class="sect-hd">
+                            <h3 class="modal-body-title">신고사유</h3>
+                        </div>
+                        <div class="form-column border-0">
+                            <label class="custom-radio" for="form1-1">
+                                <input type="radio" name="form1" id="form1-1" class="sr-only" checked>
+                                <span>부적절한 홍보 게시글</span>
+                            </label>
+                            <label class="custom-radio" for="form1-2">
+                                <input type="radio" name="form1" id="form1-2" class="sr-only">
+                                <span>음란성 또는 청소년에게 부적합한 내용</span>
+                            </label>
+                            <label class="custom-radio" for="form1-1">
+                                <input type="radio" name="form1" id="form1-3" class="sr-only">
+                                <span>명예훼손/사생활 침해 및 저작권 침해 등</span>
+                            </label>
+                            <label class="custom-radio" for="form1-2">
+                                <input type="radio" name="form1" id="form1-4" class="sr-only">
+                                <span>
+                                    기타
+                                    <textarea name="" class="form-control mt-2" cols="30" rows="6"></textarea>
+                                    <ul class="nudge dot">
+                                        <li>신고해주신 내용은 관리자 검토 후 내부정책에 의거 조치가 진행됩니다.</li>
+                                    </ul>
+                                </span>
+                            </label>
+                        </div>   
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="bottom-btn">
+                    <div class="link-area">
+                        <div class="link-area-inner row">
+                            <div>
+                                <a href="#" class="btn btn-black">신고</a>
+                            </div>
+                            <div>
+                                <a href="#" class="btn btn-outline-black">취소</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 영상 -->
+<div id="modalVideo" class="modal fade" tabindex="-1" data-backdrop="static">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal"><span class="sr-only">닫기</span></button>
+            <div class="modal-header">
+                <h5 class="modal-title">시청하기</h5>
+            </div>
+            <div id="modalVideoContent">
+            </div>
+            <div class="player-info mt-4">
+                <div class="tb-hd">
+                    <h4></h4>
+                </div>
+            </div>
+            <div class="modal-alert-btn">
+                <button type="button" class="btn btn-sm btn-outline-black" data-dismiss="modal">닫기</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+$('[data-toggle=video]').click(function(){
+    $('#modalVideoContent').html('<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://play.mbus.tv/hls/'+$(this).data('video')+'" allowfullscreen></iframe></div>');
+    $('#modalVideo h4').text($(this).closest('tr').find('.text-truncate').text());
+    $('#modalVideo').modal();
+    return false;
+});
+$('#modalVideo').on('hidden.bs.modal',function(){
+    $('#modalVideoContent,#modalVideo h4').empty();
+});
+</script>
+
+    <!-- footer -->
+    <footer id="ft">
+        <div class="container">
+            <ul class="fnb">
+                <li><a href="#">OF 소개</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+            <div class="address">
+                상호명 : (주)덴티스 <i></i> 대표자명: 심기봉 <i></i> 개인정보관리책임자 : 전영현 <br>
+                사업자등록번호 : <a href="#" target="_blank" title="새창 열기">134-87-38310</a> <i></i> 통신판매업신고번호 : 제2012-대구달서-0202호 <i></i> 의료기기 판매업 신고번호 : 제20173420023-00057호<br>
+                사업장주소지 : [42718] 대구광역시 달서구 성서서로 99  <i></i> 팩스: 053-583-2806 <i></i>이메일 : 7061@dentis.co.kr <i></i> 제품문의 : 02-919-8312
+            </div>
+            <p class="copy">COPYRIGHT (C) DENTIS ALL RIGHTS RESERVED.</p>
+            <ul class="sns-list">
+                <li><a href="#" class="icon-sns-ytp" target="_blank">덴티스 유튜브채널 바로가기</a></li>
+                <li><a href="#" class="icon-sns-face" target="_blank">덴티스 페이스북 바로가기</a></li>
+                <li><a href="#" class="icon-sns-insta" target="_blank">덴티스 인스타그램 바로가기</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- //footer -->
+</div>    
+
+</body>
+</html>

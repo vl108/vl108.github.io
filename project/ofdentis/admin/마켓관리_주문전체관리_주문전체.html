@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="telephone=no" name="format-detection">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Document</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+<link href="css/import.css" rel="stylesheet"/>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/swiper.min.js"></script>
+</head>
+<!-- body-화면ID -->
+<body>
+<!-- container -->
+<div id="ct">
+    <header id="hd">
+        <button class="mn-open"><i class="icon-menu"></i></button>
+        <div class="wrap">
+            <div>
+                <!-- [D] 2022-09-02 수정 -->
+                <div class="logo">
+                    <h1><a href="main.html"><img src="img/logo.png" alt="Dentis Management Academy"></a></h1>
+                </div>
+                <!-- // -->
+                <ul id="gnb">
+                    <li>
+                        <a href="#">교육</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">마켓</a>
+                    </li>
+                    <li>
+                        <a href="#">콘텐츠</a>
+                    </li>
+                    <li>
+                        <a href="#">개원 서비스</a>
+                    </li>
+                    <li>
+                        <a href="#">회원</a>
+                    </li>
+                    <li>
+                        <a href="#">발송/알림</a>
+                    </li>
+                    <li>
+                        <a href="#">포인트/결제</a>
+                    </li>
+                    <li>
+                        <a href="#">쿠폰</a>
+                    </li>
+                    <li>
+                        <a href="#">사이트</a>
+                    </li>
+                    <li>
+                        <a href="#">설문조사</a>
+                    </li>
+                    <li>
+                        <a href="#">통계</a>
+                    </li>
+                    <li>
+                        <a href="#">관리자 설정</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="snb">
+                <div class="profile">
+                    <a href="#">
+                        <img src="img/sample.png" alt="">
+                        <span>관리자</span>
+                    </a>
+                </div>
+                <div class="logout"><button type="button" class="btn">로그아웃</button></div>
+            </div>
+        </div>
+    </header>
+    <div id="lnb">
+        <button class="close-lnb"><i class="xi-angle-left"></i></button>
+        <!-- [D] 2022-09-02 수정 -->
+        <h1><a href="main.html"><img src="img/logo.png" alt="Dentis Management Academy"></a></h1>
+        <!-- // -->
+        <div class="snb">
+            <div class="profile">
+                <a href="#">
+                    <img src="img/sample.png" alt="">
+                    <span>관리자</span>
+                </a>
+            </div>
+            <div class="logout"><button type="button" class="btn">로그아웃</button></div>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href="#">제품관리</a>
+                    <ul>
+                        <li><a href="./마켓관리_제품관리_목록.html">- 상품 관리</a></li>
+                        <li><a href="./마켓관리_제품관리_목록_등록.html">- 상품 등록</a></li>
+                        <li><a href="./마켓관리_제품관리_카테고리 관리.html">- 카테고리 관리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">주문전체관리</a>
+                    <ul>
+                        <li class="active"><a href="./마켓관리_주문전체관리_주문전체리스트.html">- 주문전체 리스트</a></li>
+                        <li><a href="./마켓관리_주문전체관리_입금대기목록.html">- 입금대기 목록</a></li>
+                        <li><a href="./마켓관리_주문전체관리_신규주문목록.html">- 신규주문 목록</a></li>
+                        <li><a href="./마켓관리_주문전체관리_배송준비중목록.html">- 배송준비중 목록</a></li>
+                        <li><a href="./마켓관리_주문전체관리_배송중목록.html">- 배송중 목록</a></li>
+                        <li><a href="./마켓관리_주문전체관리_배송완료목록.html">- 배송완료 목록</a></li>
+                        <li><a href="./마켓관리_주문전체관리_구매확정목록.html">- 구매확정 목록</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">주문클레임관리</a>
+                    <ul>
+                        <li><a href="./마켓관리_주문클레임관리_주문취소목록.html">- 주문취소 목록</a></li>
+                        <li><a href="./마켓관리_주문클레임관리_반품목록.html">- 반품 목록</a></li>
+                        <li><a href="./마켓관리_주문클레임관리_교환목록.html">- 교환 목록</a></li>
+                        <li><a href="./마켓관리_주문클레임관리_환불목록.html">- 환불 목록</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">증빙관리</a>
+                    <ul>
+                        <li><a href="./마켓관리_증빙관리_현금영수증관리.html">- 현금영수증 관리</a></li>
+                        <li><a href="./마켓관리_증빙관리_세금계산서관리.html">- 세금계산서 관리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">문의/상담/리뷰 관리</a>
+                    <ul>
+                        <li><a href="./마켓관리_문의상담리뷰관리_문의상담관리.html">- 문의/상담 관리</a></li>
+                        <li><a href="./마켓관리_문의상담리뷰관리_리뷰관리.html">- 리뷰 관리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">사이트 관리</a>
+                    <ul>
+                        <li><a href="./마켓관리_사이트관리_메인페이지관리_visual.html">- 메인페이지 관리</a></li>
+                        <li><a href="./마켓관리_사이트관리_of추천기획전.html">- OF 추천 기획전</a></li>
+                        <li><a href="./마켓관리_사이트관리_쇼핑몰설정.html">- 쇼핑몰 설정</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="mt-5"><a href="#">구글 에널리틱스 <i class="xi-external-link"></i></a></div>
+            <div class="mt-2"><a href="#">홈페이지 <i class="xi-external-link"></i></a></div>
+        </div>
+    </div>
+    <div class="page-container">
+        <div class="breadcrumb">
+            <h2>주문 전체</h2>
+            <span>마켓</span>
+            <i class="xi-angle-right-min"></i>
+            <span>주문 관리</span>
+        </div>
+
+        <!-- Search -->
+        <div class="wrap search-wrap">
+            <form>
+                <div class="body">
+                    <h3>주문일자</h3>
+                    <div class="row row-frame">
+                        <div class="col-xl-auto form-group">
+                            <h4>기간 설정</h4>
+                            <div class="row">
+                                <div class="col-auto form-select form-select-sm">
+                                    <select class="form-control">
+                                        <option value="">선택</option>
+                                        <option value="">주문일</option>
+                                        <option value="">결제일</option>
+                                        <option value="">배송시작일</option>
+                                        <option value="">배송완료일</option>
+                                    </select>
+                                    <i class="xi-angle-down"></i>
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control datepicker" id="datepicker1">
+                                    <span class="col-auto px-2">~</span>
+                                    <input type="text" class="form-control datepicker" id="datepicker2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-auto offset-1 form-group">
+                            <h4>빠른 기간 설정</h4>
+                            <div class="row dateset">
+                                <div class="col-4 col-md">
+                                    <label for="dateset1"><input type="radio" name="dateset" id="dateset1"><span>오늘</span></label>
+                                </div>
+                                <div class="col-4 col-md">
+                                    <label for="dateset2"><input type="radio" name="dateset" id="dateset2"><span>1주일</span></label>
+                                </div>
+                                <div class="col-4 col-md">
+                                    <label for="dateset3"><input type="radio" name="dateset" id="dateset3"><span>15일</span></label>
+                                </div>
+                                <div class="col-4 col-md">
+                                    <label for="dateset4"><input type="radio" name="dateset" id="dateset4"><span>한달</span></label>
+                                </div>
+                                <div class="col-4 col-md">
+                                    <label for="dateset5"><input type="radio" name="dateset" id="dateset5"><span>3개월</span></label>
+                                </div>
+                                <div class="col-4 col-md">
+                                    <label for="dateset6"><input type="radio" name="dateset" id="dateset6"><span>1년</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-frame">
+						<div class="col-xl-auto form-group">
+                            <h3>검색 구분</h3>
+                            <div class="row">
+                                <div class="col-auto form-select form-select-sm">
+                                    <select class="form-control">
+                                        <option value="">선택</option>
+                                        <option value="">주문자명</option>
+                                        <option value="">주문번호</option>
+                                        <option value="">송장번호</option>
+                                        <option value="">상품명</option>
+                                        <option value="">상품코드</option>
+                                        <option value="">주문자명</option>
+                                        <option value="">수령자명</option>
+                                        <option value="">입금자명</option>
+                                        <option value="">아이디</option>
+                                        <option value="">병원명</option>
+                                    </select><i class="xi-angle-down"></i>
+                                </div>
+                                <div class="col mt-2 mt-md-0">
+                                    <input type="text" class="form-control" name="searchKeyword" placeholder="검색어를 입력하세요" maxlength="20">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 form-group">
+                            <h3>주문 상태</h3>
+                            <div class="row confirm">
+                                <div class="col-6 col-md-auto">
+                                    <label for="confirm2-0">
+                                        <input type="checkbox" name="order_checkbox_01" id="confirm2-0">
+                                        <i></i> <span>전체</span>
+                                    </label>
+                                </div>
+                                <div class="col-6 col-md-auto">
+                                    <label for="confirm2-1">
+                                        <input type="checkbox" name="order_checkbox_02" id="confirm2-1">
+                                        <i></i> <span>입금대기</span>
+                                    </label>
+                                </div>
+                                <div class="col-6 col-md-auto">
+                                    <label for="confirm2-2">
+                                        <input type="checkbox" name="order_checkbox_03" id="confirm2-2">
+                                        <i></i> <span>결제/입금확인</span>
+                                    </label>
+                                </div>
+                                <div class="col-6 col-md-auto">
+                                    <label for="confirm2-3">
+                                        <input type="checkbox" name="order_checkbox_04" id="confirm2-3">
+                                        <i></i> <span>배송준비중</span>
+                                    </label>
+                                </div>
+                                <div class="col-6 col-md-auto">
+                                    <label for="confirm2-4">
+                                        <input type="checkbox" name="order_checkbox_05" id="confirm2-4">
+                                        <i></i> <span>배송중</span>
+                                    </label>
+                                </div>
+                                <div class="col-6 col-md-auto">
+                                    <label for="confirm2-5">
+                                        <input type="checkbox" name="order_checkbox_06" id="confirm2-5">
+                                        <i></i> <span>배송완료</span>
+                                    </label>
+                                </div>
+                                <div class="col-6 col-md-auto">
+                                    <label for="confirm2-6">
+                                        <input type="checkbox" name="order_checkbox_07" id="confirm2-6">
+                                        <i></i> <span>구매확정</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 form-group">
+                            <h3>결제수단</h3>
+                            <div class="row confirm">
+                                <div class="col-6 col-md-auto">
+                                    <label for="confirm3-1">
+                                        <input type="checkbox" name="pay_checkbox_01" id="confirm3-1">
+                                        <i></i> <span>전체</span>
+                                    </label>
+                                </div>
+                                <div class="col-6 col-md-auto">
+                                    <label for="confirm3-2">
+                                        <input type="checkbox" name="pay_checkbox_02" id="confirm3-2">
+                                        <i></i> <span>신용카드</span>
+                                    </label>
+                                </div>
+                                <div class="col-6 col-md-auto">
+                                    <label for="confirm3-3">
+                                        <input type="checkbox" name="pay_checkbox_03" id="confirm3-3">
+                                        <i></i> <span>계좌이체</span>
+                                    </label>
+                                </div>
+                                <div class="col-6 col-md-auto">
+                                    <label for="confirm3-4">
+                                        <input type="checkbox" name="pay_checkbox_04" id="confirm3-4">
+                                        <i></i> <span>카카오페이</span>
+                                    </label>
+                                </div>
+                                <div class="col-6 col-md-auto">
+                                    <label for="confirm3-5">
+                                        <input type="checkbox" name="pay_checkbox_04" id="confirm3-5">
+                                        <i></i> <span>무통장 입금</span>
+                                    </label>
+                                </div>
+                                <div class="col-6 col-md-auto">
+                                    <label for="confirm3-6">
+                                        <input type="checkbox" name="pay_checkbox_04" id="confirm3-6">
+                                        <i></i> <span>패키지차감</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </form>
+            <div class="bottom">
+                <div class="btn-flex">
+                    <button type="button" class="btn btn-lg">초기화</button>
+                    <button type="button" class="btn btn-primary btn-lg">검색</button>
+                </div>
+            </div>
+        </div>
+        <!-- // Search -->
+
+        <!-- Table -->
+        <div class="wrap">
+            <div class="body">
+                <div class="table-top">
+                    <div class="table-sorting row no-gutters mb-4 mb-lg-0">
+                        <div class="col form-select">
+                            <select class="form-control">
+                                <option>50개</option>
+                                <option>100개</option>
+                            </select><i class="xi-angle-down"></i>
+                        </div>
+                    </div>
+                    <div class="table-result">총 <span class="num">10</span> 개의 결과</div>
+                </div>
+                <div class="table-wrap">
+                    <table class="tb text-center">
+                        <colgroup>
+                            <col width="5%">
+                            <col width="90">
+                            <col width="*">
+                            <col width="10%">
+                            <col width="12%">
+                            <col width="10%">
+                            <col width="18%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <input type="checkbox" id="main_check" value="">
+                                </th>
+                                <th colspan="2">상품명</th>
+                                <th>수량</th>
+                                <th>합계</th>
+                                <th>주문상태</th>
+                                <th>주문일자</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- [S] -->
+                            <tr class="total-details"> 
+                                <td>
+                                    <input type="checkbox" name="chk" value="N">
+                                </td>
+                                <td colspan="6">
+                                    <ul>
+                                        <li>
+                                            <strong>주문번호</strong> : 
+                                            <a href="/mgr/market/order/detail/23041115221610279002">1231503098008</a>
+                                        </li>
+                                        <li>
+                                            <strong>주문자정보</strong> : 
+                                            <input type="hidden" name="id" value="1201aaaa">
+                                            <a href="/mgr/member/member_info?member_no=22494534143111">홍길동</a>
+                                            /
+                                            010-0000-0000
+                                            /
+                                            (주)OOO
+                                            /
+                                            S123456
+                                        </li>
+                                        <li><strong>총 상품금액</strong> : 6,000,000원 (쿠폰:500,000원, 포인트 : 500,000원, 배송비 : 0원)</li>
+                                        <li><strong>결제금액</strong> : 4,545,600원 
+                                            (
+                                                쿠폰 : 0원, 
+                                                <!-- [D] 23-05-11 레이어팝업추가 -->
+                                                <div class="detail-popup">
+                                                    <a href="#" class="btn-detail-popup" data-toggle="detailPopup" data-target="#point1">포인트 : 12,844원</a>
+                                                    <!-- 팝업 // 위 버튼 data-target=""과 팝업의 id="" 값 일치 // 너비 확장 .wide -->
+                                                    <div id="point1" class="detail-popup-wrap">
+                                                        <button type="button" class="btn-close-popup xi-close"></button>
+                                                        <div class="detail-popup-body">
+                                                            충전식 : 10,000 원 <br>
+                                                            적립식 : 2,844 원
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- // -->
+                                            )
+                                        </li>
+                                        <li><strong>결제수단</strong> : 카드</li>
+                                        <li><strong>총 수량</strong> : 4</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr> 
+                                <td></td>
+                                <td>
+                                    <div class="thumb">
+                                        <img src="img/sample.png" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <ul class="order-details">
+                                        <li>
+                                            <a href="#">Louis button II 10eaouis button II 10eaouis button II 10eaouis button II 10eaouis button II 10eaouis button II 10eaouis button II 10eaouis button II 10eaouis button II 10eaouis button II 10eaouis button II 10ea</a>
+                                        </li>
+                                        <li>옵션 : Ø6.5</li>
+                                    </ul>
+                                </td>
+                                <td>10</td>
+                                <td>2,545,600원</td>
+                                <td>
+                                    <!-- [D] 23-05-11 레이어팝업추가 -->
+                                    <div class="detail-popup">
+                                        <a href="#" class="btn-detail-popup" data-toggle="detailPopup" data-target="#receipt1">
+                                            <span class="text-primary">결제완료</span>
+                                        </a>
+                                        <!-- 팝업 // 위 버튼 data-target=""과 팝업의 id="" 값 일치 // 너비 확장 .wide -->
+                                        <div id="receipt1" class="detail-popup-wrap wide" style="z-index:10">
+                                            <button type="button" class="btn-close-popup xi-close"></button>
+                                            <div class="detail-popup-body">
+                                                결제완료 → 배송준비 [2023-05-09 21:34:30]<br>
+                                                배송준비 → 배송중 [2023-05-09 21:34:34]<br>
+                                                배송중 → 배송완료 [2023-05-09 21:34:38]<br>
+                                                배송완료 → 구매확정 [2023-05-09 21:35:39]
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- // -->
+                                </td>
+                                <td>
+                                    <p><strong>주문</strong> : 2023-04-16 13:28:03</p><br>
+                                    <p><strong>결제</strong> : 2023-04-16 13:28:03</p>
+                                </td>
+                            </tr> 
+                            <tr> 
+                                <td></td>
+                                <td>
+                                    <div class="thumb">
+                                        <img src="img/sample.png" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <ul class="order-details">
+                                        <li>
+                                            <a href="#">Louis button II 10eaouis</a>
+                                        </li>
+                                        <li>색상 : Blue (+10,000)</li>
+                                    </ul>
+                                </td>
+                                <td>10</td>
+                                <td>2,545,600원</td>
+                                <td><span class="text-primary">배송중</span></td>
+                                <td>
+                                    <p><strong>주문</strong> : 2023-04-16 13:28:03</p><br>
+                                    <p><strong>결제</strong> : 2023-04-16 13:28:03</p>
+                                </td>
+                            </tr> 
+                            <!-- // [E] -->
+
+                            <!-- [S] -->
+                            <tr class="total-details"> 
+                                <td>
+                                    <input type="checkbox" name="chk" value="N">
+                                </td>
+                                <td colspan="6">
+                                    <ul>
+                                        <li>
+                                            <strong>주문번호</strong> : 
+                                            <a href="/mgr/market/order/detail/23041115221610279002">1231503098008</a>
+                                        </li>
+                                        <li>
+                                            <strong>주문자정보</strong> : 
+                                            <input type="hidden" name="id" value="1201aaaa">
+                                            <a href="/mgr/member/member_info?member_no=22494534143111">홍길동</a>
+                                            /
+                                            010-0000-0000
+                                            /
+                                            (주)OOO
+                                            /
+                                            S123456
+                                        </li>
+                                        <li><strong>총 상품금액</strong> : 6,000,000원 (쿠폰:500,000원, 포인트 : 500,000원, 배송비 : 0원)</li>
+                                        <li><strong>결제금액</strong> : 4,545,600원</li>
+                                        <li><strong>결제수단</strong> : 카드</li>
+                                        <li><strong>총 수량</strong> : 4</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr> 
+                                <td></td>
+                                <td>
+                                    <div class="thumb">
+                                        <img src="img/sample.png" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <ul class="order-details">
+                                        <li>
+                                            <a href="#">Louis button II 10eaouis button II 10eaouis button II 10eaouis button II 10eaouis button II 10eaouis button II 10eaouis button II 10eaouis button II 10eaouis button II 10eaouis button II 10eaouis button II 10ea</a>
+                                        </li>
+                                        <li>옵션 : Ø6.5</li>
+                                    </ul>
+                                </td>
+                                <td>10</td>
+                                <td>2,545,600원</td>
+                                <td><span class="text-primary">결제완료</span></td>
+                                <td>
+                                    <p><strong>주문</strong> : 2023-04-16 13:28:03</p><br>
+                                    <p><strong>결제</strong> : 2023-04-16 13:28:03</p>
+                                </td>
+                            </tr> 
+                            <tr> 
+                                <td></td>
+                                <td>
+                                    <div class="thumb">
+                                        <img src="img/sample.png" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <ul class="order-details">
+                                        <li>
+                                            <a href="#">Louis button II 10eaouis</a>
+                                        </li>
+                                        <li>색상 : Blue (+10,000)</li>
+                                    </ul>
+                                </td>
+                                <td>10</td>
+                                <td>2,545,600원</td>
+                                <td><span class="text-primary">배송중</span></td>
+                                <td>
+                                    <p><strong>주문</strong> : 2023-04-16 13:28:03</p><br>
+                                    <p><strong>결제</strong> : 2023-04-16 13:28:03</p>
+                                </td>
+                            </tr> 
+                            <!-- // [E] -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-bottom">
+                    <div class="btn-flex">
+                        <div>
+                            <div class="form-select pr-2">
+                                <select class="form-control">
+                                    <option value="">배송준비중</option>
+                                </select><i class="xi-angle-down"></i>
+                            </div>
+                            <button type="button" class="btn btn-sm">변경</button>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-green-outline">엑셀 다운로드</button>
+                </div>
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true"><i class="xi-angle-left-min"></i></span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true"><i class="xi-angle-right-min"></i></span>
+                        </a>
+                    </li>
+                </ul>  
+            </div>
+        </div>
+        <!-- // Table -->
+        
+        <!-- //페이지 시작 -->
+    </div>
+</div>
+<!-- //container -->
+   
+<script src="js/common.js"></script>
+</body>
+</html>

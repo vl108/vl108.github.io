@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g id="그룹_4136" data-name="그룹 4136" transform="translate(-501 -2956)">
+    <rect id="사각형_1479" data-name="사각형 1479" width="64" height="64" transform="translate(501 2956)" fill="none"/>
+    <g id="그룹_2611" data-name="그룹 2611" transform="translate(3)">
+      <g id="사각형_1482" data-name="사각형 1482" transform="translate(514 2974)" fill="none" stroke="#111" stroke-width="1.8">
+        <rect width="33" height="19" rx="1" stroke="none"/>
+        <rect x="0.9" y="0.9" width="31.2" height="17.2" rx="0.1" fill="none"/>
+      </g>
+      <g id="사각형_1484" data-name="사각형 1484" transform="translate(535 2979)" fill="none" stroke="#111" stroke-width="1.8">
+        <rect width="7" height="8" rx="1" stroke="none"/>
+        <rect x="0.9" y="0.9" width="5.2" height="6.2" rx="0.1" fill="none"/>
+      </g>
+      <g id="패스_166" data-name="패스 166" transform="translate(514 2991)" fill="none">
+        <path d="M1,0H32a1,1,0,0,1,1,1l2,10a1,1,0,0,1-1,1H-1a1,1,0,0,1-1-1L0,1A1,1,0,0,1,1,0Z" stroke="none"/>
+        <path d="M 1.675651550292969 1.800000190734863 L -0.0043487548828125 10.19999980926514 L 33.00434875488281 10.19999980926514 L 31.32434844970703 1.800000190734863 L 1.675651550292969 1.800000190734863 M 1 0 L 32 0 C 32.55228042602539 0 33 0.4477100372314453 33 1 L 35 11 C 35 11.55228042602539 34.55228042602539 12 34 12 L -1 12 C -1.552280426025391 12 -2 11.55228042602539 -2 11 L 0 1 C 0 0.4477100372314453 0.4477195739746094 0 1 0 Z" stroke="none" fill="#111"/>
+      </g>
+      <line id="선_582" data-name="선 582" x2="9.332" transform="translate(520.5 2981.5)" fill="none" stroke="#111" stroke-linecap="round" stroke-width="1.8"/>
+      <line id="선_583" data-name="선 583" x2="9.332" transform="translate(520.5 2985.5)" fill="none" stroke="#111" stroke-linecap="round" stroke-width="1.8"/>
+    </g>
+  </g>
+</svg>

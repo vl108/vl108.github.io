@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta content="width=768, height=1024" name="viewport" />
+<title></title>
+<link rel="preload" href="font/KoPubBatangPMA.woff" type="font/woff" />
+<link rel="preload" href="font/KoPubDotumPMA.woff" type="font/woff" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<script type="text/javascript" src="js/DTCaliperSensor.js"></script>
+<!-- page -->
+<link rel="stylesheet" type="text/css" href="css/video.css" />
+<link rel="stylesheet" type="text/css" href="css/spectrum.css" />
+<link rel="stylesheet" type="text/css" href="css/virtual_02.css" />
+</head>
+<body>
+    <div id="wrap" class="page-odd">
+        <div class="wrapper">
+            <!-- 탐구 -->
+            <div class="explore font-dt">
+                <header class="explore-hd">
+                    <strong class="sr-only">탐구</strong>
+                    <h2 class="tit">물체의 운동 나타내기</h2>
+                    <span class="font-coo">관찰, 자료 해석</span>
+                    <div class="page">『실험 관찰』 36 쪽</div>
+                    <div class="explore-ability">
+                        <span class="ability"><i class="icon-ability-think"></i>사고력</span>
+                        <i class="split"></i>
+                        <span class="ability"><i class="icon-ability-study"></i>탐구 능력</span>
+                    </div>
+                </header>
+                <div class="d-flex justify-content-between">
+                    <strong class="how-title font-ka">어떻게 할까요</strong>
+                    <button type="button" class="btn position-absolute" style="left: 158px;top: 66px" data-toggle="modal" data-target="#modalReference"><i class="icon-folder"></i>보충 자료</button>
+                </div>
+                <ul class="lst-num mt14">
+                    <li class="text-flex text-num">
+                        <span class="num font-coo">1</span>
+                        <div class="col">
+                            다음 교실의 모습을 관찰해 봅시다.
+                        </div>
+                    </li>
+                    <li class="text-flex text-num">
+                        <span class="num font-coo">2</span>
+                        <div class="col">
+                            <span class="font-serif">1</span> 초 뒤 교실의 모습을 관찰하고 운동한 물체에 ◯표 해 봅시다.
+                            <button type="button" class="btn-tail ml4" data-toggle="modal" data-target="#modalExp"
+                                data-exp="1"><i class="icon-btn icon-pencil"></i><span class="left">실험
+                                    관찰</span></button>
+                            <button type="button" class="btn ml4" data-toggle="modal" data-target="#modalVirtual"><i
+                                    class="icon-virtual"></i>가상 실험실</button>
+                        </div>
+                    </li>
+                </ul>
+                <div class="box position-relative mt40">
+                    <img src="images/virtual_02/pic1.png" height="311" alt="" />
+                    <p class="fwd font-serif" style="top: 334px; left: 44.5px;"><span class="font-serif">0</span> m</p>
+                    <p class="fwd font-serif" style="top: 334px; left: 140px;"><span class="font-serif">1</span> m</p>
+                    <p class="fwd font-serif" style="top: 334px; left: 233px;"><span class="font-serif">2</span> m</p>
+                    <p class="fwd font-serif" style="top: 334px; left: 329px;"><span class="font-serif">3</span> m</p>
+                    <p class="fwd font-serif" style="top: 334px; left: 424px;"><span class="font-serif">4</span> m</p>
+                    <p class="fwd font-serif" style="top: 334px; left: 519px;"><span class="font-serif">5</span> m</p>
+                </div>
+                <ul class="lst-num mb5" style="margin-top: 120px">
+                    <li class="text-flex text-num">
+                        <span class="num font-coo">3</span>
+                        <div class="col">
+                            ◯표 한 물체의 운동을 걸린 시간과 이동 거리로 나타내 봅시다.
+                            <button type="button" class="btn-tail ml4" data-toggle="modal" data-target="#modalExp"
+                                data-exp="2"><i class="icon-btn icon-pencil"></i><span class="left">실험
+                                    관찰</span></button>
+                        </div>
+                    </li>
+                </ul>
+                <button type="button" class="btn-img text-hide btn-self ml5" data-toggle="modal"
+                    data-target="#modalSelf">스스로 평가해요</button>
+            </div>
+            <div class="inform1 speech-toggle">
+                <div class="speech">
+                    <p class="fwd font-komi" style="left: 10px;top: 19px;">가상 실험실을 <br />통해 운동한 물체를 <br />찾아봐요.</p>
+                    <button type="button" class="icon-close" style="left: 100px; top: -13px;">닫기</button>
+                </div>
+                <button type="button" class="icon-audio" data-audio="Audio2">내용보기</button>
+                <audio id="Audio2" src="media/virtual_02/virtual_0_01.mp3" preload="none"></audio>
+            </div>
+            <div class="row">
+                <div class="col-content mt40 ml35">
+                    <p class="para">
+                        우리 주변에 있는 여러 가지 물체의 운동도 이동하는 데 걸린 시간과 이동 거리로 나타낼 수 있습니다.
+                        <button type="button" class="btn mt3 float-right" data-toggle="modal"
+                            data-target="#modalVideo"><i class="icon-vod"></i>개념 영상</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="bottom-buttons">
+                <button type="button" class="btn-img text-hide btn-self-check" data-toggle="modal"
+                    data-target="#modalSelfCheck">스스로 확인해요</button>
+                <button type="button" class="btn-img text-hide btn-arrange" data-toggle="modal"
+                    data-target="#modalArrange">정리 문제</button>
+            </div>
+
+            <footer id="num"><b>71</b></footer>
+        </div>
+    </div>
+
+    <!-- 비디오 -->
+    <div id="modalVideo" class="modal modal-video">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" title="닫기" class="icon-modal-close" data-dismiss="modal">닫기</button>
+                <h2 class="modal-title">개념 영상</h2>
+                <!-- 비디오 -->
+                <video poster="media/virtual_02/524_071_c_1.jpg" class="video-js" data-content_index="content_cls_video"
+                    controls="controls" webkit-playsinline="" playsinline="" preload="none" title="개념 영상">
+                    <source src="media/virtual_02/524_071_c_1.mp4" type="video/mp4" />
+                    <track kind="subtitles" srclang="ko" src="media/virtual_02/524_071_c_1.vtt" />
+                </video>
+                <!-- 자막 -->
+                <div class="narr">
+                    <div class="box">
+                        <p class="hide" data-toggle="video-caption" data-playtime="6,11">1 초 동안 위치가 변하지 않은 사람은 운동하지 않은
+                            물체입니다.</p>
+                        <p class="hide" data-toggle="video-caption" data-playtime="12,16">1 초 동안 위치가 변한 강아지는 운동한 물체입니다.
+                        </p>
+                        <p class="hide" data-toggle="video-caption" data-playtime="17,20">이때 강아지가 1 초 동안 이동한 거리는 1 m입니다.
+                        </p>
+                        <p class="hide" data-toggle="video-caption" data-playtime="21,27">이처럼 물체의 운동은 물체가 이동하는 데 걸린 시간과
+                            이동 거리로 나타낼 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn-narr">자막 보기</button>
+        </div>
+    </div>
+
+    <!-- 보충자료 -->
+    <div id="modalReference" class="modal">
+        <div class="modal-content">
+            <button type="button" title="닫기" class="icon-modal-close" data-dismiss="modal">닫기</button>
+            <div class="modal-header">
+                <h2 class="font-coo"><i class="icon-modal-folder"></i>보충 자료</h2>
+            </div>
+            <div class="reference modal-body">
+                <div class="reference-title">
+                    <strong>물체의 운동</strong>
+                </div>
+                <div class="reference-content">
+                    <p>
+                        시간이 지남에 따라 위치가 변하지 않은 물체는 정지한 물체이고, 시간이 지남에 따라 위치가 변한 물체가 운동한 물체입니다.
+                    </p>
+
+                    <!-- 비디오 -->
+                    <video poster="media/virtual_02/524_071_a_1_23.jpg" class="video-js mt40" data-content_index="content_cls_video"  controls="controls" webkit-playsinline="" playsinline="" preload="none" title="물체의 운동">
+                        <source src="media/virtual_02/524_071_a_1_23.mp4" type="video/mp4" />
+                        <track kind="subtitles" srclang="ko" src="media/virtual_02/524_071_a_1_23.vtt" />
+                    </video>
+                    <div class="narr">
+                        <div class="box">
+                            <p class="hide" data-toggle="video-caption" data-playtime="1,7">정지해 있는 자동차는 시간이 지남에 따라 위치가 변하지 않았으므로 운동하지 않은 물체이고,</p>
+                            <p class="hide" data-toggle="video-caption" data-playtime="8,16">달리는 자동차는 시간이 지남에 따라 위치가 변했으므로 운동한 물체입니다.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 실험관찰탐구 -->
+    <div id="modalExp" class="modal modal-exp">
+        <div class="modal-content">
+            <button type="button" title="닫기" class="icon-modal-close" data-dismiss="modal">닫기</button>
+            <div class="modal-exp-header">
+                <strong class="font-coo exp-header">실험 관찰 <span>탐구</span></strong>
+                <span class="exp-label">『실험 관찰』 36 쪽</span>
+                <h2 class="modal-title">물체의 운동 나타내기</h2>
+            </div>
+            <div class="modal-body">
+                <div class="tab-content exp-content">
+                    <div id="exp1" class="tab-pane active">
+                        <div class="question">
+                            <span class="num font-coo">1.</span>
+                            <div class="col">
+                                『과학』 <span class="font-serif">71</span> 쪽 <span class="font-serif">1</span> 초 뒤 교실의 모습에서
+                                ◯표 한 물체가 운동한 물체인 까닭을 <span class="text-nowrap">써 봅시다.</span>
+                            </div>
+                        </div>
+                        <div class="d-flex mb50">
+                            <div class="box position-relative">
+                                <img src="images/virtual_02/pic1.png" style="height:184px" alt="" />
+                                <p class="fwd font-serif" style="top: 204px; left: 25px;"><span
+                                        class="font-serif">0</span> m</p>
+                                <p class="fwd font-serif" style="top: 204px; left: 80px;"><span
+                                        class="font-serif">1</span> m</p>
+                                <p class="fwd font-serif" style="top: 204px; left: 138px;"><span
+                                        class="font-serif">2</span> m</p>
+                                <p class="fwd font-serif" style="top: 204px; left: 195px;"><span
+                                        class="font-serif">3</span> m</p>
+                                <p class="fwd font-serif" style="top: 204px; left: 250px;"><span
+                                        class="font-serif">4</span> m</p>
+                                <p class="fwd font-serif" style="top: 204px; left: 306px;"><span
+                                        class="font-serif">5</span> m</p>
+                            </div>
+                            <div class="box position-relative">
+                                <img src="images/virtual_02/pic2.png" style="height:184px" alt="" />
+                                <p class="fwd font-serif" style="top: 204px; left: 25px;"><span
+                                        class="font-serif">0</span> m</p>
+                                <p class="fwd font-serif" style="top: 204px; left: 80px;"><span
+                                        class="font-serif">1</span> m</p>
+                                <p class="fwd font-serif" style="top: 204px; left: 138px;"><span
+                                        class="font-serif">2</span> m</p>
+                                <p class="fwd font-serif" style="top: 204px; left: 195px;"><span
+                                        class="font-serif">3</span> m</p>
+                                <p class="fwd font-serif" style="top: 204px; left: 250px;"><span
+                                        class="font-serif">4</span> m</p>
+                                <p class="fwd font-serif text-nowrap" style="top: 204px;left: 304px;"><span
+                                        class="font-serif">5</span> m</p>
+                            </div>
+                        </div>
+                        <div class="bx bx-dashed mt20">
+                            <div class="input-group">
+                                이 물체들은 시간이 지남에 따라
+                                <textarea id="textarea_071_01" class="form-control ml6"></textarea>
+                            </div>
+                        </div>
+                        <div class="test-buttons btn-chk-wrap">
+                            <button type="button" class="btn-img btn-answer-check" data-toggle="answer"
+                                data-target="#exp1" data-chance="1">확인하기</button>
+                            <div class="bubble-alert font-coo">스스로 <br />정리해 보세요.</div>
+                            <button type="button" class="btn-img btn-answer-refresh" data-toggle="answer-refresh"
+                                data-target="#exp1">다시 하기</button>
+                        </div>
+                        <div class="ex-answer-box">
+                            <strong class="label-answer-ex font-ka">예시 답안</strong>
+                            이 물체들은 시간이 지남에 따라 <span class="text-blue">위치가 변했기 때문이다.</span>
+                        </div>
+                    </div>
+                    <div id="exp2" class="tab-pane">
+                        <div class="question">
+                            <span class="num font-coo">2.</span>
+                            <div class="col">
+                                ◯표 한 물체의 운동을 걸린 시간과 이동 거리로 나타내 봅시다.
+                            </div>
+                        </div>
+                        <div class="table-round-wrp">
+                            <table class="tb">
+                                <colgroup>
+                                    <col style="width: 25%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>◯표 한 물체</th>
+                                        <th>물체의 운동</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="pa0">
+                                            <input type="text" id="input_071_01" class="form-control overlap" />
+                                        </td>
+                                        <td class="pa0">
+                                            <input type="text" id="input_071_02" class="form-control itx" /> 초 동안 <input
+                                                type="text" id="input_071_03" class="form-control itx ml5 mr5" /><span
+                                                class="font-serif">m</span> 이동했다.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pa0">
+                                            <input type="text" id="input_071_04" class="form-control overlap" />
+                                        </td>
+                                        <td class="pa0">
+                                            <input type="text" id="input_071_05" class="form-control overlap" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pa0">
+                                            <input type="text" id="input_071_06" class="form-control overlap" />
+                                        </td>
+                                        <td class="pa0">
+                                            <input type="text" id="input_071_07" class="form-control overlap" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="test-buttons btn-chk-wrap">
+                            <button type="button" class="btn-img btn-answer-check" data-toggle="answer"
+                                data-target="#exp2" data-chance="1">확인하기</button>
+                            <div class="bubble-alert font-coo">스스로 <br />정리해 보세요.</div>
+                            <button type="button" class="btn-img btn-answer-refresh" data-toggle="answer-refresh"
+                                data-target="#exp2">다시 하기</button>
+                        </div>
+                        <div class="ex-answer-box">
+                            <strong class="label-answer-ex font-ka">예시 답안</strong>
+                            <div class="table-round-wrp">
+                                <table class="tb">
+                                    <colgroup>
+                                        <col style="width: 25%" />
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>◯표 한 물체</th>
+                                            <th>물체의 운동</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="pa10">
+                                                <span class="text-blue">가방을 멘 학생</span>
+                                            </td>
+                                            <td class="pa10">
+                                                <span class="text-blue font-serif">1</span> 초 동안 <span
+                                                    class="text-blue font-serif">1</span> m 이동했다
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="pa10">
+                                                <span class="text-blue">휠체어를 탄 학생</span>
+                                            </td>
+                                            <td class="pa10">
+                                                <span class="text-blue"><span class="font-serif">1</span> 초 동안 <span
+                                                        class="font-serif">2</span> m 이동했다.</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="pa10">
+                                                <span class="text-blue">축구공</span>
+                                            </td>
+                                            <td class="pa10">
+                                                <span class="text-blue"><span class="font-serif">1</span> 초 동안 <span
+                                                        class="font-serif">1</span> m 이동했다.</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 스스로 평가해요 -->
+    <div id="modalSelf" class="modal modal-self modal-half">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" title="닫기" class="icon-layer-clse" data-dismiss="modal"></button>
+                <strong class="self-check-title"><span class="text-hide">스스로</span> 평가해요</strong>
+                <p class="check-pencil font-komi">학습한 내용을 생각하며 선택해 봅시다.</p>
+                <ul class="self-check-list">
+                    <li class="row">
+                        <p class="col">물체의 운동을 나타낼 때 흥미와 호기심을 가지고 참여했나요?</p>
+                        <div class="self-button text-hide">
+                            <label>
+                                <input type="checkbox" name="self_025_01" value="self_025_01" id="self_025_01"
+                                    class="sr-only" /><span>우수</span>
+                            </label>
+                            <label class="self-button-2">
+                                <input type="checkbox" name="self_025_01" value="self_025_02" id="self_025_02"
+                                    class="sr-only" /><span>보통</span>
+                            </label>
+                            <label class="self-button-3">
+                                <input type="checkbox" name="self_025_01" value="self_025_03" id="self_025_03"
+                                    class="sr-only" /><span>미흡</span>
+                            </label>
+                        </div>
+                    </li>
+                    <li class="row">
+                        <p class="col">물체의 운동을 걸린 시간과 이동 거리로 나타냈나요?</p>
+                        <div class="self-button text-hide">
+                            <label>
+                                <input type="checkbox" name="self_025_04" value="self_025_04" id="self_025_04"
+                                    class="sr-only" /><span>우수</span>
+                            </label>
+                            <label class="self-button-2">
+                                <input type="checkbox" name="self_025_04" value="self_025_05" id="self_025_05"
+                                    class="sr-only" /><span>보통</span>
+                            </label>
+                            <label class="self-button-3">
+                                <input type="checkbox" name="self_025_04" value="self_025_06" id="self_025_06"
+                                    class="sr-only" /><span>미흡</span>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 스스로확인해요 -->
+    <div id="modalSelfCheck" class="modal modal-self-check">
+        <div class="modal-content">
+            <button type="button" title="닫기" class="icon-modal-close" data-dismiss="modal">닫기</button>
+            <div class="modal-body">
+                <h2 class="self-check-title"><span class="text-hide">스스로</span> 확인해요</h2>
+                <div id="selfCheck01" data-qtype="text">
+                    <assessmentItem data-qid="text_025_01" data-response-type="fillInTheBlank">
+                        <itemBody>
+                            <div class="question">
+                                <span class="num font-coo">1.</span>
+                                <div class="col">
+                                    물체의 운동은 물체가 이동하는 데 걸린
+                                    <div class="itx-wrp" data-answer="시간">
+                                        <input type="text" id="input_071_08" class="form-control itx" />
+                                    </div>과/와
+                                    <div class="itx-wrp mt5" data-answer="이동 거리@@이동거리@@이동한거리@@이동한 거리">
+                                        <input type="text" id="input_071_09" class="form-control itx" />
+                                    </div><span class="text-nowrap">(으)로</span> 나타낼 수 있습니다.
+
+                                </div>
+                            </div>
+                        </itemBody>
+                        <correctResponse><span class="sr-only">시간, 이동 거리</span></correctResponse>
+                    </assessmentItem>
+                    <div class="test-buttons">
+                        <button type="button" class="btn-img btn-answer-check chk-data-button"
+                            data-toggle="answer-final" data-chance="1" data-target="#selfCheck01">확인하기</button>
+                        <button type="button" class="btn-img btn-answer-refresh" data-toggle="answer-refresh"
+                            data-target="#selfCheck01">다시 하기</button>
+                    </div>
+                    <div class="answer-box">
+                        <div class="answer-wrap">
+                            <strong class="label-answer font-ka">정답</strong>
+                            <div class="col text-blue">시간, 이동 거리</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="selfCheck02" data-qtype="etc">
+                    <assessmentItem data-qid="textarea_025_01" data-response-type="essay">
+                        <itemBody>
+                            <div class="question">
+                                <span class="num font-coo">2.</span>
+                                <div class="col">
+                                    <p class="text-q">
+                                        <span class="badge">탐구 능력</span> 체육 시간에 달리기를 했던 경험을 떠올려 보고 자신의 운동을 걸린 시간과 이동 거리로
+                                        나타내 봅시다.
+                                    </p>
+                                    <textarea id="textarea_025_01" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </itemBody>
+                    </assessmentItem>
+                    <div class="test-buttons btn-chk-wrap">
+                        <button type="button" class="btn-img btn-answer-check chk-data-button"
+                            data-toggle="answer-final" data-target="#selfCheck02">확인하기</button>
+                        <div class="bubble-alert font-coo">스스로 <br />정리해 보세요.</div>
+                        <button type="button" class="btn-img btn-answer-refresh" data-toggle="answer-refresh"
+                            data-target="#selfCheck02">다시 하기</button>
+                    </div>
+                    <div class="answer-box">
+                        <div class="answer-wrap">
+                            <strong class="label-answer-ex font-ka">예시 답안</strong>
+                            <div class="text-blue">나는 <span class="font-serif">12</span> 초 동안 <span
+                                    class="font-serif">50 m</span> 이동했다.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 정리 문제 -->
+    <div id="modalArrange" class="modal modal-test">
+        <div class="modal-content">
+            <button type="button" title="닫기" class="icon-modal-close" data-dismiss="modal">닫기</button>
+            <header class="modal-header">
+                <h2 class="font-coo"><i class="icon-modal-arrange"></i>정리 문제</h2>
+            </header>
+            <nav class="nav nav-test">
+                <button type="button" class="active" data-toggle="tab" data-target="#test01">1</button>
+                <button type="button" data-toggle="tab" data-target="#test02">2</button>
+                <button type="button" data-toggle="tab" data-target="#test03">3</button>
+            </nav>
+            <div class="modal-body">
+                <div class="tab-content">
+                    <div id="test01" class="tab-pane active" data-qtype="checkbox">
+                        <assessmentItem data-qid="select_071_01" data-response-type="multipleChoice">
+                            <itemBody>
+                                <div class="question">
+                                    <span class="num font-coo">1.</span>
+                                    <div class="col">
+                                        <div class="text-q">다음 중 물체의 운동에 대한 설명으로 옳은 것을 두 가지 골라 봅시다.</div>
+                                        <ul class="answersheet mt10">
+                                            <li>
+                                                <label class="text-flex">
+                                                    <input type="checkbox" name="select_071_01" value="1"
+                                                        id="select_071_01" />
+                                                    <b class="mark">①</b>
+                                                    <span class="col">
+                                                        물체의 운동은 이동 거리로만 나타낸다.
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="text-flex">
+                                                    <input type="checkbox" name="select_071_01" value="2"
+                                                        id="select_071_02" />
+                                                    <b class="mark">②</b>
+                                                    <span class="col">
+                                                        물체의 운동은 걸린 시간으로만 나타낸다.
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="text-flex">
+                                                    <input type="checkbox" name="select_071_01" value="3"
+                                                        id="select_071_03" data-answer="" />
+                                                    <b class="mark">③</b>
+                                                    <span class="col">
+                                                        정지해 있는 물체는 시간에 따라 위치가 변하지 않는다.
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="text-flex">
+                                                    <input type="checkbox" name="select_071_01" value="4"
+                                                        id="select_071_04" data-answer="" />
+                                                    <b class="mark">④</b>
+                                                    <span class="col">
+                                                        시간이 지남에 따라 물체의 위치가 변할 때 물체가 운동한다고 한다.
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="text-flex">
+                                                    <input type="checkbox" name="select_071_01" value="5"
+                                                        id="select_071_05" />
+                                                    <b class="mark">⑤</b>
+                                                    <span class="col">
+                                                        물체의 위치가 변하더라도 걸린 시간이 짧으면 물체는 운동하지 않는다고 한다.
+                                                    </span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </itemBody>
+                            <correctResponse><span class="sr-only">3, 4</span></correctResponse>
+                            <modalFeedback><span class="sr-only">시간이 지남에 따라 물체의 위치가 변할 때 운동한다고 합니다. 물체의 운동은 이동 거리와 걸린
+                                    시간으로 나타냅니다.</span></modalFeedback>
+                        </assessmentItem>
+                        <div class="test-buttons">
+                            <button type="button" class="btn-img btn-answer-check" data-toggle="answer-final"
+                                data-target="#test01" data-chance="2">확인하기</button>
+                            <button type="button" class="btn-img btn-answer-refresh" data-toggle="answer-refresh"
+                                data-target="#test01">다시 하기</button>
+                        </div>
+                        <div class="answer-box" data-answer="hint">
+                            <div class="answer-wrap">
+                                <strong class="label-answer-hint font-ka">힌트</strong>
+                                <div class="w-100">운동하는 물체는 시간이 지남에 따라 위치가 변하며, 정지한 물체는 시간이 지나도 위치가 변하지 않습니다.</div>
+                            </div>
+                        </div>
+                        <div class="answer-bottom">
+                            <div class="answer-box">
+                                <div class="answer-wrap">
+                                    <strong class="label-answer font-ka">정답</strong>
+                                    <div class="col text-blue">③, ④</div>
+                                </div>
+                                <div class="answer-wrap">
+                                    <strong class="label-answer-feed font-ka">해설</strong>
+                                    <div class="w-100">시간이 지남에 따라 물체의 위치가 변할 때 운동한다고 합니다. 물체의 운동은 이동 거리와 걸린 시간으로 나타냅니다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="answer-btn-wrong hide">
+                                <button type="button" class="btn-img btn-vod" data-toggle="modal"
+                                    data-target="#modalAnswerVideo1">개념 영상</button>
+                                <div class="bubble-alert font-coo">개념 영상을 보며<br />배운 내용을 다시 생각해 봅시다.</div>
+                            </div>
+                            <div class="answer-btn hide">
+                                <button type="button" class="btn-img btn-next">다음 문제</button>
+                                <div class="bubble-alert font-coo">다음 <br />문제를 풀어 봅시다.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="test02" class="tab-pane" data-qtype="radio">
+                        <assessmentItem data-qid="radio_071_01" data-response-type="singleChoice">
+                            <itemBody>
+                                <div class="question">
+                                    <span class="num font-coo w65">[2~3]</span>
+                                    <div class="col">
+                                        <div class="text-q">다음은 <span class="font-serif">1</span> 초 간격으로 나타낸 공원의 모습입니다.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center position-relative">
+                                    <img src="images/virtual_02/ask01.png" width="500" alt="" />
+                                    <p class="fwd font-dt fs17" style="left: 95px;top: 8px;">처음</p>
+                                    <p class="fwd font-dt fs17" style="left: 95px; top: 198px;"><span
+                                            class="font-serif">1</span> 초 뒤</p>
+                                    <label for="radio_071_01" style="left: 279px;top: 187px;">
+                                        <input type="radio" name="radio_071_01" id="radio_071_01" value="사람"
+                                            class="sr-only" data-answer="" />
+                                        <span class="label-circle"></span>
+                                    </label>
+                                    <label for="radio_071_02" style="left: 423px;top: 221px;">
+                                        <input type="radio" name="radio_071_01" id="radio_071_02" value="공"
+                                            class="sr-only" />
+                                        <span class="label-circle"></span>
+                                    </label>
+                                    <label for="radio_071_03" style="left: 499px;top: 174px;">
+                                        <input type="radio" name="radio_071_01" id="radio_071_03" value="나무"
+                                            class="sr-only" />
+                                        <span class="label-circle"></span>
+                                    </label>
+                                </div>
+                                <div class="question mt40">
+                                    <span class="num font-coo">2.</span>
+                                    <div class="col">
+                                        <div class="text-q">운동한 물체를 찾아 <span class="font-serif">1</span> 초 뒤 모습에 ◯표 해
+                                            봅시다.</div>
+                                    </div>
+                                </div>
+                            </itemBody>
+                            <correctResponse><span class="sr-only">사람</span></correctResponse>
+                            <modalFeedback><span class="sr-only">처음 모습과 <span class="font-serif">1</span> 초 뒤 모습에서 위치가
+                                    변한 물체는 사람입니다. 따라서 사람이 운동한 물체입니다.</span></modalFeedback>
+                        </assessmentItem>
+                        <div class="test-buttons">
+                            <button type="button" class="btn-img btn-answer-check" data-toggle="answer-final"
+                                data-target="#test02" data-chance="2">확인하기</button>
+                            <button type="button" class="btn-img btn-answer-refresh" data-toggle="answer-refresh"
+                                data-target="#test02">다시 하기</button>
+                        </div>
+                        <div class="answer-box" data-answer="hint">
+                            <div class="answer-wrap">
+                                <strong class="label-answer-hint font-ka">힌트</strong>
+                                <div class="w-100">
+                                    처음 모습과 <span class="font-serif">1</span> 초 뒤 모습에서 위치가 변한 물체가 무엇인지 찾아봅니다.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="answer-bottom">
+                            <div class="answer-box">
+                                <div class="answer-wrap">
+                                    <strong class="label-answer font-ka">정답</strong>
+                                    <div class="col text-blue">사람</div>
+                                </div>
+                                <div class="answer-wrap">
+                                    <strong class="label-answer-feed font-ka">해설</strong>
+                                    <div class="w-100">
+                                        처음 모습과 <span class="font-serif">1</span> 초 뒤 모습에서 위치가 변한 물체는 사람입니다. 따라서 사람이 운동한
+                                        물체입<span class="text-nowrap">니다.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="answer-btn-wrong hide">
+                                <button type="button" class="btn-img btn-vod" data-toggle="modal"
+                                    data-target="#modalAnswerVideo2">개념 영상</button>
+                                <div class="bubble-alert font-coo">개념 영상을 보며<br />배운 내용을 다시 생각해 봅시다.</div>
+                            </div>
+                            <div class="answer-btn hide">
+                                <button type="button" class="btn-img btn-next">다음 문제</button>
+                                <div class="bubble-alert font-coo">다음 <br />문제를 풀어 봅시다.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="test03" class="tab-pane" data-qtype="multipleBlank">
+                        <assessmentItem data-qid="" data-response-type="etc">
+                            <itemBody>
+                                <div class="question">
+                                    <span class="num font-coo w65">[2~3]</span>
+                                    <div class="col">
+                                        <div class="text-q">다음은 <span class="font-serif">1</span> 초 간격으로 나타낸 공원의 모습입니다.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center position-relative">
+                                    <img src="images/virtual_02/ask01.png" width="500" alt="" />
+                                    <p class="fwd font-dt fs17" style="left: 95px;top: 8px;">처음</p>
+                                    <p class="fwd font-dt fs17" style="left: 95px; top: 198px;"><span
+                                            class="font-serif">1</span> 초 뒤</p>
+
+                                </div>
+                                <div class="question mt40">
+                                    <span class="num font-coo">3.</span>
+                                    <div class="col">
+                                        <div class="text-q"><span class="num font-coo">2</span>에서 찾은 물체의 운동을 걸린 시간과 이동
+                                            거리로 나타내 봅시다.</div>
+                                        <div class="bx flex-select-bx">
+                                            <select name="" id="select_071_06" class="form-control" data-answer="사람"
+                                                style="max-width:140px;flex:0 0 140px">
+                                                <option value="" disabled="disabled" selected="selected">운동한 물체</option>
+                                                <option value="사람">사람</option>
+                                                <option value="벤치">벤치</option>
+                                                <option value="공">공</option>
+                                                <option value="나무">나무</option>
+                                            </select>
+                                            <span class="ml5 mr5">은/는</span>
+                                            <select name="" id="select_071_07" class="form-control" data-answer="1 초">
+                                                <option value="" disabled="disabled" selected="selected">걸린 시간</option>
+                                                <option value="0 초"><span class="font-serif">0</span> 초</option>
+                                                <option value="1 초"><span class="font-serif">1</span> 초</option>
+                                                <option value="2 초"><span class="font-serif">2</span> 초</option>
+                                                <option value="3 초"><span class="font-serif">3</span> 초</option>
+                                            </select>
+                                            <span class="ml5 mr5">동안</span>
+                                            <select name="" id="select_071_08" class="form-control" data-answer="2 m">
+                                                <option value="" disabled="disabled" selected="selected">이동 거리</option>
+                                                <option value="1 m"><span class="font-serif">1 m</span></option>
+                                                <option value="2 m"><span class="font-serif">2 m</span></option>
+                                                <option value="3 m"><span class="font-serif">3 m</span></option>
+                                                <option value="4 m"><span class="font-serif">4 m</span></option>
+                                            </select>
+                                            <span class="ml5">이동했다.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </itemBody>
+                            <correctResponse><span class="sr-only">사람, 1 초, 2 m</span></correctResponse>
+                            <modalFeedback><span class="sr-only">처음과 1 초 뒤 모습 사이에 걸린 시간은 1 초입니다. 또, 처음 모습에서 사람은 0 m 위치에
+                                    있고, 1 초 뒤 모습에서 사람은 2 m 위치에 있으므로 사람의 이동 거리는 2 m입니다.</span></modalFeedback>
+                        </assessmentItem>
+                        <div class="test-buttons">
+                            <button type="button" class="btn-img btn-answer-check" data-toggle="answer-final"
+                                data-target="#test03" data-chance="2">확인하기</button>
+                            <button type="button" class="btn-img btn-answer-refresh" data-toggle="answer-refresh"
+                                data-target="#test03">다시 하기</button>
+                        </div>
+                        <div class="answer-box" data-answer="hint">
+                            <div class="answer-wrap">
+                                <strong class="label-answer-hint font-ka">힌트</strong>
+                                <div class="w-100">
+                                    처음 모습과 <span class="font-serif">1</span> 초 뒤 모습을 통해 걸린 시간과 이동 거리를 알 수 있습니다.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="answer-bottom">
+                            <div class="answer-box">
+                                <div class="answer-wrap">
+                                    <strong class="label-answer font-ka">정답</strong>
+                                    <div class="col text-blue">사람, <span class="font-serif">1</span> 초, <span
+                                            class="font-serif">2 m</span></div>
+                                </div>
+                                <div class="answer-wrap">
+                                    <strong class="label-answer-feed font-ka">해설</strong>
+                                    <div class="w-100">
+                                        처음과 <span class="font-serif">1</span> 초 뒤 모습 사이에 걸린 시간은 <span
+                                            class="font-serif">1</span> 초입니다. 또, 처음 모습에서 사람은 <span class="font-serif">0
+                                            m</span> 위치에 있고, <span class="font-serif">1</span> 초 뒤 모습에서 사람은 <span
+                                            class="font-serif">2 m</span> 위치에 있으므로 사람의 이동 거리는 <span class="font-serif">2
+                                            m</span>입니다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="answer-btn-wrong hide">
+                                <button type="button" class="btn-img btn-vod" data-toggle="modal"
+                                    data-target="#modalAnswerVideo3">개념 영상</button>
+                                <div class="bubble-alert font-coo">개념 영상을 보며<br />배운 내용을 다시 생각해 봅시다.</div>
+                            </div>
+                            <div class="answer-btn">
+                                <button type="button" class="btn-img btn-next last">처음으로</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 정리 문제 비디오 -->
+    <div id="modalAnswerVideo1" class="modal modal-video modal-answer-video">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" title="닫기" class="icon-modal-close" data-dismiss="modal">닫기</button>
+                <h2 class="modal-title">개념 영상</h2>
+                <!-- 비디오 -->
+                <video poster="media/summary/524_071_c_1.jpg" class="video-js" data-content_index="content_cls_video"
+                    controls="controls" webkit-playsinline="" playsinline="" preload="none" title="개념 영상">
+                    <source src="media/summary/524_071_c_1.mp4" type="video/mp4" />
+                    <track kind="subtitles" srclang="ko" src="media/summary/524_071_c_1.vtt" />
+                </video>
+                <!-- 자막 -->
+                <div class="narr">
+                    <div class="box">
+                        <p class="hide" data-toggle="video-caption" data-playtime="6,11">1 초 동안 위치가 변하지 않은 사람은 운동하지 않은
+                            물체입니다.</p>
+                        <p class="hide" data-toggle="video-caption" data-playtime="12,16">1 초 동안 위치가 변한 강아지는 운동한 물체입니다.
+                        </p>
+                        <p class="hide" data-toggle="video-caption" data-playtime="17,20">이때 강아지가 1 초 동안 이동한 거리는 1 m입니다.
+                        </p>
+                        <p class="hide" data-toggle="video-caption" data-playtime="21,27">이처럼 물체의 운동은 물체가 이동하는 데 걸린 시간과
+                            이동 거리로 나타낼 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn-narr">자막 보기</button>
+        </div>
+    </div>
+    <div id="modalAnswerVideo2" class="modal modal-video modal-answer-video">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" title="닫기" class="icon-modal-close" data-dismiss="modal">닫기</button>
+                <h2 class="modal-title">개념 영상</h2>
+                <!-- 비디오 -->
+                <video poster="media/summary/524_071_c_1.jpg" class="video-js" data-content_index="content_cls_video"
+                    controls="controls" webkit-playsinline="" playsinline="" preload="none" title="개념 영상">
+                    <source src="media/summary/524_071_c_1.mp4" type="video/mp4" />
+                    <track kind="subtitles" srclang="ko" src="media/summary/524_071_c_1.vtt" />
+                </video>
+                <!-- 자막 -->
+                <div class="narr">
+                    <div class="box">
+                        <p class="hide" data-toggle="video-caption" data-playtime="6,11">1 초 동안 위치가 변하지 않은 사람은 운동하지 않은
+                            물체입니다.</p>
+                        <p class="hide" data-toggle="video-caption" data-playtime="12,16">1 초 동안 위치가 변한 강아지는 운동한 물체입니다.
+                        </p>
+                        <p class="hide" data-toggle="video-caption" data-playtime="17,20">이때 강아지가 1 초 동안 이동한 거리는 1 m입니다.
+                        </p>
+                        <p class="hide" data-toggle="video-caption" data-playtime="21,27">이처럼 물체의 운동은 물체가 이동하는 데 걸린 시간과
+                            이동 거리로 나타낼 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn-narr">자막 보기</button>
+        </div>
+    </div>
+    <div id="modalAnswerVideo3" class="modal modal-video modal-answer-video">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" title="닫기" class="icon-modal-close" data-dismiss="modal">닫기</button>
+                <h2 class="modal-title">개념 영상</h2>
+                <!-- 비디오 -->
+                <video poster="media/summary/524_071_c_1.jpg" class="video-js" data-content_index="content_cls_video"
+                    controls="controls" webkit-playsinline="" playsinline="" preload="none" title="개념 영상">
+                    <source src="media/summary/524_071_c_1.mp4" type="video/mp4" />
+                    <track kind="subtitles" srclang="ko" src="media/summary/524_071_c_1.vtt" />
+                </video>
+                <!-- 자막 -->
+                <div class="narr">
+                    <div class="box">
+                        <p class="hide" data-toggle="video-caption" data-playtime="6,11">1 초 동안 위치가 변하지 않은 사람은 운동하지 않은
+                            물체입니다.</p>
+                        <p class="hide" data-toggle="video-caption" data-playtime="12,16">1 초 동안 위치가 변한 강아지는 운동한 물체입니다.
+                        </p>
+                        <p class="hide" data-toggle="video-caption" data-playtime="17,20">이때 강아지가 1 초 동안 이동한 거리는 1 m입니다.
+                        </p>
+                        <p class="hide" data-toggle="video-caption" data-playtime="21,27">이처럼 물체의 운동은 물체가 이동하는 데 걸린 시간과
+                            이동 거리로 나타낼 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn-narr">자막 보기</button>
+        </div>
+    </div>
+
+    <!-- 문항 확인 메시지 -->
+    <div id="answerMsgCheck" class="modal modal-alert" data-dismiss="modal">
+        <div class="modal-dialog-centered">
+            <img src="images/common/answer.png" width="375" alt="정답을 확인해 보세요." />
+        </div>
+    </div>
+    <div id="answerExMsgCheck" class="modal modal-alert" data-dismiss="modal">
+        <div class="modal-dialog-centered">
+            <img src="images/common/answerEx.png" width="375" alt="예시 답안을 확인해 보세요." />
+        </div>
+    </div>
+    <div id="answerMsgGood" class="modal modal-alert" data-dismiss="modal">
+        <div class="modal-dialog-centered">
+            <img src="images/common/good.png" width="359" alt="와! 제대로 알고 있군요." />
+        </div>
+    </div>
+    <div id="answerMsgOnemore" class="modal modal-alert" data-dismiss="modal">
+        <div class="modal-dialog-centered">
+            <img src="images/common/onemore.png" width="375" alt="다시 한번 생각해 보세요." />
+        </div>
+    </div>
+    <div id="answerMsgHint" class="modal modal-alert" data-dismiss="modal">
+        <div class="modal-dialog-centered">
+            <img src="images/common/hint.png" width="359" alt="힌트를 참고해 다시 한번 풀어 보세요." />
+        </div>
+    </div>
+
+    <!-- 가상 실험실 -->
+    <div id="modalVirtual" class="modal modal-virtual">
+        <div class="modal-content">
+            <button type="button" title="닫기" class="icon-modal-close" data-dismiss="modal" data-toggle="reset">닫기</button>
+            <div class="modal-virtual-header">
+                <strong class="virtual-title"><span class="sr-only">가상 실험실</span></strong>
+                <h2 class="modal-title">물체의 운동 나타내기</h2>
+            </div>
+            <div class="modal-body">
+                <div class="top-btn">
+                    <button type="button" class="icon-btn icon-home drop-refresh" data-target="#virtual-3"
+                        data-toggle="reset">첫 화면</button>
+                    <button type="button" class="icon-btn text-hide icon-help" data-toggle="modal"
+                        data-target="#modalVirtualHelp">도움말</button>
+                </div>
+                <div class="tab-content virtual-content">
+                    <div id="virtual-1" class="tab-pane active">
+                        <h3 class="para">다음 교실의 모습을 관찰해 볼까요?</h3>
+                        <div class="position-relative mt20">
+                            <img src="images/virtual_02/virtual-bg1.jpg" alt="교실의 모습" />
+                            <span class="fwd font-serif" style="top: 345px;left: 26px;">0 m</span>
+                            <span class="fwd font-serif" style="top: 345px;left: 144px;">1 m</span>
+                            <span class="fwd font-serif" style="top: 345px;left: 262px;">2 m</span>
+                            <span class="fwd font-serif" style="top: 345px;left: 379px;">3 m</span>
+                            <span class="fwd font-serif" style="top: 345px;left: 494px;">4 m</span>
+                            <span class="fwd font-serif" style="top: 345px;left: 612px;">5 m</span>
+                        </div>
+                        <div class="btm-btn">
+                            <button type="button" class="btn fs19" data-target="#virtual-2" data-toggle="tab">1 초 뒤 모습을
+                                <br />관찰해 볼까요?</button>
+                        </div>
+                    </div>
+                    <div id="virtual-2" class="tab-pane">
+                        <h3 class="para"><span class="font-serif">1</span> 초 후 교실의 모습입니다. 운동한 물체에 ◯표 해 보세요.</h3>
+                        <div class="position-relative mt20">
+                            <img src="images/virtual_02/virtual-bg2.jpg" alt="1초 후 교실의 모습" />
+                            <img src="images/virtual_02/before.png" alt="교실의 모습" class="before" />
+                            <span class="fwd font-serif" style="top: 345px;left: 26px;">0 m</span>
+                            <span class="fwd font-serif" style="top: 345px;left: 144px;">1 m</span>
+                            <span class="fwd font-serif" style="top: 345px;left: 262px;">2 m</span>
+                            <span class="fwd font-serif" style="top: 345px;left: 379px;">3 m</span>
+                            <span class="fwd font-serif" style="top: 345px;left: 494px;">4 m</span>
+                            <span class="fwd font-serif" style="top: 345px;left: 612px;">5 m</span>
+                            <button type="button" class="btn-x1" data-toggle="btn-x">
+                                <span class="sr-only">X</span>
+                            </button>
+                            <button type="button" class="btn-x2" data-toggle="btn-x">
+                                <span class="sr-only">X</span>
+                            </button>
+                            <button type="button" class="btn-x3" data-toggle="btn-x">
+                                <span class="sr-only">X</span>
+                            </button>
+                            <button type="button" class="btn-x4" data-toggle="btn-x">
+                                <span class="sr-only">X</span>
+                            </button>
+                            <button type="button" class="btn-o1" data-toggle="btn-o" data-target="#q1">
+                                <span class="sr-only">O</span>
+                            </button>
+                            <button type="button" class="btn-o2" data-toggle="btn-o" data-target="#q2">
+                                <span class="sr-only">O</span>
+                            </button>
+                            <button type="button" class="btn-o3" data-toggle="btn-o" data-target="#q3">
+                                <span class="sr-only">O</span>
+                            </button>
+                        </div>
+                        <div class="btm-btn">
+                            <!-- <button type="button" class="btn btn-re" data-class=".before,show">
+                            <i class="icon-re"></i>
+                            <span class="text-ylw">처음 모습을</span> 관찰해 볼까요?
+                        </button>  -->
+                            <button type="button" class="btn" data-target="#virtual-1" data-toggle="tab">
+                                <i class="icon-re"></i>
+                                <span class="text-ylw">처음 모습을</span> 관찰해 볼까요?
+                            </button>
+
+                            <button type="button" class="btn btn-finish ml9">
+                                <i class="icon-chk"></i>
+                                확인하기
+                            </button>
+                        </div>
+                    </div>
+                    <div id="virtual-3" class="tab-pane">
+                        <div class="position-relative">
+                            <img src="images/virtual_02/virtual-bg3.jpg" alt="1초 후 교실의 모습" />
+                            <span class="fwd font-serif" style="top: 345px;left: 26px;">0 m</span>
+                            <span class="fwd font-serif" style="top: 345px;left: 144px;">1 m</span>
+                            <span class="fwd font-serif" style="top: 345px;left: 262px;">2 m</span>
+                            <span class="fwd font-serif" style="top: 345px;left: 379px;">3 m</span>
+                            <span class="fwd font-serif" style="top: 345px;left: 494px;">4 m</span>
+                            <span class="fwd font-serif" style="top: 345px;left: 612px;">5 m</span>
+                        </div>
+                        <div class="dragdrop">
+                            <div class="drop-area">
+                                <div class="qbox">
+                                    휠체어를 탄 학생은 <span class="font-serif">1</span> 초 동안
+                                    <div>
+                                        <input type="text" id="text_071_01" class="sr-only" />
+                                        <div class="drop-fix drop-type-box" data-drop="2"></div>
+                                    </div> <span class="font-serif">m</span> 이동했습니다.
+                                </div>
+                                <div class="qbox">
+                                    가방을 멘 학생은 <span class="font-serif">1</span> 초 동안
+                                    <div>
+                                        <input type="text" id="text_071_02" class="sr-only" />
+                                        <div class="drop-fix drop-type-box" data-drop="1"></div>
+                                    </div> <span class="font-serif">m</span> 이동했습니다.
+                                </div>
+                                <div class="qbox">
+                                    축구공은 <span class="font-serif">1</span> 초 동안
+                                    <div>
+                                        <input type="text" id="text_071_03" class="sr-only" />
+                                        <div class="drop-fix drop-type-box" data-drop="1"></div>
+                                    </div> <span class="font-serif">m</span> 이동했습니다.
+                                </div>
+                            </div>
+                            <div class="bx drag-area justify-content-around">
+                                <div class="drag-fix drag-type-box" data-text="1m" data-drop="1" data-drop-count="3">1
+                                </div>
+                                <div class="drag-fix drag-type-box" data-text="2m" data-drop="2" data-drop-count="3">2
+                                </div>
+                                <div class="drag-fix drag-type-box" data-text="3m" data-drop="3" data-drop-count="3">3
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btm-btn">
+                            <button type="button" class="btn drop-refresh" data-target="#virtual-3">
+                                <i class="icon-re"></i>
+                                다시 하기
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalVirtualAlert" class="modal modal-virtual modal-alert" data-backdrop="static">
+        <div class="modal-content">
+            <div class="modal-dialog-centered">
+                <div class="modal-body">
+                    <button type="button" title="닫기" class="icon-modal-close" data-dismiss="modal">닫기</button>
+                    <p>운동한 물체를 더 찾아보세요.</p>
+                    <button type="button" class="btn" data-dismiss="modal"><i class="icon-re"></i> 다시 하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalVirtualAlertX" class="modal modal-virtual modal-alert" data-backdrop="static">
+        <div class="modal-content">
+            <div class="modal-dialog-centered">
+                <div class="modal-body">
+                    <button type="button" title="닫기" class="icon-modal-close" data-dismiss="modal">닫기</button>
+                    <p>지금 선택한 물체는 운동하지 않았어요. <br />다시 찾아보세요.</p>
+                    <button type="button" class="btn" data-dismiss="modal"><i class="icon-re"></i> 다시 하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalVirtualAlertO" class="modal modal-virtual modal-alert" data-backdrop="static">
+        <div class="modal-content">
+            <div class="modal-dialog-centered">
+                <div class="modal-body">
+                    <button type="button" title="닫기" class="icon-modal-close" data-dismiss="modal">닫기</button>
+                    <p>운동한 물체를 잘 관찰했어요.</p>
+                    <button type="button" class="btn" data-dismiss="modal"><i class="icon-chk"></i> 확인하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalVirtualHelp" class="modal modal-virtual modal-alert" data-dismiss="modal">
+        <div class="modal-content">
+            <div class="modal-dialog-centered">
+                <div class="modal-body">
+                    <button type="button" title="닫기" class="icon-modal-close">닫기</button>
+                    <strong class="title">도움말</strong>
+                    <div class="bx-help">
+                        <div class="media">
+                            <i class="icon-btn icon-home"></i>
+                            <div class="col">
+                                첫 시작 화면으로 이동합니다.
+                            </div>
+                        </div>
+                        <div class="media">
+                            <i class="icon-btn icon-help"></i>
+                            <div class="col">
+                                활동에 필요한 안내를 확인할 수 있습니다.
+                            </div>
+                        </div>
+                        <div class="media">
+                            <i class="icon-btn icon-rectangle"></i>
+                            <div class="col">
+                                활동을 시작할 수 있습니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--멀티미디어 목록 시작-->
+    <div class="display:none;">
+        <p data-dtext_index="dtext_cls_image" title="실험 관찰_1 초 간격으로 나타낸 교실의 모습"></p>
+        <p data-dtext_index="dtext_cls_image" title="1 초 간격으로 나타낸 교실의 모습"></p>
+        <p data-dtext_index="dtext_cls_video" title="보충자료_운동하고 있는 자동차"></p>
+        <p data-dtext_index="dtext_cls_video" title="개념 영상_물체의 운동은 어떻게 나타낼까요"></p>
+        <p data-dtext_index="dtext_cls_image" title="보충자료_정지하고 있는 자동차"></p>
+        <p data-dtext_index="dtext_cls_image" title="정리 문제2, 3_1 초 간격으로 나타낸 공원의 모습"></p>
+    </div>
+    <!--멀티미디어 목록 끝-->
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <!-- page -->
+    <script type="text/javascript" src="js/spectrum.js"></script>
+    <script type="text/javascript" src="js/video-js.js"></script>
+    <script type="text/javascript" src="js/video.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.custom.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="js/virtual_02.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <g id="그룹_2056" data-name="그룹 2056" transform="translate(-1838 -603)">
+    <rect id="사각형_1239" data-name="사각형 1239" width="26" height="26" transform="translate(1838 603)" fill="none"/>
+    <g id="그룹_2032" data-name="그룹 2032" transform="translate(1840.624 606.791)">
+      <path id="합치기_2" data-name="합치기 2" d="M13.549,17.518a.731.731,0,0,1-.463-.166l-3.37-2.76H6.845A7.745,7.745,0,1,1,6.845-.9h5.261a7.746,7.746,0,0,1,2.175,15.181v2.5a.731.731,0,0,1-.731.731ZM6.845.564a6.283,6.283,0,1,0,0,12.566H9.977a.731.731,0,0,1,.463.165l2.377,1.947v-1.53A.731.731,0,0,1,13.4,13,6.284,6.284,0,0,0,12.105.564Z" transform="translate(0.901 0.898)" fill="#ff7500"/>
+      <g id="그룹_2031" data-name="그룹 2031" transform="translate(6.314 7.038)">
+        <circle id="타원_395" data-name="타원 395" cx="0.813" cy="0.813" r="0.813" fill="#ff7500"/>
+        <circle id="타원_396" data-name="타원 396" cx="0.813" cy="0.813" r="0.813" transform="translate(3.25)" fill="#ff7500"/>
+        <circle id="타원_397" data-name="타원 397" cx="0.813" cy="0.813" r="0.813" transform="translate(6.5)" fill="#ff7500"/>
+      </g>
+    </g>
+  </g>
+</svg>

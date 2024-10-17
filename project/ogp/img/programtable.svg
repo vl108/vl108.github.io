@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1160" height="646" viewBox="0 0 1160 646">
+  <defs>
+    <filter id="주제별_전체회의_1_21:00_-_23:00_" x="83.5" y="569.5" width="133" height="55" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="주제별_전체회의_3_20:00_-_22:00_" x="856.5" y="519.5" width="133" height="55" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-2"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="개회식_19:00_-_21:00_" x="97.5" y="479.5" width="105" height="55" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-3"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="폐회식_22:00_-_23:00_" x="868.5" y="589.5" width="109" height="55" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-4"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="주제별_전체회의_2_21:00_-_23:00_" x="470.5" y="569.5" width="133" height="55" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-5"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="지방정부_회의_00:00_-_01:30_" x="482.5" y="49.5" width="109" height="55" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-6"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="특별세션_19:30_-_20:30_" x="483.5" y="450.5" width="107" height="55" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-7"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="그룹_2711" data-name="그룹 2711" transform="translate(-380 -2208)">
+    <rect id="사각형_2132" data-name="사각형 2132" width="297" height="599" transform="translate(380 2255)" fill="#f6f6f6"/>
+    <rect id="사각형_2124" data-name="사각형 2124" width="296" height="599" transform="translate(1154 2255)" fill="#f6f6f6"/>
+    <rect id="사각형_2127" data-name="사각형 2127" width="297" height="599" transform="translate(767 2255)" fill="#f6f6f6"/>
+    <rect id="사각형_2011" data-name="사각형 2011" width="297" height="100" transform="translate(380 2754)" fill="#004f99"/>
+    <rect id="사각형_2010" data-name="사각형 2010" width="296" height="79" transform="translate(1154 2714)" fill="#004f99"/>
+    <rect id="사각형_2019" data-name="사각형 2019" width="297" height="79" transform="translate(380 2674)" fill="#7030a0"/>
+    <rect id="사각형_2008" data-name="사각형 2008" width="296" height="60" transform="translate(1154 2794)" fill="#7030a0"/>
+    <rect id="사각형_2027" data-name="사각형 2027" width="387" height="44" transform="translate(380 2208)" fill="#333"/>
+    <rect id="사각형_2029" data-name="사각형 2029" width="386" height="44" transform="translate(1154 2208)" fill="#333"/>
+    <g transform="matrix(1, 0, 0, 1, 380, 2208)" filter="url(#주제별_전체회의_1_21:00_-_23:00_)">
+      <text id="주제별_전체회의_1_21:00_-_23:00_2" data-name="주제별 전체회의 1
+(21:00 - 23:00)" transform="translate(149 590)" fill="#fff" font-size="16" font-family="MICEGothicBold, MICEGothic" letter-spacing="-0.025em"><tspan x="-58" y="0">주제별 전체회의 1</tspan><tspan font-size="14" font-family="Rubik-Regular, Rubik"><tspan x="-45" y="22">(21:00 - 23:00)</tspan></tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 380, 2208)" filter="url(#주제별_전체회의_3_20:00_-_22:00_)">
+      <text id="주제별_전체회의_3_20:00_-_22:00_2" data-name="주제별 전체회의 3
+(20:00 - 22:00)" transform="translate(922 540)" fill="#fff" font-size="16" font-family="MICEGothicBold, MICEGothic" letter-spacing="-0.025em"><tspan x="-62" y="0">주제별 전체회의 3</tspan><tspan font-size="14" font-family="Rubik-Regular, Rubik"><tspan x="-46" y="22">(20:00 - 22:00)</tspan></tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 380, 2208)" filter="url(#개회식_19:00_-_21:00_)">
+      <text id="개회식_19:00_-_21:00_2" data-name="개회식
+(19:00 - 21:00)" transform="translate(149 500)" fill="#fff" font-size="16" font-family="MICEGothicBold, MICEGothic" letter-spacing="-0.025em"><tspan x="-26" y="0">개회식</tspan><tspan font-size="14" font-family="Rubik-Regular, Rubik"><tspan x="-44" y="22">(19:00 - 21:00)</tspan></tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 380, 2208)" filter="url(#폐회식_22:00_-_23:00_)">
+      <text id="폐회식_22:00_-_23:00_2" data-name="폐회식
+(22:00 - 23:00)" transform="translate(922 610)" fill="#fff" font-size="16" font-family="MICEGothicBold, MICEGothic" letter-spacing="-0.025em"><tspan x="-21" y="0">폐회식</tspan><tspan font-size="14" font-family="Rubik-Regular, Rubik"><tspan x="-46" y="22">(22:00 - 23:00)</tspan></tspan></text>
+    </g>
+    <text id="_12월_15일_수_" data-name="12월 15일 (수)" transform="translate(573 2235)" fill="#fff" font-size="16" font-family="Rubik-Bold, Rubik" letter-spacing="-0.025em" font-weight="700"><tspan x="-48" y="0">12</tspan><tspan y="0" font-family="MICEGothicBold, MICEGothic" font-weight="400">월 </tspan><tspan y="0">15</tspan><tspan y="0" font-family="MICEGothicBold, MICEGothic" font-weight="400">일 (수)</tspan></text>
+    <text id="_12월_17일_금_" data-name="12월 17일 (금)" transform="translate(1347 2235)" fill="#fff" font-size="16" font-family="Rubik-Bold, Rubik" letter-spacing="-0.025em" font-weight="700"><tspan x="-47" y="0">12</tspan><tspan y="0" font-family="MICEGothicBold, MICEGothic" font-weight="400">월 </tspan><tspan y="0">17</tspan><tspan y="0" font-family="MICEGothicBold, MICEGothic" font-weight="400">일 (금)</tspan></text>
+    <rect id="사각형_2035" data-name="사각형 2035" width="90" height="599" transform="translate(677 2255)" fill="#fee599"/>
+    <rect id="사각형_2009" data-name="사각형 2009" width="90" height="599" transform="translate(1450 2255)" fill="#fee599"/>
+    <rect id="사각형_2012" data-name="사각형 2012" width="297" height="100" transform="translate(767 2754)" fill="#004f99"/>
+    <rect id="사각형_2013" data-name="사각형 2013" width="297" height="60" transform="translate(767 2254)" fill="#066"/>
+    <rect id="사각형_2016" data-name="사각형 2016" width="297" height="60" transform="translate(767 2414)" fill="#c4e0b2"/>
+    <rect id="사각형_2017" data-name="사각형 2017" width="297" height="60" transform="translate(767 2574)" fill="#c4e0b2"/>
+    <rect id="사각형_2018" data-name="사각형 2018" width="297" height="60" transform="translate(767 2654)" fill="#ee3c24"/>
+    <rect id="사각형_2028" data-name="사각형 2028" width="387" height="44" transform="translate(767 2208)" fill="#333"/>
+    <g transform="matrix(1, 0, 0, 1, 380, 2208)" filter="url(#주제별_전체회의_2_21:00_-_23:00_)">
+      <text id="주제별_전체회의_2_21:00_-_23:00_2" data-name="주제별 전체회의 2
+(21:00 - 23:00)" transform="translate(536 590)" fill="#fff" font-size="16" font-family="MICEGothicBold, MICEGothic" letter-spacing="-0.025em"><tspan x="-62" y="0">주제별 전체회의 2</tspan><tspan font-size="14" font-family="Rubik-Regular, Rubik"><tspan x="-45" y="22">(21:00 - 23:00)</tspan></tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 380, 2208)" filter="url(#지방정부_회의_00:00_-_01:30_)">
+      <text id="지방정부_회의_00:00_-_01:30_2" data-name="지방정부 회의
+(00:00 - 01:30)" transform="translate(536 70)" fill="#fff" font-size="16" font-family="MICEGothicBold, MICEGothic" letter-spacing="-0.025em"><tspan x="-52" y="0">지방정부 회의</tspan><tspan font-size="14" font-family="Rubik-Regular, Rubik"><tspan x="-46" y="22">(00:00 - 01:30)</tspan></tspan></text>
+    </g>
+    <text id="대륙별_회의_-_아시아_태평양_11:00_-_12:30_" data-name="대륙별 회의 - 아시아∙태평양
+(11:00 - 12:30)" transform="translate(916 2438)" fill="#333" font-size="16" font-family="MICEGothicBold, MICEGothic" letter-spacing="-0.025em"><tspan x="-89" y="0">대륙별 회의 - 아시아</tspan><tspan y="0" font-family="SegoeUI-Bold, Segoe UI" font-weight="700">∙</tspan><tspan y="0">태평양</tspan><tspan font-size="14" font-family="Rubik-Regular, Rubik"><tspan x="-42" y="22">(11:00 - 12:30)</tspan></tspan></text>
+    <text id="대륙별_회의_-_아프리카_및_중동_18:00_-_19:00_" data-name="대륙별 회의 - 아프리카 및 중동
+(18:00 - 19:00)" transform="translate(916 2599)" fill="#333" font-size="16" font-family="MICEGothicBold, MICEGothic" letter-spacing="-0.025em"><tspan x="-98" y="0">대륙별 회의 - 아프리카 및 중동</tspan><tspan font-size="14" font-family="Rubik-Regular, Rubik"><tspan x="-44" y="22">(18:00 - 19:00)</tspan></tspan></text>
+    <g transform="matrix(1, 0, 0, 1, 380, 2208)" filter="url(#특별세션_19:30_-_20:30_)">
+      <text id="특별세션_19:30_-_20:30_2" data-name="특별세션
+(19:30 - 20:30)" transform="translate(536 471)" fill="#fff" font-size="16" font-family="MICEGothicBold, MICEGothic" letter-spacing="-0.025em"><tspan x="-33" y="0">특별세션</tspan><tspan font-size="14" font-family="Rubik-Regular, Rubik"><tspan x="-45" y="22">(19:30 - 20:30)</tspan></tspan></text>
+    </g>
+    <text id="_12월_16일_목_" data-name="12월 16일 (목)" transform="translate(960 2235)" fill="#fff" font-size="16" font-family="Rubik-Bold, Rubik" letter-spacing="-0.025em" font-weight="700"><tspan x="-48" y="0">12</tspan><tspan y="0" font-family="MICEGothicBold, MICEGothic" font-weight="400">월 </tspan><tspan y="0">16</tspan><tspan y="0" font-family="MICEGothicBold, MICEGothic" font-weight="400">일 (목)</tspan></text>
+    <rect id="사각형_2036" data-name="사각형 2036" width="90" height="599" transform="translate(1064 2255)" fill="#fee599"/>
+    <g id="그룹_2707" data-name="그룹 2707" transform="translate(773 55)">
+      <text id="주제별_대륙별" data-name="주제별/대륙별" transform="translate(718 2386)" fill="#333" font-size="16" font-family="MICEGothicBold, MICEGothic" letter-spacing="-0.025em"><tspan x="-7" y="14">주</tspan><tspan x="-7" y="34">제</tspan><tspan x="-7" y="54">별</tspan><tspan x="-3" y="74">/</tspan><tspan x="-7" y="94">대</tspan><tspan x="-7" y="114">륙</tspan><tspan x="-7" y="134">별</tspan></text>
+      <text id="분과회의" transform="translate(718 2536)" fill="#333" font-size="16" font-family="MICEGothicBold, MICEGothic" letter-spacing="-0.025em"><tspan x="-7" y="14">분</tspan><tspan x="-7" y="34">과</tspan><tspan x="-7" y="54">회</tspan><tspan x="-7" y="74">의</tspan></text>
+    </g>
+    <g id="그룹_2786" data-name="그룹 2786" transform="translate(387 55)">
+      <text id="주제별_대륙별-2" data-name="주제별/대륙별" transform="translate(718 2386)" fill="#333" font-size="16" font-family="MICEGothicBold, MICEGothic" letter-spacing="-0.025em"><tspan x="-7" y="14">주</tspan><tspan x="-7" y="34">제</tspan><tspan x="-7" y="54">별</tspan><tspan x="-3" y="74">/</tspan><tspan x="-7" y="94">대</tspan><tspan x="-7" y="114">륙</tspan><tspan x="-7" y="134">별</tspan></text>
+      <text id="분과회의-2" data-name="분과회의" transform="translate(718 2536)" fill="#333" font-size="16" font-family="MICEGothicBold, MICEGothic" letter-spacing="-0.025em"><tspan x="-7" y="14">분</tspan><tspan x="-7" y="34">과</tspan><tspan x="-7" y="54">회</tspan><tspan x="-7" y="74">의</tspan></text>
+    </g>
+    <g id="그룹_2787" data-name="그룹 2787" transform="translate(0 55)">
+      <text id="주제별_대륙별-3" data-name="주제별/대륙별" transform="translate(718 2386)" fill="#333" font-size="16" font-family="MICEGothicBold, MICEGothic" letter-spacing="-0.025em"><tspan x="-7" y="14">주</tspan><tspan x="-7" y="34">제</tspan><tspan x="-7" y="54">별</tspan><tspan x="-3" y="74">/</tspan><tspan x="-7" y="94">대</tspan><tspan x="-7" y="114">륙</tspan><tspan x="-7" y="134">별</tspan></text>
+      <text id="분과회의-3" data-name="분과회의" transform="translate(718 2536)" fill="#333" font-size="16" font-family="MICEGothicBold, MICEGothic" letter-spacing="-0.025em"><tspan x="-7" y="14">분</tspan><tspan x="-7" y="34">과</tspan><tspan x="-7" y="54">회</tspan><tspan x="-7" y="74">의</tspan></text>
+    </g>
+    <rect id="사각형_2244" data-name="사각형 2244" width="4" height="646" transform="translate(765 2208)" fill="#fff"/>
+    <rect id="사각형_2245" data-name="사각형 2245" width="4" height="646" transform="translate(1152 2208)" fill="#fff"/>
+    <rect id="사각형_2246" data-name="사각형 2246" width="1160" height="4" transform="translate(380 2252)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+#wrap.intro{background: url(../images/intro.png) no-repeat 0 0 / 100% auto}
+#wrap.intro>*{position: absolute}
+.intro-tit{top: 445px;left: 406px;font-size: 28px;letter-spacing: -.05em}
+.intro-tit span{display: inline-block}
+.intro-tit span:first-child{transform: rotate(6deg) translateY(-2px)}
+.intro-tit span:last-child{transform: rotate(-6deg) translateY(-2px)}
+.intro-txt{top: 44px;left: 246px;font-size: 27px;font-weight: 400}
+#wrap.intro button{top: 626px;left: 340px;box-shadow: 2px 4px 4px rgb(0 0 0 / 20%);}

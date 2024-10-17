@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+.gate{position: relative;}
+.gate>img{display: block;margin: 14px auto 0;}
+.gate .title{display: flex;align-items: end;position:absolute;top: 65px;left: 226px;font-size: 60px;font-family: 'ONE-Mobile-POP',sans-serif;font-weight: 500;letter-spacing: -0.02em;}
+.gate .title span{margin:0 0 5px 20px}
+
+#btnStart{position: relative;display: block;margin: 36px auto 0;z-index: 10;}
+
+#timer{position: absolute;top: -22px;left: 11px;width: 134px;height: 144px;background: url(../images/step1/timer.png) no-repeat 100% / 100%;}
+#timer .line{display:inline-block;position: absolute;left: 66px;top: 51px;width: 2px;height: 16px;background: #e84d0d;border-radius: 3px;animation: timerun 60s linear both;transform-origin: center bottom 3px}
+#timer:after{content: '';position: absolute;left: 65px;top: 65px;width: 5px;height: 5px;background: #36bac2;border-radius: 50%;}
+
+.quizlist{display:none;position: relative;}
+.quizlist>li{display:none;position: absolute;left: 0;width: 100%;animation:fadeIn 1s both}
+.quizlist>li.active{display: block;}
+
+.qbox{display: flex;flex-direction: column;justify-content: center;align-items: center;width: 697px;height: 352px;margin: 15px auto 0;padding: 30px 52px;background: url(../images/step1/board.png) no-repeat 100% / 100%;}
+.qbox p:not(.desc){display: flex;align-items: flex-start;font-size: 33px;letter-spacing: -0.02em;line-height: 1.2;}
+.qbox b{display: flex;justify-content: center;align-items: center;margin-right: 10px;width: 44px;height: 44px;border-radius: 50%;background: #000;color: #fff;font-size: 26px;line-height: 44px;}
+.qbox span{flex: auto;max-width: calc( 100% - 54px );text-align: center;}
+.qbox img{height:128px;margin-top: 10px;}
+
+/* 3지선다 */
+/*.quizlist li.option3 p:not(.desc) span{color:#0073e9;font-weight:700}*/
+.quizlist li.option3 p:not(.desc) span{color:#000;font-weight:700}
+.quizlist li.option3 .desc{margin-top: 13px;font-size: 32px;text-align: center;}
+.quizlist li.option3 .desc span{color:#0073e9}
+.quizlist li.option3 .abox button{width:222px;}
+
+/* 긴 버전 */
+.quizlist li.longword .qbox{height:270px;background-image: url(../images/step1/board-sm.png)}
+.quizlist li.longword .qbox p{font-size: 31px;}
+.quizlist li.longword .qbox b{margin-top: -4px;}
+.quizlist li.longword .abox{flex-direction: column;margin-top: 20px;}
+.quizlist li.longword .abox button{width: 689px;height: 89px;font-size: 30px;}
+
+
+.abox{display: flex;align-items: center;justify-content: center;margin-top: 50px; font-size: 36px;}
+.abox>span{margin: 0 16px;font-family: 'CookieRun',sans-serif;font-size: 40px;}
+.abox button{display: flex;justify-content: center;align-items: center;position:relative;width: 273px;height: 101px;border: 5px solid #e6e6e6;border-radius: 7px;background: #fff;box-shadow: 2px 2px 0px rgb(0 0 0 / 10%);font-weight: 600;transition: none;}
+.abox button:before{content: '';position: absolute;bottom: -10px;right: -10px;width: 35px;height: 35px;background: url(../images/step1/tag-off.png) no-repeat center / cover;}
+.abox button.on{background:#fff32f;border-color:#1c1c1c;}
+.abox button.on:before{background-image:url(../images/step1/tag-on.png);}
+.abox button i{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);width: 132px;height: 132px;background:url(../images/step1/icon-x.png) no-repeat center / cover;}
+.abox button .io{background-image: url(../images/step1/icon-o.png);}
+.abox button.on i{animation: fadeIn .5s both;}
+
+.timeover{padding-top: 66px;text-align: center;}
+.timeover p{margin-bottom: 35px;font-size: 30px;letter-spacing: -.08em;}
+.icon-alarm{width: 44px;height: 48px;background: url(../images/step1/icon-alarm.png) no-repeat center / 100%;margin: -6px 9px 0 0;}
+.timeover .result{margin: 196px 0 41px;font-size: 34px;}
+.timeover .result b{display: inline-block;vertical-align: bottom;font-size: 54px;color: #5033dd;line-height: 44px;}
+.btns{max-width: 300px;margin: 0 auto;}
+
+.playing .quizlist{display:block;}
+.playing .gate, .finish .gate, #timer, .timeover{display: none;}
+.playing #timer, .finish .timeover{display: block;}
+.disable{pointer-events: none;}
+
+.char1{animation: char-ani1 2s ease-in infinite}
+.char2{animation: char-ani2 1.5s ease-in infinite}
+@keyframes char-ani1 {
+    0%,100%{transform: translate(0,0);}
+    50%{transform: translate(-2px,2px) rotate(-2deg);}
+}
+@keyframes char-ani2 {
+    0%,100%{transform: translate(-2px,-3px) rotate(0deg);}
+    50%{transform: translate(0,0) rotate(-1deg);}
+}

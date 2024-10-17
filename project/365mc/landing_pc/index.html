@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" type="text/css" href="css/common.css?ver=210312" />
+<link rel="stylesheet" type="text/css" href="css/swiper.min.5.2.1.css?ver=210312" />
+<style>
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+.wrap {position:relative;min-width:1400px;overflow:hidden}
+.inbox {position:relative;width:1180px;margin:0 auto}
+#quick-menu{position:fixed; top: 160px; right:70px; width:250px;height:706px;background:url(images/menu_bg.png) no-repeat;background-size:100% auto;z-index:100}
+#quick-menu>*{position:absolute; left:40px}
+#quick-menu>*:first-child{top: 126px}
+#quick-menu>*:nth-child(2){top: 308px}
+#quick-menu>*:last-child{top: 490px}
+
+.section1 {height:960px; background:url('images/bg_1.jpg') no-repeat center top; text-align: center}
+.section1 .inbox{padding-top:149px}
+.section1 .logo{position: absolute; top: 7.2916%; right: 0; display:inline-block; width:182px; height:24px; background:url('images/logo.png') no-repeat 0 0 / 100% auto}
+.mov {position: absolute; top: 34.895%; left: 9.8305%; width: 80.339%; height: 53.75%}
+
+#btn-wrp{background:#2c436c; text-align:center}
+#btn-wrp>*{cursor:pointer}
+
+.section2 {height:1044px; background:url('images/bg_2.jpg') no-repeat center top; text-align: center}
+.section2 .inbox{padding-top:120px}
+.section2 .swp-frame{width: 540px; margin: 55px auto 0; overflow: hidden}
+.section2 .swiper-slide{width:100%}
+.section2 .swiper-button-prev{top: 370px; left: 230px}
+.section2 .swiper-button-next{top: 370px; right: 230px}
+.swiper-button-prev, .swiper-button-next{width: 30px;height: 56px}
+.swiper-button-prev:after, .swiper-button-next:after{content:''}
+.swiper-button-prev{background: url(images/btn-prev.png) no-repeat 0 0 / 100% 100%}
+.swiper-button-next{background: url(images/btn-next.png) no-repeat 0 0 / 100% 100%}
+
+.section3 {height:2808px; background:url('images/bg_3.jpg') no-repeat center top; text-align: center}
+.section3 .inbox{padding-top:111px}
+
+.section4 {height:1104px; background:url('images/bg_4.jpg') no-repeat center top; text-align: center}
+.section4 .inbox{padding-top:120px}
+.section4 .swp-frame{width: 840px; margin: 160px auto 0; overflow: hidden; border: 10px solid rgba(255,255,255,0.5)}
+.section4 .swiper-slide{width:100%}
+.section4 .swiper-button-prev{top: 434px; left: 80px}
+.section4 .swiper-button-next{top: 434px; right: 80px}
+.swiper-pagination{top:56px; left:0; width:100%}
+.swiper-pagination-bullet, .swiper-pagination-bullet-active{width: 244px; height: 68px; margin:0 3px; background-color:transparent; background-repeat: no-repeat; background-position: 0 0; background-size:100% auto; border-radius: 0; opacity: 1}
+.swiper-pagination>*:first-child{background-image:url('images/bg_ct_1_off.png')}
+.swiper-pagination>*:first-child.swiper-pagination-bullet-active{background-image:url('images/bg_ct_1_on.png')}
+.swiper-pagination>*:nth-child(2){background-image:url('images/bg_ct_2_off.png')}
+.swiper-pagination>*:nth-child(2).swiper-pagination-bullet-active{background-image:url('images/bg_ct_2_on.png')}
+.swiper-pagination>*:nth-child(3){background-image:url('images/bg_ct_3_off.png')}
+.swiper-pagination>*:nth-child(3).swiper-pagination-bullet-active{background-image:url('images/bg_ct_3_on.png')}
+.swiper-pagination>*:last-child{background-image:url('images/bg_ct_4_off.png')}
+.swiper-pagination>*:last-child.swiper-pagination-bullet-active{background-image:url('images/bg_ct_4_on.png')}
+
+.section5 {height:1000px; background:url('images/bg_5.jpg') no-repeat center top; text-align: center}
+.section5 .inbox{padding-top:66px}
+.section5 .inbox>*:nth-child(2){margin-top:54px}
+.section5 .inbox>*:last-child{display: flex; justify-content: space-between}
+.section5 .inbox>*:last-child .btn-list>a{height:84px}
+.btn-wrp{margin-top: 59px; font-family: 'NanumSquare',san-serif; font-weight: 800; text-align: left; font-size: 20px}
+.btn-group>*{margin-bottom: 20px}
+.btn-list>a{display: inline-block; width:220px; height:64px; background: rgba(0, 0, 0, .9); border-radius: 12px; text-align: center; color:#fff}
+.btn-list>a>span{display: flex; align-items: center; justify-content: center; height: 100%}
+.btn-list>a:hover, .btn-list>a:active, .btn-list>a:focus{background:#e6736e; color:#fff}
+.btn-list>a:not(:last-child){margin-right:15px}
+
+.footer {height:276px; background:url('images/footer.jpg') no-repeat center top}
+</style>
+</head>
+<body>
+<div class="wrap">
+	<div class="section1">
+		<div id="quick-menu">
+			<a href="#" target="_blank">
+				<img src="images/menu_1.png" alt="람스만큼 간편 비용확인">
+			</a>
+			<a href="#" target="_blank">
+				<img src="images/menu_2.png" alt="나는 얼마나 빠질까? 다이어트 테스트">
+			</a>
+			<a href="#" target="_blank">
+				<img src="images/menu_3.png" alt="편한 시간에 무료 전화 상담">
+			</a>
+		</div>
+		<div class="inbox">
+			<a href="#" target="_blank"  class="logo"></a>
+			<img src="images/tit_1.png" alt="2021 summer 당신의 여름, 어떤 모습인가요?"/>
+			<div class="mov">
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/V0-aHje2huI?autoplay=1&rel=0&showsearch=0&loop=0" frameborder="0" allow="accelerometer;autoplay;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+	<div id="btn-wrp">
+		<img src="images/btn_1.png" alt="람스 아님 어려웠죠~ 람스로 만든 인생샷 내용 바로가기" class="btn1">
+		<img src="images/btn_2.png" alt="이래서 인기폭팔 람스 인기비결 내용 바로가기" class="btn2">
+		<img src="images/btn_3.png" alt="뭐니뭐니해도 람스는 효과죠! 바로가기" class="btn3">
+		<img src="images/btn_4.png" alt="나랑 가까운 지점은? 람스센터 안내 바로가기" class="btn4">
+	</div>
+	<div class="section2">
+		<div class="inbox">
+			<img src="images/tit_2.png" alt="수상의 영광을 람스에게! 람스 인생샷 콘테스트 수상작"/>
+			<div class="swiper-container">
+				<div class="swp-frame swp-frame1">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="images/slide1_1_v2.jpg" alt="람스 인생샷 콘테스트 수상작">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/slide1_2_v2.jpg" alt="람스 인생샷 콘테스트 수상작">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/slide1_3_v2.jpg" alt="람스 인생샷 콘테스트 수상작">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/slide1_4_v2.jpg" alt="람스 인생샷 콘테스트 수상작">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/slide1_5_v2.jpg" alt="람스 인생샷 콘테스트 수상작">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/slide1_6_v2.jpg" alt="람스 인생샷 콘테스트 수상작">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/slide1_7_v2.jpg" alt="람스 인생샷 콘테스트 수상작">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/slide1_8_v2.jpg" alt="람스 인생샷 콘테스트 수상작">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/slide1_9_v2.jpg" alt="람스 인생샷 콘테스트 수상작">
+						</div>
+					</div>
+					<div class="swiper-control">
+						<div class="swiper-button-prev swiper-button-prev1"></div>
+						<div class="swiper-button-next swiper-button-next1"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section3">
+		<div class="inbox">
+			<img src="images/tit_3.png" alt="다들 람스하는 이유가 있었네요! 람스 인기비결"/>
+			<img src="images/sc3_1.png" alt="check point 1 365mc 비만클리닉에서 지방, 진짜 빼야죠~ 시술은 간편하게, 지방추출은 확실하게! 지방세포 직접 추출 바로 확인, 셀룰라이트 연결 직접 파괴, 주변부 지방까지 배출 유도. 람스는 365mc가 독자개발한 신개념 지방세포 제거시술로 지방세포를 직접 추출해내 바로 확인할 수 있는 시술입니다."/>
+			<img src="images/sc3_2.png" alt="check point 2 이렇게 간편하게 지방을 뽑는다구? 비교를 거부하는 간편함! 피부절개 NO! 수면마취 NO! 압박복 NO! 람스는 지방흡입수술처럼 지방세포를 직접 제거하지만 절개, 수면마취 등 복잡한 과정이 없는 지방흡입주사 시술입니다."/>
+			<img src="images/sc3_3.png" alt="check point 3 사이즈가 크다구요? 람스라면 가능해요! 간편 지방흡입주사 람스, 보틀 수 제한 No! 무한람스, 간편하게 쏙 빼고 싶을 땐 람스, 사이즈가 커서 고민일 땐? 부위별 최대지방을 추출해주는 무한람스!"/>
+		</div>
+	</div>
+	<div class="section4">
+		<div class="inbox">
+			<img src="images/tit_4.png" alt="람스 정말 징하네요...! 어메이징, 람스효과!"/>
+			<div class="swiper-container">
+				<div class="swp-frame swp-frame2">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="images/slide2_1_v2.jpg" alt="복부람스 3주 경과">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/slide2_2_v2.jpg" alt="허벅지 무한람스 3개월 경과">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/slide2_3_v2.jpg" alt="팔 무한람스 2개월 경과">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/slide2_4_v2.jpg" alt="복부람스 3개월 경과">
+						</div>
+					</div>
+					<div class="swiper-control">
+						<div class="swiper-button-prev swiper-button-prev2"></div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-next swiper-button-next2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section5">
+		<div class="inbox">
+			<img src="images/tit_5.png" alt="나랑 가까운 지점은 어디? 365mc람스센터 안내"/>
+			<div class="btn-wrp">
+				<div class="btn-group">
+					<div class="tit">
+						<img src="images/sc5_sub_tit_1.png" alt="서울권">
+					</div>
+					<div class="btn-list">
+						<a href="#">
+							<span>365mc병원 람스센터</span>
+						</a>
+						<a href="#">
+							<span>강남역 람스 스페셜센터</span>
+						</a>
+						<a href="#">
+							<span>강남본점(신사) 람스센터</span>
+						</a>
+						<a href="#">
+							<span>신촌 람스센터</span>
+						</a>
+						<a href="#">
+							<span>영등포 람스센터</span>
+						</a>
+					</div>
+					<div class="btn-list">
+						<a href="#">
+							<span>노원 람스센터</span>
+						</a>
+						<a href="#">
+							<span>천호 스페셜센터</span>
+						</a>
+						<a href="#">
+							<span>성신여대 람스센터</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="btn-wrp">
+				<div class="btn-group">
+					<div class="tit">
+						<img src="images/sc5_sub_tit_2.png" alt="경기권">
+					</div>
+					<div class="btn-list">
+						<a href="#">
+							<span>분당 람스센터</span>
+						</a>
+						<a href="#">
+							<span>일산 람스센터</span>
+						</a>
+						<a href="#">
+							<span>수원 람스센터</span>
+						</a>
+						<a href="#">
+							<span>구리 람스센터</span>
+						</a>
+						<a href="#">
+							<span>부천 람스센터</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="btn-wrp">
+				<div class="btn-group">
+					<div class="tit">
+						<img src="images/sc5_sub_tit_3.png" alt="인천권">
+					</div>
+					<div class="btn-list">
+						<a href="#">
+							<span>글로벌 인천병원 <br>람스센터</span>
+						</a>
+					</div>
+				</div>
+				<div class="btn-group">
+					<div class="tit">
+						<img src="images/sc5_sub_tit_4.png" alt="충청권">
+					</div>
+					<div class="btn-list">
+						<a href="#">
+							<span>글로벌 대전병원 <br>람스센터</span>
+						</a>
+					</div>
+				</div>
+				<div class="btn-group">
+					<div class="tit">
+						<img src="images/sc5_sub_tit_5.png" alt="영남권">
+					</div>
+					<div class="btn-list">
+						<a href="#">
+							<span>부산365mc병원 <br>람스센터</span>
+						</a>
+						<a href="#">
+							<span>해운대 <br>람스 스페셜센터</span>
+						</a>
+						<a href="#">
+							<span>대구 <br>람스센터</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer"></div>
+</div>		
+</body>
+</html>
+
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.5.2.1.js?ver=210312"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	if ($('.section2').length) {
+		var sec2 = $('.section2').offset().top;
+	}
+	if ($('.section3').length) {
+		var sec3 = $('.section3').offset().top;
+	}
+	if ($('.section4').length) {
+		var sec4 = $('.section4').offset().top;
+	}
+	if ($('.section5').length) {
+		var sec5 = $('.section5').offset().top;
+	}
+	$('.btn1').click(function(){
+		$('html, body').animate({scrollTop:sec2},100);
+		return false;
+	});
+
+	$('.btn2').click(function(){
+		$('html, body').animate({scrollTop:sec3},100);
+		return false;
+	});
+	$('.btn3').click(function(){
+		$('html, body').animate({scrollTop:sec4},100);
+		return false;
+	});
+
+	$('.btn4').click(function(){
+		$('html, body').animate({scrollTop:sec5},100);
+		return false;
+	});
+});
+var swiper = new Swiper(".swp-frame1", {
+	autoplay: {
+	  delay: 3000,
+	  disableOnInteraction: false,
+	},
+	loop: true,
+	navigation: {
+		nextEl: '.swiper-button-next1',
+		prevEl: '.swiper-button-prev1',
+	}
+});
+var swiper = new Swiper(".swp-frame2", {
+	autoplay: {
+	  delay: 3000,
+	  disableOnInteraction: false,
+	},
+	pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+	},
+	loop: true,
+	navigation: {
+		nextEl: '.swiper-button-next2',
+		prevEl: '.swiper-button-prev2',
+	}
+});
+</script>

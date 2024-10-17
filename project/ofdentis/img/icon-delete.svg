@@ -1,0 +1,27 @@
+<svg id="ic_delete" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_1479" data-name="사각형 1479" width="14.739" height="16.538" transform="translate(0 0)" fill="none" stroke="#666" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <rect id="사각형_1436" data-name="사각형 1436" width="20" height="20" fill="none"/>
+  <g id="그룹_2628" data-name="그룹 2628" transform="translate(2.631 1.731)">
+    <g id="그룹_2623" data-name="그룹 2623">
+      <g id="그룹_2622" data-name="그룹 2622" clip-path="url(#clip-path)">
+        <rect id="사각형_1478" data-name="사각형 1478" width="10.374" height="12.448" transform="translate(2.182 3.29)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="1.6"/>
+      </g>
+    </g>
+    <path id="패스_184" data-name="패스 184" d="M4.465.8h0Z" fill="#fff" stroke="#666" stroke-width="1"/>
+    <g id="그룹_2625" data-name="그룹 2625">
+      <g id="그룹_2624" data-name="그룹 2624" clip-path="url(#clip-path)">
+        <line id="선_585" data-name="선 585" x2="5.809" transform="translate(4.465 0.8)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="1.6"/>
+      </g>
+    </g>
+    <path id="패스_185" data-name="패스 185" d="M0,3.29H0Z" fill="#fff" stroke="#666" stroke-width="1"/>
+    <g id="그룹_2627" data-name="그룹 2627">
+      <g id="그룹_2626" data-name="그룹 2626" clip-path="url(#clip-path)">
+        <line id="선_586" data-name="선 586" x2="14.739" transform="translate(0 3.29)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="1.6"/>
+      </g>
+    </g>
+  </g>
+</svg>

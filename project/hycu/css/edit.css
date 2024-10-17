@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+/* 레이아웃 */
+.edit-mode #index{overflow: hidden}
+.edit-mode .block-wrap{width:1500px !important;outline:1px solid #009DE8}
+.edit-mode .block-wrap:before{ content:'1'; position: absolute;bottom:100%;left:-1px; width:2em;line-height:2em; background:#009DE8;; font-size:14px; text-align: center;color:#fff}
+.edit-mode #index-2:before{content:'2'; }
+.edit-mode #index-3:before{content:'3'; }
+.edit-mode #hd{left: 0;background: rgba(0,0,0,.25);padding: 0 20px;align-items: center;justify-content: space-between}
+.edit-mode #hd .logo{position: static; margin:0; transform: none}
+.edit-mode .rtit{font-size: 20px}
+.edit-mode .rtit:before{content: '';display: inline-block;vertical-align: middle;width: 10px;height: 10px;background-image:url(../img/icon-iphak.svg);margin-right: 8px}
+.edit-mode #hd-rt>*:not(.icon-re){display: inline-block;padding:5px 20px;border:1px solid rgba(255,255,255,.6);background: none;text-align: center; color: #fff;min-width: 100px;margin-left: 10px}
+.edit-mode #hd-rt>*:not(.icon-re):hover{border-color:#009DE8;color:#009DE8}
+.edit-mode #hd-rt{position: static;transform: none}
+.edit-mode .icon-re{height: auto;margin-right: 10px}
+.edit-control{position: fixed;left: 20px;top: 50%; z-index:30; width: 44px;transform: translateY(-50%)}
+.edit-control>button{width: 44px;height: 44px;border-radius: 100%;background: rgba(0,0,0,.25); box-shadow:0 0 8px rgba(0,0,0,.2) !important; margin: 5px 0}
+.edit-control>.bg-primary:hover{transform: rotate(90deg)}
+.btn-grid-refresh{ position: absolute;top:-28px;left:27px; padding:4px 12px; border:1px solid #009DE8; font-size:12px; color:#009DE8 !important}
+.icon-bg{width: 20px;height: 20px;background-image: url(../img/icon-bg.svg)}
+.edit-mode .block a{ pointer-events: none}
+
+.edit-mode~.ui-dialog .ui-dialog-buttonpane{padding:10px}
+.edit-mode~.ui-dialog.ui-dialog-alert-wrap .di_alert, .edit-mode~.ui-dialog.ui-dialog-conf-wrap .di_confirm{padding: 40px 40px calc( 30px - 0.5em );font-weight:600; font-size:1.25em;text-align: center}
+.edit-mode~.ui-dialog .ui-dialog-buttonset{ display: flex;justify-content: center}
+.edit-mode~.ui-dialog .di_btn_conf{order: 2}
+.edit-mode~.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset{float: none}
+.edit-mode~.ui-dialog .ui-dialog-buttonpane button{margin-right:5px; margin-left:5px}
+.edit-mode~.ui-dialog .ui-dialog-buttonpane button.di_btn_close{min-width: 106px !important;height: 50px !important;font-size: 15px !important;background-color: #333;border-color: #333;color: #fff}
+.edit-mode~.ui-dialog .ui-dialog-buttonpane button.di_btn_close:hover{background-color: #009de8;border-color:#009de8}
+
+/* 팝업 */
+.modal-edit .modal-content{border-radius: 0;border: 0;background: rgba(0,0,0,.95);font-size: 17px}
+.edit-mode~.modal-backdrop{background: none}
+.nav-edit a{color: #ccc;font-size: 18px;margin: 0 30px 40px 0;border-bottom: 2px solid transparent;line-height: 24px}
+.nav-edit a.active{/*color: #009DE8;border-color: #009DE8;*/border-color:#fff;font-weight: 700;color:#fff}
+.scroll-section{height:400px;overflow: hidden;overflow-y: auto}
+#modalEdit label{display: block;position: relative;padding: 0}
+.scroll-section::-webkit-scrollbar {width: 5px}
+.scroll-section::-webkit-scrollbar-track {background-color: rgba(255,255,255,.3);-webkit-border-radius: 5px;border-radius: 5px}
+.scroll-section::-webkit-scrollbar-thumb {-webkit-border-radius: 5px;border-radius: 5px;background: rgba(255,255,255,.5)}
+.shortcut-list .depth{display: none;border-top: 1px solid #333;font-size:.875em}
+#modalEdit .shortcut-list label{line-height: 40px;padding: 0 20px;color: #ccc}
+.shortcut-list button{display: block;height: 56px;width: 100%;text-align: left;background: #202020;color: #fff;position: relative;padding: 0 20px; font-weight: 500; line-height: 26px}
+.shortcut-list input:checked+span{border-bottom: 2px solid;color: #009DE8 !important}
+.shortcut-list [class*=icon]{width: 26px;height: 26px;background-size: 26px auto;vertical-align: top;margin-right: 5px;filter:contrast(0) brightness(10)}
+.icon-unGdInfo{background-image: url(../img/edit/unGdInfo.svg)}
+.icon-maSnEx{background-image: url(../img/edit/maSnEx.svg)}
+.icon-unGdLife{background-image: url(../img/edit/unGdLife.svg)}
+.icon-unGdAlarm{background-image: url(../img/edit/unGdAlarm.svg)}
+.icon-unGdTalk{background-image: url(../img/edit/unGdTalk.svg)}
+.icon-unGdIntro{background-image: url(../img/edit/unGdIntro.svg)}
+.shortcut-list [data-toggle=gnb]:after{right: 20px}
+.shortcut-list>li+li{border-top: 1px solid #333}
+.edit-footer{text-align: center;margin-top: 30px}
+.edit-footer .btn{color: #fff !important;font-size: 18px;border: 1px solid #fff;padding: .5em 1em;width: 180px;margin: 0 4px}
+.shortcut-list .depth>.row{padding: 20px 0}
+.icon-chk{width: 22px;height: 22px;background-color: #666;border-radius: 100%;margin: 0}
+.scroll-section .icon-chk{opacity: 0}
+.widget-list input:checked+span .icon-chk, .active>.icon-chk{opacity: 1;background-image: url(../img/edit/chk.svg)}
+.widget-list input[disabled]~span{opacity:.5;pointer-events: none}
+.outer-list{margin:0}
+.outer-list>li{padding: 0 8px 16px}
+.outer-list .txt{display: flex;align-items: center;justify-content: center;position: relative;z-index: 1;border: 1px solid #333;color: #fff}
+.outer-list .txt:before{content: '';padding-bottom: 100%}
+.outer-list .icon-chk{position: absolute;top: 10px;right: 10px}
+.outer-list [class*=block-outlink-bg]{opacity:0}
+.outer-list input:checked~[class*=block-outlink-bg]{opacity: 1}
+.outer-list input:checked~.txt{border-color: #009DE8}
+.widget-list>li{padding:25px 0;text-align: center}
+.widget-wrp{position: relative;display: inline-block;vertical-align: top;position: relative;margin-bottom: 15px}
+.widget-wrp .icon-chk{position: absolute;top: 0;right: 0;bottom: 0;left: 0;background-color: rgba(0,0,0,.8);width: auto;height: auto;background-size: auto 22px;border-radius: 0}
+.choice-section{display: flex;align-content: center;justify-content: center;flex-direction: column;height: 416px;font-size: 20px;color: #fff;text-align: center}
+.choice-section button{position: relative;border: 1px solid #ccc;height: 124px;background: none;width: 100%;color: #fff;font-size: 15px;transition: none}
+.choice-section .row{margin-top: 60px}
+.choice-section button:hover{border-color:#009DE8;color:#009DE8}
+.choice-section button>span{position: absolute;top: 10px;left :10px}
+.choice-section button:disabled{background: url(../img/edit/disabled.png) no-repeat 0 0/cover;pointer-events: none}
+.choice-section button:disabled:after{content: '선택 불가';position: absolute;top: 0;left: 0;right: 0;bottom: 0;display: flex;align-items: center;justify-content: center;font-size: 16px}
+.choice-section .active{border-color: #009DE8 !important;background: url(../img/edit/chk.svg) no-repeat 50% 50%}
+.edit-bg{padding: 50px 0 40px;text-align: left;color: #fff}
+.bg-img{width: 220px;height: 124px;background: #222 url(../img/icon-bg.svg) no-repeat 50% 50%/auto 32px}
+.bg-img img{width: 100%;height: 100%;object-fit: cover}
+.bg-file-upload{padding-left: 30px}
+.bg-file-upload .btn{border-color: #333;width: 150px;margin-bottom: 15px}
+.edit-bg li{padding: 0 0 40px 30px}
+.edit-bg .custom-input-label{margin: 0 0 30px -30px}
+
+/* 편집 모드 */
+.icon-edit-delete,.icon-edit-setting{ position: absolute;top:0;left:0;z-index:10;width: 28px;height: 28px;background-image:url(../img/index/icon-edit-delete.svg)}
+.icon-edit-setting{ left: auto; top:15px; right:15px; background-image:url(../img/index/icon-edit-setting.svg)}
+.edit-pallette{ display: none; position: absolute;top:5px;left:100%; z-index:11; width:240px; padding:15px; background: rgba(0,0,0,.9)}
+.edit-pallette .icon-edit-submit{position: absolute; top:10px; right: 10px;filter:contrast(0) brightness(10)}
+.edit-pallette p{margin:0 6px 6px;color:#fff !important}
+.edit-pallette-color{display: flex; flex-wrap: wrap}
+.edit-pallette-color>*{ flex:0 0 20%; max-width:20%;padding:6px}
+.edit-pallette-color button{width:30px;height: 30px;border-radius:50%; font-weight:400; font-size:14px !important; line-height:30px;background: rgba(255,255,255,.85)}
+.edit-pallette-color>*:last-child b{color: #000 !important}
+.edit-pallette-color>*:nth-child(6)~*:not(:last-child){display: none} /* 10개까지 늘까봐 미리 대비 */
+[gs-x="5"] .edit-pallette{top:5px;left: auto;right:5px}
+
+/* grid */
+.grid-stack .grid-stack-placeholder > .placeholder-content {
+    background-color: rgba(0, 0, 0, .4);
+    margin: 0;
+    position: absolute;
+    width: auto;
+    z-index: 0 !important;
+    text-align: center
+}
+.grid-stack .grid-stack-placeholder{
+    width:16.6666666667%
+}
+.grid-stack .grid-stack-placeholder[gs-w="2"] {
+    width: 33.3333333333%
+}
+.grid-stack.grid-stack-animate, .grid-stack.grid-stack-animate .grid-stack-item {
+    transition: left .3s, top .3s, height .3s, width .3s
+}
+.grid-stack.grid-stack-animate .grid-stack-item.grid-stack-placeholder, .grid-stack.grid-stack-animate .grid-stack-item.ui-draggable-dragging, .grid-stack.grid-stack-animate .grid-stack-item.ui-resizable-resizing {
+    transition: left 0s, top 0s, height 0s, width 0s
+}
+.ui-draggable-dragging, .ui-resizable-resizing {
+    z-index: 100
+}
+.ui-draggable-dragging > .grid-stack-item-content, .ui-resizable-resizing > .grid-stack-item-content {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, .2);
+    opacity: .8
+}
+.ui-draggable-dragging {
+    will-change: left, top;
+    cursor: move
+}
+.ui-resizable-resizing {
+    will-change: width, height
+}

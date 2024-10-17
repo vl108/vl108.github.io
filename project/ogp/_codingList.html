@@ -1,0 +1,784 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Coding-List</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="https://demo.sketchbook.kr/ogp/css/bootstrap.min.css">
+	<style>
+		.container{max-width:1400px;margin:0 auto;}
+		h1 {color: #333;font-size: 30px;text-align: left;line-height: 40px;font-weight: 700;margin:30px 0;}
+		.nav-tabs{margin-bottom: 8px;border: 0;}
+		.nav-item{max-width: 200px;}
+		.nav-tabs .nav-link{background-color: #fafafa;border: 1px solid #dee2e6;color:#333}
+		.nav-tabs .nav-link:hover{color:#333}
+		table {table-layout: fixed;width: 100%;margin-bottom: 50px;border-collapse: collapse;}
+		th {padding: 14px 10px;height: 25px;;border: 1px solid #e2e2e2;font-size: 14px;text-align:center;background: #f9f9f9;}
+		td {padding: 14px 10px;border: 1px solid #e2e2e2;font-size: 14px;text-align: center;}
+		a {color: #003eb1;}
+		a:hover {text-decoration: underline;}
+		tbody tr{cursor: pointer;}
+		tr.line td {border-top: 2px solid #d2d2d2;}
+		tr:hover {background: rgba(255, 255, 0, .1);}
+		tr.ui-check td {background: rgba(255, 0, 0, .1);}
+		tr.ui-check-2 td {background: rgba(255, 172, 0, .1);}
+		tr.ui-disabled td {background: #ddd;}
+		tr>td:nth-child(6){text-align: left;}
+		tr>td:last-child{padding:0}
+		tr>td:last-child a{display: block;}
+		td span.line{display:inline-block;position:relative;color: #ccc;}
+		td span.line:after{content: '';position: absolute;top: 50%;left: 0;width: 100%;height: 1px;background: #ccc;}
+		td.mod{background: #333;color: #fff;}
+		td.new{background: darkblue;color: #fff;}
+		td.fin{background: #f0f0f0}
+		td.del{background: #d0112b;color:#fff;}
+		.text-purple{color:purple}
+		.text-primary {color: #09564a !important;}
+		.text-danger {color: #d0112b !important;}
+		.ui-primary {background: rgba(255, 0, 0, .1);}
+		.no-pointer{pointer-events: none;}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 id="docTit">MARKUP LIST</h1>
+		<p>주석 참고 : &lt;-- [S] 2021-11-05 추가/수정 --&gt; | // .js 이하 동일</p>
+		<ul class="nav nav-tabs nav-justified">
+			<li class="nav-item"><a href="#add" class="nav-link active" data-toggle="tab">4차</a></li>
+			<li class="nav-item"><a href="#update" class="nav-link" data-toggle="tab">최신 텍스트 Update</a></li>
+			<li class="nav-item"><a href="#ko" class="nav-link" data-toggle="tab">3차 국문</a></li>
+			<li class="nav-item"><a href="#en" class="nav-link" data-toggle="tab">3차 영문</a></li>
+		</ul>
+		<div class="tab-content">
+			<div id="add" class="tab-pane active">
+				<div class="table-responsive">
+					<table class="table-fixed">
+						<colgroup>
+							<col style="width:auto">
+							<col style="width:auto">
+							<col style="width:auto">
+							<col style="width:auto">
+							<col style="width:auto">
+							<col style="width:auto">
+							<col style="width:150px;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>1 Depth</th>
+								<th>2 Depth</th>
+								<th>3 Depth</th>
+								<th>4 Depth</th>
+								<th>Page ID</th>
+								<th>Note</th>
+								<th>진행도</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr onClick="window.open('join-guide.html','','')">
+								<td>Participant Information</td>
+								<td>참가안내(국문)</td>
+								<td></td>
+								<td></td>
+								<td>join-guide.html</td>
+								<td>참가 방법 일부 텍스트 삭제 / 11-05 주석 참고</td>
+								<td class="mod">수정</td>
+							</tr>
+							<tr onClick="window.open('join-guide.html','','')">
+								<td></td>
+								<td>참가안내(영문)</td>
+								<td></td>
+								<td></td>
+								<td>join-guide.html</td>
+								<td>참가 방법 일부 텍스트 삭제 / 11-05 주석 참고</td>
+								<td class="mod">수정</td>
+							</tr>
+							<tr onClick="window.open('mail_04.html','','')" class="line">
+								<td>관리자페이지(영문)</td>
+								<td>자동 이메일 발송</td>
+								<td>게시글 관리, 댓글관리</td>
+								<td></td>
+								<td>mail_04.html</td>
+								<td></td>
+								<td class="new">신규</td>
+							</tr>
+							<tr onClick="window.open('mail_05.html','','')">
+								<td></td>
+								<td></td>
+								<td>회원가입현황</td>
+								<td>차단관리</td>
+								<td>mail_05.html</td>
+								<td></td>
+								<td class="new">신규</td>
+							</tr>
+							<tr onClick="window.open('mypage_03.html','','')" class="line">
+								<td>마이페이지</td>
+								<td>내 스케줄</td>
+								<td></td>
+								<td></td>
+								<td>mypage_03.html</td>
+								<td></td>
+								<td class="new">신규</td>
+							</tr>
+							<tr onClick="window.open('program_list.html','','')" class="line">
+								<td>프로그램</td>
+								<td>리스트</td>
+								<td></td>
+								<td></td>
+								<td>program_list.html</td>
+								<td></td>
+								<td class="new">신규</td>
+							</tr>
+							<tr onClick="window.open('program_view.html','','')">
+								<td></td>
+								<td>게시글</td>
+								<td></td>
+								<td></td>
+								<td>program_view.html</td>
+								<td></td>
+								<td class="new">신규</td>
+							</tr>
+							<tr onClick="window.open('speakers.html','','')" class="line">
+								<td>연사소개</td>
+								<td>리스트</td>
+								<td></td>
+								<td></td>
+								<td>speakers.html</td>
+								<td></td>
+								<td class="new">신규</td>
+							</tr>
+							<tr onClick="window.open('speakers_view.html','','')">
+								<td></td>
+								<td>프로필</td>
+								<td></td>
+								<td></td>
+								<td>speakers_view.html</td>
+								<td></td>
+								<td class="new">신규</td>
+							</tr>
+							<tr onClick="window.open('opengov.html','','')" class="line">
+								<td>열린정부 특별관</td>
+								<td>리스트</td>
+								<td></td>
+								<td></td>
+								<td>opengov.html</td>
+								<td></td>
+								<td class="new">신규</td>
+							</tr>
+							<tr onClick="window.open('opengov_view.html','','')">
+								<td></td>
+								<td>게시물</td>
+								<td></td>
+								<td></td>
+								<td>opengov_view.html</td>
+								<td></td>
+								<td class="new">신규</td>
+							</tr>
+							<tr onClick="window.open('_layout.html','','')" class="line">
+								<td>메인</td>
+								<td>국문</td>
+								<td></td>
+								<td></td>
+								<td>_layout.htm</td>
+								<td></td>
+								<td class="mod">수정</td>
+							</tr>
+							<tr onClick="window.open('_layout.html','','')">
+								<td></td>
+								<td>영문</td>
+								<td></td>
+								<td></td>
+								<td>_layout.htm</td>
+								<td></td>
+								<td class="mod">수정</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div id="update" class="tab-pane">
+				<div class="table-responsive">
+					<table class="table-fixed">
+						<colgroup>
+							<col style="width:auto">
+							<col style="width:auto">
+							<col style="width:auto">
+							<col style="width:auto">
+							<col style="width:auto">
+							<col style="width:auto">
+							<col style="width:150px;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>1 Depth</th>
+								<th>2 Depth</th>
+								<th>3 Depth</th>
+								<th>4 Depth</th>
+								<th>Page ID</th>
+								<th>Note</th>
+								<th>진행도</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr onClick="window.open('mypage_00.html','','')">
+								<td>마이페이지</td>
+								<td>내 등록정보<br>(현재 오픈ver. 국문)</td>
+								<td></td>
+								<td></td>
+								<td>mypage_00.html</td>
+								<td>최신 버전 텍스트 UPDATE</td>
+								<td class="mod">수정</td>
+							</tr>
+							<tr onClick="window.open('en_mypage_00.html','','')">
+								<td></td>
+								<td>내 등록정보<br>(현재 오픈ver. 영문)</td>
+								<td></td>
+								<td></td>
+								<td>en_mypage_00.html</td>
+								<td>최신 버전 텍스트 UPDATE</td>
+								<td class="mod">수정</td>
+							</tr>
+							<tr onClick="window.open('mypage_01.html','','')">
+								<td></td>
+								<td>내 등록정보<br>(3차 오픈ver. 국문)</td>
+								<td></td>
+								<td></td>
+								<td>mypage_01.html</td>
+								<td>최신 버전 텍스트 UPDATE</td>
+								<td class="mod">수정</td>
+							</tr>
+							<tr onClick="window.open('en_mypage_01.html','','')">
+								<td></td>
+								<td>내 등록정보<br>(3차 오픈ver. 영문)</td>
+								<td></td>
+								<td></td>
+								<td>en_mypage_01.html</td>
+								<td>최신 버전 텍스트 UPDATE</td>
+								<td class="mod">수정</td>
+							</tr>
+							<tr onClick="window.open('registration.html','','')" class="line">
+								<td>등록</td>
+								<td>참가등록(국문)</td>
+								<td></td>
+								<td></td>
+								<td>registration.html</td>
+								<td>최신 버전 텍스트 UPDATE</td>
+								<td class="mod">수정</td>
+							</tr>
+							<tr onClick="window.open('registration.html','','')">
+								<td></td>
+								<td>참가등록(영문)</td>
+								<td></td>
+								<td></td>
+								<td>registration.html</td>
+								<td>최신 버전 텍스트 UPDATE</td>
+								<td class="mod">수정</td>
+							</tr>
+							<tr onClick="window.open('login_01.html','','')" class="line">
+								<td>로그인</td>
+								<td>로그인(국문)</td>
+								<td></td>
+								<td></td>
+								<td>login_01.html</td>
+								<td>최신 버전 텍스트 UPDATE</td>
+								<td class="mod">수정</td>
+							</tr>
+							<tr onClick="window.open('login_01.html','','')">
+								<td></td>
+								<td>로그인(영문)</td>
+								<td></td>
+								<td></td>
+								<td>login_01.html</td>
+								<td>최신 버전 텍스트 UPDATE</td>
+								<td class="mod">수정</td>
+							</tr>
+							<tr onClick="window.open('login_02.html','','')">
+								<td></td>
+								<td>비밀번호 찾기(국문)</td>
+								<td></td>
+								<td></td>
+								<td>login_02.html</td>
+								<td>최신 버전 텍스트 UPDATE</td>
+								<td class="mod">수정</td>
+							</tr>
+							<tr onClick="window.open('login_02.html','','')">
+								<td></td>
+								<td>비밀번호 찾기(영문)</td>
+								<td></td>
+								<td></td>
+								<td>login_02.html</td>
+								<td>최신 버전 텍스트 UPDATE</td>
+								<td class="mod">수정</td>
+							</tr>
+							<tr onClick="window.open('mail_01.html','','')" class="line">
+								<td>자동발송메일</td>
+								<td>참가등록 완료(영문)</td>
+								<td></td>
+								<td></td>
+								<td>mail_01.html</td>
+								<td>최신 버전 텍스트 UPDATE</td>
+								<td class="mod">수정</td>
+							</tr>
+							<tr onClick="window.open('mail_02.html','','')">
+								<td></td>
+								<td>임시 비밀번호 발급(영문)</td>
+								<td></td>
+								<td></td>
+								<td>mail_02.html</td>
+								<td>최신 버전 텍스트 UPDATE</td>
+								<td class="mod">수정</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div id="ko" class="tab-pane">
+				<div class="table-responsive">
+					<table class="table-fixed">
+						<colgroup>
+							<col style="width:auto">
+							<col style="width:auto">
+							<col style="width:auto">
+							<col style="width:auto">
+							<col style="width:auto">
+							<col style="width:auto">
+							<col style="width:150px;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>1 Depth</th>
+								<th>2 Depth</th>
+								<th>3 Depth</th>
+								<th>4 Depth</th>
+								<th>Page ID</th>
+								<th>Note</th>
+								<th>진행도</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr onClick="window.open('_layout.html','','')">
+								<td>공통</td>
+								<td>레이아웃</td>
+								<td><span class="line">(헤더 푸터 수정사항 반영)</span><br>video 부분 링크 +</td>
+								<td></td>
+								<td>_layout.htm</td>
+								<td><span class="line">2021-10-21(수정)</span><br>2021-10-29(수정)</td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('_login_pu.html','','')">
+								<td></td>
+								<td>로그인 POPUP</td>
+								<td>상단 로그인/로그아웃 버튼</td>
+								<td></td>
+								<td>_login_pu.html</td>
+								<td>2021-10-21(수정)</td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('openagora.html','','')" class="line">
+								<td>오픈아고라</td>
+								<td>리스트</td>
+								<td></td>
+								<td></td>
+								<td>openagora.html</td>
+								<td><span class="line">2021-10-21(수정)</span><br><span>2021-10-29(수정)</span></td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('openagora_notice.html','','')">
+								<td></td>
+								<td>참여방법/유의사항</td>
+								<td></td>
+								<td></td>
+								<td>openagora_notice.html</td>
+								<td><span class="line">2021-10-26(완료)</span><br><span>2021-10-29(수정)</span></td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('openagora_view.html','','')">
+								<td></td>
+								<td>게시글</td>
+								<td></td>
+								<td></td>
+								<td>openagora_view.html</td>
+								<td><span class="line">2021-10-21(수정)</span><br><span class="line">2021-10-26(수정)</span><br><span class="line">2021-10-27(수정)</span><br><span>2021-10-29(수정)</span></td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('openagora_view.html','','')">
+								<td></td>
+								<td>신고하기</td>
+								<td>신고하기 버튼</td>
+								<td></td>
+								<td>openagora_view.html</td>
+								<td>2021-10-22(신규)</td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('openagora_write.html','','')">
+								<td></td>
+								<td>글 작성</td>
+								<td></td>
+								<td></td>
+								<td>openagora_write.html</td>
+								<td><span class="line">2021-10-21(수정)</span><br><span class="line">2021-10-26(수정)</span><br><span>2021-10-29(수정)</span></td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('openagora_profile.html','','')">
+								<td></td>
+								<td>내 프로필</td>
+								<td></td>
+								<td></td>
+								<td>openagora_profile.html</td>
+								<td><span class="line">2021-10-21(수정)</span><br><span class="line">2021-10-26(수정)</span><br><span>2021-10-29(수정)</span></td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('openagora_profile.html','','')">
+								<td></td>
+								<td>메세지 POPUP</td>
+								<td>메세지 보내기 버튼</td>
+								<td></td>
+								<td>openagora_profile.html</td>
+								<td>2021-10-21(수정)</td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('registration.html','','')" class="line">
+								<td>등록</td>
+								<td>참가자 등록</td>
+								<td></td>
+								<td></td>
+								<td>registration.html</td>
+								<td>2021-10-22(수정)</td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('mypage_01.html','','')">
+								<td>내 정보</td>
+								<td>내 등록정보</td>
+								<td></td>
+								<td></td>
+								<td>mypage_01.html</td>
+								<td><span class="line">2021-10-21(완료)</span><br><span class="line">2021-10-25(수정)</span><br><span>2021-10-27(수정)</span></td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('mypage_02.html','','')">
+								<td>내 정보</td>
+								<td>내 프로필</td>
+								<td>사진 미등록</td>
+								<td></td>
+								<td>mypage_02.html</td>
+								<td><span class="line">2021-10-21(수정)</span><br><span class="line">2021-10-25(수정)</span><br><span class="line">2021-10-27(수정)</span><br><span>2021-10-29(수정)</span></td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('mypage_03.html','','')">
+								<td></td>
+								<td></td>
+								<td>사진 등록</td>
+								<td></td>
+								<td>mypage_03.html</td>
+								<td><span class="line">2021-10-21(수정)</span><br><span class="line">2021-10-25(수정)</span><br><span class="line">2021-10-27(수정)</span><br><span>2021-10-29(수정)</span></td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('mypage_03.html','','')">
+								<td></td>
+								<td></td>
+								<td>미리보기</td>
+								<td>하단 미리보기 버튼</td>
+								<td>mypage_03.html</td>
+								<td><span class="line">2021-10-21(수정)</span><br><span>2021-10-29(수정)</span></td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('mypage_04.html','','')">
+								<td></td>
+								<td>메시지함</td>
+								<td>목록</td>
+								<td></td>
+								<td>mypage_04.html</td>
+								<td><span class="line">2021-10-21(완료)</span><br><span class="line">2021-10-25(수정)</span><br><span class="line">2021-10-27(수정)</span><br>2021-10-29(수정)</td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('mypage_05.html','','')">
+								<td></td>
+								<td></td>
+								<td>알림(Admin)</td>
+								<td></td>
+								<td>mypage_05.html</td>
+								<td><span class="line">2021-10-21(수정)</span><br><span class="line">2021-10-26(수정)</span><br><span>2021-10-27(수정)</span></td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('mypage_06.html','','')">
+								<td></td>
+								<td></td>
+								<td>알림</td>
+								<td></td>
+								<td>mypage_06.html</td>
+								<td><span class="line">2021-10-22(신규)</span><br><span class="line">2021-10-26(수정)</span><br><span>2021-10-27(수정)</span></td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('mypage_07.html','','')">
+								<td></td>
+								<td></td>
+								<td>최초 1회 약관 동의</td>
+								<td></td>
+								<td>mypage_07.html</td>
+								<td><span class="line">2021-10-22(신규)</span><br><span class="line">2021-10-27(수정)</span><br><span>2021-10-29(삭제)</span></td>
+								<td class="del">삭제</td>
+							</tr>
+							<tr onClick="window.open('mypage_07_v2.html','','')">
+								<td></td>
+								<td></td>
+								<td>최초 1회 약관 동의.ver2</td>
+								<td></td>
+								<td>mypage_07_v2.html</td>
+								<td><span class="line">2021-10-22(신규)</span><br><span class="line">2021-10-27(수정)</span><br>2021-10-29(수정)</td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('mail_03.html','','')">
+								<td></td>
+								<td></td>
+								<td>자동 이메일 발송</td>
+								<td></td>
+								<td>mail_03.html</td>
+								<td><span class="line">2021-10-22(신규)</span><br><span>2021-10-29(수정)</span></td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('mail_04.html','','')">
+								<td></td>
+								<td></td>
+								<td>자동 이메일 발송</td>
+								<td>게시글 관리, 댓글관리</td>
+								<td>mail_04.html</td>
+								<td>2021-10-29(신규)</td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('mail_05.html','','')">
+								<td></td>
+								<td></td>
+								<td>자동 이메일 발송</td>
+								<td>차단관리</td>
+								<td>mail_05.html</td>
+								<td>2021-10-29(신규)</td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr class="line">
+								<td>띄어쓰기 전체 수정</td>
+								<td>(변경 전)<br>포용적 디지털혁신</td>
+								<td>(변경 후)<br>포용적 디지털 혁신</td>
+								<td></td>
+								<td></td>
+								<td>2021-10-28(수정)</td>
+								<td class="fin">완료</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div id="en" class="tab-pane">
+				<div class="table-responsive">
+					<table class="table-fixed">
+						<colgroup>
+							<col style="width:auto">
+							<col style="width:auto">
+							<col style="width:auto">
+							<col style="width:auto">
+							<col style="width:auto">
+							<col style="width:auto">
+							<col style="width:150px;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>1 Depth</th>
+								<th>2 Depth</th>
+								<th>3 Depth</th>
+								<th>4 Depth</th>
+								<th>Page ID</th>
+								<th>Note</th>
+								<th>진행도</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr onClick="window.open('_layout.html','','')">
+								<td>공통</td>
+								<td>레이아웃</td>
+								<td><span class="line">(헤더 푸터 수정사항 반영)</span><br>video 부분 링크 +</td>
+								<td></td>
+								<td>_layout.html</td>
+								<td><span class="line">2021-10-21(수정)</span><br>2021-10-29(수정)</td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('en_login_pu.html','','')">
+								<td></td>
+								<td>로그인 POPUP</td>
+								<td>상단 로그인/로그아웃 버튼</td>
+								<td></td>
+								<td>en_login_pu.html</td>
+								<td><span class="line">2021-10-25(신규)</span><br>2021-10-29(수정)</td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('en_openagora.html','','')" class="line">
+								<td>오픈아고라</td>
+								<td>리스트</td>
+								<td></td>
+								<td></td>
+								<td>en_openagora.html</td>
+								<td><span class="line">2021-10-25(신규)</span><br>2021-10-29(수정)</td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('en_openagora_notice.html','','')">
+								<td></td>
+								<td>참여방법/유의사항</td>
+								<td></td>
+								<td></td>
+								<td>en_openagora_notice.html</td>
+								<td>2021-10-29(신규)</td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('en_openagora_view.html','','')">
+								<td></td>
+								<td>게시글</td>
+								<td></td>
+								<td></td>
+								<td>en_openagora_view.html</td>
+								<td><span class="line">2021-10-25(신규)</span><br><span class="line">2021-10-26(수정)</span><br><span class="line">2021-10-27(수정)</span><br>2021-10-29(수정)</td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('en_openagora_view.html','','')">
+								<td></td>
+								<td>신고하기</td>
+								<td>신고하기 버튼</td>
+								<td></td>
+								<td>en_openagora_view.html</td>
+								<td>2021-10-29(신규)</td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('en_openagora_write.html','','')">
+								<td></td>
+								<td>글 작성</td>
+								<td></td>
+								<td></td>
+								<td>en_openagora_write.html</td>
+								<td><span class="line">2021-10-25(신규)</span><br><span class="line">2021-10-26(수정)</span><br><span>2021-10-29(수정)</span></td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('en_openagora_profile.html','','')">
+								<td></td>
+								<td>내 프로필</td>
+								<td></td>
+								<td></td>
+								<td>en_openagora_profile.html</td>
+								<td><span class="line">2021-10-25(신규)</span><br><span class="line">2021-10-26(수정)</span><br><span>2021-10-29(수정)</span></td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('en_openagora_profile.html','','')">
+								<td></td>
+								<td>메세지 POPUP</td>
+								<td>메세지 보내기 버튼</td>
+								<td></td>
+								<td>en_openagora_profile.html</td>
+								<td><span class="line">2021-10-25(신규)</span><br>2021-10-29(수정)</td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('registration.html','','')" class="line">
+								<td>등록</td>
+								<td>참가자 등록</td>
+								<td></td>
+								<td></td>
+								<td>registration.html</td>
+								<td>2021-10-29(수정)</td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('en_mypage_01.html','','')">
+								<td>내 정보</td>
+								<td>내 등록정보</td>
+								<td></td>
+								<td></td>
+								<td>en_mypage_01.html</td>
+								<td><span class="line">2021-10-??(완료)</span><br><span class="line">2021-10-25(수정)</span><br><span>2021-10-27(수정)</span></td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('en_mypage_02.html','','')">
+								<td>내 정보</td>
+								<td>내 프로필</td>
+								<td>사진 미등록</td>
+								<td></td>
+								<td>en_mypage_02.html</td>
+								<td><span class="line">2021-10-25(신규)</span><br><span class="line">2021-10-27(수정)</span><br><span>2021-10-29(수정)</span></td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('en_mypage_03.html','','')">
+								<td></td>
+								<td></td>
+								<td>사진 등록</td>
+								<td></td>
+								<td>en_mypage_03.html</td>
+								<td><span class="line">2021-10-25(신규)</span><br><span class="line">2021-10-27(수정)</span><br><span>2021-10-29(수정)</span></td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('en_mypage_03.html','','')">
+								<td></td>
+								<td></td>
+								<td>미리보기</td>
+								<td>하단 미리보기 버튼</td>
+								<td>en_mypage_03.html</td>
+								<td><span class="line">2021-10-25(신규)</span><br><span>2021-10-29(수정)</span></td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('en_mypage_04.html','','')">
+								<td></td>
+								<td>메시지함</td>
+								<td>목록</td>
+								<td></td>
+								<td>en_mypage_04.html</td>
+								<td><span class="line">2021-10-25(신규)</span><br><span class="line">2021-10-27(수정)</span><br>2021-10-29(수정)</td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('en_mypage_05.html','','')">
+								<td></td>
+								<td></td>
+								<td>알림(Admin)</td>
+								<td></td>
+								<td>en_mypage_05.html</td>
+								<td><span class="line">2021-10-25(신규)</span><br><span class="line">2021-10-26(수정)</span><br><span class="line">2021-10-27(수정)</span><br><span>2021-10-29(수정)</span></td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('en_mypage_06.html','','')">
+								<td></td>
+								<td></td>
+								<td>알림</td>
+								<td></td>
+								<td>en_mypage_06.html</td>
+								<td><span class="line">2021-10-25(신규)</span><br><span class="line">2021-10-26(수정)</span><br><span class="line">2021-10-27(수정)</span><br><span>2021-10-29(수정)</span></td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('en_mypage_07.html','','')">
+								<td></td>
+								<td></td>
+								<td>최초 1회 약관 동의</td>
+								<td></td>
+								<td>en_mypage_07.html</td>
+								<td><span class="line">2021-10-22(신규)</span><br><span class="line">2021-10-27(수정)</span><br><span>2021-10-29(삭제)</span></td>
+								<td class="del">삭제</td>
+							</tr>
+							<tr onClick="window.open('en_mypage_07_v2.html','','')">
+								<td></td>
+								<td></td>
+								<td>최초 1회 약관 동의.ver2</td>
+								<td></td>
+								<td>en_mypage_07_v2.html</td>
+								<td><span class="line">2021-10-22(신규)</span><br><span class="line">2021-10-27(수정)</span><br><span>2021-10-29(수정)</span></td>
+								<td class="fin">완료</td>
+							</tr>
+							<tr onClick="window.open('mail_03.html','','')">
+								<td></td>
+								<td></td>
+								<td>자동 이메일 발송</td>
+								<td></td>
+								<td>mail_03.html</td>
+								<td>2021-10-29(신규)</td>
+								<td class="fin">완료</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="https://demo.sketchbook.kr/ogp/js/jquery-3.3.1.min.js"></script>
+<script src="https://demo.sketchbook.kr/ogp/js/bootstrap.bundle.min.js"></script>
+</html>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g id="그룹_3997" data-name="그룹 3997" transform="translate(-636 -2956)">
+    <rect id="사각형_1478" data-name="사각형 1478" width="64" height="64" transform="translate(636 2956)" fill="none"/>
+    <g id="그룹_2614" data-name="그룹 2614" transform="translate(-1 3)">
+      <g id="그룹_2612" data-name="그룹 2612">
+        <g id="사각형_1485" data-name="사각형 1485" transform="translate(651 2970)" fill="none" stroke="#111" stroke-width="1.8">
+          <rect width="36" height="24" rx="1" stroke="none"/>
+          <rect x="0.9" y="0.9" width="34.2" height="22.2" rx="0.1" fill="none"/>
+        </g>
+        <line id="선_584" data-name="선 584" y2="7" transform="translate(662 2992.5)" fill="none" stroke="#111" stroke-width="1.8"/>
+        <line id="선_586" data-name="선 586" x1="21" transform="translate(658.5 2999.5)" fill="none" stroke="#111" stroke-linecap="round" stroke-width="1.8"/>
+        <line id="선_585" data-name="선 585" y2="7" transform="translate(676 2992.5)" fill="none" stroke="#111" stroke-width="1.8"/>
+      </g>
+      <g id="그룹_2613" data-name="그룹 2613" transform="translate(0.5)">
+        <line id="선_587" data-name="선 587" x2="10" transform="translate(663.5 2981.5)" fill="none" stroke="#111" stroke-linecap="round" stroke-width="1.8"/>
+        <line id="선_588" data-name="선 588" x2="3" y2="3" transform="translate(670.5 2978.5)" fill="none" stroke="#111" stroke-linecap="round" stroke-width="1.8"/>
+        <line id="선_589" data-name="선 589" y1="3" x2="3" transform="translate(670.5 2981.5)" fill="none" stroke="#111" stroke-linecap="round" stroke-width="1.8"/>
+      </g>
+    </g>
+  </g>
+</svg>

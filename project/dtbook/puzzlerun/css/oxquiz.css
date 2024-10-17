@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+.game-board{background: #fcf7f4 url(../images/step2/game1/bg.png) no-repeat bottom center / 100% auto}
+.game-board>*{position:absolute}
+.name{left: 366px;top: -19px;}
+.result{width: 180px;height: 126px;top: -29px;left: 142px;padding-top: 24px;background: url(../images/step2/game1/bubble.png) no-repeat center / cover;font-size: 22px;line-height: 1.4;text-align: center}
+.result-num{display:inline-block;position: relative;}
+.result-num:after{display:none;content: '';position: absolute;top: 50%;left: 50%;width: 36px;height: 36px;border:3px solid #205fff;border-radius: 50%;transform: translate(-50%, -50%);}
+.result-num input{width: 50px;border: 1px solid #63462d;text-align: center}
+.result-num span{display:none;position: absolute;top: 100%;left: 50%;line-height: 1;transform: translateX(-50%);animation: fadeIn .5s both;color: #ec2020;white-space: nowrap;font-size: 22px;}
+.wrong .result-num:after{width: 0;height: 35px;border: 1px solid #ec2020;border-radius: 0;transform: translate(-50%, -50%) rotate(35deg);}
+.wrong .result-num span{display: block;}
+
+.char1{animation: char-ani1 2s ease-in infinite}
+.char2{animation: char-ani2 1.5s ease-in infinite}
+@keyframes char-ani1 {
+    0%,100%{transform: translate(0,0);}
+    50%{transform: translate(-2px,2px) rotate(-2deg);}
+}
+@keyframes char-ani2 {
+    0%,100%{transform: translate(-2px,-3px) rotate(0deg);}
+    50%{transform: translate(0,0) rotate(-1deg);}
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;-moz-appearance: none;appearance: none}
+
+.quizlist{display: flex;flex-wrap: wrap;position: absolute;top: 145px;left: 39px;width: 807px;;margin: 0 -8px}
+.quizlist li{flex-basis: 25%;padding: 0 4px}
+.quizlist div[role="button"]{display:flex;align-items:center;position:relative;height: 122px;margin-top: 8px;padding: 0 12px;background:transparent;border:1px solid #c19050;border-radius: 10px;font-size: 18px;font-weight: 600;line-height: 1.3;text-align: left;transition: .25s}
+.quizlist div[role="button"].on{background: #995625;border-color:#c19050;color:#fff}
+/* .quizlist div[role="button"].on:after{content: '';position: absolute;bottom: 12px;right: 10px;width: 28px;height: 28px;background: url(../images/step2/game1/chkpoint.png) no-repeat center / 100% auto} */
+.quizlist div[role="button"] p{min-height: 94px;}
+.quizlist span{border-bottom: 1px solid}
+.quizlist i{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);width: 90px;height: 90px;background: url(../images/step2/game1/icon-x.png) no-repeat}
+.quizlist .io{background: url(../images/step2/game1/icon-o.png)}
+
+.btn-fin{top: 77px;right: 36px}
+.btns{top: 77px;right: 36px}
+.btn-toggle{display: none;position: absolute;top: -94px;right: 0;width: 296px;}
+.disable .btn-toggle{display: block;}
+.disable #btnFin{display: none}
+.disable [data-answer]{pointer-events: none}
+.disable #userNum{border-color: #63462d;background: #fcf7f4;pointer-events: none}
+.disable .result-num:after{display: block;}

@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="telephone=no" name="format-detection">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Document</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+<link href="css/import.css" rel="stylesheet"/>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/swiper.min.js"></script>
+</head>
+<!-- body-화면ID -->
+<body>
+<!-- container -->
+<div id="ct">
+    <header id="hd">
+        <button class="mn-open"><i class="icon-menu"></i></button>
+        <div class="wrap">
+            <div>
+                <!-- [D] 2022-09-02 수정 -->
+                <div class="logo">
+                    <h1><a href="main.html"><img src="img/logo.png" alt="Dentis Management Academy"></a></h1>
+                </div>
+                <!-- // -->
+                <ul id="gnb">
+                    <li>
+                        <a href="#">교육</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">마켓</a>
+                    </li>
+                    <li>
+                        <a href="#">콘텐츠</a>
+                    </li>
+                    <li>
+                        <a href="#">개원 서비스</a>
+                    </li>
+                    <li>
+                        <a href="#">회원</a>
+                    </li>
+                    <li>
+                        <a href="#">발송/알림</a>
+                    </li>
+                    <li>
+                      <a href="#">포인트/결제</a>
+                    </li>
+                    <li>
+                        <a href="#">쿠폰</a>
+                    </li>
+                    <li>
+                        <a href="#">사이트</a>
+                    </li>
+                    <li>
+                        <a href="#">설문조사</a>
+                    </li>
+                    <li>
+                        <a href="#">통계</a>
+                    </li>
+                    <li>
+                        <a href="#">관리자 설정</a>
+                    </li>
+                </ul>
+    
+            </div>
+            <div class="snb">
+                <div class="profile">
+                    <a href="#">
+                        <img src="img/sample.png" alt="">
+                        <span>관리자</span>
+                    </a>
+                </div>
+                <div class="logout"><button type="button" class="btn">로그아웃</button></div>
+            </div>
+        </div>
+    </header>
+    <div id="lnb">
+        <button class="close-lnb"><i class="xi-angle-left"></i></button>
+        <!-- [D] 2022-09-02 수정 -->
+        <h1><a href="main.html"><img src="img/logo.png" alt="Dentis Management Academy"></a></h1>
+        <!-- // -->
+        <div class="snb">
+            <div class="profile">
+                <a href="#">
+                    <img src="img/sample.png" alt="">
+                    <span>관리자</span>
+                </a>
+            </div>
+            <div class="logout"><button type="button" class="btn">로그아웃</button></div>
+        </div>
+        <div>
+            <ul>
+                <li class="active">
+                    <a href="#">제품관리</a>
+                    <ul>
+                        <li><a href="#">- 상품 관리</a></li>
+                        <li><a href="#">- 상품 등록</a></li>
+                        <li><a href="#">- 카테고리 관리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">주문전체관리</a>
+                    <ul>
+                        <li><a href="#">- 주문전체 리스트</a></li>
+                        <li><a href="#">- 입금대기 목록</a></li>
+                        <li><a href="#">- 신규주문 목록</a></li>
+                        <li><a href="#">- 배송준비중 목록</a></li>
+                        <li><a href="#">- 배송중 목록</a></li>
+                        <li><a href="#">- 구매확정 목록</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">주문클레임관리</a>
+                    <ul>
+                        <li><a href="#">- 주문취소 목록</a></li>
+                        <li><a href="#">- 반품 목록</a></li>
+                        <li><a href="#">- 교환 목록</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">환불관리</a>
+                    <ul>
+                        <li><a href="#">- 환불내역 관리</a></li>
+                        <li><a href="#">- 현금영수증 관리</a></li>
+                        <li><a href="#">- 세금계산서 관리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">문의/상담/리뷰 관리</a>
+                    <ul>
+                        <li><a href="#">- 문의/상담 관리</a></li>
+                        <li><a href="#">- 리뷰 관리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">사이트 관리</a>
+                    <ul>
+                        <li><a href="#">- 배너 관리</a></li>
+                        <li><a href="#">- OF 추천상품</a></li>
+                        <li><a href="#">- 쇼핑몰 설정</a></li>
+                    </ul>
+                </li>
+            </ul>
+                
+            <div class="mt-5"><a href="#">구글 에널리틱스 <i class="xi-external-link"></i></a></div>
+            <div class="mt-2"><a href="#">홈페이지 <i class="xi-external-link"></i></a></div>
+        </div>
+    </div>
+
+    <div class="page-container">
+        <!-- 페이지 시작 --> 
+        <div class="breadcrumb">
+            <h2>상품 상세</h2>
+            <span>마켓</span>
+            <i class="xi-angle-right-min"></i>
+            <span>상품 관리</span>
+        </div>
+
+        <!-- [D] 상세보기시 노출 -->
+        <ul class="nav nav-pills">
+            <li class="nav-item col">
+                <a class="nav-link active" data-toggle="tab" href="#info">상품 정보</a>
+            </li>
+            <li class="nav-item col">
+                <a class="nav-link" data-toggle="tab" href="#statistic">통계</a>
+            </li>
+        </ul>
+        <!-- // -->
+        
+        <div class="tab-content">
+            <div id="info" class="tab-pane active">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                    <a class="nav-link active" href="#wrap1-1">카테고리</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#wrap1-2">출력 설정</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#wrap1-3">가격 및 할인정보</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#wrap1-4">재고 설정</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#wrap1-5">옵션 설정</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#wrap1-6">상품 이미지</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#wrap1-7">관련상품</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#wrap1-8">상세정보</a>
+                    </li>
+                </ul>
+                <div class="wrap" id="wrap1-1">
+                    <div class="header">
+                        <h2>카테고리</h2>
+                    </div>
+                    <div class="body">
+                        <div class="form-row form-group">
+                            <h3>카테고리 대상</h3>
+                            <div class="confirm">
+                                <label for="confirm5-1">
+                                    <input type="checkbox" name="confirm5" id="confirm5-1" value="">
+                                    <i></i> <span>스페셜 프로모션 상품</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-row form-group">
+                            <h3>카테고리 연결</h3>
+                            <span class="notice-info">
+                                카테고리가 먼저 등록되어 있어야 카테고리 연결이 가능합니다. 
+                                <a href="#" class="text-primary">카테고리 등록하기 &gt;</a>
+                            </span>
+                        </div>
+                        <div class="form-row form-group">
+                            <h3>카테고리 선택</h3>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <select class="form-select w300" size="6" aria-label="size 6 select">
+                                        <option selected="">Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-auto">
+                                    <select class="form-select w300" size="6" aria-label="size 6 select">
+                                        <option selected="">Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-auto ml-2 mr-5">
+                                    <button type="button" class="btn" onclick="">선택</button>
+                                </div>
+                                <h3>선택 카테고리</h3>
+                                <select class="form-select w300" size="6" aria-label="size 6 select">
+                                    <option selected="">Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- [D] 스페셜 프로모션 상품 선택 시 -->
+                        <div class="form-row form-group">
+                            <h3>프로모션 기간노출</h3>
+                            <div class="row no-gutters align-items-center ml-3">
+                                <input type="date" class="form-control" name="searchSelect5" id="start_date" value="" min="2022-01-01" max="2050-12-31">
+                                <span class="col-auto px-2">~</span>
+                                <input type="date" class="form-control" name="searchSelect4" id="end_date" value="" min="2022-01-01" max="2050-12-31">
+                                <div class="confirm ml-4">
+                                    <label for="confirm0-1">
+                                        <input type="radio" name="confirm0" id="confirm0-1" checked>
+                                        <i></i> <span>공개</span>
+                                    </label>
+                                    <label for="confirm0-2">
+                                        <input type="radio" name="confirm0" id="confirm0-2">
+                                        <i></i> <span>비공개</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap" id="wrap1-2">
+                    <div class="header">
+                        <h2>출력 설정</h2>
+                    </div>
+                    <div class="body">
+                        <div class="form-row form-group">
+                            <h3>노출 여부 <span class="text-primary">*</span></h3>
+                            <div class="confirm">
+                                <label for="confirm1-1">
+                                    <input type="radio" name="confirm1" id="confirm1-1" checked>
+                                    <i></i> <span>공개</span>
+                                </label>
+                                <label for="confirm1-2">
+                                    <input type="radio" name="confirm1" id="confirm1-2">
+                                    <i></i> <span>비공개</span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- [D] 상세보기시 노출 -->
+                        <div class="form-row form-group">
+                            <h3>상품번호</h3>
+                            <div class="row no-gutters form-group align-items-center">
+                                <input type="text" class="form-control w400" id="" value=""> 
+                                <div class="col-auto ml-2">
+                                    <button type="button" class="btn text-blue" onclick="">화면보기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // -->
+                        <div class="form-row form-group">
+                            <h3>상품명 <span class="text-primary">*</span></h3>
+                            <div>
+                                <input type="text" class="form-control" id="" value=""> 
+                            </div>
+                        </div>
+                        <div class="form-row form-group">
+                            <h3>키워드</h3>
+                            <div>
+                                <input type="text" class="form-control" id="" value="">
+                                <p class="notice-info">
+                                    키워드는 ,(쉼표)로 구분해주세요. 예를 들면 사과,배,딸기.. 이런 형식입니다.
+                                </p>
+                            </div>    
+                        </div>
+                        <div class="form-row form-group">
+                            <h3>보험청구 코드</h3>
+                            <div>
+                                <input type="text" class="form-control w400" id="" value="">
+                            </div>
+                        </div>
+                        <div class="form-row form-group">
+                            <h3>유튜브 ID</h3>
+                            <div>
+                                <input type="text" class="form-control w400" id="" value="">
+                                <p class="notice-info">
+                                    유튜브 주소에서 ID만 입력해주세요. 예를들어 https://www.youtube.com/watch?v=<span class="text-primary">mY8k5Qsd0Lw</span>에서 빨간색 부분입니다. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-row form-group">
+                            <h3>상품 선택</h3>
+                            <div class="confirm">
+                                <label for="confirm1-0">
+                                    <input type="checkbox" name="confirm1" id="confirm1-0">
+                                    <i></i> <span>패키지 차감 상품</span>
+                                </label>
+                                <label for="confirm1-1">
+                                    <input type="checkbox" name="confirm1" id="confirm1-1">
+                                    <i></i> <span>상담 예약 상품</span>
+                                </label>
+                                <label for="confirm1-2">
+                                    <input type="checkbox" name="confirm1" id="confirm1-2">
+                                    <i></i> <span>이벤트 상품</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="wrap" id="wrap1-3">
+                    <div class="header">
+                        <h2>가격 및 할인정보</h2>
+                    </div>
+                    <div class="body">
+                        <div class="form-row form-group">
+                            <h3>정가 <span class="text-primary">*</span></h3>
+                            <div class="row no-gutters align-items-center">
+                                <input type="text" name="" class="form-control w160" id="" value="">
+                                <span class="col-auto pl-1">원</span>
+                            </div>
+                        </div>
+                        <div class="form-row form-group">
+                            <h3>할인가 사용여부</h3>
+                            <div class="confirm">
+                                <label for="confirm2-1">
+                                    <input type="radio" name="confirm2" id="confirm2-1" checked>
+                                    <i></i> <span>사용안함</span>
+                                </label>
+                                <label for="confirm2-2">
+                                    <input type="radio" name="confirm2" id="confirm2-2">
+                                    <i></i> <span>사용함</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-row form-group">
+                            <h3>할인가</h3>
+                            <div class="row no-gutters align-items-center">
+                                <input type="text" name="" class="form-control w160" id="" value="">
+                                <span class="col-auto pl-1">원</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="wrap" id="wrap1-4">
+                    <div class="header">
+                        <h2>재고 설정</h2>
+                    </div>
+                    <div class="body">
+                        <div class="form-row form-group">
+                            <h3>품절 여부</h3>
+                            <div class="confirm">
+                                <label for="confirm3-1">
+                                    <input type="radio" name="confirm3" id="confirm3-1" checked>
+                                    <i></i> <span>재고있음</span>
+                                </label>
+                                <label for="confirm3-2">
+                                    <input type="radio" name="confirm3" id="confirm3-2">
+                                    <i></i> <span>품절</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-row form-group">
+                            <h3>판매가능수량 </h3>
+                            <div class="row no-gutters align-items-center">
+                                <input type="text" name="" class="form-control w80" id="" value="">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="wrap" id="wrap1-5">
+                    <div class="header">
+                        <h2>옵션 설정</h2>
+                    </div>
+                    <div class="body">
+                        <div class="form-row form-group">
+                            <h3>품절 여부</h3>
+                            <div class="row no-gutters align-items-center">
+                                <div class="confirm">
+                                    <label for="confirm4-1">
+                                        <input type="radio" name="confirm4" id="confirm4-1" checked>
+                                        <i></i> <span>사용안함</span>
+                                    </label>
+                                    <label for="confirm4-2">
+                                        <input type="radio" name="confirm4" id="confirm4-2">
+                                        <i></i> <span>사용</span>
+                                    </label>
+                                </div>
+                                <button type="button" class="btn btn-sm ml-3" onclick="">옵션관리</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="wrap" id="wrap1-6">
+                    <div class="header">
+                        <h2>상품 이미지</h2>
+                    </div>
+                    <div class="body">
+                        <div class="form-group">
+                            <h3>썸네일 이미지</h3>
+                            <div class="bx p-5">
+                                <div class="row align-items-center">
+                                    <h4>기본 썸네일</h4>
+                                    <!-- 이미지 등록 시에 base:64로 출력 -->
+                                    <div class="mr-3" id="file_img0"></div>
+                                    <label>
+                                        <input type="hidden" name="org_file_master_no" value="">
+                                        <input type="hidden" name="file_path_org_01" value="">
+                                        <i class="icon-upload" id="file0"></i>
+                                    </label>
+                                    <span><p> 폴더를 클릭해 업로드하세요. <br> <b>권장 사이즈는 400 * 400(px)입니다.</b></p></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <h3>슬라이드 이미지</h3> 
+                            <!-- [D] 프론트 기획 확정 후 -->
+                            <div class="bx p-5">
+                                <div class="row align-items-center">
+                                    <h4>이미지1</h4>
+                                    <!-- 이미지 등록 시에 base:64로 출력 -->
+                                     <div class="mr-3" id="file_img1">
+                                     
+                                     </div>
+                                    <label>
+                                    <input type="hidden" name="org_file_master_no1" value="">
+                                    <input type="hidden" name="file_path_org_02" value="">
+                                     <i class="icon-upload" id="file1" onclick="onFile('1');"></i>
+                                    </label>
+                                    <span><p> 폴더를 클릭해 업로드하세요. <br> <b>권장 사이즈는 400 * 400(px)입니다.</b></p></span>
+                                </div>
+                                <div class="row align-items-center mt-3">
+                                    <h4>이미지2</h4>
+                                    <!-- 이미지 등록 시에 base:64로 출력 -->
+                                    <div class="mr-3" id="file_img2"></div>
+                                    <label>
+                                        <input type="hidden" name="org_file_master_no2" value="">
+                                        <input type="hidden" name="file_path_org" value="">
+                                        <i class="icon-upload" id="file2" onclick="onFile('2');"></i>
+                                    </label>
+                                    <span><p> 폴더를 클릭해 업로드하세요. <br> <b>권장 사이즈는 200 * 200(px)입니다.</b></p></span>
+                                </div>
+                                <div class="row align-items-center mt-3">
+                                    <h4>이미지3</h4>
+                                    <!-- 이미지 등록 시에 base:64로 출력 -->
+									<div class="mr-3" id="file_img3"></div>
+                                    <label>
+                                        <input type="hidden" name="org_file_master_no2" value="">
+                                        <input type="hidden" name="file_path_org" value="">
+                                        <i class="icon-upload" id="file3" onclick="onFile('3');"></i>
+                                    </label>
+                                    <span><p> 폴더를 클릭해 업로드하세요. <br> <b>권장 사이즈는 200 * 200(px)입니다.</b></p></span>
+                                </div>
+                                <div class="row align-items-center mt-3">
+                                    <h4>이미지4</h4>
+                                    <!-- 이미지 등록 시에 base:64로 출력 -->
+                                    <div class="mr-3" id="file_img4"></div>
+                                    <label>
+                                        <input type="hidden" name="org_file_master_no2" value="">
+                                        <input type="hidden" name="file_path_org" value="">
+                                        <i class="icon-upload" id="file4" onclick="onFile('4');"></i>
+                                    </label>
+                                    <span><p> 폴더를 클릭해 업로드하세요. <br> <b>권장 사이즈는 200 * 200(px)입니다.</b></p></span>
+                                </div>
+                                <div class="row align-items-center mt-3">
+                                    <h4>이미지5</h4>
+                                    <!-- 이미지 등록 시에 base:64로 출력 -->
+									<div class="mr-3" id="file_img5"></div>
+                                    <label>
+                                        <input type="hidden" name="org_file_master_no2" value="">
+                                        <input type="hidden" name="file_path_org" value="">
+                                        <i class="icon-upload" id="file5" onclick="onFile('5');"></i>
+                                    </label>
+                                    <span><p> 폴더를 클릭해 업로드하세요. <br> <b>권장 사이즈는 200 * 200(px)입니다.</b></p></span>
+                                </div>
+                                <div class="row align-items-center mt-3">
+                                    <h4>이미지6</h4>
+                                    <!-- 이미지 등록 시에 base:64로 출력 -->
+									<div class="mr-3" id="file_img6"></div>
+                                    <label>
+                                        <input type="hidden" name="org_file_master_no2" value="">
+                                        <input type="hidden" name="file_path_org" value="">
+                                        <i class="icon-upload" id="file6" onclick="onFile('6');"></i>
+                                    </label>
+                                    <span><p> 폴더를 클릭해 업로드하세요. <br> <b>권장 사이즈는 200 * 200(px)입니다.</b></p></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="wrap" id="wrap1-7">
+                    <div class="header">
+                        <h2>관련상품</h2>
+                    </div>
+                    <div class="body">
+                        <div class="selected-area row">
+                            <div class="col-md-3 col-12">
+                                <!-- 클릭 시에 삭제합니다. -->
+                                <a href="#" class="selected-item d-block mt-0" title="삭제합니다" onClick="confirm('상품을 삭제하시겠습니까?');">상품리스트 <i class="xi-close"></i></a>
+                            </div>
+                            <div class="col-md-3 col-12">
+                                <a href="#" class="selected-item d-block mt-0" title="삭제합니다" onClick="confirm('상품을 삭제하시겠습니까?');">상품리스트 <i class="xi-close"></i></a>
+                            </div>
+                            <div class="col-md-3 col-12">
+                                <a href="#" class="selected-item d-block mt-0" title="삭제합니다" onClick="confirm('상품을 삭제하시겠습니까?');">상품리스트 <i class="xi-close"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-right mt-2">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#lecturerModal">추가하기</button>
+                        </div>
+                    </div>
+                </div> 
+                <div class="wrap" id="wrap1-8">
+                    <div class="header">
+                        <h2>상세정보</h2>
+                    </div>
+                    <div class="body">
+                        <div class="form-group">
+                            <h3>짧은 설명</h3>
+                            <textarea class="form-control" id="" rows="5" placeholder="설명을 입력하세요"></textarea>
+                        </div> 
+                        <div class="form-group">
+                            <div class="row">
+                                <h3>PC쇼핑몰 상세 설명</h3>
+                                <div class="confirm ml-3">
+                                    <label for="confirm00">
+                                        <input type="checkbox" name="confirm0" id="confirm00" onchange="onCopy();" />
+                                        <i></i> <span>PC/모바일 상세설명 동일사용</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <textarea class="form-control" name="product_description" id="product_description" rows="5" placeholder="설명을 입력하세요"></textarea>
+                        </div> 
+                        <div class="form-group">
+                            <h3>모바일쇼핑몰 상세 설명</h3>
+                            <textarea class="form-control" name="mobile_description" id="mobile_description" rows="5" placeholder="설명을 입력하세요"></textarea>
+                        </div> 
+                    </div>
+                </div>
+				<div class="bottom">
+                    <div class="btn-flex">
+                        <button type="button" class="btn btn-primary btn-lg">수정</button>
+                        <button type="button" class="btn btn-lg">취소</button>
+                    </div>
+                </div>
+            </div>
+            <div id="statistic" class="tab-pane">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">매출</a>
+                    </li>
+                </ul>
+
+                <div class="wrap search-wrap">
+                    <form>
+                        <div class="body">
+                            <div class="row row-frame">
+                                <div class="col-xl-auto form-group">
+                                    <h3>기간 구분</h3>
+                                    <div class="row confirm">
+                                        <div class="col-6 col-md-auto">
+                                            <label for="confirm2-1">
+                                                <input type="radio" name="confirm2" id="confirm2-1">
+                                                <i></i> <span>일별</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-6 col-md-auto">
+                                            <label for="confirm2-2">
+                                                <input type="radio" name="confirm2" id="confirm2-2">
+                                                <i></i> <span>월별</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div> 
+
+                                <div class="col-xl-auto offset-1 form-group">
+                                    <h4>기간 설정</h4>  
+                                    <div class="row dateset align-items-center">
+                                        <div class="form-select w80">
+                                            <select class="form-control">
+                                                <option>2001</option>
+                                            </select><i class="xi-angle-down"></i> 
+                                        </div>
+                                        <span class="col-auto ml-1 mr-2">년</span>
+                                        <div class="form-select w80">
+                                            <select class="form-control">
+                                                <option>05</option>
+                                            </select><i class="xi-angle-down"></i> 
+                                        </div>
+                                        <span class="col-auto ml-1 mr-2">월</span>
+                                        <div class="col-4 col-md">
+                                            <label for="dateset1"><input type="radio" name="dateset" id="dateset1"><span>이번 달</span></label>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div> 
+                    </form>
+                    <div class="bottom">
+                        <div class="btn-flex">
+                            <button type="button" class="btn btn-lg">초기화</button>
+                            <button type="button" class="btn btn-primary btn-lg">검색</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="header">
+                        <h2>매출 통계</h2>
+                    </div>
+                    <div class="body">
+                        <div class="table-wrap">
+                            <table class="tb text-center">
+                                <colgroup>
+                                    <col>
+                                    <col span="4" width="18%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>날짜 (일)</th> 
+                                        <th colspan="2">주문건수 (건)</th>
+                                        <th colspan="2">결제금액 (원)</th> 
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><p class="txt-result">2022-11-01</p></td>
+                                        <td><p class="txt-result">813</p></td>
+                                        <td><p class="txt-result">30%</p></td>
+                                        <td><p class="txt-result">###,###,###</p></td>
+                                        <td><p class="txt-result">##%</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="txt-result">2022-11-01</p></td>
+                                        <td><p class="txt-result">813</p></td>
+                                        <td><p class="txt-result">30%</p></td>
+                                        <td><p class="txt-result">###,###,###</p></td>
+                                        <td><p class="txt-result">##%</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="txt-result">2022-11-01</p></td>
+                                        <td><p class="txt-result">813</p></td>
+                                        <td><p class="txt-result">30%</p></td>
+                                        <td><p class="txt-result">###,###,###</p></td>
+                                        <td><p class="txt-result">##%</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="txt-result">2022-11-01</p></td>
+                                        <td><p class="txt-result">-</p></td>
+                                        <td><p class="txt-result">-</p></td>
+                                        <td><p class="txt-result">-</p></td>
+                                        <td><p class="txt-result">-</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="body">
+                        <div class="table-wrap table-total">
+                            <table class="tb text-center">
+                                <colgroup>
+                                    <col>
+                                    <col span="4" width="18%">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td><p class="txt-result">합계</p></td>
+                                        <td colspan="2"><p class="txt-result">###,###,###</p></td>
+                                        <td colspan="2"><p class="txt-result">###,###,###</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="lecturerModal" class="modal modal-default modal-upside fade" tabindex="1" aria-modal="true" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content"> 
+                    <div class="modal-head"> 
+                        <h2>상품 추가</h2>
+                        <i class="xi-close" data-dismiss="modal"></i>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col">
+                                    <input type="text" class="form-control" id="" value="" placeholder="text">
+                                </div>
+                                <div class="col-auto pl-2">
+                                    <button type="button" class="btn">검색</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-wrap mt-3">
+                            <table class="tb text-center">
+                                <colgroup>
+                                    <col><col width="20%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>제목</th>
+                                        <th>선택 </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>상품리스트 </td>
+                                        <td><button type="button" class="btn btn-sm">선택</button></td>
+                                    </tr> 
+                                    <tr>
+                                        <td>상품리스트 </td>
+                                        <td><button type="button" class="btn btn-sm">선택</button></td>
+                                    </tr> 
+                                    <tr>
+                                        <td>상품리스트 </td>
+                                        <td><button type="button" class="btn btn-sm">선택</button></td>
+                                    </tr> 
+                                </tbody>
+                            </table>
+                        </div>
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true"><i class="xi-angle-left-min"></i></span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true"><i class="xi-angle-right-min"></i></span>
+                                </a>
+                            </li>
+                        </ul>  
+        
+                        <div class="text-center mt-5">
+                            <button type="button" class="btn" data-dismiss="modal">취소</button>
+                            <button type="button" class="btn btn-primary">확인</button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div> 
+
+        <!-- //페이지 시작 -->
+    </div>
+        
+</div>
+<!-- //container -->
+<script>
+    $('.nav-tabs a').on("click", function() {
+
+        fromTop = 75;  
+        href = $(this).attr("href");
+
+        $('html, body').animate({scrollTop: $(href).offset().top - fromTop}, 0);
+
+        return false;
+
+    });
+
+    $('.tb-open').on('click', function(){
+        $(this).parents('tr').next('.tb-inner').toggleClass('open');
+        return false;
+    })
+</script>
+<script src="js/common.js"></script>
+</body>
+</html>

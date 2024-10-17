@@ -1,0 +1,18 @@
+<svg id="btn-gnb" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+      }
+    </style>
+  </defs>
+  <rect id="사각형_3_복사_3" data-name="사각형 3 복사 3" class="cls-1" x="9" y="9" width="6" height="6"/>
+  <rect id="사각형_3_복사_4" data-name="사각형 3 복사 4" class="cls-1" x="9" width="6" height="6"/>
+  <rect id="사각형_3_복사_7" data-name="사각형 3 복사 7" class="cls-1" y="9" width="6" height="6"/>
+  <rect id="사각형_3_복사_7-2" data-name="사각형 3 복사 7" class="cls-1" width="6" height="6"/>
+  <rect id="사각형_3_복사_5" data-name="사각형 3 복사 5" class="cls-1" x="18" width="6" height="6"/>
+  <rect id="사각형_3_복사_6" data-name="사각형 3 복사 6" class="cls-1" x="18" y="9" width="6" height="6"/>
+  <rect id="사각형_3_복사_8" data-name="사각형 3 복사 8" class="cls-1" x="9" y="18" width="6" height="6"/>
+  <rect id="사각형_3_복사_8-2" data-name="사각형 3 복사 8" class="cls-1" y="18" width="6" height="6"/>
+  <rect id="사각형_3_복사_8-3" data-name="사각형 3 복사 8" class="cls-1" x="18" y="18" width="6" height="6"/>
+</svg>

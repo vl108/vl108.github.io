@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="telephone=no" name="format-detection">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Document</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/lightbox.min.css">
+<link rel="stylesheet" href="css/jquery-ui.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/common.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <!-- header -->
+    <header id="hd">
+        <div class="container">
+            <a href="#" class="hd-back d-lg-none"><i class="icon-back">뒤로</i></a>
+            <h1 class="hd-logo"><a href="#"><img src="img/logo.svg" alt="OF 덴티스"></a></h1>
+            <ul class="hd-navi d-xl-flex">
+                <li>
+                    <a href="#">Courses</a>
+                    <ul class="depth">
+                        <li><a href="#">Offline Courses</a></li>
+                        <li><a href="#">Online Courses</a></li>
+                        <li><a href="#">Speakers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Contents</a>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">Posting</a></li>
+                        <li><a href="#">Clinical Cases</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Story</a></li>
+                <li><a href="#">OF Market</a></li>
+                <li><a href="#">Opening</a></li>
+                <li><a href="#">Event</a></li>
+            </ul>
+            <div class="hd-side">
+                <a href="#" class="icon-user d-xl-block" title="마이페이지">마이페이지</a>
+                <!-- [D] 로그인 이후에만 노출 -->
+                <button type="button" class="icon-user btn-mypage d-xl-none" title="마이페이지">마이페이지</button>
+                <a href="#" title="장바구니" class="position-relative">
+                    <span class="icon-cart">장바구니</span>
+                    <span class="cart-num">0</span>
+                </a>
+                <a href="#" title="내 찜 내역" class="icon-like">내 찜 내역</a>
+                <!-- [D] default
+                    <div class="d-xl-block"><b>홍길동</b>님</div>
+                    <a href="#" class="text-muted d-xl-block mr-xl-2">로그아웃</a>
+                -->
+                <a href="#" class="d-xl-block">로그인</a>
+                <a href="#" class="d-xl-block">회원가입</a>
+                <!-- // -->
+                <a href="#search" class="icon-search btn-search d-xl-none">검색</a>
+                 <form action="" class="form-search d-xl-block">
+                    <input type="text" class="form-control" name="" value="" placeholder="검색어를 입력해 주세요" title="검색">
+                    <button type="submit"><i class="icon-search">검색</i></button>
+                </form>
+            </div>
+            <button type="button" class="gnb-toggle d-xl-none"><span class="text-hide">메뉴열기/닫기</span></button>
+        </div>
+        <div id="search">
+            <div class="container">
+                <form action="">
+                    <div class="hd-search">
+                        <input type="text" name="" value="" placeholder="검색어를 입력해 주세요">
+                        <i></i>
+                        <button type="submit"><i class="icon-search">검색</i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <nav id="gnb">
+            <div class="gnb-bg"></div>
+            <div class="gnb-util">
+            <!-- 
+                <div><i class="icon-user"></i> <b>홍길동</b>님</div>
+                <a href="#" class="text-muted">로그아웃</a>
+                
+                [D] default
+                <a href="#">로그인</a> 
+                <a href="#">회원가입</a>
+            -->
+            </div>
+            <ul class="gnb">
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Courses</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">Offline Courses</a></li>
+                        <li><a href="#">Online Courses</a></li>
+                        <li><a href="#">Speakers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Market</a>
+                    </strong>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Contents</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">Posting</a></li>
+                        <li><a href="#">Clinical Cases</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Story</a>
+                    </strong>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Opening</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">상담신청</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Event</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">진행중 이벤트</a></li>
+                        <li><a href="#">종료 이벤트</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <nav id="mnb" class="mypage-menu">
+            <div class="mypage-menu-hd">
+                <button type="button" class="icon-close btn-mypage">닫기</button>
+                <p>만나서 반가워요, <b class="name">홍길동</b> 님</p>
+                <div class="hd-m-account">
+                    <a href="#" class="btn btn-outline-primary btn-xs">로그아웃</a>
+                </div>
+            </div>
+            <ul class="gnb">
+                <li>
+                    <a href="#">수강신청 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">오프라인 교육 신청 내역</a></li>
+                        <li><a href="#">온라인 교육 신청 내역</a></li>
+                        <li><a href="#">취소/환불 내역</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#">마켓 주문 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">마켓 주문 내역</a></li>
+                        <li class="active"><a href="#">반품/교환 내역</a></li>
+                        <li><a href="#">취소/환불 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">리뷰 / 댓글 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">내가 작성한 리뷰</a></li>
+                        <li><a href="#">내가 작성한 댓글</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">문의 / 상담 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">문의 내역</a></li>
+                        <li><a href="#">상담 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">찜 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">내 찜 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">포인트 / 결제 관리</a>
+                    <ul class="depth">
+                        <li><a href="#">보유 포인트</a></li>
+                        <li><a href="#">충전 / 계좌 관리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">쿠폰 관리</a>
+                    <ul class="depth">
+                        <li><a href="#">나의 보유 쿠폰</a></li>
+                        <li><a href="#">발급 가능 쿠폰</a></li>
+                        <li><a href="#">지난 쿠폰 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">회원 정보</a>
+                    <ul class="depth">
+                        <li><a href="#">배송지 목록</a></li>
+                        <li><a href="#">회원 정보 수정</a></li>
+                        <li><a href="#">회원 탈퇴</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">환경 설정</a>
+                    <ul class="depth">
+                        <li class="active"><a href="#">앱 설정</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+
+    <!-- content -->
+    <main id="ct">
+<!-- 페이지시작 -->
+<div class="sub-page">
+    <div class="container">
+        <div class="sub-page-hd">
+            <h2 class="content-title"><span>질문하기</span></h2>
+        </div>
+        <form action="">
+            <div class="form-container form-question">
+                <ul class="">
+                    <li class="item">
+                        <div class="form-label require">
+                            <b>Step 01</b>
+                            <p>궁금하신 내용이 어떤 분야 인가요?</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 col-lg form-chk">
+                                <input type="checkbox" class="sr-only" id="chk-1-1">
+                                <label for="chk-1-1" class="chk-square">
+                                    <span>교정</span>
+                                </label>
+                            </div>
+                            <div class="col-4 col-lg form-chk">
+                                <input type="checkbox" class="sr-only" id="chk-1-2">
+                                <label for="chk-1-2" class="chk-square">
+                                    <span>교합</span>
+                                </label>
+                            </div>
+                            <div class="col-4 col-lg form-chk">
+                                <input type="checkbox" class="sr-only" id="chk-1-3">
+                                <label for="chk-1-3" class="chk-square">
+                                    <span>보철</span>
+                                </label>
+                            </div>
+                            <div class="col-4 col-lg mt-2 mt-lg-0 form-chk">
+                                <input type="checkbox" class="sr-only" id="chk-1-4">
+                                <label for="chk-1-4" class="chk-square">
+                                    <span>외과</span>
+                                </label>
+                            </div>
+                            <div class="col-4 col-lg mt-2 mt-lg-0 form-chk">
+                                <input type="checkbox" class="sr-only" id="chk-1-5">
+                                <label for="chk-1-5" class="chk-square">
+                                    <span>임플란트</span>
+                                </label>
+                            </div>
+                            <div class="col-4 col-lg mt-2 mt-lg-0 form-chk">
+                                <input type="checkbox" class="sr-only" id="chk-1-6">
+                                <label for="chk-1-6" class="chk-square">
+                                    <span>치주</span>
+                                </label>
+                            </div>
+                            <div class="col-4 col-lg mt-2 mt-lg-0 form-chk">
+                                <input type="checkbox" class="sr-only" id="chk-1-7">
+                                <label for="chk-1-7" class="chk-square">
+                                    <span>마케팅</span>
+                                </label>
+                            </div>
+                            <div class="col-4 col-lg mt-2 mt-lg-0 form-chk">
+                                <input type="checkbox" class="sr-only" id="chk-1-8">
+                                <label for="chk-1-8" class="chk-square">
+                                    <span>디지털</span>
+                                </label>
+                            </div>
+                            <div class="col-4 col-lg mt-2 mt-lg-0 form-chk">
+                                <input type="checkbox" class="sr-only" id="chk-1-9">
+                                <label for="chk-1-9" class="chk-square">
+                                    <span>기타</span>
+                                </label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="form-label require">
+                            <b>Step 02</b>
+                            <p>질문내용의 제목을 간단하게 작성해주세요.</p>
+                        </div>
+                        <input type="text" class="form-control" placeholder="질문내용의 제목을 간단하게 작성해주세요.">
+                    </li>
+                    <li class="item">
+                        <div class="form-label require">
+                            <b>Step 03</b>
+                            <p>궁금하신 내용에 자세히 작성해 주세요.</p>
+                        </div>
+                        <textarea name="" id="" class="form-control" cols="30" rows="11" placeholder=" &#13;&#10; &#13;&#10;궁금한 내용을 질문해주세요. &#13;&#10;&#13;&#10;질문 시 아래내용에 주의해주세요. &#13;&#10;- 답변이 등록되면 질문 수정/삭제가 불가합니다. &#13;&#10;- 질문 내용에 개인정보(실명, 전화번호 등)가 포함되지 않게 해주세요. &#13;&#10;- 자문의는 질문과 관계없는 신체 사진/동영상을 요구하지 않습니다. &#13;&#10;* 피해를 입으셨다면, 서비스에 신고, 112또는 사이버 경찰청(www.police.go.kr)으로 신고 부탁드립니다. &#13;&#10; &#13;&#10;"></textarea>
+                    </li>
+                    <li class="item">
+                        <div class="form-label">
+                            <b>Step 04</b>
+                            <p>이미지 등 부가적으로 첨부할 파일이 있으면, 첨부해 주세요. <small>(선택)</small></p>
+                        </div>
+                        <div class="input-group">
+                            <input type="file" id="fileName" class="sr-only">
+                            <input type="text" class="form-control file-name" readonly value="" placeholder="임상 사진, 파노라마, CT 캡처 사진, 영상 등을 첨부하시면 보다 정확하게 확인 할 수 있습니다.">
+                            <label class="btn btn-black btn-sm">
+                                <input type="file" class="sr-only" id="btn-upload">파일 선택
+                            </label>
+                        </div>
+                        <ul class="thumb-list">
+                            <li class="thumb-list-item">
+                                <img src="https://phinf.pstatic.net/checkout.phinf/20220719_153/1658170322939ImbAt_JPEG/20220718_203339.jpg?type=w640" alt="">
+                                <button type="button" class="thumb-list-del text-hide">삭제</button>
+                            </li>
+                            <li class="thumb-list-item">
+                                <img src="https://phinf.pstatic.net/checkout.phinf/20220719_153/1658170322939ImbAt_JPEG/20220718_203339.jpg?type=w640" alt="">
+                                <button type="button" class="thumb-list-del text-hide">삭제</button>
+                            </li>
+                            <li class="thumb-list-item">
+                                <img src="https://phinf.pstatic.net/checkout.phinf/20220719_153/1658170322939ImbAt_JPEG/20220718_203339.jpg?type=w640" alt="">
+                                <button type="button" class="thumb-list-del text-hide">삭제</button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <div class="form-label require">
+                            <b>Step 05</b>
+                            <p>카운슬링 주의 사항을 읽고 동의 해 주세요.</p>
+                        </div>
+                        <div class="bx">
+                            답변은 참고용으로만 활용해야 하며, 실제 시술, 효과, 과정, 합병증, 후유증 등은 환자의 당시 상태를 고려하여 행위자가 판단하고 시행 해야 합니다. 본 솔루션을 바탕으로 이뤄진 행위에 대한 책임은 행위자에게 있고, 어떠한 법적, 도의적 책임을 답변자 그리고 당사에 물을 수 없음을 동의합니다. 질문에는 환자 개인 정보 및 특정인을 알 수 있는 정보를 포함하지 않아야 하며, 게시글에 개인정보보호법, 저작권 등의 관련법 위반 소지가 있는 경우 질문자에게 그 책임이 있으며, 당사에게 그에 대해 책임을 물 수 없습니다. <br>게시글의 내용과 답변을 답변자와 당사의 동의없이 무단으로 전재, 재배포하는 경우, 타인의 명예를 훼손하는 경우에는 관련법에 의거하여 처벌 받을 수 있습니다. <br>기타 게시판 운영정책에 위배되는 글은 사전 고지 없이 삭제 됩니다.
+                            <div class="text-center mt-4">
+                                <div class="form-chk">
+                                    <input type="checkbox" class="sr-only" name="chkOne" id="chk-2">
+                                    <label for="chk-2" class="chk-custom">
+                                        <span>동의합니다.</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </li>
+                </ul>
+            </div>
+        </form>
+        <div class="bottom-btn">
+            <div class="link-area">
+                <div class="link-area-inner row">
+                    <div>
+                        <button type="submit" class="btn btn-black">질문등록</button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-outline-black">작성취소</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //페이지시작 -->
+    </main>
+    <!-- //content -->
+
+    <!-- footer -->
+    <footer id="ft">
+        <div class="container">
+            <ul class="fnb">
+                <li><a href="#">OF 소개</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+            <div class="address">
+                상호명 : (주)덴티스 <i></i> 대표자명: 심기봉 <i></i> 개인정보관리책임자 : 전영현 <br>
+                사업자등록번호 : <a href="#" target="_blank" title="새창 열기">134-87-38310</a> <i></i> 통신판매업신고번호 : 제2012-대구달서-0202호 <i></i> 의료기기 판매업 신고번호 : 제20173420023-00057호<br>
+                사업장주소지 : [42718] 대구광역시 달서구 성서서로 99  <i></i> 팩스: 053-583-2806 <i></i>이메일 : 7061@dentis.co.kr <i></i> 제품문의 : 02-919-8312
+            </div>
+            <p class="copy">COPYRIGHT (C) DENTIS ALL RIGHTS RESERVED.</p>
+            <ul class="sns-list">
+                <li><a href="#" class="icon-sns-ytp" target="_blank">덴티스 유튜브채널 바로가기</a></li>
+                <li><a href="#" class="icon-sns-face" target="_blank">덴티스 페이스북 바로가기</a></li>
+                <li><a href="#" class="icon-sns-insta" target="_blank">덴티스 인스타그램 바로가기</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- //footer -->
+</div>    
+
+
+</body>
+</html>

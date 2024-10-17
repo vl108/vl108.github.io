@@ -1,0 +1,203 @@
+<!doctype html>
+    <html lang="ko">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SHN</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/vendors.bundle.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/vendors.bundle.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="#ct" class="skip sr-only sr-only-focusable">Go to content</a>
+    </nav>
+    <div id="wrap">
+        <header id="hd">
+            <div class="container">
+                <div class="hd-inner">
+                    <div class="hd-btns">
+                        <div class="gnb-wrp hd-navi hd-toggle">
+                            <button type="button" class="hd-toggler btn-gnb text-hide" aria-expanded="false" aria-controls="gnb">
+                                <span>주메뉴 열기</span>
+                            </button>
+                            <nav id="gnb" class="menu-container" role="navigation" aria-hidden="true">
+                                <ul>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">학술지</a></li>
+                                    <li><a href="#">회원게시판</a></li>
+                                    <li><a href="#">자료실</a></li>
+                                    <li><a href="#">학회소개</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="srch-wrp hd-toggle">
+                            <button type="button" class="hd-toggler btn-srch text-hide" aria-expanded="false" aria-controls="srch">검색창 열기</button>
+                            <form action="" id="srch">
+                                <label for="keyword"></label>
+                                <input type="text" placeholder="검색어를 입력해주세요." value="">
+                                <button type="button" class="btn-srch-del text-hide">내용 삭제</button>
+                            </form>
+                        </div>
+                    </div>
+                    <a href="#" class="hd-logo text-hide" title="메인페이지로 이동">SHN</a>
+                    <div class="sign-wrp hd-navi hd-toggle">
+                        <button type="button" class="hd-toggler btn-sign text-hide" aria-expanded="false" aria-controls="sign">
+                            <span>로그인메뉴 열기</span>
+                        </button>
+                        <nav id="sign" class="menu-container" role="navigation" aria-hidden="true">
+                            <ul>
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">회원가입</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="ct">
+			<div class="container mypage">
+                <h3 class="sub-tit">마이페이지</h3>
+                <ul class="tab">
+                    <li><a href="#" class="active" aria-current="page">나의 활동내역</a></li>
+                    <li><a href="#">비밀번호 수정</a></li>
+                    <li><a href="#">회원정보 수정</a></li>
+                </ul>
+                <div action="" class="doc">
+                    <div class="tb-body">
+                        <div class="table-responsive">
+                            <table class="tb tb-notice">
+                                <colgroup>
+                                    <col width="12%"/>
+                                    <col width="*"/>
+                                    <col width="12%"/>
+                                    <col width="15%"/>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">번호</th>
+                                        <th scope="col">제목</th>
+                                        <th scope="col">첨부 파일</th>
+                                        <th scope="col">작성일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- [D] 공지 영역 / span.label -->
+                                    <tr>
+                                        <td><span class="label">공지</span></td>
+                                        <td>
+                                            <a href="#" class="text-truncate">공지 입니다.</a>
+                                        </td>
+                                        <td><a href="#" class="icon-down text-hide" title="첨부 파일 다운로드" download>다운로드</a></td>
+                                        <td>2022-12-31</td>
+                                    </tr>
+                                    <!-- // -->
+                                    <tr>
+                                        <td>12</td>
+                                        <td>
+                                            <a href="#" class="text-truncate">회원게시판 입니다. 회원게시판 입니다. 회원게시판 입니다. 회원게시판 입니다. 회원게시판 입니다. 회원게시판 입니다.</a>
+                                        </td>
+                                        <td><a href="#" class="icon-down text-hide" title="첨부 파일 다운로드" download>다운로드</a></td>
+                                        <td>2022-12-31</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>
+                                            <a href="#" class="text-truncate">회원게시판 입니다.</a>
+                                        </td>
+                                        <td><a href="#" class="icon-down text-hide disabled" title="첨부 파일 다운로드" >다운로드</a></td>
+                                        <td>2022-12-31</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="list_footer">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link arrow first" href="/people"><span class="sr-only">첫 페이지</span></a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link arrow prev" href="#"><span class="sr-only">Previous</span></a>
+                            </li>
+                            <li class="page-item"> <!-- 활성화 a.active -->
+                                <a class="page-link active" href="#" title="현재 페이지">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">4</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">5</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link arrow next" href="#"><span class="sr-only">Next</span></a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link arrow last" href="/people?page=1"><span class="sr-only">끝 페이지</span></a>
+                            </li>
+                        </ul>	
+                        <div class="btn-wrp">
+                            <button type="button" class="btn btn-black btn-md btn-write">작성하기</button>	
+                        </div>
+                    </div> 
+                </div>
+			</div>
+		</div>
+        <footer id="ft">
+            <div class="container">
+                <div class="ft-top">
+                    <span class="ft-logo text-hide">SHN</span>
+                    <ul class="ft-info">
+                        <li>
+                            <strong>Address</strong>
+                            <p>서울특별시 강남구 남부순환로 377길 7 3층</p>
+                        </li>
+                        <li>
+                            <strong>학회장</strong>
+                            <p>정우병</p>
+                        </li>
+                        <li>
+                            <strong>Tel</strong>
+                            <p><a href="tel:02-1234-5678" title="전화걸기">02-1234-5678</a></p>
+                        </li>
+                        <li>
+                            <strong>Fax</strong>
+                            <p>02-1234-5678</p>
+                        </li>
+                        <li>
+                            <strong>E-mail</strong>
+                            <p><a href="mailto:abcd@saamdang.kr" title="메일보내기">abcd@saamdang.kr</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ft-btm">
+                    <p class="ft-copy">Copyright 2023 Sky Human Nature. All right reserved</p>
+                    <ul class="ft-privacy">
+                        <li>
+                            <a href="#" target="_blank" title="개인정보취급방침 새창열림">개인정보취급방침</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" title="정보공개 새창열림">정보공개</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" id="goTop" class="btn-top text-hide">페이지 최상단으로 이동</button>
+        </footer>
+    </div>
+</body>
+</html>

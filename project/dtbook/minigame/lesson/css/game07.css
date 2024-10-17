@@ -1,0 +1,340 @@
+@charset "utf-8";
+#intro .intro-title {width: 600px}
+#intro .intro-subtitle {height: 82px}
+#act .bx{top:auto;bottom: 54px;width: 1000px;padding: 56px 20px;box-shadow: 6px 6px #C1E1F8;border: 0;transform: translateY(calc( 100% + 56px )) translateX(-50%);transition: .4s}
+#act .bx h3{font-size:38px;color: #1C69FF}
+#act .bx p{margin-top: 12px}
+.guide-obj{left: 917px;top: -264px;width:94px;height:435px;background-image: url(../img/game07/common/guide-obj.png); background-size: 100% auto}
+.guide-line{top: 119px;left: 531px;width: 388px;height: 38px;background-image: url(../img/game07/common/guide-line.png); background-size: 100% auto}
+.guide-move{top: 114px;left: 903px}
+.guide-open .guide-move{transform: translateX(-316px)}
+.guide-balloon{top: 100px;left: 1029px}
+.start #act{opacity: 1;visibility: visible}
+#act:before{content: '';position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: url(../img/game07/common/machine.png) no-repeat center center / 100% auto}
+#act:after{content: '';position: absolute;top: 0;left: 138px;z-index:30;width: 1006px;height: 80px;background: url(../img/game07/common/curtain.png) no-repeat center center / 100% auto}
+.interaction{top:0;width: 810px;height: 166px}
+.drag-item{position: absolute;top:auto !important;left: 668px;bottom: 8px;z-index: 10;width: 120px;height: 120px}
+.drag-item .arr{position: absolute;top: 128px;left: 50%;width: 17px;height: 48px;transform: translateX(-50%)}
+.drag-item .arr:before{content: '';display:inline-block;vertical-align: top;width: 17px;height:0;background: url(../img/game07/common/arr.png) no-repeat top center / 100% auto}
+.drag-item.dropped .arr:before {-webkit-animation: arr-ani 0.4s steps(4) forwards;animation: arr-ani 0.4s steps(4) forwards}
+.drag-item.ui-draggable-disabled{visibility: hidden;opacity: 0}
+.start .drag-item:not(.dragging, .dropped){transition: left .5s}
+.start .drag-item.on:not(.dropped){transition: .5s;animation: claw-ani 2s ease 1s backwards}
+[data-page] .drop-area{display: none;opacity: 1}
+[data-page="1"] .drop-area.page01, [data-page="2"] .drop-area.page02, [data-page="3"] .drop-area.page03{display: block}
+
+@keyframes claw-ani {
+    0% {
+        transform: rotate(0)
+    }
+    33% {
+        transform: rotate(8deg)
+    }
+    66% {
+        transform: rotate(-8deg)
+    }
+    100% {
+        transform: rotate(0)
+    }
+}
+.claw{position: absolute;bottom: 0;left: 50%;z-index:10;width: 59px;height: 417px;background:url(../img/game07/common/claw.png) no-repeat bottom center / 100% auto;transform: translateX(-50%)}
+.hook{position: absolute;bottom: -7px;left: 21px;width: 38px;height: 77px;background: url(../img/game07/common/hook-left.png) no-repeat center / 100%;transform-origin: top right}
+.hook.right{left: auto;right: 21px;background-image: url(../img/game07/common/hook-right.png);transform-origin: top left}
+.ring{position: absolute;bottom: 65px;left: 50%;z-index: 40;width: 16px;height: 6px;background: #151614;transform: translateX(-50%)}
+.drop-box .hook.left{z-index:30}
+.drop-area{position: absolute;width: 100%;height: 140px;bottom: 0}
+.drop-box{display: flex;justify-content: center;position: absolute;width: 120px;height: 120px;bottom:0}
+.drop-item{display: flex;align-items: center;flex-direction: column-reverse;justify-content: space-between;position: absolute;width: 120px;height: 278px;bottom: -126px}
+.drop-item .drop-img{flex: 0 0 auto;margin-top:-10px}
+.drop-box .drag{position: relative;width: 100%;height: 100%;bottom: -31px}
+.drop-box .drag-item{visibility: hidden;top: 113px !important;left: 0 !important;z-index: -1;transform: translateY(-100%);opacity: 0}
+.drop-box .drag-item img{position: absolute;top: calc( 100% - 41px );left: 50%;transform: translateX(-50%);opacity: 0}
+.drop-box.moving .drag-item img{opacity: 1}
+.drop-box.drop .drag-item img{opacity: 0}
+.drop-area .drop-box:first-child{left: 138px}
+.drop-area .drop-box:nth-child(2){left: 276px}
+.drop-area .drop-box:nth-child(3){left:414px}
+.drop-area .drop-box:nth-child(4){left: 552px}
+.start .drop-box.pick:not(.drop) .drag-item{transition: top 2s}
+/* .start .drop-item .drop-img{transition: 2s} */
+@keyframes arr-ani {
+    100% {height:100%}
+}
+@keyframes hook-left-ani {
+	100% {transform: rotate(17deg)}
+}
+@keyframes hook-right-ani {
+	100% {transform: rotate(-17deg)}
+}
+.drop-box.pick .hook{animation: hook-left-ani .5s 2s forwards}
+.drop-box.pick .hook.right{animation: hook-right-ani .5s 2s forwards}
+.drop-box.pick.moving:not(.drop) .hook{transform: rotate(0) !important}
+.drop-box.pick .drag-item{z-index: 1;visibility: visible;opacity: 1}
+.drop-box.pick:not(.drop, .moving) .drag-item{top: 100% !important}
+.drop-box.pick.moving .drop-img{opacity: 0}
+.drop-box.drop .drop-img{opacity: 1 !important}
+.drop-box.pick.moving .drag-item img{opacity: 1}
+.drop-box.drop .hook{animation: hook-left-ani .5s forwards}
+.drop-box.drop .hook.right{animation: hook-right-ani .5s forwards}
+.drop-box.pick:not(.moving) .claw{z-index:10}
+.drop-box.pick:not(.moving) .hook.right{z-index:20}
+.drop-box.pick .arr:before{display: none}
+.btn-buzzer{top: 378px;width: 84px;height: 56px;margin-left: 330px;pointer-events: none}
+.btn-buzzer:after{content:'';display: inline-block;position:relative;width: 100%;height: 56px;background: url(../img/game07/common/buzzer.png) no-repeat top center / 100% auto}
+.icon-buzzer{position: absolute;top: 0;width: 100%;height: 100%;background: url(../img/game07/common/buzzer-default.png) no-repeat top center / 100% auto;transition: all .4s}
+.icon-buzzer-click{display: inline-block;position: absolute;left: calc( 50% - 28px );width: 61px;height: 82px;bottom: calc( 100% + 8px );background: url(../img/game07/common/click.png) no-repeat center / 100% auto;opacity: 0;transition: opacity .3s}
+.btn-buzzer.on{pointer-events:auto}
+.btn-buzzer.on .icon-buzzer{background-image: url(../img/game07/common/buzzer-on.png)}
+.btn-buzzer.on .icon-buzzer, .btn-buzzer.on .icon-buzzer-click{animation: buzzer-ani 0.3s linear 0s infinite alternate}
+.btn-buzzer.on .icon-buzzer-click{opacity: 1}
+.btn-buzzer.active .icon-buzzer{background-image: url(../img/game07/common/buzzer-active.png)}
+.btn-buzzer.active .icon-buzzer-click{display: none}
+@keyframes buzzer-ani {
+	100% {transform: translateY(-10px)}
+}
+
+/* page01 */
+.rain {position: absolute;top: 0;left: 0;width: 100%;height: 76%;overflow: hidden}
+.rain>img{position: absolute;bottom:100%;left: 0;width: 100%;animation: rain-ani 2s linear 0s infinite forwards}
+.rain>img:nth-child(2){animation-delay: .5s}
+.rain>img:nth-child(3){animation-delay: 1s}
+.rain>img:nth-child(4){animation-delay: 1.5s}
+@keyframes rain-ani {
+	100% {bottom:-50%}
+}
+.page01 .intro-ai{top: 384px;width:290px;height:163px}
+.page01 .intro-ai img{animation: cat-ani1 1s linear 2s infinite alternate}
+.page01 .end-ai{top: 337px;width: 288px;height: 320px;margin-left: -26px}
+.page01 .end-ai01{top: 14px;left: 12px; width: 277px}
+.page01 .end-ai02{top: 195px;left: 61px; width: 198px}
+.page01 .end-ai03{top: 68px;left: 96px; width: 180px}
+.end .page01 .end-ai03, .end.page01 .end-ai03{animation: cat-ani3 1.5s linear .5s infinite alternate}
+.page01 .end-ai04{top: 2px;left: 0}
+.page01 .drop-box:nth-child(1) img{width:78px}
+.page01 .drop-box:nth-child(2) img{width:92px; margin-bottom:-7px}
+.page01 .drop-box:nth-child(3) img{width:100px}
+.page01 .drop-box:nth-child(4) img{width:86px; margin-bottom:-10px}
+
+/* page02 */
+.page02 .bg-obj01{left: 163px;top: 197px;animation: flying-ani01 3s linear 0s infinite alternate}
+.page02 .bg-obj02{left: 70px;top: 265px;transform: rotate(45deg);animation: flying-ani02 1.5s linear .5s infinite alternate}
+.page02 .bg-obj03{left: 1025px;top: 136px;animation: flying-ani01 4s linear .75s infinite alternate}
+.page02 .bg-obj04{left: 1084px;top: 214px;transform: scale(-1, 1);animation: flying-ani02 2.5s linear .25s infinite alternate}
+.page02 .intro-ai{top: 382px;width: 286px;height: 175px}
+.page02 .intro-ai01{top: 126px;left: 11px}
+.page02 .intro-ai02{left: 2px;animation: cat-ani2 1s linear 0s infinite alternate}
+.page02 .drop-box:nth-child(1) img{width:39px}
+.page02 .drop-box:nth-child(2) img{width:93px; margin-bottom:-13px}
+.page02 .drop-box:nth-child(3) img{width:60px}
+.page02 .drop-box:nth-child(4) img{width:89px}
+.page02 .end-ai{top:369px;width: 342px;height: 257px}
+.page02 .end-ai01{left: 24px;top: 219px; width: 244px}
+.page02 .end-ai02{left: 83px;top: 173px; width: 46px}
+.page02 .end-ai03{left: 188px;top: 153px; width: 47px}
+.page02 .end-ai04{left: 0px;top: 32px; width: 221px}
+.page02 .end-ai05{left: 151px;top: 172px; width: 51px}
+.page02 .end-ai06{left: 46px;top: 167px; width: 46px}
+.page02 .end-ai07{left: 0px;top: -1px; width: 266px}
+.page02 .end-ai08{left: 281px;top: 225px; width: 73px}
+.page02 .end-ai09{left: 259px;top: 173px; width: 82px}
+.end .page02 .end-ai02, .end.page02 .end-ai02{animation: cat-ani6 2s linear .5s infinite both}
+.end .page02 .end-ai03, .end.page02 .end-ai03{animation: cat-ani7 2s linear .5s infinite both}
+.end .page02 .end-ai05, .end.page02 .end-ai05{animation: cat-ani8 2s linear .5s infinite both}
+.end .page02 .end-ai06, .end.page02 .end-ai06{animation: cat-ani9 2s linear .5s infinite both}
+.end .page02 .end-ai08, .end.page02 .end-ai08{animation: cat-ani10 2s linear .5s infinite both}
+.end .page02 .end-ai09, .end.page02 .end-ai09{animation: cat-ani11 2s linear .5s infinite both}
+
+/* page03 */
+.page03 .bg-obj01{left: 1103px;top: 232px;width:142px;height:63px;background: url(../img/game07/page03/bg-obj01.svg) no-repeat center / 100% auto;animation: snow-ani01 6s linear 0s infinite both}
+.page03 .bg-obj02, .page03 .bg-obj03, .page03 .bg-obj04{background: url(../img/game07/page03/bg-obj02.svg) no-repeat center / 100% auto;animation: snow-ani02 8s linear 0s infinite both}
+.page03 .bg-obj02{left: 1px;top: 57px;width: 336px;height: 168px}
+.page03 .bg-obj03{left: 910px;top: 33px;width: 262px;height: 132px;animation-delay: .5s}
+.page03 .bg-obj04{left: 155px;top: 413px;width: 213px;height: 108px;transform: rotate(4deg);animation-delay: .75s;animation: snow-ani03 3s linear 0s infinite both}
+.page03 .bg-obj05, .page03 .bg-obj06{background: url(../img/game07/page03/bg-obj03.svg) no-repeat center / 100% auto}
+.page03 .bg-obj05{left: 934px;top: 327px;width: 66px;height: 66px;animation: snow-ani04 3s linear 0.5s infinite both}
+.page03 .bg-obj06{left: 292.176px;top: 256.176px;width: 80px;height: 80px;transform: rotate(21deg);animation: snow-ani06 3s linear 0.5s infinite both}
+.page03 .bg-obj07, .page03 .bg-obj08, .page03 .bg-obj09{width:52px;height:48px;background: url(../img/game07/page03/bg-obj04.svg) no-repeat center / 100% auto;animation: snow-ani05 4s linear 0s infinite both}
+.page03 .bg-obj07{left: 413px;top: 195px}
+.page03 .bg-obj08{left: 991px;top: 242px}
+.page03 .bg-obj09{left: -8px;top: 343px;transform: rotate(-34deg);animation: snow-ani07 4s linear 0s infinite both}
+.page03 .intro-ai{top: 344px;width: 335px;height: 232px;margin-left: -6px}
+.page03 .intro-ai01{top: 166px;left: 51px; width: 259px}
+.page03 .intro-ai02{animation: cat-ani1 1s linear 2s infinite alternate}
+.page03 .drop-box:nth-child(1) img{width:110px}
+.page03 .drop-box:nth-child(2) img{width:113px; margin-bottom:-10px}
+.page03 .drop-box:nth-child(3) img{width:94px}
+.page03 .drop-box:nth-child(4) img{width:62px}
+.page03 .end-ai{top: 273px;width:335px;height:362px;margin-left: -15px}
+.page03 .end-ai01{left: 54px;top: 196px;width:162px;transform: rotate(-8deg)}
+.page03 .end-ai02{left: 8px;top: 190px}
+.page03 .end-ai03, .page03 .end-ai05{left: 79px;top: 61px;width:197px}
+.page03 .end-ai04{left: 173px;top: 164px;width:23px;transform: scale(0);transform-origin: top center}
+.end .page03 .end-ai01, .page03.end .end-ai01{animation: cat-ani4 4s ease .5s infinite forwards}
+.end .page03 .end-ai04, .page03.end .end-ai04{animation: cat-ani5 5s linear .5s infinite forwards}
+@keyframes raindrop {
+    0% {
+        transform: translateY(0%)
+    }
+    75% {
+        transform: translateY(580px)
+    }
+    100% {
+        transform: translateY(650px)
+    }
+}
+@keyframes stem {
+    0% {
+        opacity: 1
+    }
+    65% {
+        opacity: 1
+    }
+    75% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+@keyframes flying-ani01 {
+    50% {
+        transform: translateY(-20px)
+    }
+}
+@keyframes flying-ani02 {
+    50% {
+        margin-top:-6px;margin-right: -3px;
+    }
+}
+@keyframes snow-ani01 {
+    50% {
+        transform: translate(15px, 10px)
+    }
+}
+@keyframes snow-ani02 {
+    50% {
+        transform: translate(31px, 20px)
+    }
+}
+@keyframes snow-ani03 {
+    50% {
+        transform: translate(12px, 8px) rotate(4deg)
+    }
+    100% {
+        transform: translate(0) rotate(4deg)
+    }
+}
+@keyframes snow-ani04 {
+    50% {
+        transform: translate(0, 14px)
+    }
+}
+@keyframes snow-ani05 {
+    50% {
+        transform: translate(0, 8px)
+    }
+}
+@keyframes snow-ani06 {
+    50% {
+        transform: translate(0, 14px) rotate(21deg)
+    }
+    100% {
+        transform: translate(0) rotate(21deg)
+    }
+}
+@keyframes snow-ani07 {
+    50% {
+        transform: translate(0, 4px) rotate(-34deg)
+    }
+    100% {
+        transform: translate(0) rotate(-34deg)
+    }
+}
+@keyframes cat-ani1 {
+	0%, 10%, 20%{
+        transform: rotate(.5deg)
+    }
+    5%, 15%{
+        transform: rotate(-.5deg)
+    }
+}
+@keyframes cat-ani2 {
+    from{
+        transform: translate(0px, -2px)
+    }
+    to{
+        transform: translate(-1px, 1px)
+    }
+}
+@keyframes cat-ani3 {
+    100%{
+        transform: rotate(15deg) translateX(15px)
+    }
+}
+@keyframes cat-ani4 {
+    50%{
+        transform: rotate(17deg) translate(3px, 12px)
+    }
+    100%{
+        transform: rotate(-8deg) translateX(0)
+    }
+}
+@keyframes cat-ani5 {
+    20%, 60%{
+        transform: scale(1)
+    }
+    70%, 100%{
+        transform: scale(0)
+    }
+}
+@keyframes cat-ani6 {
+    33%{
+        transform: translate(-15px, -2px) rotate(27deg)
+    }
+}
+@keyframes cat-ani7 {
+    66%{    
+        transform: translate(15px, -11px) rotate(-22deg)
+    }
+}
+@keyframes cat-ani8 {
+    33%{
+        transform: translate(18px, 0px) rotate(-22deg)
+    }
+}
+@keyframes cat-ani9 {
+    66%{
+        transform: translate(-15px, -5px) rotate(29deg)
+    }
+}
+@keyframes cat-ani10 {
+    66%{
+        transform: translate(-18px, 0)
+    }
+    100%{
+        transform: translate(0)
+    }
+}
+@keyframes cat-ani11 {
+    30%{
+        transform: translate(-18px, -10px) rotate(-6deg)
+    }
+    50%{
+        transform: translate(-18px, -36px) rotate(-12deg)
+    }
+    60%{
+        transform: translate(-18px, -14px) rotate(-24deg)
+    }
+    70%{
+        transform: translate(-9px, 0) rotate(-10deg)
+    }
+    80%{
+        transform: translate(4px, -17px) rotate(-6deg)
+    }
+    100%{
+        transform: translate(0, 0) rotate(0)
+    }
+}
+
+/* social */
+.social #round .bx{top:90px;transform: translate(-50%, calc(-100% - 102px) )}

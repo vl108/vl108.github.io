@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="telephone=no" name="format-detection">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Document</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/lightbox.min.css">
+<link rel="stylesheet" href="css/jquery-ui.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/common.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <!-- header -->
+    <header id="hd" class="">
+        <div class="container">
+            <!-- [D] ios - 메인제외한 페이지에서 제공
+            <a id="ios-back" href="#" class="hd-back d-lg-none"><i class="icon-back">뒤로</i></a>
+            -->
+            <h1 class="hd-logo"><a href="/index"><img src="img/logo.svg" alt=""></a></h1>
+            <ul class="hd-navi d-xl-flex">
+               <li><a href="/courses/offline">Courses</a></li>
+               <li><a href="/market/main">Market</a></li>
+               <li><a href="/contents/of_content">Contents</a></li>
+               <li><a href="/opening/of_opening">Opening</a></li>
+               <li><a href="/event/main">Event</a></li> 
+            </ul>
+            <div class="hd-side">
+                
+                    <a href="/member/login?rurl=/event/event_info/38" class="d-xl-block">로그인</a>
+                    <a href="/member/signIn" class="d-xl-block">회원가입</a>
+                    <a href="/courses/cart"><span class="icon-cart">장바구니</span></a>
+                    
+                        <button type="button" class="icon-user btn-mypage d-xl-none" title="마이페이지">마이페이지</button>
+                        <a href="/mypage" class="icon-user d-xl-block">로그인</a>
+                    
+                    
+                    <a href="#search" class="icon-search btn-search">검색</a>
+                
+                
+            </div>
+            <button type="button" class="gnb-toggle d-xl-none"><span class="text-hide">메뉴열기/닫기</span></button>
+        </div>
+    
+
+<div id="search">
+    <div class="container">
+        <form action="/search/result">
+            <div class="hd-search">
+                <input type="text" name="s" value="" placeholder="검색어를 입력해 주세요">
+                <i></i>
+                <button type="submit"><i class="icon-search">검색</i></button>
+            </div>
+        </form>
+    </div>
+</div>
+<nav id="gnb" style="display: none; height: 277px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+    <div class="gnb-bg"></div>
+    <ul class="gnb">
+           <li>
+            <strong class="gnb-title">
+                <a href="/courses/offline">Courses</a>
+                <i role="button">메뉴열기/닫기</i>
+            </strong>
+            <ul class="depth">
+                <li><a href="/courses/offline">Offline Courses</a></li>
+                <li><a href="/courses/online">Online Courses</a></li>
+                
+            </ul>
+        </li>
+        <li>
+            <strong class="gnb-title">
+                <a href="/market/main">Market</a>
+                <!-- <i role="button">메뉴열기/닫기</i> -->
+            </strong>
+        </li>
+        <li>
+            <strong class="gnb-title">
+                <a href="/contents/of_content">Contents</a>
+                <i role="button">메뉴열기/닫기</i>
+            </strong>
+            <ul class="depth">
+                <li><a href="/contents/of_content">OF Contents</a></li>
+                <li><a href="/contents/posting">Posting</a></li>
+                <li><a href="/contents/clinical_cases">Clinical Cases</a></li>
+                
+            </ul>
+        </li>
+        <li>
+            <strong class="gnb-title">
+                <a href="/opening/of_opening">Opening</a>
+                <i role="button">메뉴열기/닫기</i>
+            </strong>
+            <ul class="depth">
+                <li><a href="/opening/of_opening">OF Opening</a></li>
+                <li><a href="/opening/apply">상담신청</a></li>
+            </ul>
+        </li>
+        <li>
+            <strong class="gnb-title">
+                <a href="/event/main">Event</a>
+                <i role="button">메뉴열기/닫기</i>
+            </strong>
+            <ul class="depth">
+                <li><a href="/event/main?mode=live">진행중 이벤트</a></li>
+                <li><a href="/event/main?mode=end">종료 이벤트</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<a class="dim" onclick="lyrClose(mnb);"><i class="sr-only">close</i></a>
+<!-- 모바일 -->
+
+    <nav id="mnb" class="mypage-menu state-logout">
+        <div class="mypage-menu-hd">
+            <button type="button" class="icon-close btn-mypage">닫기</button>
+        </div>
+        <div class="mypage-login-area">
+            <h3 class="content-title">안녕하세요, <br>로그인 또는 회원가입해 주세요</h3>
+            <p>로그인하고 더 많은 혜택을 만나보세요.</p>
+            <a href="/member/login" class="btn btn-black btn-block" id="sign_in">로그인</a>
+            <a href="/member/signIn" class="btn btn-outline-black btn-block">회원가입</a>
+        </div>
+        
+    </nav>
+
+
+
+<!-- //모바일  -->
+
+<form name="form_mypage_chk" method="post">
+    <input type="hidden" name="m" value="checkplusService">						<!-- 필수 데이타로, 누락하시면 안됩니다. -->
+    <input type="hidden" name="EncodeData" id="mypageEncodeData">		<!-- 위에서 업체정보를 암호화 한 데이타입니다. -->
+</form>
+<form action="/member/memberExistingUpInput" method="post" name="mypage_chk_next">
+
+</form>
+</header>
+    <!-- //header -->
+
+    <!-- content -->
+    <main id="ct">
+<!-- 페이지시작 -->
+<div class="sub-page sub-event">
+    <div class="container">
+        <div class="sub-page-hd">
+            <h2 class="content-title"><span>EVENT</span></h2>
+            <p>OF에서 진행하는 다양한 이벤트를 만나보세요.</p>
+        </div>
+        <div class="post-wrp">
+            <input type="hidden" name="board_no">
+            <div class="post-top">
+                <!-- <span class="badge-outline font-obj">EVENT</span> -->
+                <strong>
+                    2023 OF SEMINAR SCHEDUAL
+                </strong>
+                <span class="item-meta period">
+                    
+                    
+                    
+                    
+                    2023-01-01(일) ~ 2023-12-31(일)
+                </span>
+            </div>
+            <p class="pic">
+                
+                    <img src="https://ofdentis.s3.ap-northeast-2.amazonaws.com/data/site/AC80260D4665423FA53888CA416EC30F.jpg" alt="">
+                
+                </p><p style="text-align:center"><img alt="" src="https://ofdentis.s3.ap-northeast-2.amazonaws.com/data/editor/c30a3517997244238313c5ba21a74714.jpg" style="height:2800px; width:1000px"></p>
+
+            <p></p>
+        </div>
+        <div class="bottom-btn">
+            <div class="link-area">
+                <div class="link-area-inner row">
+                    
+                        
+                        
+                    
+                    <div>
+                        <a href="/event/main" class="btn btn-outline-black">목록</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="board-wrp reply">
+                <div class="tb-hd">
+                    <b>댓글</b>
+                </div>
+                <form action="/event/event_comment" method="POST" id="commentProc">
+                    <div class="write-wrp">
+                        <input type="hidden" name="board_no" value="38">
+                        <input type="hidden" name="member_no" value="">
+                        <input type="hidden" name="id" value="">
+                        <input type="hidden" name="comment" value="comment">
+                        <textarea name="content" class="form-control" cols="30" rows="4" placeholder="댓글을 남겨보세요"></textarea>
+                        <button type="button" class="btn btn-primary btn-upload-reply" id="comment_btn">등록</button>
+                    </div>
+                </form>
+                <ul class="board-list">
+                    
+                           <li class="board-item">
+                            <input type="hidden" name="comment_board_no" value="38">
+                            <input type="hidden" name="comment_id1" value="thdd*******">
+                            <input type="hidden" name="comment_id2" value="thddudals12">
+                            <input type="hidden" name="comment_contents" value="이벤트 짱">
+                            <input type="hidden" name="comment_seq1" value="93">
+                            <input type="hidden" name="write_date1" value="2023.04.24">
+                            <div class="info-split">
+                                <span class="name">thdd*******</span>
+                                <span class="date">
+                                    2023.04.24
+                                </span>
+                                <div class="tools">
+                                    
+                                        
+                                        
+                                    
+                                </div>
+                            </div>
+                            <p class="txt">
+                                
+                                    삭제된 댓글입니다.
+                                    
+                                
+                            </p>
+                            <button type="button" class="btn-underline-black btn-reply">답글</button>
+                            <!-- [D] 답글 쓰기 -->
+                            <form action="/event/event_comment" method="POST" id="commentAnswerProc">
+                                <input type="hidden" name="board_no" value="38">
+                                <input type="hidden" name="member_no" value="">
+                                <input type="hidden" name="comment_no" value="93">
+                                <input type="hidden" name="id" value="">
+                                <input type="hidden" name="comment" value="answer">
+                                <div class="write-wrp">
+                                    <textarea name="answer_contents" id="answer_count1" class="form-control" cols="30" rows="4" placeholder="답글을 남겨보세요"></textarea>
+                                    <button type="button" class="btn btn-primary btn-upload-reply" id="answer_btn">등록</button>
+                                </div>
+                            </form>
+                            <!-- // -->
+        
+        
+                            <!-- [D] 답글 있는 경우 / 답글 활성화 .active -->
+                            <!-- 달린 답글이 있을 경우 버튼 등장 -->
+                            
+        
+                            <!-- [D] 답글 목록 -->
+                            <ul class="comment-list">
+                                
+                                
+                                    <li>
+                                        <p class="board-item empty">등록된 답글이 없습니다.</p>
+                                    </li>
+                                
+                                <!-- // -->
+                            </ul>
+                            <!-- // -->
+                        </li>
+                       
+                </ul>      
+            </div>
+    </div>
+</div>
+<!-- //페이지시작 -->
+    </main>
+    <!-- //content -->
+
+    <!-- footer -->
+    <footer id="ft">
+        <div class="container">
+            <ul class="fnb">
+                <li><a href="/about">OF소개</a></li>
+                <li><a href="/privacy">개인정보처리방침</a></li>
+                <li><a href="/terms">이용약관</a></li>
+                <li><a href="/notice">고객센터</a></li>
+            </ul>
+            <div class="address">
+                상호명 : (주)덴티스 <i></i> 대표자명: 심기봉 <i></i> 개인정보관리책임자 : 전영현 <br>
+                사업자등록번호 : 134-87-38310 <i></i> 통신판매업신고번호 : 제2012-대구달서-0202호 <i></i> 의료기기 판매업 신고번호 : 제20173420023-00057호<br>
+                사업장주소지 : [42718] 대구광역시 달서구 성서서로 99  <i></i> 팩스: 053-583-2806 <i></i>이메일 : 7061@dentis.co.kr <i></i> 제품문의 : 02-919-8312
+            </div>
+            <p class="copy">COPYRIGHT (C) DENTIS ALL RIGHTS RESERVED.</p>
+            <ul class="sns-list">
+                <li><a href="https://www.youtube.com/c/dentiskorea" class="icon-sns-ytp" target="_blank">덴티스 유튜브채널 바로가기</a></li>
+                <li><a href="https://www.facebook.com/dentisofficial/" class="icon-sns-face" target="_blank">덴티스 페이스북 바로가기</a></li>
+                <li><a href="https://www.instagram.com/dentis_smile/" class="icon-sns-insta" target="_blank">덴티스 인스타그램 바로가기</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- //footer -->
+</div>    
+
+
+</body>
+</html>

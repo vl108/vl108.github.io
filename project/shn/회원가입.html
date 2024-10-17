@@ -1,0 +1,357 @@
+<!doctype html>
+    <html lang="ko">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SHN</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/vendors.bundle.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/vendors.bundle.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="#ct" class="skip sr-only sr-only-focusable">Go to content</a>
+    </nav>
+    <div id="wrap">
+        <header id="hd">
+            <div class="container">
+                <div class="hd-inner">
+                    <div class="hd-btns">
+                        <div class="gnb-wrp hd-navi hd-toggle">
+                            <button type="button" class="hd-toggler btn-gnb text-hide" aria-expanded="false" aria-controls="gnb">
+                                <span>주메뉴 열기</span>
+                            </button>
+                            <nav id="gnb" class="menu-container" role="navigation" aria-hidden="true">
+                                <ul>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">학술지</a></li>
+                                    <li><a href="#">회원게시판</a></li>
+                                    <li><a href="#">자료실</a></li>
+                                    <li><a href="#">학회소개</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="srch-wrp hd-toggle">
+                            <button type="button" class="hd-toggler btn-srch text-hide" aria-expanded="false" aria-controls="srch">검색창 열기</button>
+                            <form action="" id="srch">
+                                <label for="keyword"></label>
+                                <input type="text" placeholder="검색어를 입력해주세요." value="">
+                                <button type="button" class="btn-srch-del text-hide">내용 삭제</button>
+                            </form>
+                        </div>
+                    </div>
+                    <a href="#" class="hd-logo text-hide" title="메인페이지로 이동">SHN</a>
+                    <div class="sign-wrp hd-navi hd-toggle">
+                        <button type="button" class="hd-toggler btn-sign text-hide" aria-expanded="false" aria-controls="sign">
+                            <span>로그인메뉴 열기</span>
+                        </button>
+                        <nav id="sign" class="menu-container" role="navigation" aria-hidden="true">
+                            <ul>
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">회원가입</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="ct">
+			<div class="container">
+                <h3 class="sub-tit">회원가입</h3>
+                <form action="" class="doc sign-up">
+                    <div class="form-sect">
+                        <h4 class="form-hd">개인정보</h4>
+                        <div class="form-body">
+                            <div class="row">
+                                <div class="form-group col-12">
+                                    <label for="val1" class="form-label">아이디 <span class="dot text-red">*</span></label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="val1" value="" placeholder="아이디를 입력해주세요">	
+                                        <button type="button" class="btn btn-md">중복확인</button>
+                                        <div class="invalid-feedback">
+                                            ※ 6~ 15자의 영문 소문자 또는 숫자로만 생성이 가능합니다.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-12">
+                                    <label for="val2" class="form-label">비밀번호 <span class="dot text-red">*</span></label>
+                                    <input type="text" class="form-control" id="val2" value="" placeholder="비밀번호를 입력해주세요">	
+                                    <div class="invalid-feedback">
+                                        ※ 영문/숫자/특수문자를 모두 조합하여 6 ~ 16자로 입력해주시기 바랍니다.
+                                    </div>
+                                </div>
+                                <div class="form-group col-12">
+                                    <label for="val3" class="form-label">비밀번호 확인 <span class="dot text-red">*</span></label>
+                                    <input type="text" class="form-control" id="val3" value="" placeholder="비밀번호를 한 번 더 입력해주세요">	
+                                    <div class="invalid-feedback">
+                                        ※ 비밀번호가 일치하지 않습니다.
+                                    </div>
+                                </div>
+                                <div class="form-group col-12">
+                                    <label for="val4" class="form-label">이름 <span class="dot text-red">*</span></label>
+                                    <input type="text" class="form-control" id="val4" value="홍길동" readonly>	
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="val5" class="form-label">한자 이름</label>
+                                    <input type="text" class="form-control" id="val5" value="" placeholder="한자 이름을 입력해주세요">	
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="val6" class="form-label">영문 이름</label>
+                                    <input type="text" class="form-control" id="val6" value="" placeholder="영문 이름을 입력해주세요">	
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="val7" class="form-label">생년월일 <span class="dot text-red">*</span></label>
+                                    <input type="text" class="form-control datepicker" id="val7" placeholder="0000-00-00" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="val8" class="form-label">휴대폰 번호 <span class="dot text-red">*</span></label>
+                                    <input type="tel" class="form-control" id="val8" value="" required placeholder="휴대폰 번호를 입력해주세요">	
+                                </div>
+                                <div class="form-group col-12">
+                                    <div class="form-label">성별 <span class="dot text-red">*</span></div>
+                                    <div class="input-group">
+                                        <div class="form-check">
+                                            <input type="radio" class="sr-only" name="val9" id="val9-1" checked>
+                                            <label for="val9-1" class="chk-custom">
+                                                <span>남성</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" class="sr-only" name="val9" id="val9-2">
+                                            <label for="val9-2" class="chk-custom">
+                                                <span>여성</span>
+                                            </label>
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            ※ 성별을 선택해주세요.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="val10" class="form-label">전화번호</label>
+                                    <input type="tel" class="form-control" id="val10" value="" placeholder="전화번호를 입력해주세요">	
+                                </div>
+                                <div class="form-group col-12">
+                                    <div class="form-label">주소</div>
+                                    <div class="input-group">
+										<input type="hidden" id="user_postcode" value=""/>
+                                        <input type="text" id="user_address" name="user_address" class="form-control" value="" readonly placeholder="우편번호찾기로 주소를 입력해주세요">	
+                                        <input type="button" class="btn btn-md" onclick="execDaumPostcode()" value="우편번호">
+                                    </div>
+                                    <input type="text" id="user_detailAddress" name="user_address_detail" class="form-control mt-2" value="" placeholder="우편번호찾기로 주소를 입력해주세요">
+
+									<div id="addressSrch" style="display:none;border:1px solid;width:100%;height:300px;margin:5px 0;position:relative">
+										<img src="https://t1.daumcdn.net/postcode/resource/images/close.png" id="btnFoldWrap" style="cursor:pointer;position:absolute;right:0px;top:-1px;z-index:1;width: 20px;" onclick="foldDaumPostcode()" alt="접기 버튼">
+									</div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="val12" class="form-label">E-mail <span class="dot text-red">*</span></label>
+                                    <input type="text" class="form-control" id="val12" value="" placeholder="이메일을 입력해주세요">
+                                    <div class="invalid-feedback">
+                                        ※ 이메일 형식에 맞게 입력해주세요.
+                                    </div>	
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-sect">
+                        <div class="form-hd d-flex">
+                            <h4>소속</h4>
+                            <span class="nudge">※ 해당 정보만 입력해주시면 됩니다.</span>
+                        </div>
+                        <div class="form-body">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="val13" class="form-label">출신학교</label>
+                                    <div class="form-select">
+                                        <select class="form-control" id="val13" required>
+                                            <option value="" disabled selected>출신학교를 선택해주세요</option>
+                                            <option value="test">test</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="val14" class="form-label">졸업년도</label>
+                                    <div class="form-select">
+                                        <select class="form-control" id="val14" required>
+                                            <option value="" disabled selected>졸업년도를 선택해주세요</option>
+                                            <option value="test">test</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="val15" class="form-label">면허번호</label>
+                                    <div class="form-select">
+                                        <select class="form-control" id="val15" required>
+                                            <option value="" disabled selected>면허번호를 선택해주세요</option>
+                                            <option value="test">test</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="val16" class="form-label">면허취득 년도</label>
+                                    <div class="form-select">
+                                        <select class="form-control" id="val16" required>
+                                            <option value="" disabled selected>면허취득 년도를 선택해주세요</option>
+                                            <option value="test">test</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <div class="form-label">전문의 여부</div>
+                                    <div class="input-group">
+                                        <div class="form-check">
+                                            <input type="radio" class="sr-only" name="val17" id="val17-1" checked>
+                                            <label for="val17-1" class="chk-custom">
+                                                <span>전문의</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" class="sr-only" name="val17" id="val17-2">
+                                            <label for="val17-2" class="chk-custom">
+                                                <span>비전문의</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="val18" class="form-label">과목</label>
+                                    <input type="text" class="form-control" id="val18" value="" placeholder="과목을 입력해주세요">	
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wrp">
+                        <button type="button" class="btn btn-black">회원가입</button>
+                        <button type="button" class="btn">취소</button>
+                    </div>
+                </form>
+			</div>
+		</div>
+        <footer id="ft">
+            <div class="container">
+                <div class="ft-top">
+                    <span class="ft-logo text-hide">SHN</span>
+                    <ul class="ft-info">
+                        <li>
+                            <strong>Address</strong>
+                            <p>서울특별시 강남구 남부순환로 377길 7 3층</p>
+                        </li>
+                        <li>
+                            <strong>학회장</strong>
+                            <p>정우병</p>
+                        </li>
+                        <li>
+                            <strong>Tel</strong>
+                            <p><a href="tel:02-1234-5678" title="전화걸기">02-1234-5678</a></p>
+                        </li>
+                        <li>
+                            <strong>Fax</strong>
+                            <p>02-1234-5678</p>
+                        </li>
+                        <li>
+                            <strong>E-mail</strong>
+                            <p><a href="mailto:abcd@saamdang.kr" title="메일보내기">abcd@saamdang.kr</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ft-btm">
+                    <p class="ft-copy">Copyright 2023 Sky Human Nature. All right reserved</p>
+                    <ul class="ft-privacy">
+                        <li>
+                            <a href="#" target="_blank" title="개인정보취급방침 새창열림">개인정보취급방침</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" title="정보공개 새창열림">정보공개</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" id="goTop" class="btn-top text-hide">페이지 최상단으로 이동</button>
+        </footer>
+    </div>
+    <!-- 주소 iframe api -->
+    <script src="http://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script>
+        // 우편번호 찾기 찾기 화면을 넣을 element
+        var element_wrap = document.getElementById('addressSrch');
+    
+        function foldDaumPostcode() {
+            // iframe을 넣은 element를 안보이게 한다.
+            element_wrap.style.display = 'none';
+        }
+    
+        function execDaumPostcode() {
+            // 현재 scroll 위치를 저장해놓는다.
+            var currentScroll = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+            new daum.Postcode({
+                oncomplete: function(data) {
+                    // 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+    
+                    // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+                    // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                    var addr = ''; // 주소 변수
+                    var extraAddr = ''; // 참고항목 변수
+    
+                    //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                    if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                        addr = data.roadAddress;
+                    } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                        addr = data.jibunAddress;
+                    }
+    
+                    // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+                    if(data.userSelectedType === 'R'){
+                        // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+                        // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+                        if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                            extraAddr += data.bname;
+                        }
+                        // 건물명이 있고, 공동주택일 경우 추가한다.
+                        if(data.buildingName !== '' && data.apartment === 'Y'){
+                            extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                        }
+                        // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+                        if(extraAddr !== ''){
+                            extraAddr = ' (' + extraAddr + ')';
+                        }
+                        // 조합된 참고항목을 해당 필드에 넣는다.
+                        document.getElementById("user_extraAddress").value = extraAddr;
+                    
+                    } else {
+                        document.getElementById("user_extraAddress").value = '';
+                    }
+    
+                    // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                    document.getElementById('user_postcode').value = data.zonecode;
+                    document.getElementById("user_address").value = addr;
+                    // 커서를 상세주소 필드로 이동한다.
+                    document.getElementById("user_detailAddress").focus();
+    
+                    // iframe을 넣은 element를 안보이게 한다.
+                    // (autoClose:false 기능을 이용한다면, 아래 코드를 제거해야 화면에서 사라지지 않는다.)
+                    element_wrap.style.display = 'none';
+    
+                    document.body.scrollTop = currentScroll;
+                },
+                onresize : function(size) {
+                    element_wrap.style.height = size.height+'px';
+                },
+                width : '100%',
+                height : '100%'
+            }).embed(element_wrap);
+    
+            element_wrap.style.display = 'block';
+        }
+    </script>
+    <!-- // 주소 iframe api -->
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=900">
+<title></title>
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+<!-- page -->
+<link rel="stylesheet" type="text/css" href="../../css/oxquiz.css" />
+</head>
+<body>
+<!-- Start -->
+<div id="wrap">
+	<div class="wrap-inner">
+        <div class="game-header">
+            <ul class="lv-box">
+                <li class="level-num">레벨 4</li>
+                <li class="step-num">2단계</li>
+            </ul>
+            <p class="tit-question">미래는 밑줄 친 사자성어가 바르게 쓰인 땅만 가질 수 있어요. <br>미래가 가질 수 있는 땅을 모두 찾아 터치해 보세요.</p>
+            <button type="button" class="btn-home"><span class="sr-only">홈으로 가기</span></button>
+        </div>
+        <div class="game-board" id="oxQuiz">
+            <img src="../../images/step2/game1/char1.png" width="116" class="position-absolute char1" style="top: -16px;left: 325px;" >
+            <!-- <img src="../../images/step2/game1/char2.png" width="102" class="position-absolute char2" style="top: -18px;left: 439px;" > -->
+            <!-- <div class="result">
+                내가 가진 땅은 <br>총 
+				<div class="result-num">
+					<input type="number" id="userNum">
+					<span>정답: <b id="correctNum">0</b></span>
+				</div>
+                칸이야!
+            </div> -->
+			<p class="name">미래</p>
+            <ol class="quizlist">
+            </ol>
+            <div class="btns">
+                <button type="button" class="btn btn-sm btn-fix" id="btnFin"><i class="icon-chk"></i> 정답 확인</button>
+                <div class="btn-toggle">
+                    <button type="button" class="btn btn-sm btn-fix" data-toggle="modal" data-target="#modalRe"><i class="icon-re"></i> 다시 하기</button>
+                    <button type="button" class="btn btn-sm btn-fix"><i class="icon-book"></i> 미니북 보기</button>
+                    <button type="button" class="btn btn-sm btn-orange w-100 ml0 mt9"><i class="icon-arr"></i> 다음 단계로 이동하기</button>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+
+<div id="modalAlert1" class="modal" data-background="static">
+	<div class="modal-dialog-centered">
+        <div class="modal-content">
+			<div class="modal-body">
+				<button type="button" title="닫기" class="icon-close" data-dismiss="modal">닫기</button>
+				<p>땅을 선택해 주세요.</p>
+				<button type="button" class="btn btn-sm btn-fix mt30" data-dismiss="modal">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modalAlert2" class="modal" data-background="static">
+	<div class="modal-dialog-centered">
+        <div class="modal-content">
+			<div class="modal-body">
+				<button type="button" title="닫기" class="icon-close" data-dismiss="modal">닫기</button>
+				<p>빈칸에 숫자를 입력해 주세요.</p>
+				<button type="button" class="btn btn-sm btn-fix mt30" data-dismiss="modal">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modalAlert3" class="modal" data-background="static">
+	<div class="modal-dialog-centered">
+        <div class="modal-content">
+			<div class="modal-body">
+				<button type="button" title="닫기" class="icon-close" data-dismiss="modal">닫기</button>
+				<p>빈칸에 적은 숫자와 <br/>선택한 땅의 수는 같아야 합니다.</p>
+				<button type="button" class="btn btn-sm btn-fix mt30" data-dismiss="modal">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modalRe" class="modal" data-background="static">
+	<div class="modal-dialog-centered">
+        <div class="modal-content">
+			<div class="modal-body">
+				<button type="button" title="닫기" class="icon-close" data-dismiss="modal">닫기</button>
+				<p>현재 단계를 다시 해 볼까요?</p>
+				<button type="button" class="btn btn-sm btn-fix mt30" data-dismiss="modal" data-toggle="replay">확인</button>
+				<button type="button" class="btn btn-sm btn-fix btn-gray mt30" data-dismiss="modal">취소</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modalHome" class="modal" data-background="static">
+	<div class="modal-dialog-centered">
+        <div class="modal-content">
+			<div class="modal-body">
+				<button type="button" title="닫기" class="icon-close" data-dismiss="modal">닫기</button>
+				<p>게임을 정말 멈추시겠습니까?</p>
+				<button type="button" class="btn btn-sm btn-fix mt30" data-dismiss="modal" data-toggle="reset">확인</button>
+				<button type="button" class="btn btn-sm btn-fix btn-gray mt30" data-dismiss="modal">취소</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- // End -->
+<!-- js -->
+<script type="text/javascript" src="../../js/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<!-- page -->
+<script type="text/javascript" src="../../data/data.book2.step2ox.js"></script>
+<script type="text/javascript" src="../../js/oxquiz.js"></script>
+<script>
+// 시작
+oxQuiz(dataStep2oxLevel4);
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1170" height="370" viewBox="0 0 1170 370">
+  <g id="그룹_1717" data-name="그룹 1717" transform="translate(-375 -1195)">
+    <rect id="사각형_1024" data-name="사각형 1024" width="1170" height="370" transform="translate(375 1195)" fill="none"/>
+    <rect id="사각형_577" data-name="사각형 577" width="1081" height="1" transform="translate(464 1242)" fill="#e5e5e5"/>
+    <rect id="사각형_578" data-name="사각형 578" width="1081" height="1" transform="translate(464 1303)" fill="#e5e5e5"/>
+    <rect id="사각형_579" data-name="사각형 579" width="1081" height="1" transform="translate(464 1364)" fill="#e5e5e5"/>
+    <rect id="사각형_580" data-name="사각형 580" width="1081" height="1" transform="translate(464 1425)" fill="#e5e5e5"/>
+    <text id="_210_000_140_000_70_000_0" data-name="210,000
+140,000
+70,000
+0" transform="translate(445 1250)" fill="#999" font-size="16" font-family="Stolzl-Book, Stolzl"><tspan x="-62" y="0">210,000</tspan><tspan x="-62" y="60">140,000</tspan><tspan x="-55" y="120">70,000</tspan><tspan x="-10" y="180">0</tspan></text>
+    <text id="_2021" data-name="2021" transform="translate(605 1466)" fill="#111" font-size="22" font-family="Stolzl-Medium, Stolzl" font-weight="500"><tspan x="-25" y="0">2021</tspan></text>
+    <g id="그룹_1139" data-name="그룹 1139" transform="translate(-12 -56)">
+      <rect id="사각형_581" data-name="사각형 581" width="40" height="172" transform="translate(517 1309)" fill="#16b4b9"/>
+      <rect id="사각형_582" data-name="사각형 582" width="40" height="116" transform="translate(677 1365)" fill="#e52f42"/>
+      <rect id="사각형_583" data-name="사각형 583" width="40" height="48" transform="translate(597 1433)" fill="#313033"/>
+    </g>
+    <g id="그룹_1716" data-name="그룹 1716" transform="translate(698 -56)">
+      <rect id="사각형_581-2" data-name="사각형 581" width="40" height="175" transform="translate(517 1306)" fill="#16b4b9"/>
+      <rect id="사각형_582-2" data-name="사각형 582" width="40" height="133" transform="translate(677 1348)" fill="#e52f42"/>
+      <rect id="사각형_583-2" data-name="사각형 583" width="40" height="50" transform="translate(597 1431)" fill="#313033"/>
+    </g>
+    <text id="_2020" data-name="2020" transform="translate(960 1466)" fill="#111" font-size="22" font-family="Stolzl-Medium, Stolzl" font-weight="500"><tspan x="-28" y="0">2020</tspan></text>
+    <g id="그룹_1139-2" data-name="그룹 1139" transform="translate(343 -56)">
+      <rect id="사각형_581-3" data-name="사각형 581" width="40" height="171" transform="translate(517 1310)" fill="#16b4b9"/>
+      <rect id="사각형_582-3" data-name="사각형 582" width="40" height="128" transform="translate(677 1353)" fill="#e52f42"/>
+      <rect id="사각형_583-3" data-name="사각형 583" width="40" height="45" transform="translate(597 1436)" fill="#313033"/>
+    </g>
+    <text id="_2019" data-name="2019" transform="translate(1315 1466)" fill="#111" font-size="22" font-family="Stolzl-Medium, Stolzl" font-weight="500"><tspan x="-25" y="0">2019</tspan></text>
+    <g id="그룹_1143" data-name="그룹 1143" transform="translate(-41 -69)">
+      <text id="Total_assets" data-name="Total assets" transform="translate(820 1600)" fill="#111" font-size="16" font-family="NotoSansCJKkr-Medium, Noto Sans CJK KR" font-weight="500" letter-spacing="-0.05em"><tspan x="0" y="0">Total assets</tspan></text>
+      <text id="Total_liabilities" data-name="Total liabilities" transform="translate(962 1600)" fill="#111" font-size="16" font-family="NotoSansCJKkr-Medium, Noto Sans CJK KR" font-weight="500" letter-spacing="-0.05em"><tspan x="0" y="0">Total liabilities</tspan></text>
+      <text id="Total_equity" data-name="Total equity" transform="translate(1123 1600)" fill="#111" font-size="16" font-family="NotoSansCJKkr-Medium, Noto Sans CJK KR" font-weight="500" letter-spacing="-0.05em"><tspan x="0" y="0">Total equity</tspan></text>
+      <circle id="타원_140" data-name="타원 140" cx="7.5" cy="7.5" r="7.5" transform="translate(798 1586)" fill="#16b4b9"/>
+      <circle id="타원_141" data-name="타원 141" cx="7.5" cy="7.5" r="7.5" transform="translate(940 1586)" fill="#313033"/>
+      <circle id="타원_142" data-name="타원 142" cx="7.5" cy="7.5" r="7.5" transform="translate(1101 1586)" fill="#e52f42"/>
+    </g>
+  </g>
+</svg>

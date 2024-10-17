@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+#wrap.guide{width: 900px;height: 1054px;background: url(../images/guide.png) no-repeat center / 100%;}
+#wrap.guide>*{position: absolute}
+.guide-tit{top: 174px;left:50%;font-size: 33px;letter-spacing: -.1em;transform: translate(-50%,0);}
+.guide-tit span{display: inline-block}
+.guide-tit span:first-child{transform: rotate(6deg) translateY(-2px)}
+.guide-tit span:last-child{transform: rotate(-6deg) translateY(-2px)}
+.guide-txt{top: 702px;left: 189px;font-size: 36px;line-height: 1.6;font-weight: 700;text-align: center;}
+
+.icon-mobile{top: 475px;left: 355px;width: 191px;height: 191px;background: url(../images/guide-i.png) no-repeat center / cover;animation: ani 4s 1s infinite}
+@keyframes ani{
+    0%{transform: rotate(0);} 
+    25%,100%{transform: rotate(90deg);}
+}

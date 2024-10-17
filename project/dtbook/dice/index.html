@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta content="width=1363,height=952" name="viewport" />
+<title></title>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/theme.css" />
+<link rel="stylesheet" type="text/css" href="css/dicegame.css" />
+</head>
+<body>
+
+<div id="wrap" class="science-3-1">
+    <div class="wrap-inner">
+        <header id="hd">
+            <h1><i class="icon-funny">재미있게 정리하기</i>
+                <span>놀이로 정리해요</span>
+            </h1>
+        </header>
+        <div id="ct">
+
+<!-- 페이지 시작 -->
+<div>
+    <h2>친구들과 놀이를 하면서 이 단원의 학습 내용을 정리해 봅<span class="text-nowrap">시다.</span></h2>
+    <div class="box">
+        <div class="box-header">
+            <span class="font-net">준비물</span>
+        </div>
+        <div class="box-content">
+            <ul class="row no-gutters">
+                <li class="col-4 text-center">
+                    <img src="images/dicegame/obj1.png" alt="주사위" width="272">
+                    <p class="img-caption"><i></i>주사위</p>
+                </li>
+                <li class="col-4 text-center">
+                    <img src="images/dicegame/obj2.png" alt="놀이용 말" width="272">
+                    <p class="img-caption"><i></i>놀이용 말</p>
+                </li>
+                <li class="col-4 text-center">
+                    <img src="images/dicegame/obj3.png" alt="필기도구" width="272">
+                    <p class="img-caption"><i></i>필기도구</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="box-line">
+        <div class="box-header">
+            <span class="font-net">놀이 방법</span>
+            <button type="button" class="btn-speaker" data-audio="images/dicegame/rule.mp3">
+                <span class="sr-only">내레이션 재생</span>
+            </button>
+        </div>
+        <div class="box-content">
+            <ul class="rule">
+                <li>
+                    <b class="num">1</b>
+                    <p>가위바위보로 순서를 정한 후, 주사위를 던져 나온 수만큼 움직입니다.</p>
+                </li>
+                <li>
+                    <b class="num">2</b>
+                    <p>해당 칸의 질문에 정확히 답하면 그 자리에 머물고, 답하지 못하거나 그림만 있는 칸이면 이전의 자리로 돌아갑니다.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="btn-wrp">
+		<button type="button" class="btn-modal-play" data-toggle="modal" data-target="#playerSet" data-keyboard="false" data-backdrop="static">활동하기</button>
+	</div>
+</div>
+
+<!-- 페이지 끝 -->
+        </div>
+    </div>
+</div>
+
+<!-- 플레이어 세팅 -->
+<div id="playerSet" class="modal modalFin fade">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button type="button" class="icon-close" data-dismiss="modal">닫기</button>
+            <div class="modal-body">
+                <div>
+                    <h2>플레이어 수 선택</h2>
+                    <div>
+                        <div id="playerSetBtn">
+                            <div>
+                                <input type="radio" name="playernum" id="playerNum2" value="2" checked>
+                                <label for="playerNum2">②</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="playernum" id="playerNum3" value="3">
+                                <label for="playerNum3">③</label>
+                            </div> 
+                            <div>
+                                <input type="radio" name="playernum" id="playerNum4" value="4">
+                                <label for="playerNum4">④</label>
+                            </div>
+                        </div>
+                        <ul id="playerInfo">
+                            <li>
+                                <span>플레이어 1 : </span>
+                                <input type="text" maxlength="2" placeholder="이름 (두 글자)">
+                                <div role="button" class="choice-color" data-color="1"></div>
+                            </li>
+                            <li>
+                                <span>플레이어 2 : </span>
+                                <input type="text" maxlength="2" placeholder="이름 (두 글자)">
+                                <div role="button" class="choice-color" data-color="2"></div>
+                            </li>
+                            <li style="display: none;">
+                                <span>플레이어 3 : </span>
+                                <input type="text" maxlength="2" placeholder="이름 (두 글자)">
+                                <div role="button" class="choice-color" data-color="3"></div>
+                            </li>
+                            <li style="display: none;">
+                                <span>플레이어 4 : </span>
+                                <input type="text" maxlength="2" placeholder="이름 (두 글자)">
+                                <div role="button" class="choice-color" data-color="4"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" id="btnStart" class="btn-modal">게임시작</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 모달 -->
+<div id="modal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="icon-close" data-dismiss="modal">닫기</button>
+            <div class="modal-body">
+                <div class="board-game">
+                    <div class="board">
+                        <div id="map">
+                            <!-- 
+                                data-action ::: 
+                                return -> 되돌아가기
+                                moveto1 -> 1칸앞으로
+                                moveto2 -> 2칸앞으로
+                                moveback1 -> 뒤로한칸
+                                moveback2 -> 뒤로두칸
+                                nothing -> 한번쉬기
+                                onemore -> 주사위한번더
+                             -->
+                            <span style="left: 40px;top: 20px;"><img src="images/dicegame/start.png" alt="출발!" width="54"></span>
+
+                            <span class="font-net text-white" style="left: 137px; top: 112px;">암수의 <br>생김새가 다른 <br>동물 두 가지 <br>말하기</span>
+                            <span data-action="moveback1" class="font-net text-white text-deco" style="left: 241px; top: 174px;">뒤로 한 칸</span>
+                            <span class="font-net" style="left: 328px; top: 182px;">곰은 <br>주로 암컷이 <br>새끼를 돌본다. <br>( O, Ｘ )</span>
+                            <span data-action="return" class="sr-only">되돌아가기</span>
+                            <span data-action="moveto1" class="font-net text-deco" style="left: 569px; top: 177px;">앞으로 한 칸</span>
+                            <span class="font-net" style="left: 607px; top: 229px;">동물의 <br>한살이 뜻 <br>말하기</span>
+                            <span class="font-net text-white" style="left: 516px; top: 321px;">배추흰나비가 <br>한살이 관찰 동물로 <br>좋은 점 두 가지 말하기</span>
+                            <span data-action="return" class="sr-only">되돌아가기</span>
+                            <span class="font-net text-white" style="left: 317px; top: 348px;">배추흰나비의 <br>한살이 <br>단계 말하기</span>
+                            <span class="font-net" style="left: 199px; top: 340px;">완전 탈바꿈과 <br>불완전 탈바꿈의 <br>차이점 말하기</span>
+                            <span data-action="return" class="sr-only">되돌아가기</span>
+                            <span class="font-net" style="left: 10px; top: 458px;">알을 낳는 동물은 <br>같은 수의 <br>알을 낳는다. <br>( O, Ｘ )</span>
+                            <span data-action="onemore" class="font-net text-deco" style="left: 29px; top: 555px;">주사위 <br>한 번 더 <br>던지기</span>
+                            <span data-action="return" class="sr-only">되돌아가기</span>
+                            <span class="font-net text-white" style="left: 199px; top: 558px;">새끼를 낳는 <br>동물의 한살이에서 <br>공통점 한 가지 <br>말하기</span>
+                            <span data-action="nothing" class="font-net text-deco" style="left: 326px; top: 548px;">한 번 쉬기</span>
+                            <span class="font-net text-white" style="left: 421px; top: 591px;">사슴벌레의 한살이와 <br>닭의 한살이에서 <br>공통점 한 가지 <br>말하기</span>
+                            
+                            <span style="left: 628px;top: 536px;"><img src="images/dicegame/arrive.png" alt="도착!" width="54"></span>
+                        </div>
+                        <div class="dice">
+                            <div id="diceImg" role="button">
+                                <img src="images/dicegame/dice_1.png" alt="주사위" width="120" data-dtext_index="dtext_cls_image"> 
+                            </div>
+                            <div class="balloon1">
+                                <p id="diceTurn" class="effect">
+                                    <img src="images/dicegame/player1.png" alt="" width="110">
+                                </p>
+                                <p class="font-net">주사위를 누르세요.</p>
+                            </div> 
+                            <div class="balloon2">
+                                <p class="font-net">
+                                    <strong id="diceNum">1</strong>
+                                </p>
+                            </div>
+                            <input type="hidden" value="" id="diceValue">
+                            <input type="hidden" value="" id="point">
+                        </div>
+                    </div>
+                    <div class="quiz">
+                        <ol id="quizList">
+                            <li>
+                                <p>암수의 생김새가 다른 동물 두 가지 말하기</p>
+                                <div class="answer-bx">
+                                    <div class="toggle">
+                                        <p>캐릭터를 눌러서 예시 답안을 확인해 보세요.</p>
+                                        <p>원앙, 장수 풍뎅이, 거미</p>
+                                    </div>
+                                    <button type="button" class="btn-answer"  data-audio="images/dicegame/1.mp3"><span class="sr-only">확인</span></button>
+                                </div>
+                                <button type="button" disabled class="btn-chk">확인</button>
+                            </li>
+                            <li></li>
+                            <li>
+                                <p>곰은 주로 암컷이 새끼를 돌본다.</p>
+                                <div class="answer-bx" data-answer="o">
+                                    <button type="button" data-toggle="step-o">
+                                        <span class="sr-only">O</span>
+                                    </button>
+                                    <button type="button" data-toggle="step-x">
+                                        <span class="sr-only">X</span>
+                                    </button>
+                                    <div class="answer-txt">
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <button type="button" disabled class="btn-chk">확인</button>
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li>
+                                <p>동물의 한살이 뜻 말하기</p>
+                                <div class="answer-bx">
+                                    <div class="toggle">
+                                        <p>캐릭터를 눌러서 예시 답안을 확인해 보세요.</p>
+                                        <p>동물이 태어나서 성장하여 자손을 남기는 과정이다.</p>
+                                    </div>
+                                    <button type="button" class="btn-answer" data-audio="images/dicegame/2.mp3"><span class="sr-only">확인</span></button>
+                                </div>
+                                <button type="button" disabled class="btn-chk">확인</button>
+                            </li>
+                            <li>
+                                <p>배추흰나비가 한살이 관찰 동물로 좋은 점 두 가지 말하기</p>
+                                <div class="answer-bx">
+                                    <div class="toggle">
+                                        <p>캐릭터를 눌러서 예시 답안을 확인해 보세요.</p>
+                                        <p>알과 먹이를 구하기 쉽다. 한살이 기간이 짧다.</p>
+                                    </div>
+                                    <button type="button" class="btn-answer" data-audio="images/dicegame/3.mp3"><span class="sr-only">확인</span></button>
+                                </div>
+                                <button type="button" disabled class="btn-chk">확인</button>
+                            </li>
+                            <li></li>
+                            <li>
+                                <p>배추흰나비의 한살이 단계 말하기</p>
+                                <div class="answer-bx">
+                                    <div class="toggle">
+                                        <p>캐릭터를 눌러서 예시 답안을 확인해 보세요.</p>
+                                        <p>알, 애벌레, 번데기, 어른벌레</p>
+                                    </div>
+                                    <button type="button" class="btn-answer" data-audio="images/dicegame/4.mp3"><span class="sr-only">확인</span></button>
+                                </div>
+                                <button type="button" disabled class="btn-chk">확인</button>
+                            </li>
+                            <li>
+                                <p>완전 탈바꿈과 불완전 탈바꿈의 차이점 말하기</p>
+                                <div class="answer-bx">
+                                    <div class="toggle">
+                                        <p>캐릭터를 눌러서 예시 답안을 확인해 보세요.</p>
+                                        <p class="fs36">완전 탈바꿈은 곤충의 한살이에 번데기 단계가 있는 것이고, 불완전 탈바꿈은 곤충의 한살이에 번데기 단계가 없는 것이다.</p>
+                                    </div>
+                                    <button type="button" class="btn-answer" data-audio="images/dicegame/5.mp3"><span class="sr-only">확인</span></button>
+                                </div>
+                                <button type="button" disabled class="btn-chk">확인</button>
+                            </li>
+                            <li></li>
+                            <li>
+                                <p>알을 낳는 동물은 같은 수의 알을 낳는다.</p>
+                                <div class="answer-bx" data-answer="x">
+                                    <button type="button" data-toggle="step-o">
+                                        <span class="sr-only">O</span>
+                                    </button>
+                                    <button type="button" data-toggle="step-x">
+                                        <span class="sr-only">X</span>
+                                    </button>
+                                    <div class="answer-txt">
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <button type="button" disabled class="btn-chk">확인</button>
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li>
+                                <p>새끼를 낳는 동물의 한살이에서 공통점 한 가지 말하기</p>
+                                <div class="answer-bx">
+                                    <div class="toggle">
+                                        <p>캐릭터를 눌러서 예시 답안을 확인해 보세요.</p>
+                                        <p class="fs34">새끼는 어미의 모습과 비슷하다. 새끼는 어미젖을 먹고 자란다. 다 자라면 암컷과 수컷이 짝짓기를 하여 암컷이 새끼를 낳는다.</p>
+                                    </div>
+                                    <button type="button" class="btn-answer" data-audio="images/dicegame/6.mp3"><span class="sr-only">확인</span></button>
+                                </div>
+                                <button type="button" disabled class="btn-chk">확인</button>
+                            </li>
+                            <li></li>
+                            <li>
+                                <p>사슴벌레의 한살이와 닭의 한살이에서 공통점 한 가지 말하기</p>
+                                <div class="answer-bx">
+                                    <div class="toggle">
+                                        <p>캐릭터를 눌러서 예시 답안을 확인해 보세요.</p>
+                                        <p>암컷이 알을 낳는다. 어렸을 때와 다 자랐을 때의 생김새가 다르다.</p>
+                                    </div>
+                                    <button type="button" class="btn-answer" data-audio="images/dicegame/7.mp3"><span class="sr-only">확인</span></button>
+                                </div>
+                                <button type="button" disabled class="btn-chk">확인</button>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
+<!-- 완료 레이어 -->
+<div id="modalFin" class="modal modalFin fade" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button type="button" class="icon-close" data-dismiss="modal">닫기</button>
+            <div class="modal-body">
+                <div>
+                    <h2>축하합니다! <span class="nickname"></span></h2>
+                    <p>도착 지점에 먼저 도착했습니다. <br>친구도 말판 놀이를 잘 마칠 수 있도록 <br>응원해 주세요!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modalGameFin" class="modal modalFin fade" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button type="button" class="icon-close" data-dismiss="modal">닫기</button>
+            <div class="modal-body">
+                <div>
+                    <h2>축하합니다! <span class="nickname"></span></h2>
+                    <p>모든 친구들이 <br>도착 지점에 도착했습니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/dice.js"></script>
+</body>
+</html>

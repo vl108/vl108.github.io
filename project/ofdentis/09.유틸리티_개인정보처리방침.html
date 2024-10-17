@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="telephone=no" name="format-detection">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Document</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/lightbox.min.css">
+<link rel="stylesheet" href="css/jquery-ui.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/common.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <!-- header -->
+    <header id="hd">
+        <div class="container">
+            <a href="#" class="hd-back d-lg-none"><i class="icon-back">뒤로</i></a>
+            <h1 class="hd-logo"><a href="#"><img src="img/logo.svg" alt="OF 덴티스"></a></h1>
+            <ul class="hd-navi d-xl-flex">
+                <li>
+                    <a href="#">Courses</a>
+                    <ul class="depth">
+                        <li><a href="#">Offline Courses</a></li>
+                        <li><a href="#">Online Courses</a></li>
+                        <li><a href="#">Speakers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Contents</a>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">Posting</a></li>
+                        <li><a href="#">Clinical Cases</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Story</a></li>
+                <li><a href="#">OF Market</a></li>
+                <li><a href="#">Opening</a></li>
+                <li><a href="#">Event</a></li>
+            </ul>
+            <div class="hd-side">
+                <a href="#" class="icon-user d-xl-block" title="마이페이지">마이페이지</a>
+                <!-- [D] 로그인 이후에만 노출 -->
+                <button type="button" class="icon-user btn-mypage d-xl-none" title="마이페이지">마이페이지</button>
+                <a href="#" title="장바구니" class="position-relative">
+                    <span class="icon-cart">장바구니</span>
+                    <span class="cart-num">0</span>
+                </a>
+                <a href="#" title="내 찜 내역" class="icon-like">내 찜 내역</a>
+                <!-- [D] default
+                    <div class="d-xl-block"><b>홍길동</b>님</div>
+                    <a href="#" class="text-muted d-xl-block mr-xl-2">로그아웃</a>
+                -->
+                <a href="#" class="d-xl-block">로그인</a>
+                <a href="#" class="d-xl-block">회원가입</a>
+                <!-- // -->
+                <a href="#search" class="icon-search btn-search d-xl-none">검색</a>
+                 <form action="" class="form-search d-xl-block">
+                    <input type="text" class="form-control" name="" value="" placeholder="검색어를 입력해 주세요" title="검색">
+                    <button type="submit"><i class="icon-search">검색</i></button>
+                </form>
+            </div>
+            <button type="button" class="gnb-toggle d-xl-none"><span class="text-hide">메뉴열기/닫기</span></button>
+        </div>
+        <div id="search">
+            <div class="container">
+                <form action="">
+                    <div class="hd-search">
+                        <input type="text" name="" value="" placeholder="검색어를 입력해 주세요">
+                        <i></i>
+                        <button type="submit"><i class="icon-search">검색</i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <nav id="gnb">
+            <div class="gnb-bg"></div>
+            <div class="gnb-util">
+            <!-- 
+                <div><i class="icon-user"></i> <b>홍길동</b>님</div>
+                <a href="#" class="text-muted">로그아웃</a>
+                
+                [D] default
+                <a href="#">로그인</a> 
+                <a href="#">회원가입</a>
+            -->
+            </div>
+            <ul class="gnb">
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Courses</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">Offline Courses</a></li>
+                        <li><a href="#">Online Courses</a></li>
+                        <li><a href="#">Speakers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Market</a>
+                    </strong>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Contents</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">Posting</a></li>
+                        <li><a href="#">Clinical Cases</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Story</a>
+                    </strong>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Opening</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">OF Contents</a></li>
+                        <li><a href="#">상담신청</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="gnb-title">
+                        <a href="#">Event</a>
+                        <i role="button">메뉴열기/닫기</i>
+                    </strong>
+                    <ul class="depth">
+                        <li><a href="#">진행중 이벤트</a></li>
+                        <li><a href="#">종료 이벤트</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <nav id="mnb" class="mypage-menu">
+            <div class="mypage-menu-hd">
+                <button type="button" class="icon-close btn-mypage">닫기</button>
+                <p>만나서 반가워요, <b class="name">홍길동</b> 님</p>
+                <div class="hd-m-account">
+                    <a href="#" class="btn btn-outline-primary btn-xs">로그아웃</a>
+                </div>
+            </div>
+            <ul class="gnb">
+                <li>
+                    <a href="#">수강신청 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">오프라인 교육 신청 내역</a></li>
+                        <li><a href="#">온라인 교육 신청 내역</a></li>
+                        <li><a href="#">취소/환불 내역</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#">마켓 주문 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">마켓 주문 내역</a></li>
+                        <li class="active"><a href="#">반품/교환 내역</a></li>
+                        <li><a href="#">취소/환불 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">리뷰 / 댓글 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">내가 작성한 리뷰</a></li>
+                        <li><a href="#">내가 작성한 댓글</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">문의 / 상담 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">문의 내역</a></li>
+                        <li><a href="#">상담 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">찜 내역</a>
+                    <ul class="depth">
+                        <li><a href="#">내 찜 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">포인트 / 결제 관리</a>
+                    <ul class="depth">
+                        <li><a href="#">보유 포인트</a></li>
+                        <li><a href="#">충전 / 계좌 관리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">쿠폰 관리</a>
+                    <ul class="depth">
+                        <li><a href="#">나의 보유 쿠폰</a></li>
+                        <li><a href="#">발급 가능 쿠폰</a></li>
+                        <li><a href="#">지난 쿠폰 내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">회원 정보</a>
+                    <ul class="depth">
+                        <li><a href="#">배송지 목록</a></li>
+                        <li><a href="#">회원 정보 수정</a></li>
+                        <li><a href="#">회원 탈퇴</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">환경 설정</a>
+                    <ul class="depth">
+                        <li class="active"><a href="#">앱 설정</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+
+    <!-- content -->
+    <main id="ct">
+<!-- 페이지시작 -->
+<div class="sub-page sub-utility">
+    <div class="container">
+        <div class="sub-page-hd">
+            <h2 class="content-title"><span>개인정보취급방침</span></h2>
+        </div>
+        <p>
+            '(주) 덴티스'는 (이하 '회사'는) 고객님의 개인정보를 중요시하며, "정보통신망 이용촉진 및 정보보호"에 관한 법률을 준수하고 있습니다. 회사는 개인정보취급방침을 통하여 고객님께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다. 회사는 개인정보취급방침을 개정하는 경우 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다. <br><br>본 방침은 : 2011 년 6 월 13 일 부터 시행됩니다.
+        </p>
+        <div class="sect-policy">
+            <ul class="nav nav-boxs no-gutters">
+                <li class="nav-item col-lg-4"><a href="#policyContent1" class="nav-link">1. 수집하는 개인정보 항목</a></li>
+                <li class="nav-item col-lg-4"><a href="#policyContent2" class="nav-link">2. 개인정보의 수집 및 이용목적</a></li>
+                <li class="nav-item col-lg-4"><a href="#policyContent3" class="nav-link">3. 개인정보의 공유 및 제3자 제공</a></li>
+                <li class="nav-item col-lg-4"><a href="#policyContent4" class="nav-link">4. 개인정보 취급 위탁</a></li>
+                <li class="nav-item col-lg-4"><a href="#policyContent5" class="nav-link">5. 개인정보의 보유 및 이용기간</a></li>
+                <li class="nav-item col-lg-4"><a href="#policyContent6" class="nav-link">6. 개인정보의 파기절차 및 방법</a></li>
+                <li class="nav-item col-lg-4"><a href="#policyContent7" class="nav-link">7. 이용자 및 법정 대리인의 권리와 그 행사 방법</a></li>
+                <li class="nav-item col-lg-4"><a href="#policyContent8" class="nav-link">8. 개인정보 자동 수집 장치의 설치 운영 및 그 거부에 관한 사항</a></li>
+                <li class="nav-item col-lg-4"><a href="#policyContent9" class="nav-link">9. 개인정보 관리를 위한 기술적, 관리적 보호조치</a></li>
+                <li class="nav-item col-lg-4"><a href="#policyContent10" class="nav-link">10. 개인정보관리 책임자</a></li>
+                <li class="nav-item col-lg-4"><a href="#policyContent11" class="nav-link">11. 처리방침 변경에 대한 고지 의무</a></li>
+            </ul>
+        </div>
+        <div class="sect-policy">
+            <div class="item" id="policyContent1">
+                    <h4 class="tit">1. 수집하는 개인정보 항목</h4>
+                    <p>회사는 회원가입, 세미나 신청, 기타 회사가 제공하는 서비스 이용, 이벤트, 뉴스레터 발송, 영업활동 등을 위해 아래와 같은 개인정보를 수집하고 있습니다. 수집항목 이름 , 생년월일, 로그인ID, 전화번호, 휴대전화번호, 이메일, 직업, 회사명, 출신학교, 성별, 배송지 정보, 회원 선택에 따라 생일, 결혼기념일, 면허번호 개인정보 수집방법 홈페이지 , 서면양식</p>
+            </div>
+            <div class="item" id="policyContent2">
+                <h4 class="tit">3. 개인정보의 공유 및 제3자 제공</h4>
+                <p>회사는 회원가입, 세미나 신청, 기타 회사가 제공하는 서비스 이용, 이벤트, 뉴스레터 발송, 영업활동 등을 위해 아래와 같은 개인정보를 수집하고 있습니다. 수집항목 이름 , 생년월일, 로그인ID, 전화번호, 휴대전화번호, 이메일, 직업, 회사명, 출신학교, 성별, 배송지 정보, 회원 선택에 따라 생일, 결혼기념일, 면허번호 개인정보 수집방법 홈페이지 , 서면양식</p>
+            </div>
+            <div class="item" id="policyContent3">
+                    <h4 class="tit">3. 개인정보의 공유 및 제3자 제공</h4>
+                    <p>회사는 회원가입, 세미나 신청, 기타 회사가 제공하는 서비스 이용, 이벤트, 뉴스레터 발송, 영업활동 등을 위해 아래와 같은 개인정보를 수집하고 있습니다. 수집항목 이름 , 생년월일, 로그인ID, 전화번호, 휴대전화번호, 이메일, 직업, 회사명, 출신학교, 성별, 배송지 정보, 회원 선택에 따라 생일, 결혼기념일, 면허번호 개인정보 수집방법 홈페이지 , 서면양식</p>
+            </div>
+            <div class="item" id="policyContent4">
+                    <h4 class="tit">4. 개인정보 취급 위탁</h4>
+                    <p>회사는 회원가입, 세미나 신청, 기타 회사가 제공하는 서비스 이용, 이벤트, 뉴스레터 발송, 영업활동 등을 위해 아래와 같은 개인정보를 수집하고 있습니다. 수집항목 이름 , 생년월일, 로그인ID, 전화번호, 휴대전화번호, 이메일, 직업, 회사명, 출신학교, 성별, 배송지 정보, 회원 선택에 따라 생일, 결혼기념일, 면허번호 개인정보 수집방법 홈페이지 , 서면양식</p>
+            </div>
+            <div class="item" id="policyContent5">
+                    <h4 class="tit">5. 개인정보의 보유 및 이용기간</h4>
+                    <p>회사는 회원가입, 세미나 신청, 기타 회사가 제공하는 서비스 이용, 이벤트, 뉴스레터 발송, 영업활동 등을 위해 아래와 같은 개인정보를 수집하고 있습니다. 수집항목 이름 , 생년월일, 로그인ID, 전화번호, 휴대전화번호, 이메일, 직업, 회사명, 출신학교, 성별, 배송지 정보, 회원 선택에 따라 생일, 결혼기념일, 면허번호 개인정보 수집방법 홈페이지 , 서면양식</p>
+            </div>
+            <div class="item" id="policyContent6">
+                    <h4 class="tit">6. 개인정보의 파기절차 및 방법</h4>
+                    <p>회사는 회원가입, 세미나 신청, 기타 회사가 제공하는 서비스 이용, 이벤트, 뉴스레터 발송, 영업활동 등을 위해 아래와 같은 개인정보를 수집하고 있습니다. 수집항목 이름 , 생년월일, 로그인ID, 전화번호, 휴대전화번호, 이메일, 직업, 회사명, 출신학교, 성별, 배송지 정보, 회원 선택에 따라 생일, 결혼기념일, 면허번호 개인정보 수집방법 홈페이지 , 서면양식</p>
+            </div>
+            <div class="item" id="policyContent7">
+                    <h4 class="tit">7. 이용자 및 법정 대리인의 권리와 그 행사 방법</h4>
+                    <p>회사는 회원가입, 세미나 신청, 기타 회사가 제공하는 서비스 이용, 이벤트, 뉴스레터 발송, 영업활동 등을 위해 아래와 같은 개인정보를 수집하고 있습니다. 수집항목 이름 , 생년월일, 로그인ID, 전화번호, 휴대전화번호, 이메일, 직업, 회사명, 출신학교, 성별, 배송지 정보, 회원 선택에 따라 생일, 결혼기념일, 면허번호 개인정보 수집방법 홈페이지 , 서면양식</p>
+            </div>
+            <div class="item" id="policyContent8">
+                    <h4 class="tit">8. 개인정보 자동 수집 장치의 설치 운영 및 그 거부에 관한 사항</h4>
+                    <p>회사는 회원가입, 세미나 신청, 기타 회사가 제공하는 서비스 이용, 이벤트, 뉴스레터 발송, 영업활동 등을 위해 아래와 같은 개인정보를 수집하고 있습니다. 수집항목 이름 , 생년월일, 로그인ID, 전화번호, 휴대전화번호, 이메일, 직업, 회사명, 출신학교, 성별, 배송지 정보, 회원 선택에 따라 생일, 결혼기념일, 면허번호 개인정보 수집방법 홈페이지 , 서면양식</p>
+            </div>
+            <div class="item" id="policyContent9">
+                    <h4 class="tit">9. 개인정보 관리를 위한 기술적, 관리적 보호조치</h4>
+                    <p>회사는 회원가입, 세미나 신청, 기타 회사가 제공하는 서비스 이용, 이벤트, 뉴스레터 발송, 영업활동 등을 위해 아래와 같은 개인정보를 수집하고 있습니다. 수집항목 이름 , 생년월일, 로그인ID, 전화번호, 휴대전화번호, 이메일, 직업, 회사명, 출신학교, 성별, 배송지 정보, 회원 선택에 따라 생일, 결혼기념일, 면허번호 개인정보 수집방법 홈페이지 , 서면양식</p>
+            </div>
+            <div class="item" id="policyContent10">
+                    <h4 class="tit">10. 개인정보관리 책임자</h4>
+                    <p>회사는 회원가입, 세미나 신청, 기타 회사가 제공하는 서비스 이용, 이벤트, 뉴스레터 발송, 영업활동 등을 위해 아래와 같은 개인정보를 수집하고 있습니다. 수집항목 이름 , 생년월일, 로그인ID, 전화번호, 휴대전화번호, 이메일, 직업, 회사명, 출신학교, 성별, 배송지 정보, 회원 선택에 따라 생일, 결혼기념일, 면허번호 개인정보 수집방법 홈페이지 , 서면양식</p>
+            </div>
+            <div class="item" id="policyContent11">
+                    <h4 class="tit">11. 처리방침 변경에 대한 고지 의무</h4>
+                    <p>회사는 회원가입, 세미나 신청, 기타 회사가 제공하는 서비스 이용, 이벤트, 뉴스레터 발송, 영업활동 등을 위해 아래와 같은 개인정보를 수집하고 있습니다. 수집항목 이름 , 생년월일, 로그인ID, 전화번호, 휴대전화번호, 이메일, 직업, 회사명, 출신학교, 성별, 배송지 정보, 회원 선택에 따라 생일, 결혼기념일, 면허번호 개인정보 수집방법 홈페이지 , 서면양식</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //페이지시작 -->
+    </main>
+    <!-- //content -->
+
+    <!-- footer -->
+    <footer id="ft">
+        <div class="container">
+            <ul class="fnb">
+                <li><a href="#">OF 소개</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+            <div class="address">
+                상호명 : (주)덴티스 <i></i> 대표자명: 심기봉 <i></i> 개인정보관리책임자 : 전영현 <br>
+                사업자등록번호 : <a href="#" target="_blank" title="새창 열기">134-87-38310</a> <i></i> 통신판매업신고번호 : 제2012-대구달서-0202호 <i></i> 의료기기 판매업 신고번호 : 제20173420023-00057호<br>
+                사업장주소지 : [42718] 대구광역시 달서구 성서서로 99  <i></i> 팩스: 053-583-2806 <i></i>이메일 : 7061@dentis.co.kr <i></i> 제품문의 : 02-919-8312
+            </div>
+            <p class="copy">COPYRIGHT (C) DENTIS ALL RIGHTS RESERVED.</p>
+            <ul class="sns-list">
+                <li><a href="#" class="icon-sns-ytp" target="_blank">덴티스 유튜브채널 바로가기</a></li>
+                <li><a href="#" class="icon-sns-face" target="_blank">덴티스 페이스북 바로가기</a></li>
+                <li><a href="#" class="icon-sns-insta" target="_blank">덴티스 인스타그램 바로가기</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- //footer -->
+</div>
+
+
+</body>
+</html>

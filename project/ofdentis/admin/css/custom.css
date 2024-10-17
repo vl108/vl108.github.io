@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* 이력서 */
+.row.survey-frame{margin: 0;}
+.page-container .wrap.survey-wrap{flex-basis: 0;flex-grow: 1;max-width: 100%;padding: 0;}
+.frm-apply-wrp{font-size: 0; text-align: center}
+.frm-apply-ft{ position:fixed;bottom:15px;right:15px}
+.frm-apply-ft>*{ display: block; margin:10px;}
+.frm-apply-ft i{ margin-right:4px;}
+.frm-apply:nth-child(2n) h2{ text-align:right}
+.frm-apply h2{margin-bottom:10px; font-size:11px; text-align:left; color:#868e96}
+.frm-apply h3{ padding-top: 10px; margin-bottom:10px; border-top:2px solid; font-size:13px; color:#716aca}
+.frm-sect+.frm-sect{ margin-top:20px}
+.frm-apply .row{ margin-left:0; margin-right:0;}
+.frm-apply .row>*{ padding-left:5px; padding-right:5px}
+.frm-apply .form-group{ position: relative;margin-bottom: 5px; background: #fff}
+.frm-apply .form-group+.form-group{ margin-top: 15px}
+.frm-apply .not-use>*:not(.make-tool){ opacity:.2}
+.frm-apply .control-label{ padding:5px 0 0 5px;font-weight:400;white-space: nowrap}
+.frm-apply [contenteditable]{outline:1px dashed #ccc !important;border-radius: 5px; cursor: text;font-size: 1.05rem;}
+.frm-apply [contenteditable]:focus{ background:#fcf8e3}
+.frm-apply .form-control:not(select),.frm-apply-bx{ padding:3px 8px; border-radius:0; border-color: transparent; background:#f3f3f3; font-size: 12px; line-height:16px}
+.frm-apply footer{ position: absolute;bottom:5px;left:0;right:0; font-size:10px; text-align: center}
+.frm-apply .profile{ max-height: 140px}
+.frm-apply hr{ width: 100%; border-top:1px dashed #ebedf2}
+.frm-apply .frm-apply-bx{width: 100%;padding: 10px; border:1px solid #ebedf2}
+.frm-apply .help-block{ margin:4px 0 0;font-size: 11px;color: #868e96;}
+.frm-apply .help-block[contenteditable]{border-radius: 1px;}
+.frm-apply .form-group .radio-inline,.frm-apply .form-group .checkbox-inline{ margin:3px 0;}
+.frm-apply .radio-inline label,.frm-apply .checkbox-inline label{ margin: 0 10px 0 0; padding-left:20px;}
+.frm-apply .radio-inline label>span,.frm-apply .checkbox-inline label>span{ width: 14px; height: 14px;}
+.frm-apply b{ display: inline-block; min-width:2em; font-weight: inherit}
+.frm-apply b[contenteditable]{font-size: 1rem;}
+.frm-apply .custom-file,.frm-apply .custom-file>*{ height: 24px;}
+.frm-apply .custom-file-label{ padding:5px 10px}
+.frm-apply .custom-file-label::after{ height:22px;padding:5px 20px}
+.frm-apply.wide{width:842px;height:auto !important;min-height: 595px}
+.frm-apply.wide h2{ text-align: left !important}
+.frm-apply.wide .table tr>*{ padding:10px 5px}
+.frm-apply.wide textarea{min-width:0; margin:0 auto}
+.frm-apply.wide select{ width: 48px; padding-right: 0; padding-left: 4px;}
+.frm-apply .user{width: 170px; white-space: normal}
+.modal-full .frm-apply-ft .btn,.apply-evalution>.btn{ width: 37px; padding-left: 0; padding-right: 0}
+.modal-full .frm-apply-ft .btn span{ display: none}
+.modal-full .frm-apply-ft i{ margin: 0}
+.apply-evalution{ position: fixed;bottom:25px;right:73px}
+.apply-evalution>div{ display: none;position: absolute;right:52px;bottom:-6px; padding:8px 16px; background: #fff; border-radius: 25px; white-space: nowrap;}
+.apply-evalution>div>div{ display:inline-flex}
+.apply-evalution .btn span{ display:none}
+.apply-evalution .dropdown-menu{ min-width:260px}
+/* 만들기 */
+.m-section>button{display: flex;align-items: center;justify-content: space-between;padding: 0.688em;background-color: #fff;}
+.make-tool{ display: none;position: absolute;bottom:100%;right:0; white-space: nowrap}
+.form-group .make-tool .btn{width: auto; border-color:#3f4047 !important;background-color: #fff; color:#3f4047}
+#makeBase header .make-tool{ display: none}
+.make-select-tool{ float: right; margin: -3px 0 !important}
+.form-group .make-select-tool .btn{ width: 1.375rem; height:1.375rem; margin-left:5px; padding:0;border-radius: 50%;}
+.make-select-tool i{font-size: 0.875rem}
+[data-toggle=make-move]{ cursor:ns-resize !important}
+.make-section{position: relative}
+/* #make .make-section:hover{ z-index: 1; box-shadow:0 0 8px #36a3f7} */
+.form-group:hover .make-tool,.make-section:hover .make-tool{ display:inline-flex}
+.ui-sortable-placeholder{visibility: visible !important;outline:1px dashed #ccc !important; background:#fcf8e3 !important}
+#make .table-responsive{ overflow: visible}
+
+
+/* 0919 카테고리 관리 */
+.chk_wrap{display: flex; justify-content: space-between;}
+.chk_wrap .tree-wrp{width:40%;}
+.chk_wrap #categoryTree, .chk_wrap .jstree{max-height: 500px;}
+.chk_wrap .chk_box{flex: 1; margin: 0 1%; max-width: 50%;}
+.chk_wrap #categoryDetail, .tree-table-wrp{position:relative;width:60%;padding-left: 6%;}
+.chk_wrap #categoryDetail:before, .tree-table-wrp:before{content:'';position:absolute;top:0;left: 4%;height: 100%;border-left: 1px dashed #eee;}
+
+/* 상품관리 */
+.search-wrap.tit-wide .body h3,
+.search-wrap.tit-wide .body h4{min-width: 144px;}
+
+.selected_list{border: 1px solid #ccc; height:100%; overflow-y: auto; border-radius: 2px;}
+.selected_list li{padding: .5rem .5rem 0;}
+.selected_list span::before{content: '>'; display: inline-block; font-size: 13px; margin: 0 5px;}
+.selected_list span:first-child:before{display: none;}
+button.xi-close{outline: none !important; border: none; border-radius: 50%; padding: .2rem;}
+label.btn{line-height: 32px;}
+.form-control-file-hidden{position: absolute;overflow: hidden;clip: rect(0,0,0,0);width: 1px;height: 1px;margin: -1px;padding: 0;border: 0;}
+.file-name{font-size: 13px;}

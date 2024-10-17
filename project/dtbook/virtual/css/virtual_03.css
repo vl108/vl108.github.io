@@ -1,0 +1,64 @@
+@charset "utf-8";
+#wrap{background-image:url(../images/virtual_03/bg.jpg)}
+
+.ch-2-hd{margin-bottom:10px}
+.ch-2-title{margin-bottom:27px}
+.ch-2-title .d-block{margin-top:-15px;margin-left:72px}
+.ch-2-img{margin:-20px -2px 0 20px}
+.ch-2-img .btn-start {bottom:-20px;margin-right:20px}
+
+.explore{margin-top:50px}
+.explore .supplies-wrap .row.justify-content-around{width:388px}
+.explore .ml-auto.arrange{margin-top:195px}
+
+#modalExp .tb tbody tr>th {border-left:2px solid #c9d6dd}
+
+/* 가상 실험실 */
+.virtual-content{margin-top:10px}
+.modal-virtual .btns i{box-shadow:none}
+.icon-1{background-image:url(../images/virtual_03/icon1-sm.png)}
+.icon-2{background-image:url(../images/virtual_03/icon2-sm.png)}
+.viewbox .btn{width:127px;text-align:left}
+.modal-virtual .tab-pane{text-align:center}
+
+.viewbox{position:relative;border-color:#a8b6bd;border-width:2px; text-align:left;margin-bottom:10px;height:250px}
+
+.viewbox:not(.interaction) .btns{position:absolute;right:20px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column}
+.viewbox.interaction{width:638px;height:740px;margin:8px auto 0;border:1px solid #e0e8ee;border-radius:20px;box-shadow:10px 10px 30px rgba(0,0,0,.1);border-radius:20px}
+#virtual-1 .viewbox, #virtual-2 .viewbox{background:url(../images/virtual_03/viewbox.png) no-repeat center / cover}
+.drag-ttakji {min-width:200px;height:200px;overflow:hidden}
+.dropzone{width:200px;height:200px;border:2px solid #a8b6bd;border-radius:10px;margin:0 auto;overflow:hidden}
+.dropzone .drop-item{width:100%;height:100%}
+.dropzone .drag-ttakji{box-shadow:none}
+.modal-virtual .bx.drag-area{padding:20px 30px}
+.modal-virtual .dragdrop-info{width:430px;background-image:url(../images/virtual_03/dragdrop-info.png);text-align:left;padding-left:65px}
+
+.viewbox.interaction .btns{position:absolute;width:100%;bottom:90px;text-align:center}
+.viewbox.interaction img{border:0}
+.viewbox.interaction .btn{width:160px;height:69px;font-size:27px;border-radius:22px}
+.viewbox.interaction .btn.disabled{background:linear-gradient(-67deg, #9c9a9c, #c3c1c3);box-shadow:2px 2px 3px rgba(0,0,0,.2), inset -2px -4px 4px rgb(156 154 156 / 20%), inset 4px 4px 5px rgb(255 255 255 / 20%);border:1px solid #8b898b;pointer-events:none;cursor:auto}
+.viewbox.interaction .icon-1{width:40px;height:40px;background-image:url(../images/virtual_03/icon1.png)}
+.viewbox.interaction .btn.disabled .icon-1{background-image:url(../images/virtual_03/icon1_active.png)}
+.viewbox.interaction .icon-2{width:40px;height:40px;background-image:url(../images/virtual_03/icon2.png)}
+.viewbox.interaction .btn.disabled .icon-2{background-image:url(../images/virtual_03/icon2_active.png)}
+.viewbox-title{display:block;padding-left:20px;text-align:left;font-size:22px}
+.viewbox-title span{display:inline-block;font-size:26px;color:#cc4072}
+.magnifier{position:absolute;top:0;left:0;width:100%;height:600px}
+.magnify {position:relative;display:inline-block;height:inherit}
+.magnify .magnify-lens {position:absolute;width:298px;height:288px;border-radius:100%;cursor:none;display:none;z-index:100}
+.magnify .magnify-lens:before{content:'';position:absolute;width:412px;height:501px;top:-10px;left:-10px;background:url(../images/virtual_03/magnifier.png) no-repeat 0 0/100% auto}
+
+.controlbar{position:absolute;transform:translateX(-50%);bottom:165px;left:50%;width:483px;height:52px}
+.controlbar:before{content:'';position:absolute;top:50%;left:50%;width:calc( 100% - 51px );height:10px;background:#b9cbd4;border:2px solid #a9bec8;box-shadow:0 0 3px rgb(174 194 204 / 90%);border-radius:20px;transform:translate(-50%, -50%)}
+.controlbar>span{display:block;position:absolute;top:calc( 100% - 18px );width:39px;height:33px;padding-top:10px;background:url(../images/virtual_03/b.png) no-repeat center / 100% auto;font-size:13px;text-align:center;animation:fadeIn 1s both}
+.controlbar .bar{position:absolute;top:0;z-index:10;width:51px;height:52px;background:url(../images/virtual_03/scroll.png) no-repeat top center / 100% auto;cursor:pointer}
+.controlbar.dragging>span{display:none;animation:fadeOut 1s both}
+.rotate{position:absolute;top:2px;left:39px;width:513px;height:564px;overflow:hidden}
+.rotate img{position:absolute;top:0;left:-129px;max-width:769px}
+
+#virtual-4 .rotate{top:29px;left:39px}
+.btn.btn-fix{width:190px;display:block;margin:20px auto 0}
+#virtual-0.active ~ .btn-fix{display:none}
+.modal-virtual .modal-body{overflow:hidden}
+
+.virtual-content>.btn-fix{position:absolute;bottom:90px;left:50%;margin-left:-95px}
